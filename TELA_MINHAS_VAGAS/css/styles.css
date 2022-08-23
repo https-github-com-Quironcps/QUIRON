@@ -15,6 +15,7 @@
   .logo {
     cursor: pointer;
     width: 10px;
+    height: 10px;
   }
   
   .nav__links a,
