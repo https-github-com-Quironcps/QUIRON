@@ -47,6 +47,7 @@
     background-color: #6131EB;
     border: none;
     border-radius: 50px;
+    opacity: 49%;
     cursor: pointer;
     transition: background-color 0.3s ease 0s;
   }
