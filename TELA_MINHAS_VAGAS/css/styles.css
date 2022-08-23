@@ -18,6 +18,11 @@
     height: 10px;
   }
   
+  .logo1 {
+    width: 10px;
+    height: 10px;
+  }
+
   .nav__links a,
   .cta,
   .overlay__content a {
