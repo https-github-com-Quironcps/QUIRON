@@ -16,6 +16,8 @@
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+    align-items: center;
+    justify-content: center;
     color: #edf0f1;
     text-decoration: none;
   }
