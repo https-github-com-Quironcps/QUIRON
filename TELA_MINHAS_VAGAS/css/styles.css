@@ -14,12 +14,6 @@
   
   .logo {
     cursor: pointer;
-    order: 3;
-    margin-left: auto;
-  }
-  
-  nav {
-    order: 1;
   }
   
   .nav__links a,
@@ -34,19 +28,14 @@
   .nav__links {
     list-style: none;
     display: flex;
-    font-size: 16px;
   }
   
   .nav__links li {
     padding: 0px 20px;
   }
   
-  .nav__links li:nth-child(1) {
-    padding: 0 20px 0 0;
-  }
-  
   .nav__links li a {
-    transition: all 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
   }
   
   .nav__links li a:hover {
@@ -54,14 +43,12 @@
   }
   
   .cta {
-    order: 2;
-    margin-left: 20px;
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: background-color 0.3s ease 0s;
   }
   
   .cta:hover {
@@ -83,7 +70,7 @@
     top: 0;
     background-color: #24252a;
     overflow-x: hidden;
-    transition: all 0.5s ease 0s;
+    transition: width 0.5s ease 0s;
   }
   
   .overlay--active {
@@ -102,7 +89,7 @@
     padding: 15px;
     font-size: 36px;
     display: block;
-    transition: all 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
   }
   
   .overlay a:hover,
