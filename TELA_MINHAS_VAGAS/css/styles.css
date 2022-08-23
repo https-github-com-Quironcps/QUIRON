@@ -12,16 +12,6 @@
     background-color: #24252a;
   }
   
-  .logo {
-    cursor: pointer;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    align-items: center;
-    justify-content: center;
-    color: #edf0f1;
-    text-decoration: none;
-  }
-  
   .logo1 {
     width: 50px;
     height: auto;
@@ -30,7 +20,7 @@
   .nav__links a,
   .cta,
   .overlay__content a {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Raleway light", "Helvetica";
     font-weight: 500;
     color: #edf0f1;
     text-decoration: none;
