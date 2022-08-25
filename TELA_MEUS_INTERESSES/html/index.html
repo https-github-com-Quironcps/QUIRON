@@ -1,71 +1,38 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dropdown Menu with Search Box | CodingNepal</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Menu Responsivo</title>
 </head>
+
 <body>
-  <div class="wrapper">
-    <nav>
-      <input type="checkbox" id="show-search">
-      <input type="checkbox" id="show-menu">
-      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
-      <div class="content">
-      <div class="logo"><a href="#">CodingNepal</a></div>
-        <ul class="links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li>
-            <a href="#" class="desktop-link">Features</a>
-            <input type="checkbox" id="show-features">
-            <label for="show-features">Features</label>
-            <ul>
-              <li><a href="#">Drop Menu 1</a></li>
-              <li><a href="#">Drop Menu 2</a></li>
-              <li><a href="#">Drop Menu 3</a></li>
-              <li><a href="#">Drop Menu 4</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="desktop-link">Services</a>
-            <input type="checkbox" id="show-services">
-            <label for="show-services">Services</label>
-            <ul>
-              <li><a href="#">Drop Menu 1</a></li>
-              <li><a href="#">Drop Menu 2</a></li>
-              <li><a href="#">Drop Menu 3</a></li>
-              <li>
-                <a href="#" class="desktop-link">More Items</a>
-                <input type="checkbox" id="show-items">
-                <label for="show-items">More Items</label>
-                <ul>
-                  <li><a href="#">Sub Menu 1</a></li>
-                  <li><a href="#">Sub Menu 2</a></li>
-                  <li><a href="#">Sub Menu 3</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#">Feedback</a></li>
+  <div class="container-fluid">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a id="len1" class="hoverable" href="#">Home</a></li>
+          <li><a id="len2" class="hoverable" href="#">About</a></li>
+          <li><a id="len3" class="hoverable" href="#">Portfolio</a></li>
+          <li><a id="len4" class="hoverable" href="#">Contact</a></li>
         </ul>
       </div>
-      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-      <form action="#" class="search-box">
-        <input type="text" placeholder="Type Something to Search..." required>
-        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
-      </form>
     </nav>
+    <div id="what-the-hell-is-this">
+      <div class="page-title">
+        <h2>Simple Navigation</h2>
+        <p class="lead">
+          Based on Hover.css, the goal of this pen
+          is to create a simple navigation bar <br />
+          that can be easily reused in both mobile and native displays. Mouse over the nav text for animation!
+        </p>
+      </div>
+    </div>
   </div>
 
-  <div class="dummy-text">
-    <h2>Responsive Dropdown Menu Bar with Searchbox</h2>
-    <h2>using only HTML & CSS - Flexbox</h2>
-  </div>
-
-</body>
-</html>
+  <script src="../js/navbar.js"></script>
+  </body>
+  </html>

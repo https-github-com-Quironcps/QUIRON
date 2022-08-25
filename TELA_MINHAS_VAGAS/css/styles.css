@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,7 +22,7 @@
   .nav__links a,
   .cta,
   .overlay__content a {
-    font-family: 'arial';
+    font-family: 'Raleway';
     font-weight: 500;
     color: #edf0f1;
     text-decoration: none;
@@ -44,7 +46,7 @@
   }
   
   .cta {
-    padding: 9px 25px;
+    padding: 9px 15px;
     background-color: #8f76d3;
     border: none;
     border-radius: 50px;
