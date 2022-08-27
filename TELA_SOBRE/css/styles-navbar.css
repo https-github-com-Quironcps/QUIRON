@@ -13,7 +13,8 @@
   }
   
   nav {
-    background: #1a1a1a;
+    background: #6131eb;
+    opacity: 60%;
     width: 100%;
     padding: 10px 10%;
     display: flex;
@@ -23,7 +24,7 @@
   }
   
   .logo {
-    width: 120px;
+    width: 150px;
   }
   
   .user{
