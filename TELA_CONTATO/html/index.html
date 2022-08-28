@@ -1,12 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="stylesheet" href="../css/styles-navbar.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CONTATO</title>
+    
 </head>
 <body>
     
+    <header>
+        <nav id="navbar">
+            <div class="menu">
+                <div>
+                    <img src="../img/arco-e-texto-light.png" class="logo">
+                    <ul>
+                        <li><a href="#">Editar perfil</a></li>
+                        <li><a href="#">Configurações</a></li>
+                        <li><a href="#">Fale conosco</a></li>
+                        <li><a href="#">Anunciar vagas</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <a href="#" class="brand">QUÍRON</a>
+                <div class="container-inner">
+                    <ul>
+                        <li><a href="#">Vagas</a></li>
+                        <li><a href="#">Interesses</a></li>
+                        <li><a href="#">Sobre</a></li>
+                    </ul>
+                    <i class="fa fa-bars" id="menu-btn"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="text1">
+        <p>Nós somos uma plataforma para divulgação de</p> 
+        <p>vagas destinadas à professores.</p> 
+        <br>
+        <p>Temos como objetivo facilitar o processo para a</p> 
+        <p>contratação de docentes nas instituições do CPS.</p>
+    </h1>
+
+    <script>
+
+        const menBtn = document.getElementById('menu-btn');
+        const navbar = document.getElementById('navbar');
+        const menu = document.getElementById('.menu');
+
+        const offset = 50;
+
+        menBtn.addEventListener('click', () => {
+            menu.classList.toggle('menu-open');
+        });
+
+        window.addEventListener("scroll", () => {
+            if (pageYOffset > offset) {
+                navbar.classList.add('navbar-active');
+            } else {
+                navbar.classList.remove('navbar-active');
+            }
+        });
+
+    </script>
+
 </body>
 </html>
