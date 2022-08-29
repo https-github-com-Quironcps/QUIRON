@@ -6,58 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIRON</title>
 
-    <link rel="stylesheet" href="../css/styles-navbar.css">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/styles-sobre.css">
 </head>
 <body>
-<header>
-    <div class="hero">
-        <nav>
-            <img src="../img/arco-e-texto-light.png" class="logo" alt="Logo">
-            <ul>
-                <li><a class="ab" href="#">Vagas</a></li>
-                <li><a class="ab" href="#">Meus Interesses</a></li>
-                <li><a class="ab" href="#">Sobre</a></li>
-            </ul>
 
-            <p class="menu cta">MENU</p>
-
-            <img src="../img/etec.jpeg" class="user" onclick="toggleMenu()" alt="Logo">
-
-            <div class="sub-menu-wrap" id="subMenu">
-                <div class="sub-menu">
-                    <div class="user-info">
-                        <img src="../img/etec.jpeg">
-                        <h3>ETEC Ermelinda</h3>
-                    </div>
-                    <hr>
-
-                    <a href="#" class="sub-menu-link">
-                        <img src="../img/pencil-square.svg" alt="" srcset="">
-                        <p>Editar Perfil</p>
-                        <span>></span>
-                    </a>
-
-                    <a href="#" class="sub-menu-link">
-                        <img src="../img/gear-fill.svg" alt="" srcset="">
-                        <p>Configurações</p>
-                        <span>></span>
-                    </a>
-
-                    <a href="#" class="sub-menu-link">
-                        <img src="../img/question-circle-fill.svg" alt="" srcset="">
-                        <p>Fale Conosco</p>
-                        <span>></span>
-                    </a>
-
-                    <a href="#" class="sub-menu-link">
-                        <img src="../img/box-arrow-left.svg" alt="" srcset="">
-                        <p>Sair do Sistema</p>
-                        <span>></span>
-                    </a>
-                </div>
-            </div>
-        </nav>
+ <?php include('partials/header.php'); ?>
 
         <br><br><br>
         <div class="div-sobre">
@@ -84,11 +38,10 @@
             <br>
             <p>Assim como o professor!</p>
         </h1>
-            <img class= "img" src="../img/prof-sobre.png">
+            <img class= "img" src="images/prof-sobre.png">
         </div>
 
     </div>
-</header>
 
     <script>
         let subMenu = document.getElementById("subMenu");

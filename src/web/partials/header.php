@@ -1,65 +1,73 @@
-<div class="hero">
-    <nav>
-        <img src="images/arco.png" class="logo" alt="Logo">
-        <ul>
-            <li><a class="ab" href="#">Vagas</a></li>
-            <li><a class="ab" href="#">Meus Interesses</a></li>
-            <li><a class="ab" href="#">Sobre</a></li>
-        </ul>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <p class="menu cta">MENU</p>
+    <link rel="stylesheet" href="styles/navbar.css">
 
-        <img src="images/etec.jpeg" class="user" onclick="toggleMenu()" alt="Logo">
+    <!-- links para os ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-        <div class="sub-menu-wrap" id="subMenu">
-            <div class="sub-menu">
-                <div class="user-info">
-                    <img src="images/etec.jpeg">
-                    <h3>ETEC Ermelinda</h3>
+    <title>HEADER</title>
+    
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <label>
+                <input type="checkbox">
+                <div class="toggle">
+                    <span class="top_line common"></span>
+                    <span class="middle_line common"></span>
+                    <span class="bottom_line common"></span>
                 </div>
-                <hr>
-
-                <a href="#" class="sub-menu-link">
-                    <img src="images/svgs/editar.svg" alt="" srcset="">
-                    <p>Editar Perfil</p>
-                    <span>></span>
-                </a>
-
-                <a href="#" class="sub-menu-link">
-                    <img src="images/svgs/configuracao.svg" alt="" srcset="">
-                    <p>Configurações</p>
-                    <span>></span>
-                </a>
-
-                <a href="#" class="sub-menu-link">
-                    <img src="images/svgs/duvida.svg" alt="" srcset="">
-                    <p>Fale Conosco</p>
-                    <span>></span>
-                </a>
-
-                <a href="#" class="sub-menu-link">
-                    <img src="images/svgs/sair.svg" alt="" srcset="">
-                    <p>Sair do Sistema</p>
-                    <span>></span>
-                </a>
+                <div class="slide">
+                    <ul class="ul1">
+                        <li><a href="#"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
+                        <li><a href="#"><i class="bi bi-gear-fill"></i>ㅤConfigurações</a></li>
+                        <li><a href="#"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
+                        <li><a href="#"><i class="bi bi-megaphone-fill"></i>ㅤAnunciar vaga</a></li>
+                    </ul>
+                </div>
+            </label>
+            <div class="container">
+                <img src="images/arco-e-texto-dark.png" class="logo" alt="Logo">
+                <div class="container-inner">
+                    <ul class="ul2">
+                        <li><a href="#">Vagas</a></li>
+                        <li><a href="#">Interesses</a></li>
+                        <li><a href="#">Sobre</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</div>
+        </nav>
+    </header>
 
-<div class="overlay">
-    <a class="close">&times;</a>
-    <div class="overlay__content">
-        <a href="#">VAGAS</a>
-        <a href="#">MEUS INTERESSSES</a>
-        <a href="#">SOBRE</a>
-    </div>
-</div>
+    <script>
 
-<script>
-    let subMenu = document.getElementById("subMenu");
+        const menBtn = document.getElementById('menu-btn');
+        const navbar = document.getElementById('navbar');
+        const menu = document.getElementById('.menu');
 
-    function toggleMenu(){
-        subMenu.classList.toggle("open-menu");
-    }
-</script>
+        const offset = 50;
+
+        menBtn.addEventListener('click', () => {
+            menu.classList.toggle('menu-open');
+        });
+
+        window.addEventListener("scroll", () => {
+            if (pageYOffset > offset) {
+                navbar.classList.add('navbar-active');
+            } else {
+                navbar.classList.remove('navbar-active');
+            }
+        });
+
+    </script>
+
+</body>
+</html>
