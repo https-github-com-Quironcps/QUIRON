@@ -10,6 +10,7 @@
 </head>
 <body>
     <?php include('partials/header.php'); ?>
-    
+
+    <script src="scripts/navbar.js"></script>
 </body>
 </html>
