@@ -2,7 +2,7 @@
 
 body {
     font-size: 'Raleway';
-    background-color: black;
+    background-color: white;
     height: 2000px;
 }
 .fundo_img{
@@ -10,15 +10,27 @@ body {
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0;
-    -webkit-mask-image: linear-gradient(to top, transparent 25%, black 100%);
+    opacity: 1;
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
     transition: 2.5s ease 0s;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
 
+.fundo_img_2{
+  width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 100%);
+  transition: 2.5s ease 0s;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
 .fundo_img:hover{
-    opacity: 0.8;
+    opacity: 0.4;
 }
 
 .fundo_logo{
@@ -26,9 +38,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.8;
   right: 0;
-  bottom: 200px;
+  bottom: 160px;
   margin: auto;
 }
 
@@ -45,7 +56,7 @@ body {
     top: 50;
     left: 0;
     right: 0;
-    bottom: 0px;
+    bottom: 140px;
     margin: auto;
     transition: color 0.5s ease 0s;
 }
@@ -104,7 +115,7 @@ body {
   }
   
   nav {
-    background: black;
+    background: transparent;
     width: 100%;
     padding: 10px 10%;
     display: flex;
@@ -151,7 +162,7 @@ body {
     opacity: 0.7;
     padding: 20px;
     -webkit-mask-image: linear-gradient(to bottom, transparent 1%, black 100%);
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     text-align: center;
     align-items: center;
@@ -161,8 +172,6 @@ body {
     color: white;
     
 }
-
-
 
 .img-marca{
     width: 80px;
