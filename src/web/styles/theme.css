@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+:root{
+    /* Paleta de cores da QUIRON */
+    --cor-palette-1: #2C166B;
+    --cor-palette-2: #9679ED;
+    --cor-palette-3: #6031EB;
+    --cor-palette-4: #44376B;
+    --cor-palette-5: #4B27B8;
+
+    /* Index */
+    --botao-iniciar: #6131EB;
+    --botao-iniciar-hover: #9d88da;
+}

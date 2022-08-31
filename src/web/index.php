@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIRON</title>
 
-    <link rel="stylesheet" href="styles/index_light.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/theme.css">
 </head>
 <body>
 <div class="hero">
