@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUÍRON</title>
 
-    <link rel="stylesheet" href="styles/theme.css">
     <link rel="stylesheet" href="styles/anunciar_vaga.css">
+    <link rel="stylesheet" href="styles/theme.css">
 </head>
 <body>
     <?php include('partials/header.php'); ?>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="submit">
-            <h1>Ok</h1>
+            
         </div>
     </div>
 </body>

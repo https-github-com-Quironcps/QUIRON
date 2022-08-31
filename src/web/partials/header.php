@@ -35,7 +35,7 @@
                 </div>
             </label>
             <div class="container">
-                <img src="images/arco-e-texto-dark.png" class="logo" alt="Logo">
+                <img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo">
                 <div class="container-inner">
                     <ul class="ul2">
                         <li><a href="#">Vagas</a></li>
