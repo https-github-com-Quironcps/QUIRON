@@ -8,34 +8,39 @@
 
     <link rel="stylesheet" href="styles/anunciar_vaga.css">
     <link rel="stylesheet" href="styles/theme.css">
+    
 </head>
 <body>
-    <?php include('partials/header.php'); ?>
+<?php include('partials/header.php'); ?>
 
-    <div class="container">
+<center>
+    <div class="container1">
         <div class="header">
-            <a href="#">Voltar</a>
-            <h1>Anunciar Vaga</h1>
+            <center><a href="#" class="voltar">Voltar</a></center>
+            <h1 class="title">Anunciar Vaga</h1>
+        </div>
 
+        <div class="main-div">
             <div class="content">
                 <form>
                     <h3>Preencha todos os campos</h3>
 
-                    Nome da matéria: <input type="text"> <br><br>
-                    Link de acesso no CPS: <input type="url"> <br><br>
-                    Descrição da vaga: <textarea></textarea> <br><br>
-                    Requisito da vaga: <textarea></textarea> <br><br>
-                    Carga horária semanal: <input type="number"> <br><br>
-                    Média salarial: <input type="number"> <br><br>
+                    <input class='v1'type="text" placeholder="Nome da matéria: "> <br><br>
+                    <input class='v1' type="url" placeholder="Link de acesso no CPS: "> <br><br>
+                    <textarea class='v1' placeholder="Descrição da vaga: "></textarea> <br><br>
+                    <textarea class='v1' placeholder="Requisito da vaga: "></textarea> <br><br>
+                    <input class='v1' type="text" placeholder="Carga horária semanal: "> <br><br>
+                    <input class='v1' type="text" placeholder="Média salarial:"> <br><br>
 
-                    <input type="submit" value="Anunciar Vaga">
+                    <input type="submit" class='anunciar_btn' value="Anunciar Vaga">
                 </form>
             </div>
-        </div>
 
-        <div class="submit">
-            
+            <div class="submit">
+                <h1>exemplo</h1>
+            </div>
         </div>
     </div>
+    </center>
 </body>
 </html>

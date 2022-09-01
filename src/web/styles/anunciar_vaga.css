@@ -1,7 +1,75 @@
-body {
-    background-color: yellow;
+body{
+    background-color: white;
+    margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: rgb(17, 17, 17);
-}   
+*{
+    color: black;
+}
+
+.main-div{
+    display: flex;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+}
+
+.content{
+    width: 50%;
+    padding: 10px;
+}
+.submit{
+    width: 50%;
+    padding: 10px;
+}
+
+.container1{
+    width: 80%;
+    padding: 40px;
+    background-color: rgb(219, 219, 219);
+    text-align: left;
+    border-radius: 40px;
+}
+
+.voltar{
+    background-color: var(--botao-iniciar);
+    width: 50px;
+    opacity: 0.8;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0.5px solid var(--cor-palette-1);
+    transition: color 0.5s ease 0s;
+}
+
+.voltar:hover{
+    background-color: var(--botao-iniciar-hover);
+    border: 0;
+    color: black;
+    font-weight:600;
+}
+
+.v1{
+    width: 100%;
+    max-width: 400px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.anunciar_btn{
+
+}
+@media screen and (max-width: 800px) {
+    .main-div {
+      display: contents;
+    }
+
+    .submit, .content {
+        width: 100%;
+    }
+  }
