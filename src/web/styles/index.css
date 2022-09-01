@@ -38,9 +38,6 @@ body {
     transition: color 0.5s ease 0s;
 }
 
-.fundo_texto:hover{
-    color: blanchedalmond;
-}
 
 .fundo_botao{
     background-color: var(--botao-iniciar);
@@ -99,6 +96,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    height: 75px;
   }
   
   .logo {

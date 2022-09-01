@@ -30,17 +30,17 @@
                         <li><a href="#"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
                         <li><a href="#"><i class="bi bi-gear-fill"></i>ㅤConfigurações</a></li>
                         <li><a href="#"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
-                        <li><a href="#"><i class="bi bi-megaphone-fill"></i>ㅤAnunciar vaga</a></li>
+                        <li><a href="anunciar_vaga.php"><i class="bi bi-megaphone-fill"></i>ㅤAnunciar vaga</a></li>
                     </ul>
                 </div>
             </label>
             <div class="container">
-                <img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo">
+                <a href="index.php"><img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
                 <div class="container-inner">
                     <ul class="ul2">
                         <li><a href="#">Vagas</a></li>
                         <li><a href="#">Interesses</a></li>
-                        <li><a href="#">Sobre</a></li>
+                        <li><a href="sobre.php">Sobre</a></li>
                     </ul>
                 </div>
             </div>
