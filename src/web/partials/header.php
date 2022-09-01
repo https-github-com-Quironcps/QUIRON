@@ -19,7 +19,7 @@
     <header>
         <nav id="navbar">
             <label>
-                <input type="checkbox">
+                <input type="checkbox" class="inputNav">
                 <div class="toggle">
                     <span class="top_line common"></span>
                     <span class="middle_line common"></span>
