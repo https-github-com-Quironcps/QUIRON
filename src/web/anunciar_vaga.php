@@ -11,8 +11,8 @@
     
 </head>
 <body>
-<?php include('partials/header.php'); ?>
-
+<div></div>
+<br>
 <center>
     <div class="container1">
         <div class="header">
