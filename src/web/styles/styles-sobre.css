@@ -1,5 +1,5 @@
 body{
-    font-family:Raleway;
+    font-family: Raleway;
 }
 
 #title{
@@ -50,7 +50,7 @@ body{
     width: 241px;
     height: 52px;
     left: 140px;
-    top: 390px;
+    top: 430px;
 
     font-style: normal;
     font-weight: 400;
@@ -69,7 +69,7 @@ body{
     width: 490px;
     height: 1.5px;
     left: 140px;
-    top: 460px;
+    top: 500px;
     background: #D9D9D9;
 }
 .text2{
@@ -77,7 +77,7 @@ body{
     width: 664px;
     height: 155px;
     left: 140px;
-    top: 490px;
+    top: 530px;
 
     font-family: 'Raleway';
     font-style: normal;
