@@ -8,22 +8,40 @@
 }
 
 .submit{
-    width: 50%;
+    width: 40%;
     padding: 10px;
+    background-repeat: no-repeat;
+}
+
+#title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 52px;
+    align-items: center;
+    color: #6131eb;
+    opacity: 60%;
+}
+
+.img-anunciar{
+    padding: 0px;
+    height: 260px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .container1{
     width: 80%;
-    padding: 40px;
+    padding: 20px 60px;
     background-color: rgb(230, 230, 230);
     text-align: left;
     border-radius: 40px;
     margin-top: 0;
 }
 
-.voltar{
+.anunciar_btn{
     background-color: var(--botao-iniciar);
-    width: 50px;
+    width: 250px;
     opacity: 0.8;
     color: white;
     padding: 10px;
@@ -34,41 +52,39 @@
     transition: color 0.5s ease 0s;
 }
 
-.voltar:hover{
+.anunciar_btn:hover{
     background-color: var(--botao-iniciar-hover);
     border: 0;
     color: black;
     font-weight:600;
 }
 
-.anunciar_btn{
-    background-color: var(--botao-iniciar);
-    width: 200px;
-    opacity: 0.8;
-    color: white;
-    padding: 10px;
-    border-radius: 50px;
-    cursor: pointer;
-    text-decoration: none;
-    border: 0.5px solid var(--cor-palette-1);
-    transition: color 0.5s ease 0s;
-}
-
-
 .input1{
     width: 100%;
-    max-width: 400px;
+    max-width: 520px;
     padding: 5px;
     border-radius: 10px;
     border: 0;
 }
 
-@media screen and (max-width: 800px) {
+.linhaMeio{
+    margin-left: 30px;
+    height: 400px;
+    width: 3px;
+    background-color: #6131eb;
+    opacity: 60%;
+}
+
+@media screen and (max-width: 1000px) {
     .main-div {
       display: contents;
     }
 
     .submit, .content {
         width: 100%;
+    }
+
+    .linhaMeio{
+        height: 0;
     }
   }

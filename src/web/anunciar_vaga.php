@@ -19,8 +19,7 @@
 <center>
     <div class="container1">
         <div class="header">
-            <center><a href="#" class="voltar">Voltar</a></center>
-            <h2 class="title">Anunciar Vaga</h2>
+            <h1 id="title">Anunciar Vaga</h1>
         </div>
 
         <div class="main-div">
@@ -32,16 +31,22 @@
                     <textarea class='input1' placeholder="Requisito da vaga: "></textarea> <br><br>
                     <input class='input1' type="text" placeholder="Carga horária semanal: "> <br><br>
                     <input class='input1' type="text" placeholder="Média salarial:"> <br><br>
-
-                    <input type="submit" class='anunciar_btn' value="Anunciar Vaga">
-                </form>
             </div>
 
-            <div class="submit">
-                <h1>exemplo</h1>
+            <div class="linhaMeio"></div>
+
+                <center>
+                <div class="submit">
+                    <br>
+                    <input type="submit" class='anunciar_btn' value="Anunciar Vaga">
+                </form>
+                    <img src="images/prof-sobre.png" class="img-anunciar">
+                </center>
             </div>
         </div>
     </div>
 </center>
+
+<?php include('partials/footer.php'); ?>
 </body>
 </html>
