@@ -26,8 +26,6 @@
         <div class="main-div">
             <div class="content">
                 <form>
-                    <h3>Preencha todos os campos</h3>
-
                     <input class='input1' type="text" placeholder="Nome da matéria: "> <br><br>
                     <input class='input1' type="url" placeholder="Link de acesso no CPS: "> <br><br>
                     <textarea class='input1' placeholder="Descrição da vaga: "></textarea> <br><br>

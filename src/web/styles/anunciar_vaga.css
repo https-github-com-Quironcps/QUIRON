@@ -14,8 +14,8 @@
 
 .container1{
     width: 80%;
-    padding: 0px;
-    background-color: rgb(219, 219, 219);
+    padding: 40px;
+    background-color: rgb(230, 230, 230);
     text-align: left;
     border-radius: 40px;
     margin-top: 0;
@@ -43,7 +43,7 @@
 
 .anunciar_btn{
     background-color: var(--botao-iniciar);
-    width: 50px;
+    width: 200px;
     opacity: 0.8;
     color: white;
     padding: 10px;
