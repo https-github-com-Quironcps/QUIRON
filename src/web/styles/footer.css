@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    font-family:Raleway;
+    font-family: Raleway;
     font-weight: 400;
+    background-color: #ededed;
 }
 
 .footer{
     padding: 40px 0;
+    background-color: #fff;
 }
-
