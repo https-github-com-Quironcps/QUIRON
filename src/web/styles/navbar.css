@@ -18,9 +18,8 @@ body{
 }
 
 header{
-    min-height: 100vh;
+    min-height: 10vh;
     background-size: cover;
-    
 }
 
 .container, .container-inner{
@@ -159,7 +158,7 @@ nav .fa-bars:hover{
     color: #6131eb;
 }
 
-input{
+.inputNav{
     display: none;
     visibility: hidden;
     -webkit-appearance: none;
