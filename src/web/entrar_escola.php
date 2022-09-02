@@ -16,11 +16,14 @@
     <!-- Style -->
     <link rel="stylesheet" href="styles/entrar_escola.css">
 
+    <!-- Navbar Css  -->
+    <link rel="stylesheet" href="styles/navbar-index.css">
+
     <title>Quíron</title>
   </head>
   <body>
   
-
+  <?php include('partials/navbar-index.php'); ?>
   
   <div class="content">
     <div class="container">
