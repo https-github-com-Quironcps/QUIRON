@@ -46,7 +46,7 @@
         </div>
     </div>
 </center>
-
+<br>
 <?php include('partials/footer.php'); ?>
 </body>
 </html>
