@@ -11,6 +11,76 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     
+    <!-- css interno -->
+    <style>
+    *{
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    .footer{
+        padding: 40px 0;
+        background-color: #683de78a;
+    }
+
+    .footer .social{
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    .footer .social a{
+        font-size: 24px;
+        color: inherit;
+        border: 1px solid;
+        width: 40px;
+        height: 40px;
+        line-height: 38px;
+        display: inline-block;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 8px;
+        opacity: 0.76;
+    }
+
+    .footer .social a:hover{
+        opacity: 1.0;   
+        color: #6131eb;
+    }
+
+    .footer ul{
+        margin-top: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .footer ul li a{
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+    }
+
+    .footer ul li{
+        display: inline-block;
+        padding: 0 15px;
+    }
+
+    .footer ul li:hover{
+        color: #6131eb;
+    }
+
+    .footer .copyright{
+        margin-top: 15px;
+        text-align: center;
+        font-size: 13px;
+        color: 	#708090;
+        
+    }
+    </style>
+
     <title>FOOTER</title>
 </head>
 <body>

@@ -9,18 +9,10 @@
     <link rel="stylesheet" href="styles/theme.css">
 </head>
 <body>
-<div class="hero">
-    <nav>
-        <img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo">
-        <ul>
-            <li><a class="ab" href="#">Entrar</a></li>
-            <li><a class="ab" href="#">Cadastrar-se</a></li>
-        </ul>
-    </nav>
-</div>
 
+    <?php include('partials/navbar-index.php'); ?>
 
-    <div class="container">
+    <div class="container2">
         <img src="images/logos/arco-light.png" class='fundo_logo'>
         <div class='fundo_texto'>
             <br>
@@ -38,6 +30,7 @@
         </div>
     </div>
 
-
+    <?php include('partials/footer.php'); ?>
+    
 </body>
 </html>
