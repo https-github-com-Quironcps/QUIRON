@@ -8,13 +8,13 @@
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
     
     <!-- Style -->
-    <link rel="stylesheet" href="css/entrar_escola.css">
+    <link rel="stylesheet" href="styles/entrar_escola.css">
 
     <title>Quíron</title>
   </head>
@@ -26,7 +26,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+          <img src="images/svgs/img_login.svg" alt="Image" class="img-fluid">
         </div>
         <div class="col-md-6 contents">
           <div class="row justify-content-center">
@@ -74,9 +74,9 @@
   </div>
 
   
-    <script src=""></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="scripts/jquery_login.min.js"></script>
+    <script src="scripts/popper_login.min.js"></script>
+    <script src="js/bootstrap_login.min.js"></script>
+    <script src="js/main_login.js"></script>
   </body>
 </html>
