@@ -25,8 +25,13 @@
                     <span class="middle_line common"></span>
                     <span class="bottom_line common"></span>
                 </div>
+                
                 <div class="slide">
                     <ul class="ul1">
+                        <li><a class="hover-lis" href="#">Vagas</a></li>
+                        <li><a class="hover-lis"  href="#">Interesses</a></li>
+                        <li><a class="hover-lis"  href="sobre.php">Sobre</a></li>
+
                         <li><a href="#"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
                         <li><a href="#"><i class="bi bi-gear-fill"></i>ㅤConfigurações</a></li>
                         <li><a href="#"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
@@ -34,6 +39,7 @@
                     </ul>
                 </div>
             </label>
+
             <div class="container">
                 <a href="index.php"><img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
                 <div class="container-inner">
@@ -46,6 +52,5 @@
             </div>
         </nav>
     </header>
-
 </body>
 </html>
