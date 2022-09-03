@@ -109,13 +109,15 @@ nav .fa-bars:hover{
 }
 
 .slide{
-    height: 50vh;
+    height: 300px;
     width: 240px;
     position: absolute;
     background-color: #F2EFFB;
     transition: 0.5s ease;
     border-radius: 5px;
-    transform: translateX(350px);
+    right: 195px;
+    
+    transform: translateX(100vw);
 }
 
 .slide .ul1 li a:hover{
@@ -154,9 +156,6 @@ nav .fa-bars:hover{
     display: none;
     visibility: hidden;
     -webkit-appearance: none;
-}
-
-label{
     padding-left: 160vh;
 }
 
@@ -167,9 +166,8 @@ label{
     z-index: 1;
     cursor: pointer;
     top: 24px;
-    right: 118px;
+    right: 100px;
     border-radius: 2px;
-
 }
 
 .toggle .common{
@@ -224,7 +222,7 @@ input:checked ~ .toggle{
 }
 
 input:checked ~ .slide{
-transform: translateX(0);
+transform: translateX(100px);
 }
 
 ::-webkit-scrollbar{
@@ -240,6 +238,17 @@ transform: translateX(0);
     border: 2px solid white;
 }
 
+.hover-lis{
+    position: absolute;
+    transform: translateX(100vw);
+    text-align: center;
+    transition: all 1.8s ease;
+    margin-right: 35px;
+    color: #6131eb;
+    font-size: 15px;
+    font-weight: 800;
+}
+
 ::-webkit-scrollbar-thumb:hover{
     background-color: #a0a0a0;
     border-radius: 50px;
@@ -250,4 +259,40 @@ transform: translateX(0);
 
 .div-nav{
     padding-top: -1000px;
+}
+
+/* Responsive MENU */
+@media screen and (max-width: 1000px) {
+    .hover-lis{
+        position: relative;
+        transform: translateX(0);
+    }
+
+    .hover-lis:hover{
+        color: #6131eb;
+        opacity: 0.6;
+    }
+
+    .logo{
+        width: 150px;
+        margin-left: 30px;
+    }
+
+    .ul2{
+        display: none;
+    }
+
+    .slide{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .slide{
+        right: 120px;
+    }
+
+    .toggle{
+        right: 30px;
+    }
 }
