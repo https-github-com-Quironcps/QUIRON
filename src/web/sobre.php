@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOBRE</title>
 
-    <link rel="stylesheet" type="text/css" href="../web/styles/navbar.css">
-    <link rel="stylesheet" type="text/css" href="styles/styles-sobre.css">
+    <link rel="stylesheet" href="styles/styles-sobre.css">
+
+    <style>
+     
+    </style>
 
 </head>
 <body>
@@ -44,11 +47,11 @@
                 <p>Assim como o professor!</p>
             </h1>
         </div>
-        
-        
-        <img class= "img" src="images/prof-sobre.png">
-        
+        <img class= "img" src="images/sobre1.png">
     </div>
+
+   
+    <?php include('partials/footer.php') ?>
 
    
     

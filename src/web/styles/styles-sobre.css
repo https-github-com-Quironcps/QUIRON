@@ -4,7 +4,8 @@ body{
 
 .div-sobre{
     width: 100%;
-    display: flex;
+    display: inline-block;
+    background-color: #f8fafb;
 }
 
 #title{
@@ -23,7 +24,7 @@ body{
     display: flex;
     align-items: center;
     
-    color: #6131eb;
+    color: #7e57c2;
     opacity: 60%;
 }
 
@@ -69,7 +70,7 @@ body{
     display: flex;
     align-items: center;
 
-    color: #6131eb;
+    color: #7e57c2;
     opacity: 60%;
 }
 
@@ -103,6 +104,7 @@ body{
     float: right;
     width: 610px;
     height: 610px;
+    padding-top: -5000px;
 }
 
 .conteudo_sobre{
