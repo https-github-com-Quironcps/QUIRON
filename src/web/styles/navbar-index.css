@@ -30,6 +30,13 @@
     
     .logo {
       width: 120px;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+
+    .logo:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
     }
     
     .user{

@@ -13,14 +13,10 @@
     
     <!-- css interno -->
     <style>
-    *{
-    margin: 0;
-    box-sizing: border-box;
-    }
 
     .footer{
         padding: 40px 0;
-        background-color: #683de78a;
+        background-color: #363636;
     }
 
     .footer .social{
@@ -31,20 +27,22 @@
     .footer .social a{
         font-size: 24px;
         color: inherit;
-        border: 1px solid;
         width: 40px;
         height: 40px;
         line-height: 38px;
         display: inline-block;
-        border-radius: 50%;
         text-align: center;
         margin: 0 8px;
+        padding-top: 5px;
+        color: #708090;
         opacity: 0.76;
     }
 
     .footer .social a:hover{
         opacity: 1.0;   
         color: #6131eb;
+        margin: 0 25px 0;
+        transition: all 0.8s ease;
     }
 
     .footer ul{
@@ -61,6 +59,7 @@
         color: inherit;
         text-decoration: none;
         opacity: 0.8;
+        color: #708090;
     }
 
     .footer ul li{
@@ -68,7 +67,7 @@
         padding: 0 15px;
     }
 
-    .footer ul li:hover{
+    .footer ul li a:hover{
         color: #6131eb;
     }
 
@@ -93,10 +92,10 @@
 
         <ul class="list">
             <li>
-                <a href="#">Home</a>
+                <a href="index.php">Home</a>
             </li>
             <li>
-                <a href="#">Sobre</a>
+                <a href="sobre.php">Sobre</a>
             </li>
             <li>
                 <a href="#">Contato</a>
