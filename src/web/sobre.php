@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOBRE</title>
 
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/styles-sobre.css">
+    <link rel="stylesheet" type="text/css" href="../web/styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles-sobre.css">
+
 </head>
 <body>
 
@@ -49,16 +50,7 @@
         
     </div>
 
-    <script>
-        let subMenu = document.getElementById("subMenu");
-
-        function toggleMenu(){
-            subMenu.classList.toggle("open-menu");
-        }
-    </script>
-    <script type="text/javascript" src="../js/mobile.js"></script>
-
-    <?php include('partials/footer.php'); ?>
+   
     
 </body>
 </html>
