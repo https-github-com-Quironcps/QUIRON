@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.title1{
+    position: absolute;
+    width: 500px;
+    height: 75px;
+    left: 154px;
+    top: 150px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 75px;
+
+    color: #7e57c2;
+    opacity: 60%;
+}
+
+.text{
+    position: absolute;
+    width: 679px;
+    height: 94px;
+    left: 154px;
+    top: 260px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+
+    color: #8C8398;
+}
+
+#icon_contact1{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 154px;
+    top: 370px;
+    color: #7e57c2;
+
+    opacity: 0.7;
+}
+
+#text_contact1{
+    width: 189px;
+    height: 38px;
+    left: 237px;
+    top: 526px;
+    display: inline-block;
+    text-decoration: none;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 38px;
+    /* identical to box height */
+
+
+    color: #8C8398;
+}
+

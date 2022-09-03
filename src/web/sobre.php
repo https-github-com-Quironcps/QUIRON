@@ -21,9 +21,6 @@
     <div class="div-sobre">
 
         <div class="conteudo_sobre">
-            <div class="posicionamento">
-                
-            </div>
             <h1 id="title">Quem somos nós?</h1>
 
             <div class="linha"></div>
