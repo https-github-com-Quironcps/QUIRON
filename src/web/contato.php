@@ -27,9 +27,40 @@
 
         <br><br>
 
-        <a id="text_contact1" href=""><i id="icon_contact1" class="bi bi-instagram"></i>@quíron_cps</a><br>
-        <a id="text_contact2" href=""><i id="icon_contact2" class="bi bi-envelope"></i>quirontcc@gmail.com</a><br>
-        <a id="text_contact3" href=""><i id="icon_contact3"mclass="bi bi-telephone"></i>(11)4002-8922</a>
+        <img class="insta" src="images/svgs/instagram.svg">
+        <a class="text_contact1" href="https://instagram.com/quiron_cps?igshid=YmMyMTA2M2Y=">@quíron_cps</a><br>
+        <div class="linha"></div>
+        <img class="email" src="images/svgs/envelope.svg">
+        <a class="text_contact2" href="">quirontcc@gmail.com</a><br>
+        <div class="linha2"></div>
+        <img class="tel" src="images/svgs/telephone.svg">
+        <a class="text_contact3" href="">(11)4002-8922</a>
     </div>
+
+    <div class="formulario">
+    <h1 class="title2">Fale conosco!</h1>
+    <form
+      action="https://formsubmit.co/quirontcc@gmail.com"
+      method="POST"
+      class="form"
+    >
+      <label for="name">Nome</label>
+      <input type="text" name="name" id="name" required />
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required />
+      <label for="message">Mensagem</label>
+      <textarea name="message" id="message" required></textarea>
+      <input type="hidden" name="_captcha" value="false" />
+      <input
+        type="hidden"
+        name="_next"
+        value="http://localhost/QUIRON/src/web/contato.php"
+      />
+      <button type="submit">Enviar</button>
+    </form>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <?php include('partials/footer.php') ?>
 </body>
 </html>

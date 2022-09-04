@@ -11,6 +11,7 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+
 .title1{
     position: absolute;
     width: 500px;
@@ -44,33 +45,241 @@ body{
     color: #8C8398;
 }
 
-#icon_contact1{
+.insta{
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     left: 154px;
     top: 370px;
-    color: #7e57c2;
+   
 
     opacity: 0.7;
 }
 
-#text_contact1{
+.text_contact1{
+    position: absolute;
     width: 189px;
     height: 38px;
-    left: 237px;
-    top: 526px;
-    display: inline-block;
-    text-decoration: none;
+    left: 220px;
+    top: 375px;
 
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 25px;
     line-height: 38px;
+    text-decoration: none;
+    /* identical to box height */
+
+
+    color: #8C8398;
+
+}
+
+.linha{
+    position: absolute;
+    width: 370px;
+    height: 1.5px;
+    left: 140px;
+    top: 440px;
+    background: #D9D9D9;
+}
+
+.email{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 154px;
+    top: 490px;
+   
+
+    opacity: 0.7;
+}
+
+
+.text_contact2{
+    position: absolute;
+    width: 189px;
+    height: 38px;
+    left: 220px;
+    top: 495px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 38px;
+    text-decoration: none;
     /* identical to box height */
 
 
     color: #8C8398;
 }
 
+.linha2{
+    position: absolute;
+    width: 370px;
+    height: 1.5px;
+    left: 140px;
+    top: 560px;
+    background: #D9D9D9;
+}
+
+.tel{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 154px;
+    top: 610px;
+   
+
+    opacity: 0.7;
+}
+
+.text_contact3{
+    position: absolute;
+    width: 189px;
+    height: 38px;
+    left: 220px;
+    top: 615px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 38px;
+    text-decoration: none;
+    /* identical to box height */
+
+
+    color: #8C8398;
+}
+
+.text_contact3:hover{
+    opacity: 1.0;   
+    color: 	#7e57c2;
+    margin: 0 25px 0;
+    transition: all 0.8s ease;
+}
+
+.text_contact2:hover{
+    opacity: 1.0;   
+    color: 	#7e57c2;
+    margin: 0 25px 0;
+    transition: all 0.8s ease;
+}
+
+.text_contact1:hover{
+    opacity: 1.0;   
+    color: 	#7e57c2;
+    margin: 0 25px 0;
+    transition: all 0.8s ease;
+}
+
+.title2{
+    position: absolute;
+    width: 210px;
+    height: 38px;
+    left: 150px;
+    top: 30px;
+    text-align: center;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 38px;
+    /* identical to box height */
+
+
+    color: #8C8398;
+
+}
+
+.form {
+  padding-left: 50px;
+  padding-top: 80px;
+  width: 500px;
+  max-width: 32rem;
+  font-size: 1.125rem;
+}
+
+.form input{
+    width: 500px;
+    height: 45px;
+}
+
+.form input{
+  display: block;
+  width: 100%;
+}
+
+.form label{
+    font-size: 15px;
+}
+
+.form textarea{
+    height: 40px;
+    width: 450px;
+}
+
+.form label {
+  color: #8C8398;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+  min-height: 13rem;
+  resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  border-color: #7e57c2;
+  box-shadow: 0 0 0 3px #7e57c2;
+}
+
+.form button {
+  display: block;
+  background: #7e57c2c3;
+  color: #fff;
+  float: right;
+  height: 30px;
+  width: 100px;
+  border: none;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form button:hover,
+.form button:focus {
+  outline: none;
+  background: #7e57c2;
+}
+
+.formulario{
+    box-sizing: border-box;
+    position: absolute;
+    width: 550px;
+    height: 580px;
+    left: 770px;
+    top: 150px;
+    background: rgba(242, 239, 251, 0.61);
+    border-radius: 20px;
+}

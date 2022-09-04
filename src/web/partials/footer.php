@@ -98,7 +98,7 @@
                 <a href="sobre.php">Sobre</a>
             </li>
             <li>
-                <a href="#">Contato</a>
+                <a href="contato.php">Contato</a>
             </li>
         </ul>
 
