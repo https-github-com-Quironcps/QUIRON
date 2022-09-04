@@ -34,7 +34,7 @@
 
                         <li><a href="#"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
                         <li><a href="#"><i class="bi bi-gear-fill"></i>ㅤConfigurações</a></li>
-                        <li><a href="#"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
+                        <li><a href="contato.php"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
                         <li><a href="anunciar_vaga.php"><i class="bi bi-megaphone-fill"></i>ㅤAnunciar vaga</a></li>
                     </ul>
                 </div>
