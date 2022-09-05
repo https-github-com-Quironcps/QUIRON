@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
     <title>HEADER</title>
-    
+
 </head>
 <body>
     <header>
@@ -25,15 +25,21 @@
                     <span class="middle_line common"></span>
                     <span class="bottom_line common"></span>
                 </div>
+                
                 <div class="slide">
                     <ul class="ul1">
+                        <li><a class="hover-lis" href="#">Vagas</a></li>
+                        <li><a class="hover-lis"  href="#">Interesses</a></li>
+                        <li><a class="hover-lis"  href="sobre.php">Sobre</a></li>
+
                         <li><a href="#"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
                         <li><a href="#"><i class="bi bi-gear-fill"></i>ㅤConfigurações</a></li>
-                        <li><a href="#"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
+                        <li><a href="contato.php"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
                         <li><a href="anunciar_vaga.php"><i class="bi bi-megaphone-fill"></i>ㅤAnunciar vaga</a></li>
                     </ul>
                 </div>
             </label>
+
             <div class="container">
                 <a href="index.php"><img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
                 <div class="container-inner">
@@ -46,28 +52,5 @@
             </div>
         </nav>
     </header>
-
-    <script>
-
-        const menBtn = document.getElementById('menu-btn');
-        const navbar = document.getElementById('navbar');
-        const menu = document.getElementById('.menu');
-
-        const offset = 50;
-
-        menBtn.addEventListener('click', () => {
-            menu.classList.toggle('menu-open');
-        });
-
-        window.addEventListener("scroll", () => {
-            if (pageYOffset > offset) {
-                navbar.classList.add('navbar-active');
-            } else {
-                navbar.classList.remove('navbar-active');
-            }
-        });
-
-    </script>
-
 </body>
 </html>

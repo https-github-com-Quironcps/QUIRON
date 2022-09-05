@@ -4,15 +4,18 @@ body{
 
 .div-sobre{
     width: 100%;
-    display: flex;
+    height: 870px;
+    display: inline-block;
+    background-color: #f8fafb;
 }
 
 #title{
     position: absolute;
-    width: 378px;
+    width: 80vw;
+    max-width: 490px;
     height: 52px;
-    left: 140px;
-    top: 90px;
+    left: 10vw;
+    top: 120px;
 
     font-style: normal;
     font-weight: 400;
@@ -23,25 +26,27 @@ body{
     display: flex;
     align-items: center;
     
-    color: #6131eb;
+    color: #7e57c2;
     opacity: 60%;
 }
 
 .linha{
     position: absolute;
-    width: 490px;
+    width: 80vw;
+    max-width: 490px;
     height: 1.5px;
-    left: 140px;
-    top: 160px;
+    left: 10vw;
+    top: 190px;
     background: #D9D9D9;
 }
 
 .text1{
     position: absolute;
-    width: 591px;
+    width: 80vw;
+    max-width: 490px;
     height: 155px;
-    left: 140px;
-    top: 190px;
+    left: 10vw;
+    top: 220px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -55,10 +60,11 @@ body{
 
 .title2{
     position: absolute;
-    width: 241px;
+    width: 80vw;
+    max-width: 490px;
     height: 52px;
-    left: 140px;
-    top: 430px;
+    left: 10vw;
+    top: 470px;
 
     font-style: normal;
     font-weight: 400;
@@ -69,25 +75,29 @@ body{
     display: flex;
     align-items: center;
 
-    color: #6131eb;
+    color: #7e57c2;
     opacity: 60%;
+
+
 }
 
 .linha2{
     position: absolute;
-    width: 490px;
+    width: 80vw;
+    max-width: 490px;
     height: 1.5px;
-    left: 140px;
-    top: 500px;
+    left: 10vw;
+    top: 539px;
     background: #D9D9D9;
 }
 
 .text2{
     position: absolute;
-    width: 664px;
+    width: 80vw;
+    max-width: 490px;
     height: 155px;
-    left: 140px;
-    top: 530px;
+    left: 10vw;
+    top: 570px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -101,10 +111,22 @@ body{
 
 .img{
     float: right;
-    width: 610px;
-    height: 610px;
+    width: 90vw;
+    max-width: 690px;
+    margin-top: 90px;
+    margin-right: 90px;
+    transition: all 1s;
 }
 
-.conteudo_sobre{
-    width: 50%;
+@media only screen and (max-width: 1260px) {
+    .img{
+        opacity: 0.1;
+        
+    }
+
+    body{
+        
+    }
+
+    
 }

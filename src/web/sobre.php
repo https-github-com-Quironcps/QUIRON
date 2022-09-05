@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUIRON</title>
+    <title>SOBRE</title>
 
-    <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/styles-sobre.css">
+
+    <style>
+     
+    </style>
+
 </head>
 <body>
 
@@ -15,6 +19,7 @@
 
     <br>
     <div class="div-sobre">
+    <img class= "img" src="images/sobre1.png">
 
         <div class="conteudo_sobre">
             <h1 id="title">Quem somos nós?</h1>
@@ -43,20 +48,12 @@
                 <p>Assim como o professor!</p>
             </h1>
         </div>
-        
-        
-        <img class= "img" src="images/prof-sobre.png">
-        
     </div>
 
-    <script>
-        let subMenu = document.getElementById("subMenu");
+   
+    <?php include('partials/footer.php') ?>
 
-        function toggleMenu(){
-            subMenu.classList.toggle("open-menu");
-        }
-    </script>
-    <script type="text/javascript" src="../js/mobile.js"></script>
+   
     
 </body>
 </html>

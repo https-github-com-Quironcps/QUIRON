@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/footer.css">
 
     <!-- links para os ícones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
@@ -13,14 +12,10 @@
     
     <!-- css interno -->
     <style>
-    *{
-    margin: 0;
-    box-sizing: border-box;
-    }
 
     .footer{
         padding: 40px 0;
-        background-color: #683de78a;
+        background: rgba(54, 54, 54, 0.8);;
     }
 
     .footer .social{
@@ -31,20 +26,22 @@
     .footer .social a{
         font-size: 24px;
         color: inherit;
-        border: 1px solid;
         width: 40px;
         height: 40px;
         line-height: 38px;
         display: inline-block;
-        border-radius: 50%;
         text-align: center;
         margin: 0 8px;
+        padding-top: 5px;
+        color: #363636;
         opacity: 0.76;
     }
 
     .footer .social a:hover{
         opacity: 1.0;   
-        color: #6131eb;
+        color: 	#A9A9A9;
+        margin: 0 25px 0;
+        transition: all 0.8s ease;
     }
 
     .footer ul{
@@ -61,6 +58,7 @@
         color: inherit;
         text-decoration: none;
         opacity: 0.8;
+        color: #D3D3D3;
     }
 
     .footer ul li{
@@ -68,15 +66,16 @@
         padding: 0 15px;
     }
 
-    .footer ul li:hover{
-        color: #6131eb;
+    .footer ul li a:hover{
+        color: #363636;
+        transition: all 0.5s ease;
     }
 
     .footer .copyright{
         margin-top: 15px;
         text-align: center;
         font-size: 13px;
-        color: 	#708090;
+        color: #A9A9A9;
         
     }
     </style>
@@ -86,20 +85,20 @@
 <body>
     <section class="footer">
         <div class="social">
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-github"></i></a>
-            <a href="#"><i class="bi bi-envelope"></i></a>
+            <a href="https://instagram.com/quiron_cps?igshid=YmMyMTA2M2Y="><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/Uluketa/QUIRON"><i class="bi bi-github"></i></a>
+            <a href="https://mail.google.com/mail/u/1/#inbox"><i class="bi bi-envelope"></i></a>
         </div>
 
         <ul class="list">
             <li>
-                <a href="#">Home</a>
+                <a href="index.php">Home</a>
             </li>
             <li>
-                <a href="#">Sobre</a>
+                <a href="sobre.php">Sobre</a>
             </li>
             <li>
-                <a href="#">Contato</a>
+                <a href="contato.php">Contato</a>
             </li>
         </ul>
 
