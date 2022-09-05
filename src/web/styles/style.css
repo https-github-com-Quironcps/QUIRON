@@ -15,6 +15,7 @@
 
 .div-container{
     display: flex;
+    width: 100%;
 }
 
 .div-sub-container{
@@ -73,4 +74,3 @@
     color: black;
     font-weight:600;
 }
-
