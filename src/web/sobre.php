@@ -19,6 +19,7 @@
 
     <br>
     <div class="div-sobre">
+    <img class= "img" src="images/sobre1.png">
 
         <div class="conteudo_sobre">
             <h1 id="title">Quem somos nós?</h1>
@@ -47,7 +48,6 @@
                 <p>Assim como o professor!</p>
             </h1>
         </div>
-        <img class= "img" src="images/sobre1.png">
     </div>
 
    
