@@ -1,26 +1,7 @@
-.main-div{
-    display: flex;
-}
-
-.content{
-    width: 50%;
-    padding: 10px;
-}
-
 .submit{
     width: 40%;
     padding: 10px;
     background-repeat: no-repeat;
-}
-
-#title{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 52px;
-    align-items: center;
-    color: #6131eb;
-    opacity: 60%;
 }
 
 .img-anunciar{
@@ -28,50 +9,6 @@
     height: 260px;
     margin-top: 30px;
     margin-bottom: 10px;
-}
-
-.img-anunciar2{
-    padding: 0px;
-    height: 300px;
-    margin-top: 30px;
-    margin-bottom: 0px;
-}
-
-.container1{
-    width: 80%;
-    padding: 20px 60px;
-    background-color: rgb(230, 230, 230);
-    text-align: left;
-    border-radius: 40px;
-    margin-top: 75px;
-}
-
-.anunciar_btn{
-    background-color: var(--botao-iniciar);
-    width: 250px;
-    opacity: 0.8;
-    color: white;
-    padding: 10px;
-    border-radius: 50px;
-    cursor: pointer;
-    text-decoration: none;
-    border: 0.5px solid var(--cor-palette-1);
-    transition: color 0.5s ease 0s;
-}
-
-.anunciar_btn:hover{
-    background-color: var(--botao-iniciar-hover);
-    border: 0;
-    color: black;
-    font-weight:600;
-}
-
-.input1{
-    width: 100%;
-    max-width: 520px;
-    padding: 5px;
-    border-radius: 10px;
-    border: 0;
 }
 
 .linhaMeio{
@@ -84,11 +21,11 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .main-div {
+    .div-container {
       display: contents;
     }
 
-    .submit, .content {
+    .submit, .div-sub-container {
         width: 100%;
     }
 
@@ -96,4 +33,14 @@
         height: 0;
         min-height: 0;
     }
-  }
+
+    .container1{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container1{
+        width: 90%;
+    }
+}

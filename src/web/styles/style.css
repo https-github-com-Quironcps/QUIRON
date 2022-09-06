@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+:root{
+    /* Paleta de cores da QUIRON */
+    --cor-palette-1: #2C166B;
+    --cor-palette-2: #9679ED;
+    --cor-palette-3: #6031EB;
+    --cor-palette-4: #44376B;
+    --cor-palette-5: #4B27B8;
+
+    /* Index */
+    --botao-iniciar: #6131EB;
+    --botao-iniciar-hover: #9d88da;
+}
+
+.div-container{
+    display: flex;
+    width: 100%;
+}
+
+.div-sub-container{
+    width: 50%;
+    padding: 10px;
+}
+
+/* Input e Textarea */
+.input-textarea{
+    width: 100%;
+    max-width: 520px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 0;
+}
+
+/* Input e Textarea dentro do form class '.form' */
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  border-color: #7e57c2;
+  box-shadow: 0 0 0 3px #7e57c2;
+}
+
+/* Title */
+#title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 52px;
+    align-items: center;
+    color: #6131eb;
+    opacity: 60%;
+}
+
+/* Botão */
+.botao-001{
+    background-color: var(--botao-iniciar);
+    width: 250px;
+    opacity: 0.8;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0.5px solid var(--cor-palette-1);
+    transition: color 0.5s ease 0s;
+}
+
+/* Botão Hover */
+.botao-001:hover{
+    background-color: var(--botao-iniciar-hover);
+    border: 0;
+    color: black;
+    font-weight:600;
+}
+
+.edit-div-info{
+    width: 100%;
+    padding: 8px;
+    align-self: center;
+    display: flex;
+    margin-bottom: 10px;
+    background: rgb(236, 236, 236);
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.header001{
+    margin-top: 10px;
+}
+
+.container1{
+    width: 70%;
+    padding: 20px 60px;
+    background-color: rgb(230, 230, 230);
+    text-align: left;
+    border-radius: 40px;
+    margin-top: 100px;
+    transition: all 1s;
+}
+
+.text2{
+    margin-left: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 31px;
+    align-self: center; 
+    opacity: 0.9;
+}
+
+.bi-pen, .bi-trash3 {
+    width: 40px;
+}
+.edit-trash {
+    width: 40px;
+    align-self: center;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+#title2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 52px;
+    align-items: center;
+    color: #6131eb;
+    opacity: 60%;
+}
+
+#title2:has(+ h2) {
+    
+    background-color: #9d88da;
+}
+
+@media screen and (max-width: 1000px) {
+    .container1 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container1{
+        width: 90%;
+    }
+}

@@ -19,7 +19,7 @@
     <!-- Navbar Css  -->
     <link rel="stylesheet" href="styles/navbar-index.css">
 
-    <title>Quíron</title>
+    <title>QUIRON</title>
   </head>
   <body>
   
@@ -36,7 +36,7 @@
             <div class="col-md-8">
               <div class="mb-4">
               <h3>QUÍRON</h3>
-              <p class="mb-4">Sua próxima vaga de emprego na palma da sua mão.</p>
+              <p class="mb-4">Bem-vindo professor.</p>
             </div>
             <form action="#" method="post">
               <div class="form-group first">
