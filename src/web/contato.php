@@ -12,7 +12,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     
+    <style>
+      .formulario{
+    box-sizing: border-box;
+    position: absolute;
+    width: 37vw;
+    height: 580px;
+    left: 770px;
+    top: 150px;
+    background: rgba(242, 239, 251, 0.61);
+    border-radius: 20px;
+}
+    </style>
+
     <title>CONTATO</title>
+
 </head>
 <body>
 
