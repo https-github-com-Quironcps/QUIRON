@@ -21,8 +21,8 @@
         height: 75px;
         z-index: 9;
         transition:0.7s;
-        background-color: #f1efef;
-        box-shadow: 0 0 1em grey;
+        background-color: #fff;
+        box-shadow: 0 0 0.5em grey;
     }
     </style>
 
