@@ -7,23 +7,39 @@
 
     <link rel="stylesheet" href="styles/contato.css">
 
+    <style>
+      .formulario{
+        box-sizing: border-box;
+        position: absolute;
+        width: 37vw;
+        height: 580px;
+        left: 770px;
+        top: 150px;
+        background: rgba(242, 239, 251, 0.61);
+        border-radius: 20px;
+        transition: all 1s;
+      }
+
+      @media only screen and (max-width: 1260px) {
+        .formulario, .form, .form input{
+          left: 500px
+        }
+
+        .form input, .form textarea{
+          width: 200px;
+        }
+
+        .title1, .title2, .text, .insta, .text_contact1, .linha, .email, .text_contact2, .linha2, .tel, .text_contact3{
+          top: 500px;
+          transition: all 2s;
+        }
+      }
+    </style>
+
     <!-- Links para os ícones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    
-    <style>
-      .formulario{
-    box-sizing: border-box;
-    position: absolute;
-    width: 37vw;
-    height: 580px;
-    left: 770px;
-    top: 150px;
-    background: rgba(242, 239, 251, 0.61);
-    border-radius: 20px;
-}
-    </style>
 
     <title>CONTATO</title>
 
