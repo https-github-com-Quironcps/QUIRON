@@ -11,7 +11,6 @@
     
 </head>
 <body>
-<div></div>
 <br>
 
 <?php include('partials/header.php'); ?>
