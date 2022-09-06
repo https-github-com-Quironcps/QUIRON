@@ -24,22 +24,41 @@
         <div class="div-container">
             <div class="div-sub-container">
                 <form class="form">
-                    <input class='input-textarea' type="text" placeholder="Nome da matéria: "> <br><br>
-                    <input class='input-textarea' type="url" placeholder="Link de acesso no CPS: "> <br><br>
-                    <textarea class='input-textarea' placeholder="Descrição da vaga: "></textarea> <br><br>
-                    <textarea class='input-textarea' placeholder="Requisito da vaga: "></textarea> <br><br>
-                    <input class='input-textarea' type="text" placeholder="Carga horária semanal: "> <br><br>
-                    <input class='input-textarea' type="text" placeholder="Média salarial:"> <br><br>
+                    <label for="name">Nome da matéria: </label><br>
+                    <input class='input-textarea' type="text"> <br><br>
+
+                    <label for="name">Link de acesso no CPS:</label><br>
+                    <input class='input-textarea' type="url"> <br><br>
+
+                    <label for="name">Descrição da vaga:</label><br>
+                    <textarea class='input-textarea'></textarea> <br><br>
+
+                    <label for="name">Requisito da vaga:</label><br>
+                    <textarea class='input-textarea'></textarea> <br><br>
+
+                    <label for="name">Carga horária semanal:</label><br>
+                    <input class='input-textarea' type="text"> <br><br>
+
+                    <label for="name">Média salarial:</label><br>
+                    <input class='input-textarea' type="text"> <br><br>
             </div>
 
             <div class="linhaMeio"></div>
 
                 <center>
-                <div class="submit">
-                    <br>
-                    <input type="submit" class='botao-001' value="Anunciar Vaga">
-                </form>
-                    <img src="images/prof-sobre.png" class="img-anunciar">
+                <div class="div-sub-container-2">
+                    <div class="ab">
+                    </div>
+                    <div class="ab">
+                            <br>
+                            <input type="submit" class='botao-001' value="Anunciar Vaga">
+                        </form>
+
+                        <img src="images/2.png" class="img-anunciar">
+                    </div>
+                    <div class="ab">
+                    </div>
+                    
                 </center>
             </div>
         </div>
