@@ -5,10 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles/contato.css">
+    <link rel="stylesheet" href="../web/styles/contato.css">
+
+    <!-- Links para os ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <title>CONTATO</title>
+
+    <!-- CSS interno -->
 
     <style>
-      .formulario{
+
+    .formulario{
         box-sizing: border-box;
         position: absolute;
         width: 37vw;
@@ -20,28 +30,14 @@
         transition: all 1s;
       }
 
-      @media only screen and (max-width: 1260px) {
-        .formulario, .form, .form input{
-          left: 500px
-        }
-
-        .form input, .form textarea{
-          width: 200px;
-        }
-
-        .title1, .title2, .text, .insta, .text_contact1, .linha, .email, .text_contact2, .linha2, .tel, .text_contact3{
-          top: 500px;
-          transition: all 2s;
+      @media only screen and (max-width: 1000px){
+        .text_contact3{
+          display: none;
         }
       }
     </style>
 
-    <!-- Links para os ícones -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
-    <title>CONTATO</title>
+    <!-- fim do CSS interno -->
 
 </head>
 <body>
@@ -56,15 +52,20 @@
         </h3>
 
         <br><br>
+        
+        <div class="form_text">
+            <img class="insta" src="images/svgs/instagram.svg">
+            <a class="text_contact1" href="https://instagram.com/quiron_cps?igshid=YmMyMTA2M2Y=">@quíron_cps</a><br>
+            <div class="linha"></div>
+            <img class="email" src="images/svgs/envelope.svg">
+            <a class="text_contact2" href="">quirontcc@gmail.com</a><br>
+            <div class="linha2"></div>
+            <img class="tel" src="images/svgs/telephone.svg">
+            <a class="text_contact3" href="">(11)4002-8922</a>
+        </div>
+        
 
-        <img class="insta" src="images/svgs/instagram.svg">
-        <a class="text_contact1" href="https://instagram.com/quiron_cps?igshid=YmMyMTA2M2Y=">@quíron_cps</a><br>
-        <div class="linha"></div>
-        <img class="email" src="images/svgs/envelope.svg">
-        <a class="text_contact2" href="">quirontcc@gmail.com</a><br>
-        <div class="linha2"></div>
-        <img class="tel" src="images/svgs/telephone.svg">
-        <a class="text_contact3" href="">(11)4002-8922</a>
+
     </div>
 
     <div class="formulario">

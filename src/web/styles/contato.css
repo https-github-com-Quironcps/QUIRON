@@ -104,7 +104,7 @@ body{
 
 
 .text_contact2{
-    position: absolute;
+    
     width: 189px;
     height: 38px;
     left: 220px;
@@ -132,7 +132,7 @@ body{
 }
 
 .tel{
-    position: absolute;
+    
     width: 50px;
     height: 50px;
     left: 154px;
@@ -290,3 +290,12 @@ body{
     border-radius: 20px;
 }
 
+  @media only screen and (max-width: 1260px) {
+    .formulario, .form, .form input{
+      left: 500px
+    }
+
+    .form input, .form textarea{
+      width: 200px;
+    }
+  }
