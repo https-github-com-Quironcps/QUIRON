@@ -36,15 +36,15 @@
             <div class="col-md-8">
               <div class="mb-4">
               <h3>QUÍRON</h3>
-              <p class="mb-4">Bem-vindo professor.</p>
+              <p class="mb-4">Sua próxima vaga de emprego na palma de sua mão.</p>
             </div>
             <form action="#" method="post">
-              <div class="form-group first">
+              <div class="form input">
                 <label for="username">Usuário</label>
                 <input type="text" class="form-control" id="username">
 
               </div>
-              <div class="form-group last mb-4">
+              <div class="form input">
                 <label for="password">Senha</label>
                 <input type="password" class="form-control" id="password">
                 

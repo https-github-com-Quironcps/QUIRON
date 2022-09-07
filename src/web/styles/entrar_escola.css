@@ -70,7 +70,7 @@ h2 {
     border: none;
     padding: 0;
     font-size: 20px;
-    border-radius: 0; }
+    border-radius: 14px; }
     .content .contents .form-control:active, .content .contents .form-control:focus, .content .bg .form-control:active, .content .bg .form-control:focus {
       outline: none;
       -webkit-box-shadow: none;
@@ -199,3 +199,56 @@ h2 {
 .control--checkbox input:disabled:checked ~ .control__indicator {
   background-color: #7e0cf5;
   opacity: .2; }
+
+  .form input{
+    width: 500px;
+    height: 45px;
+}
+
+.form input{
+  display: block;
+  width: 100%;
+}
+
+.form label{
+    font-size: 15px;
+}
+
+.form textarea{
+    height: 40px;
+    width: 450px;
+}
+
+.form label {
+  color: #8C8398;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+  min-height: 13rem;
+  resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  border-color: #7e57c2;
+  box-shadow: 0 0 0 3px #7e57c2;
+}
+
+.btn{
+  border-radius: 14px;
+}
