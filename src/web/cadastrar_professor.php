@@ -47,6 +47,9 @@
                     <label for="name">Confirmar Senha:</label><br>
                     <input class='input-textarea' type="password"> <br><br>
 
+                    <input type="submit" class='botao-001' value="Cadastrar">
+                        
+
                 </form>
             </div>
 
