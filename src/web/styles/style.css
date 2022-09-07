@@ -31,6 +31,7 @@
     border-radius: 10px;
     border: 0;
     font-size: 15px;
+    transition: all 1s;
 }
 
 .form label{
@@ -87,7 +88,7 @@
     align-self: center;
     display: flex;
     margin-bottom: 10px;
-    background: rgb(236, 236, 236);
+    background: white;
     border-radius: 20px;
     justify-content: space-between;
 }
@@ -112,7 +113,7 @@
 }
 
 .text2{
-    margin-left: 20px;
+    margin-left: 10px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;

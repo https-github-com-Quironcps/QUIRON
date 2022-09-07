@@ -53,7 +53,7 @@
                             <br>
                             <input type="submit" class='botao-001' value="Anunciar Vaga">
                         </form>
-
+                            <br>
                         <img src="images/2.png" class="img-anunciar">
                     </div>
                     <div class="ab">
