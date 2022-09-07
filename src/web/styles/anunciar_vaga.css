@@ -29,10 +29,12 @@
 @media screen and (max-width: 1000px) {
     .div-container {
       display: contents;
+      align-items: center;
     }
 
     .submit, .div-sub-container {
         width: 100%;
+        text-align: center;
     }
 
     .linhaMeio{
@@ -44,7 +46,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .container1{
         width: 90%;
     }
@@ -52,5 +54,16 @@
     .div-sub-container{
         padding-top: 0;
         padding-bottom: 0;
+    }
+
+    .botao-001{
+        width: 50vw;
+        max-width: 250px;
+    }
+
+    .img-anunciar{
+        height: auto;
+        width: 50vw;
+        max-width: auto;
     }
 }

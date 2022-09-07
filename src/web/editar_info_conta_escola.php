@@ -7,7 +7,7 @@
     <title>QUIRON</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../../src/web/styles/style.css">
 </head>
 <body>
 <?php include('partials/header.php'); ?>
@@ -29,7 +29,7 @@
                 <i class="bi bi-pen"></i>
                 <i class="bi bi-trash3"></i>
             </div>
-        </div>
+        </div><br>
 
         <h1 id="title2">E-mail</h1>
 
@@ -40,7 +40,7 @@
                 <i class="bi bi-pen"></i>
                 <i class="bi bi-trash3"></i>
             </div>
-        </div>
+        </div><br>
 
         <h1 id="title2">Senha</h1>
 
