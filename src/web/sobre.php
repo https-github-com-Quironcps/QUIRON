@@ -28,11 +28,11 @@
 
             <br><br>
             <h1 class="text1">
-                <p>Nós somos uma plataforma para divulgação de</p> 
-                <p>vagas destinadas à professores.</p> 
+                <p>Nós somos uma plataforma para divulgação de
+                vagas destinadas à professores.</p> 
                 <br>
-                <p>Temos como objetivo facilitar o processo para a</p> 
-                <p>contratação de docentes nas instituições do CPS.</p>
+                <p>Temos como objetivo facilitar o processo para a 
+                contratação de docentes nas instituições do CPS.</p>
             </h1>
             <br><br><br>
             <h1 class="title2">Você sabia?</h1>
@@ -41,9 +41,9 @@
 
             <br><br>
             <h1 class="text2">
-                <p>Na mitologia grega, Quíron foi um centauro que dentre</p> 
-                <p>seus irmãos, se destacava por ser bondoso, inteligente</p>
-                <p>e disciplinado.</p>  
+                <p>Na mitologia grega, Quíron foi um centauro que dentre 
+                seus irmãos, se destacava por ser bondoso, inteligente
+                e disciplinado.</p>  
                 <br>
                 <p>Assim como o professor!</p>
             </h1>

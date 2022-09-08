@@ -117,7 +117,7 @@ nav .fa-bars:hover{
     border-radius: 5px;
     right: 195px;
     
-    transform: translateX(100vw);
+    transform: translateX(200vw);
 }
 
 .slide .ul1 li a:hover{
