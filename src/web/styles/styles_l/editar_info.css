@@ -1,0 +1,80 @@
+
+
+.div-mae{
+    width: 80vw;
+    height: 70vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.h1002{
+    margin-top: 15px;
+    color: #8C8398;
+    font-size: 25px;
+}
+
+.div-alterar-img{
+border-radius: 20px;
+text-align: center;
+width: 30%;
+background-color: rgb(242, 239, 251, 61%)
+}
+
+.div-alterar-img h3{
+    font-size: 17px;
+    font-weight: 590;
+    line-height: 60px;
+    margin-top: 15%;
+}
+
+.div-alterar-img button{
+    margin-top: 30px;
+    margin-bottom: 15%;
+}
+
+.sub-div-alterar-img{
+border-radius: 20px;
+margin-left: 7.5%;
+margin-right: 7.5%;
+background-color: white;
+width: 85%;
+height: 50%;
+}
+
+.div-alterar-texto{
+border-radius: 20px;
+width: 70%;
+margin-left: 5vw;
+padding: 10vh 20px;
+border: 1px solid rgb(97, 49, 235, 70%);
+font-size: 17px;
+font-weight: 590;
+}
+
+#input-text-alterar{
+    font-size: 16px;
+    font-weight: 590;
+    width: fit-content;
+    margin-top: 20px;
+    background-color: rgb(242, 239, 251, 61%);
+    border: 0;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+#input-text-alterar:hover, #input-text-alterar:focus{
+    outline: none;
+    border: 1px solid rgb(97, 49, 235, 70%);
+}
+
+#submit-text-alterar{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(97, 49, 235, 61%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}

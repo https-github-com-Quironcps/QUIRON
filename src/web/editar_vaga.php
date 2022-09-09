@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUÍRON</title>
 
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/anunciar_vaga.css">
+    <link rel="stylesheet" href="styles/styles_l/style.css">
+    <link rel="stylesheet" href="styles/styles_l/anunciar_vaga.css">
     
 </head>
 <body>
