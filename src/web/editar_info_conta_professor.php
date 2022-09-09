@@ -27,13 +27,13 @@
         </div>
 
         <div class="div-alterar-texto">
-            <form action="">
+            <form action="" class="div-alterar-form">
                 Nome da instituição: <input type="text" id="input-text-alterar"><br>
                 Endereço: <input type="text" id="input-text-alterar"> Nº: <input type="number" id="input-text-alterar"><br>
                 Bairro: <input type="text" id="input-text-alterar"> CEP: <input type="number" id="input-text-alterar"><br>
                 Telefone: <input type="number" id="input-text-alterar"> E-mail: <input type="email" id="input-text-alterar"><br>
 
-                <input type="submit" value="Editar" id="submit-text-alterar">
+                <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class">
             </form>
         </div>
     </div>

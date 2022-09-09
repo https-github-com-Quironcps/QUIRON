@@ -54,10 +54,15 @@ font-size: 17px;
 font-weight: 590;
 }
 
+.div-alterar-form{
+    height: 25vw;
+    background-color: aliceblue;
+}
+
 #input-text-alterar{
     font-size: 16px;
     font-weight: 590;
-    width: fit-content;
+    width: 20%;
     margin-top: 20px;
     background-color: rgb(242, 239, 251, 61%);
     border: 0;
@@ -77,4 +82,8 @@ font-weight: 590;
     color: white;
     border-radius: 5px;
     border: none;
+}
+
+.submit-class{
+    float: right;
 }
