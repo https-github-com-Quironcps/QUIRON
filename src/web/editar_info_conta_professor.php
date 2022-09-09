@@ -28,10 +28,10 @@
 
         <div class="div-alterar-texto">
             <form action="" class="div-alterar-form">
-                Nome da instituição: <input type="text" id="input-text-alterar"><br>
-                Endereço: <input type="text" id="input-text-alterar"> Nº: <input type="number" id="input-text-alterar"><br>
-                Bairro: <input type="text" id="input-text-alterar"> CEP: <input type="number" id="input-text-alterar"><br>
-                Telefone: <input type="number" id="input-text-alterar"> E-mail: <input type="email" id="input-text-alterar"><br>
+                Nome da instituição: <input class="input-sozinho" type="text" id="input-text-alterar"><br>
+                Endereço: <input type="text" class="input-endereco" id="input-text-alterar"> Nº: <input class="input-num" type="number" id="input-text-alterar"><br>
+                Bairro: <input type="text" class="input-bairro" id="input-text-alterar"> CEP: <input class="input-cep" type="number" id="input-text-alterar"><br>
+                Telefone: <input type="number" class="input-tel" id="input-text-alterar"> E-mail: <input class="input-email" type="email" id="input-text-alterar"><br>
 
                 <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class">
             </form>

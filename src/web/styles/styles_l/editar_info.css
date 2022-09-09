@@ -52,22 +52,39 @@ padding: 10vh 20px;
 border: 1px solid rgb(97, 49, 235, 70%);
 font-size: 17px;
 font-weight: 590;
+background-color: darkgoldenrod;
 }
 
 .div-alterar-form{
     height: 25vw;
-    background-color: aliceblue;
 }
 
 #input-text-alterar{
     font-size: 16px;
     font-weight: 590;
-    width: 20%;
     margin-top: 20px;
     background-color: rgb(242, 239, 251, 61%);
     border: 0;
     border-radius: 5px;
     padding: 0 10px;
+    margin-left: 5px;
+    align-content: space-between;
+}
+
+.input-sozinho{
+    width: 30vw;
+}
+
+.input-num{
+    width: 70px;
+}
+
+.input-endereco{
+    width: 27vw;
+    margin-right: 15px;
+}
+.input-junto{
+    width: 15vw;
 }
 
 #input-text-alterar:hover, #input-text-alterar:focus{
@@ -76,7 +93,7 @@ font-weight: 590;
 }
 
 #submit-text-alterar{
-    width: 100px;
+    width: 110px;
     height: 30px;
     background-color: rgb(97, 49, 235, 61%);
     color: white;
@@ -86,4 +103,5 @@ font-weight: 590;
 
 .submit-class{
     float: right;
+    margin-top: 15%;
 }
