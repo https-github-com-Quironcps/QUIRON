@@ -42,6 +42,8 @@
     background-color: white;
     width: 85%;
     height: 50%;
+    padding-bottom: 15%;
+    padding-top: 15%;
 }
 
 .div-alterar-texto{
@@ -158,5 +160,7 @@
 }
 
 .bi-camera{
+    font-size: 7vw;
     color: #6131EB;
+    opacity: 50%;
 }
