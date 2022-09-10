@@ -17,10 +17,10 @@
 }
 
 .div-alterar-img{
-border-radius: 20px;
-text-align: center;
-width: 30%;
-background-color: rgb(242, 239, 251, 61%)
+    border-radius: 20px;
+    text-align: center;
+    width: 30%;
+    background-color: rgb(242, 239, 251, 61%)
 }
 
 .div-alterar-img h3{
@@ -36,23 +36,22 @@ background-color: rgb(242, 239, 251, 61%)
 }
 
 .sub-div-alterar-img{
-border-radius: 20px;
-margin-left: 7.5%;
-margin-right: 7.5%;
-background-color: white;
-width: 85%;
-height: 50%;
+    border-radius: 20px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    background-color: white;
+    width: 85%;
+    height: 50%;
 }
 
 .div-alterar-texto{
-border-radius: 20px;
-width: 70%;
-margin-left: 5vw;
-padding: 10vh 20px;
-border: 1px solid rgb(97, 49, 235, 70%);
-font-size: 17px;
-font-weight: 590;
-background-color: darkgoldenrod;
+    border-radius: 20px;
+    width: 70%;
+    margin-left: 5vw;
+    padding: 10vh 20px;
+    border: 1px solid rgb(97, 49, 235, 70%);
+    font-size: 17px;
+    font-weight: 590;
 }
 
 .div-alterar-form{
@@ -66,23 +65,76 @@ background-color: darkgoldenrod;
     background-color: rgb(242, 239, 251, 61%);
     border: 0;
     border-radius: 5px;
-    padding: 0 10px;
-    margin-left: 5px;
+    padding: 1px 10px;
+    
     align-content: space-between;
 }
 
+/* Nome */
+.form-nome{
+    width: 26%;
+    line-height: 11vh;
+}
 .input-sozinho{
-    width: 30vw;
+    width: 74%;
 }
 
-.input-num{
-    width: 70px;
-}
 
+/* Endereco e Nº */
+.form-endereco{
+    width: 14%;
+    line-height: 11vh;
+}
 .input-endereco{
-    width: 27vw;
-    margin-right: 15px;
+    width: 60%;
 }
+
+.form-num{
+    width: 10%;
+    padding-left: 5%;
+}
+.input-num{
+    width: 15%;
+}
+
+/* Bairro e CEP */
+.form-bairro{
+    width: 10%;
+    line-height: 11vh;
+}
+.input-bairro{
+    width: 50%;
+}
+
+.form-cep{
+    width: 10%;
+    padding-left: 3.5%;
+}
+
+.input-cep{
+    width: 29%;
+}
+
+
+/* Telefone e E-mail */
+.form-tel{
+    line-height: 11vh;
+    width: 13%;
+}
+
+.input-tel{
+    width: 27%;
+}
+
+.form-email{
+    width: 12%;
+    padding-left: 3%;
+}
+
+.input-email{
+    width: 47%;
+}
+
 .input-junto{
     width: 15vw;
 }
@@ -103,5 +155,8 @@ background-color: darkgoldenrod;
 
 .submit-class{
     float: right;
-    margin-top: 15%;
+}
+
+.bi-camera{
+    color: #6131EB;
 }
