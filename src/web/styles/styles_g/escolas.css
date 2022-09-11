@@ -1,0 +1,55 @@
+.filtros{
+    margin-top: 15vh;
+    margin-left: 130vh;
+}
+
+.label{
+    display: inline;
+    width: 286px;
+    height: 23px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.2vh;
+    line-height: 23px;
+
+    color: #7E7E7E;
+}
+
+.input-textarea{
+    display: inline;
+    width: 24vh;
+    height: 4.2vh;
+    border-radius: 8px;
+    border-style: none;
+    background: #F2EFFB;
+}
+
+.input-textarea:hover{
+    outline: none;
+    border-color: #7e57c2;
+    box-shadow: 0 0 0 3px #7e57c2;
+    transition: all 1.1s;
+}
+
+.botao-001{
+    background: url("../../images/svgs/search.svg") no-repeat 15px;
+    height: 4.2vh;
+    width: 45px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgba(96, 49, 235, 0.453);
+}
+
+.botao-001:hover{
+    outline: none;
+    border-color: #7e57c2;
+    box-shadow: 0 0 0 2px #7e57c2;
+    transition: all 1.1s;
+}
+
+.conteudo{
+    background-color: #7e57c2;
+    width: 100%;
+    
+}
