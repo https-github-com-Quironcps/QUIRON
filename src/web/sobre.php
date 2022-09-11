@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOBRE</title>
 
-    <link rel="stylesheet" href="styles/styles-sobre.css">
+    <link rel="stylesheet" href="../web/styles/styles_g/styles-sobre.css">
 
     <style>
      
