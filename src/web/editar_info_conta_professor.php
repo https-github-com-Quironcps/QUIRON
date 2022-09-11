@@ -18,7 +18,7 @@
 
     <div class="div-mae">
         <div class="div-alterar-img">
-            <h3>Divulgue sua escola</h3>
+            <h3>Foto de perfil</h3>
 
             <div class="sub-div-alterar-img">
                 <i class="bi bi-camera"></i>
@@ -30,7 +30,7 @@
         <div class="div-alterar-texto">
             <form action="" class="div-alterar-form">
 
-                <label class="form-nome">Nome da instituição: </label><input class="input-sozinho" type="text" id="input-text-alterar"><br>
+                <label class="form-nome-completo">Nome completo: </label><input class="input-nome" type="text" id="input-text-alterar"><br>
                 
                 <label class="form-endereco">Endereço: </label><input type="text" class="input-endereco" id="input-text-alterar"> <label class="form-num"> Nº: </label><input class="input-num" type="number" id="input-text-alterar"><br>
                 

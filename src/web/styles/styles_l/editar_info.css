@@ -80,6 +80,15 @@
     width: 74%;
 }
 
+.form-nome-completo{
+    width: 22%;
+    line-height: 10vh;
+}
+
+.input-nome{
+    width: 78%;
+}
+
 
 /* Endereco e Nº */
 .form-endereco{
@@ -258,7 +267,8 @@
     .input-email, 
     .input-endereco, 
     .input-junto, 
-    .input-num, 
+    .input-num,
+    .input-nome,
     .input-senha, 
     .input-sozinho, 
     .input-tel
@@ -272,6 +282,7 @@
     .form-cep,
     .form-email,
     .form-nome,
+    .form-nome-completo,
     .form-endereco,
     .form-num,
     .form-senha,
