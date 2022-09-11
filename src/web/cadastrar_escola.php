@@ -42,10 +42,10 @@
                     <input class='input-textarea' type="text"> <br><br>
 
                     <label for="name">Email:</label> <br>
-                    <input class='input-textarea' type="text"> <br><br><br>
+                    <input class='input-textarea' type="text"> <br><br>
 
                     <label for="name">Senha:</label> <br>
-                    <input class='input-textarea' type="password"> <br><br>
+                    <input class='input-textarea' type="password"> <br><br><br>
 
                     <input type="submit" class='botao-001' value="Cadastrar Escola">
                         
