@@ -24,13 +24,14 @@
    <div class="container1">
         <div class="header">
             <h1 id="title">Confirme seu e-mail para redefinir sua senha</h1>
-        </div>
+        </div> <br>
 
 <form class="form">
                     <label for="name">E-mail:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' type="text"> <br><br><br>
 
                     <input type="submit" class='botao-001' value="Enviar">
+                    <br><br><br>
 </div>     
 <center>
 
