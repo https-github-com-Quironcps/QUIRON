@@ -183,6 +183,7 @@
     font-size: 80px;
     color: #6131EB;
     opacity: 50%;
+
 }
 
 @media screen and (max-width: 1255px) {
@@ -244,5 +245,48 @@
         width: 90vw;
         height: 450px;
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .div-alterar-texto{
+        height: 680px;
+    }
+
+    .input-bairro, 
+    .input-cep, 
+    .input-email, 
+    .input-endereco, 
+    .input-junto, 
+    .input-num, 
+    .input-senha, 
+    .input-sozinho, 
+    .input-tel
+    {
+        width: 60%;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .form-bairro,
+    .form-cep,
+    .form-email,
+    .form-nome,
+    .form-endereco,
+    .form-num,
+    .form-senha,
+    .form-tel{
+        width: 39%;
+        padding-left: 0;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .div-alterar-img h3{
+        font-size: 15px;
+        font-weight: 590;
+        flex: 1;
+        line-height: normal;
+        margin-top: 5%;
     }
 }
