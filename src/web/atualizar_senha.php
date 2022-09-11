@@ -34,6 +34,9 @@
                     <input class='input-textarea' type="text"> <br><br><br>
 
                     <input type="submit" class='botao-001' value="Atualizar Senha">
+                    <br>
+<br>
+<br>
 </div>     
 <center>
 
