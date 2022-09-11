@@ -24,7 +24,7 @@
                 <i class="bi bi-camera"></i>
             </div>
 
-            <button id="submit-text-alterar">Anexar</button>
+            <button id="submit-text-alterar" class="abc001">Anexar</button>
         </div>
 
         <div class="div-alterar-texto">
@@ -38,7 +38,9 @@
                 
                 <label class="form-tel">Telefone: </label><input type="number" class="input-tel" id="input-text-alterar"> <label class="form-email"> E-mail: </label><input class="input-email" type="email" id="input-text-alterar"><br>
 
-                <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class">
+                <center> <label class="form-senha">Senha: </label><input type="password" class="input-senha" id="input-text-alterar"> </center> 
+                
+                <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"> <input type="submit" value="Excluir Conta" id="submit-text-alterar-2" class="submit-class"> 
             </form>
         </div>
     </div>

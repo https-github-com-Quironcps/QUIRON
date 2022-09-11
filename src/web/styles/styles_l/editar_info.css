@@ -50,7 +50,7 @@
     border-radius: 20px;
     width: 70%;
     margin-left: 5vw;
-    padding: 10vh 20px;
+    padding: 8vh 20px;
     border: 1px solid rgb(97, 49, 235, 70%);
     font-size: 17px;
     font-weight: 590;
@@ -68,14 +68,13 @@
     border: 0;
     border-radius: 5px;
     padding: 1px 10px;
-    
     align-content: space-between;
 }
 
 /* Nome */
 .form-nome{
     width: 26%;
-    line-height: 11vh;
+    line-height: 10vh;
 }
 .input-sozinho{
     width: 74%;
@@ -85,7 +84,7 @@
 /* Endereco e Nº */
 .form-endereco{
     width: 14%;
-    line-height: 11vh;
+    line-height: 10vh;
 }
 .input-endereco{
     width: 60%;
@@ -102,7 +101,7 @@
 /* Bairro e CEP */
 .form-bairro{
     width: 10%;
-    line-height: 11vh;
+    line-height: 10vh;
 }
 .input-bairro{
     width: 50%;
@@ -120,7 +119,7 @@
 
 /* Telefone e E-mail */
 .form-tel{
-    line-height: 11vh;
+    line-height: 10vh;
     width: 13%;
 }
 
@@ -141,6 +140,16 @@
     width: 15vw;
 }
 
+/* SENHA */
+
+.form-senha{
+    width: 10%;
+}
+
+.input-senha{
+    width: 50%;
+}
+
 #input-text-alterar:hover, #input-text-alterar:focus{
     outline: none;
     border: 1px solid rgb(97, 49, 235, 70%);
@@ -155,12 +164,85 @@
     border: none;
 }
 
+#submit-text-alterar-2{
+    width: 130px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0.623);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
 .submit-class{
     float: right;
+    margin-top: 25px;
+    margin-left: 10px;
 }
 
 .bi-camera{
-    font-size: 7vw;
+    font-size: 80px;
     color: #6131EB;
     opacity: 50%;
+}
+
+@media screen and (max-width: 1255px) {
+    .div-alterar-texto{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    .div-mae{
+        display: contents;
+        align-items: center;
+        height: auto;
+    }
+
+    .div-alterar-img{
+        display: flex;
+        width: 90vw;
+        margin: 0 5vw;
+        height: 80px;
+        align-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        padding: 0px 20px;
+    }
+
+    .sub-div-alterar-img{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 60px;
+        height: 60px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        flex: 1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .bi-camera{
+        height: 30px;
+        font-size: 30px;
+    }
+
+    .div-alterar-img h3{
+        font-size: 15px;
+        font-weight: 590;
+        flex: 1;
+        line-height: 60px;
+        margin-top: 1%;
+
+    }
+
+    .abc001{
+        flex: 1;
+        width: 100px;
+    }
+
+    .div-alterar-texto{
+        width: 90vw;
+        height: 450px;
+        margin-bottom: 30px;
+    }
 }
