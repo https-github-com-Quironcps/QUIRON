@@ -11,10 +11,12 @@
 <body>
     <div class="navbar-indice">
         <nav>
-            <img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo">
+            <a href="index.php">
+                <img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo">
+            </a>
+            
             <ul>
-                <li><a class="ab" href="#">Entrar</a></li>
-                <li><a class="ab" href="#">Cadastrar-se</a></li>
+                <li><a class="ab" href="entrar_professor.php">Entrar</a></li>
             </ul>
         </nav>
     </div>

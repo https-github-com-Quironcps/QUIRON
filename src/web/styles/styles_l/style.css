@@ -125,6 +125,7 @@
 
 .bi-pen, .bi-trash3 {
     width: 40px;
+    cursor: pointer;
 }
 .edit-trash {
     width: 40px;

@@ -58,6 +58,10 @@ body{
     color: #8C8398;
 }
 
+.text2 p 
+.text1 p{
+    line-height: 10px;
+}
 .title2{
     position: absolute;
     width: 80vw;
@@ -111,16 +115,29 @@ body{
 
 .img{
     float: right;
-    width: 90vw;
-    max-width: 690px;
+    width: 80vw;
+    max-width: 590px;
     margin-top: 90px;
     margin-right: 90px;
     transition: all 1s;
 }
 
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 1250px) {
     .img{
-        opacity: 0.1;
-        
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .title2{
+        top: 500px;
+    }
+
+    .linha2{
+        top: 569px;
+    }
+
+    .text2{
+        top: 600px;
     }
 }
