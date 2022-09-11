@@ -20,7 +20,6 @@
             <h1 id="title">Cadastre a sua Instituição</h1>
         </div>
 <br>
-<br>
         <div class="div-container">
             <div class="div-sub-container">
                 <form class="form">
