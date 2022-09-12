@@ -6,57 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIRON</title>
 
-    <link rel="stylesheet" href="styles/styles_l/style.css">
-    <link rel="stylesheet" href="styles/styles_l/anunciar_vaga.css">
+    <link rel="stylesheet" href="styles/styles_l/editar_info.css">
 </head>
 <body>
-    <?php include('partials/header.php'); ?>
-    <br>
-<center>
-    <div class="container1">
-        <div class="header">
-            <h1 id="title">Editar Perfil</h1>
+<?php include('partials/header.php') ?>
+
+<br><br><br><br>
+
+    <center><h1 class="h1002">Editar Perfil</h1></center>
+
+    <div class="div-pai">
+        <div class="div-alterar-img">
+            <h3>Fotos de divulgação</h3>
+
+            <div class="sub-div-alterar-img2">
+                <img class="img-div-alterar-01" src="images/etec.jpeg">
+                <img class="img-div-alterar-01" src="images/etec.jpeg">
+                <img class="img-div-alterar-01" src="images/etec.jpeg">
+                <img class="img-div-alterar-01" src="images/etec.jpeg">
+
+                <img class="img-div-alterar-01" src="images/etec.jpeg">
+                <img class="img-div-alterar-01" src="images/etec.jpeg">
+                <img class="img-div-alterar-01" src="images/etec.jpeg">
+                <img class="img-div-alterar-01" src="images/etec.jpeg">
+
+            </div>
         </div>
 
-        <div class="div-container">
-            <div class="div-sub-container">
-                <form class="form">
-                    <label for="name">Cursos: </label><br>
-                    <textarea class='input-textarea' type="text"></textarea> <br><br>
+        <div class="div-alterar-texto">
+            <form action="" class="div-alterar-form">
 
-                    <label for="name">Sobre:</label><br>
-                    <textarea class='input-textarea' type="url"></textarea><br><br>
-
-                    <label for="name">Equipe:</label><br>
-                    <textarea class='input-textarea'></textarea><br><br>
-
-                    <label for="name">Fotos:</label><br>
-                    <input type="file" class='input-textarea file'><br><br>
-
-            </div>
-
-            <div class="linhaMeio"></div>
-
-                <center>
-                <div class="div-sub-container-2">
-                    <div class="ab">
-                    </div>
-                    <div class="ab">
-                            <br>
-                            <input type="submit" class='botao-001' value="Editar Perfil">
-                        </form>
-                            <br>
-                        <img src="images/2.png" class="img-anunciar">
-                    </div>
-                    <div class="ab">
-                    </div>
-                    
-                </center>
-            </div>
+                <label class="form-cursos">Cursos: </label><textarea class="input-cursos" type="text" id="input-text-alterar2"></textarea><br>
+                
+                <label class="form-sobre">Sobre: </label><br><textarea type="text" class="input-sobre" id="input-text-alterar2"></textarea><br>
+                
+                <label class="form-equipe">Equipe: </label><br><textarea type="text" class="input-equipe" id="input-text-alterar2"></textarea>
+                
+                <br>
+                <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class">
+            </form>
         </div>
     </div>
-</center>
-<br>
-    <?php include('partials/footer.php'); ?>
+
+<?php include('partials/footer.php') ?>
 </body>
 </html>

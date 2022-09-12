@@ -14,7 +14,7 @@
 
 <br><br><br><br>
 
-    <center><h1 class="h1002">Editar Perfil</h1></center>
+    <center><h1 class="h1002">Editar informações da conta</h1></center>
 
     <div class="div-mae">
         <div class="div-alterar-img">
