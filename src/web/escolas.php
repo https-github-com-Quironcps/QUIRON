@@ -28,10 +28,41 @@
             </form>
         </div>
         <br><br>
+        <h1 class="titulo1">Escolas:</h1>
+        <br>
+
+        <center>
         <div class="conteudo">
-            <h1>Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
+        <h1 class="titulo1">Escolas:</h1>
         </div>
+        </center>
+        
     </div>
+
+    <?php include('partials/footer.php'); ?>
 
 </body>
 </html>

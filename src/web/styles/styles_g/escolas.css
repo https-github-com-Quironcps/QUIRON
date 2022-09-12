@@ -1,6 +1,8 @@
 .filtros{
     margin-top: 15vh;
-    margin-left: 130vh;
+    margin-right: 86px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .label{
@@ -17,7 +19,6 @@
 }
 
 .input-textarea{
-    display: inline;
     width: 24vh;
     height: 4.2vh;
     border-radius: 8px;
@@ -39,6 +40,7 @@
     border-radius: 10px;
     border-style: none;
     background-color: rgba(96, 49, 235, 0.453);
+    margin-bottom: -10px;
 }
 
 .botao-001:hover{
@@ -49,7 +51,30 @@
 }
 
 .conteudo{
-    background-color: rgba(239, 251, 241, 0.61);
-    width: 100%;
-    
+    background-color: #F2EFFB;
+    width: 190vh;
+    height: 130vh; 
+    margin-bottom: 10vh;
+    border-radius: 12px;
+    overflow-y: scroll;
 }
+
+.titulo1{
+    width: 294px;
+    height: 52px;
+    padding-left: 12vh;
+    padding-top: 1vh;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 52px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #8C8398;
+}
+
