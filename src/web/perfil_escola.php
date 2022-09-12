@@ -5,10 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIRON</title>
+
+    <link rel="stylesheet" href="styles/styles_l/style.css">
+    <link rel="stylesheet" href="styles/styles_l/anunciar_vaga.css">
 </head>
 <body>
     <?php include('partials/header.php'); ?>
+    <br>
+<center>
+    <div class="container1">
+        <div class="header">
+            <h1 id="title">Editar Perfil</h1>
+        </div>
 
+        <div class="div-container">
+            <div class="div-sub-container">
+                <form class="form">
+                    <label for="name">Cursos: </label><br>
+                    <textarea class='input-textarea' type="text"></textarea> <br><br>
+
+                    <label for="name">Sobre:</label><br>
+                    <textarea class='input-textarea' type="url"></textarea><br><br>
+
+                    <label for="name">Equipe:</label><br>
+                    <textarea class='input-textarea'></textarea><br><br>
+
+                    <label for="name">Fotos:</label><br>
+                    <input type="file" class='input-textarea file'><br><br>
+
+            </div>
+
+            <div class="linhaMeio"></div>
+
+                <center>
+                <div class="div-sub-container-2">
+                    <div class="ab">
+                    </div>
+                    <div class="ab">
+                            <br>
+                            <input type="submit" class='botao-001' value="Editar Perfil">
+                        </form>
+                            <br>
+                        <img src="images/2.png" class="img-anunciar">
+                    </div>
+                    <div class="ab">
+                    </div>
+                    
+                </center>
+            </div>
+        </div>
+    </div>
+</center>
+<br>
     <?php include('partials/footer.php'); ?>
 </body>
 </html>
