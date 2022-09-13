@@ -35,6 +35,7 @@
           <div class="row justify-content-center">
             <div class="col-md-8">
               <div class="mb-4">
+                <br>
               <h3>QUÍRON</h3>
               <p class="mb-4">Sua próxima vaga de emprego na palma da sua mão.</p>
             </div>
