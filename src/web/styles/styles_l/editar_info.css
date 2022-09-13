@@ -211,17 +211,16 @@
 }
 
 .img-div-alterar-01{
-    width: 105px;
+    height: 65px;
     padding: 5px;
     cursor: pointer;
     border-radius: 10px;
     transition: all 0.4s;
+    opacity: 100%;
 }
 
 .img-div-alterar-01:hover{
-    opacity: 0;
-    background-color: #6131EB;
-    background-image: src("../../images/1.png");
+    opacity: 40%;
 }
 
 .sub-div-alterar-img2{
@@ -231,7 +230,8 @@
     background-color: white;
     width: 85%;
     height: 70%;
-    padding-bottom: 0px;
+    padding-bottom: 0;
+    align-content: space-between;
     padding-top: 20px;
 }
 
