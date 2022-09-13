@@ -8,7 +8,7 @@
 
 
     <link rel="stylesheet" href="styles/styles_l/style.css">
-    <link rel="stylesheet" href="styles/styles_l/anunciar_vaga.css">
+    <link rel="stylesheet" href="styles/styles_m/cadastro.css">
 
 
 </head>
@@ -36,7 +36,7 @@
                     <input class='input-textarea' type="text"> <br><br>
 
                     <label for="name">Data de Nascimento:</label><br>
-                    <input class='input-textarea' type="date" <br><br><br>
+                    <input class='input-textarea' type="date"> <br><br><br>
 
                     <label for="name">Email:</label><br>
                     <input class='input-textarea' type="text"> <br><br>
@@ -52,10 +52,10 @@
 
                 </form>
             </div>
-
+</center>
         </div>
     </div>
-</center>
+
 <br>
 
 </body>
