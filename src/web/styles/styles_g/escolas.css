@@ -114,3 +114,9 @@ marquee{
     color: #7E7E7E;
 }
 
+input[type=text] {
+    margin-left: 8px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #7E7E7E;
+}
