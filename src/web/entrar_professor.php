@@ -79,7 +79,7 @@
   
     <script src="scripts/jquery_login.min.js"></script>
     <script src="scripts/popper_login.min.js"></script>
-    <script src="js/bootstrap_login.min.js"></script>
-    <script src="js/main_login.js"></script>
+    <script src="scripts/bootstrap_login.min.js"></script>
+    <script src="scripts/main_login.js"></script>
   </body>
 </html>
