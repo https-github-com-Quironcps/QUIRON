@@ -8,13 +8,13 @@
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="styles_m/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/styles_m/owl.carousel.min.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="styles_m/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles_m/bootstrap.min.css">
     
     <!-- Style -->
-    <link rel="stylesheet" href="styles_m/entrar_escola.css">
+    <link rel="stylesheet" href="styles/styles_m/entrar_escola.css">
 
     <!-- Navbar Css  -->
     <link rel="stylesheet" href="styles/navbar-index.css">
