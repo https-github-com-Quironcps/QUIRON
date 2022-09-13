@@ -1,5 +1,5 @@
 .div-pai{
-    width: 100vw;
+    width: 99vw;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -10,30 +10,48 @@
     font-size: 25px;
 }
 
-.fotos{
-    flex: 1;
-    padding: 50px 2px;
-}
-
 .div-imagens{
     display: flex;
-    background-color: black;
     width: 100%;
     padding: 5px;
+    height: 100%;
     align-items: center;
-    padding-left: 2%;
-    padding-right: 20%;
+}
+
+.img-div-alterar-01{
+    max-width: 100%;
+    height: 30vh;
+    max-height: 100%;
+    border-radius: 10px;
+    transition: all 0.8s;
+    object-fit: cover;
+    object-position: center;
 }
 
 .div-alterar-img{
     border-radius: 20px;
     text-align: center;
     width: 70vw;
-    height: 130px;
+    height: auto;
     background-color: rgb(242, 239, 251, 61%);
     display: flex;
     padding: 10px;
     align-items: center;
+}
+
+.div-meio,
+.div-ponta,
+.div-ultimo{
+    padding: 5px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    flex: 1;
+    align-content: space-between;
+    object-fit: cover;
+    object-position: 20% 10%;
 }
 
 .div-alterar-img button{
@@ -104,20 +122,6 @@
 
 /* SENHA */
 
-.img-div-alterar-01{
-    height: 75px;
-    cursor: pointer;
-    border-radius: 10px;
-    
-    transition: all 0.4s;
-    opacity: 100%;
-}
-
-.img-div-alterar-01:hover{
-    opacity: 40%;
-}
-
-
 #input-text-alterar:hover, #input-text-alterar:focus{
     outline: none;
     border: 1px solid rgb(97, 49, 235, 70%);
@@ -130,65 +134,11 @@
 
 
 #submit-text-alterar{
-    width: 80px;
-    height: 25px;
+    width: 100px;
+    height: 30px;
     background-color: rgb(97, 49, 235, 61%);
     color: white;
     margin-top: 5px;
-    border-radius: 5px;
-    border: none;
-}
-
-.img-div-alterar-01{
-    max-height: 60%;
-    cursor: pointer;
-    max-width: 145px;
-    border-radius: 10px;
-    transition: all 0.4s;
-    opacity: 100%;
-    margin-top: 10px;
-}
-
-.div-meio,
-.div-ponta,
-.div-ultimo{
-    padding: 10px;
-    margin-right: 10px;
-    background-color: white;
-    border-radius: 10px;
-    height: 90%;
-}
-
-.div-meio{
-    padding: 5px;
-    background-color: white;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 90%;
-    max-width: 150px;
-}
-
-.div-ponta{
-    padding: 5px;
-    background-color: white;
-    height: 90%;
-    border-radius: 10px;
-}
-
-.div-ultimo{
-    padding: 5px;
-    margin-right: 10px;
-    background-color: white;
-    border-radius: 10px;
-    height: 90%;
-}
-
-#submit-text-alterar-2{
-    width: 130px;
-    height: 30px;
-    background-color: rgba(255, 0, 0, 0.623);
-    color: white;
     border-radius: 5px;
     border: none;
 }
@@ -219,6 +169,19 @@
     margin-top: 0;
 }
 
+.img-trash{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.img-trash:hover{
+    opacity: 1;
+}
+
 .form-cursos,
 .form-equipe,
 .form-sobre
@@ -227,5 +190,10 @@
     padding-left: 0;
     line-height: normal;
     text-align: left;
+}
 
+@media screen and (max-width: 1115px) {
+    .img-div-alterar-01{
+        max-height: 120px;
+    }
 }

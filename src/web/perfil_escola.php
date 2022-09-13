@@ -20,9 +20,11 @@
         <center>
             <div class="div-alterar-img">
                 <div class="div-imagens">
-                    <div class="div-ponta"><img class="img-div-alterar-01" src="images/etec.jpeg"></div>
-                    <div class="div-meio"><img class="img-div-alterar-01" src="images/nav2.1.PNG"></div>
-                    <div class="div-ultimo"><img class="img-div-alterar-01" src="images/nav2.1.PNG"></div>            
+                
+                <div class="div-ponta"><img class="img-div-alterar-01" src="#"> <img id="imagem001" class="img-trash" src="images/svgs/trash.svg"></div>
+                <div class="div-meio"><img class="img-div-alterar-01" src="#"> <img id="imagem002" class="img-trash" src="images/svgs/trash.svg"></div>
+                <div class="div-ultimo"><img class="img-div-alterar-01" src="#"> <img id="imagem003" class="img-trash" src="images/svgs/trash.svg"></div>            
+                    
                 </div>
             </div>
         </center>
@@ -33,14 +35,14 @@
             <div class="div-alterar-texto">
                 <form action="" class="div-alterar-form">
                     
-                    <label class="form-cursos">Cursos: </label><br><textarea class="input-cursos" type="text" id="input-text-alterar2"></textarea><br>  <br>
+                    <label class="form-cursos">Cursos: </label><br><textarea class="input-cursos" type="text" id="input-text-alterar2"></textarea><br>
                     
-                    <label class="form-sobre">Sobre: </label><br><textarea type="text" class="input-sobre" id="input-text-alterar2"></textarea><br><br>
+                    <label class="form-sobre">Sobre: </label><br><textarea type="text" class="input-sobre" id="input-text-alterar2"></textarea><br>
                     
                     <label class="form-equipe">Equipe: </label><br><textarea type="text" class="input-equipe" id="input-text-alterar2"></textarea>
                     
                     <br>
-                    <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class">
+                    <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"><br>
                 </form>
             </div>
         </center>
