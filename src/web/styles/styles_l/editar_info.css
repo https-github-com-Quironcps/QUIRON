@@ -1,17 +1,6 @@
-
-
 .div-mae{
     width: 80vw;
     height: 70vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.div-pai{
-    width: 80vw;
     margin-left: 10vw;
     margin-right: 10vw;
     display: flex;
@@ -29,7 +18,7 @@
     border-radius: 20px;
     text-align: center;
     width: 30%;
-    background-color: rgb(242, 239, 251, 61%)
+    background-color: rgb(242, 239, 251, 61%);
 }
 
 .div-alterar-img h3{
@@ -85,6 +74,7 @@
     width: 26%;
     line-height: 10vh;
 }
+
 .input-sozinho{
     width: 74%;
 }
@@ -98,12 +88,12 @@
     width: 78%;
 }
 
-
 /* Endereco e Nº */
 .form-endereco{
     width: 14%;
     line-height: 10vh;
 }
+
 .input-endereco{
     width: 60%;
 }
@@ -112,6 +102,7 @@
     width: 10%;
     padding-left: 5%;
 }
+
 .input-num{
     width: 15%;
 }
@@ -121,6 +112,7 @@
     width: 10%;
     line-height: 10vh;
 }
+
 .input-bairro{
     width: 50%;
 }
@@ -133,7 +125,6 @@
 .input-cep{
     width: 29%;
 }
-
 
 /* Telefone e E-mail */
 .form-tel{
@@ -158,48 +149,6 @@
     width: 15vw;
 }
 
-/* Outra tela */
-
-#input-text-alterar2{
-    font-size: 16px;
-    font-weight: 590;
-    margin-top: 10px;
-    background-color: rgb(242, 239, 251, 61%);
-    border: 0;
-    border-radius: 5px;
-    padding: 1px 10px;
-    align-content: space-between;
-}
-
-.form-cursos{
-    width: 10%;    
-}
-
-.input-cursos{
-    width: 100%;
-    min-height: 80px;
-}
-
-.form-sobre{
-    width: 10%;
-    margin-top: 20px;
-}
-
-.input-sobre{
-    width: 100%;
-    min-height: 120px;
-}
-
-.form-equipe{
-    width: 10%;
-    margin-top: 20px;
-}
-
-.input-equipe{
-    width: 100%;
-    min-height: 120px;
-}
-
 /* SENHA */
 
 .form-senha{
@@ -210,42 +159,10 @@
     width: 50%;
 }
 
-.img-div-alterar-01{
-    height: 65px;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.4s;
-    opacity: 100%;
-}
-
-.img-div-alterar-01:hover{
-    opacity: 40%;
-}
-
-.sub-div-alterar-img2{
-    border-radius: 20px;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    background-color: white;
-    width: 85%;
-    height: 70%;
-    padding-bottom: 0;
-    align-content: space-between;
-    padding-top: 20px;
-}
-
-
 #input-text-alterar:hover, #input-text-alterar:focus{
     outline: none;
     border: 1px solid rgb(97, 49, 235, 70%);
 }
-
-#input-text-alterar2:hover, #input-text-alterar2:focus{
-    outline: none;
-    border: 1px solid rgb(97, 49, 235, 70%);
-}
-
 
 #submit-text-alterar{
     width: 110px;
@@ -275,7 +192,6 @@
     font-size: 80px;
     color: #6131EB;
     opacity: 50%;
-
 }
 
 @media screen and (max-width: 1255px) {
@@ -325,7 +241,6 @@
         flex: 1;
         line-height: 60px;
         margin-top: 1%;
-
     }
 
     .abc001{
@@ -375,7 +290,7 @@
         line-height: normal;
         text-align: center;
     }
-
+    
     .div-alterar-img h3{
         font-size: 15px;
         font-weight: 590;
