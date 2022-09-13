@@ -10,6 +10,15 @@
     margin-bottom: 30px;
 }
 
+.div-pai{
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .h1002{
     margin-top: 15px;
     color: #8C8398;
@@ -149,6 +158,48 @@
     width: 15vw;
 }
 
+/* Outra tela */
+
+#input-text-alterar2{
+    font-size: 16px;
+    font-weight: 590;
+    margin-top: 10px;
+    background-color: rgb(242, 239, 251, 61%);
+    border: 0;
+    border-radius: 5px;
+    padding: 1px 10px;
+    align-content: space-between;
+}
+
+.form-cursos{
+    width: 10%;    
+}
+
+.input-cursos{
+    width: 100%;
+    min-height: 80px;
+}
+
+.form-sobre{
+    width: 10%;
+    margin-top: 20px;
+}
+
+.input-sobre{
+    width: 100%;
+    min-height: 120px;
+}
+
+.form-equipe{
+    width: 10%;
+    margin-top: 20px;
+}
+
+.input-equipe{
+    width: 100%;
+    min-height: 120px;
+}
+
 /* SENHA */
 
 .form-senha{
@@ -159,10 +210,42 @@
     width: 50%;
 }
 
+.img-div-alterar-01{
+    height: 65px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.4s;
+    opacity: 100%;
+}
+
+.img-div-alterar-01:hover{
+    opacity: 40%;
+}
+
+.sub-div-alterar-img2{
+    border-radius: 20px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    background-color: white;
+    width: 85%;
+    height: 70%;
+    padding-bottom: 0;
+    align-content: space-between;
+    padding-top: 20px;
+}
+
+
 #input-text-alterar:hover, #input-text-alterar:focus{
     outline: none;
     border: 1px solid rgb(97, 49, 235, 70%);
 }
+
+#input-text-alterar2:hover, #input-text-alterar2:focus{
+    outline: none;
+    border: 1px solid rgb(97, 49, 235, 70%);
+}
+
 
 #submit-text-alterar{
     width: 110px;
