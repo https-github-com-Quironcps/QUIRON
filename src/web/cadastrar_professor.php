@@ -7,8 +7,8 @@
     <title>QUIRON</title>
 
 
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/anunciar_vaga.css">
+    <link rel="stylesheet" href="styles/styles_l/style.css">
+    <link rel="stylesheet" href="styles/styles_l/anunciar_vaga.css">
 
 
 </head>
@@ -48,7 +48,7 @@
                     <input class='input-textarea' type="password"> <br><br>
 
                     <input type="submit" class='botao-001' value="Cadastrar">
-                        
+                        <br><br><br>
 
                 </form>
             </div>
