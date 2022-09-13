@@ -1,6 +1,6 @@
 .filtros{
     margin-top: 15vh;
-    margin-right: 86px;
+    margin-right: 120px;
     display: flex;
     justify-content: flex-end;
 }
@@ -40,7 +40,7 @@
     border-radius: 10px;
     border-style: none;
     background-color: rgba(96, 49, 235, 0.453);
-    margin-bottom: -10px;
+    margin-bottom: -9px;
 }
 
 .botao-001:hover{
@@ -52,8 +52,9 @@
 
 .conteudo{
     background-color: #F2EFFB;
-    width: 190vh;
-    height: 130vh; 
+    width: 172.5vh;
+    height: 70vh; 
+    margin-top: 5vh;
     margin-bottom: 10vh;
     border-radius: 12px;
     overflow-y: scroll;
@@ -62,19 +63,54 @@
 .titulo1{
     width: 294px;
     height: 52px;
-    padding-left: 12vh;
-    padding-top: 1vh;
+    padding-left: 17vh;
+    padding-top: -1vh;
 
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 22px;
     line-height: 52px;
     /* identical to box height */
 
-    display: flex;
+    display: inline;
     align-items: center;
 
     color: #8C8398;
+}
+
+.table1{
+    display: inline;
+    background-color: rgb(255, 255, 255);
+    width: 49vh;
+    height: 15vh;
+    margin: 4vh;
+    float: left;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 4vh;
+    padding-top: 1.5vh;
+}
+
+.table1:hover{
+    background-color: rgba(168, 149, 225, 0.349);
+    transition: all 1s;
+    color: #F2EFFB;
+}
+
+.foto-perfil{
+    display: inline;
+    width: 12vh;
+    height: 12vh;
+    border-radius: 5px;
+    margin-left: 1.5vh;
+    background-color: #7e57c2;
+}
+
+marquee{
+    margin-top: 2vh;
+    margin-left: 2vh;
+    width: 31vh;
+    color: #7E7E7E;
 }
 
