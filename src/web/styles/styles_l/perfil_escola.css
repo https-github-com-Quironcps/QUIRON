@@ -1,0 +1,231 @@
+.div-pai{
+    width: 100vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.h1002{
+    margin-top: 15px;
+    color: #8C8398;
+    font-size: 25px;
+}
+
+.fotos{
+    flex: 1;
+    padding: 50px 2px;
+}
+
+.div-imagens{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 20%;
+}
+
+.div-alterar-img{
+    border-radius: 20px;
+    text-align: center;
+    width: 70vw;
+    height: 130px;
+    background-color: rgb(242, 239, 251, 61%);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.div-alterar-img button{
+    margin-top: 30px;
+    margin-bottom: 15%;
+}
+
+.div-alterar-texto{
+    border-radius: 20px;
+    width: 70%;
+    padding: 8vh 20px;
+    border: 1px solid rgb(97, 49, 235, 70%);
+    font-size: 17px;
+    font-weight: 590;
+    height: auto;
+}
+
+#input-text-alterar{
+    font-size: 16px;
+    font-weight: 590;
+    margin-top: 20px;
+    background-color: rgb(242, 239, 251, 61%);
+    border: 0;
+    border-radius: 5px;
+    padding: 1px 10px;
+    align-content: space-between;
+}
+
+#input-text-alterar2{
+    font-size: 16px;
+    font-weight: 590;
+    margin-top: 10px;
+    background-color: rgb(242, 239, 251, 61%);
+    border: 0;
+    border-radius: 5px;
+    padding: 1px 10px;
+    align-content: space-between;
+}
+
+.form-cursos{
+    width: 10%;    
+}
+
+.input-cursos{
+    width: 100%;
+    min-height: 80px;
+}
+
+.form-sobre{
+    width: 10%;
+    margin-top: 20px;
+}
+
+.input-sobre{
+    width: 100%;
+    min-height: 120px;
+}
+
+.form-equipe{
+    width: 10%;
+    margin-top: 20px;
+}
+
+.input-equipe{
+    width: 100%;
+    min-height: 120px;
+}
+
+/* SENHA */
+
+.img-div-alterar-01{
+    height: 75px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+    transition: all 0.4s;
+    opacity: 100%;
+}
+
+.img-div-alterar-01:hover{
+    opacity: 40%;
+}
+
+
+#input-text-alterar:hover, #input-text-alterar:focus{
+    outline: none;
+    border: 1px solid rgb(97, 49, 235, 70%);
+}
+
+#input-text-alterar2:hover, #input-text-alterar2:focus{
+    outline: none;
+    border: 1px solid rgb(97, 49, 235, 70%);
+}
+
+
+#submit-text-alterar{
+    width: 80px;
+    height: 25px;
+    background-color: rgb(97, 49, 235, 61%);
+    color: white;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.img-div-alterar-01{
+    max-height: 60%;
+    cursor: pointer;
+    max-width: 145px;
+    border-radius: 10px;
+    transition: all 0.4s;
+    opacity: 100%;
+    margin-top: 10px;
+}
+
+.div-meio,
+.div-ponta,
+.div-ultimo{
+    padding: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 10px;
+    height: 90%;
+}
+
+.div-meio{
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 90%;
+    max-width: 150px;
+}
+
+.div-ponta{
+    padding: 5px;
+    background-color: white;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.div-ultimo{
+    padding: 5px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 10px;
+    height: 90%;
+}
+
+#submit-text-alterar-2{
+    width: 130px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0.623);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.submit-class{
+    float: right;
+    margin-top: 25px;
+    
+}
+
+.bi-camera{
+    font-size: 80px;
+    color: #6131EB;
+    opacity: 50%;
+}
+.abbs{
+    background-color: #6131EB;
+    width: 400px;
+    height: 100px;
+}
+
+.input-cursos,
+.input-sobre,
+.input-equipe
+{
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.form-cursos,
+.form-equipe,
+.form-sobre
+{
+    width: 90%;
+    padding-left: 0;
+    line-height: normal;
+    text-align: left;
+
+}
