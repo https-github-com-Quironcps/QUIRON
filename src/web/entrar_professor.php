@@ -8,16 +8,16 @@
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/styles_m/owl.carousel.min.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles_m/bootstrap.min.css">
     
     <!-- Style -->
-    <link rel="stylesheet" href="styles/entrar_escola.css">
+    <link rel="stylesheet" href="styles/styles_m/entrar_escola.css">
 
     <!-- Navbar Css  -->
-    <link rel="stylesheet" href="styles/navbar-index.css">
+    <link rel="stylesheet" href="styles/styles_m/navbar-index.css">
 
     <title>QUIRON</title>
   </head>
@@ -35,6 +35,7 @@
           <div class="row justify-content-center">
             <div class="col-md-8">
               <div class="mb-4">
+                <br>
               <h3>QUÍRON</h3>
               <p class="mb-4">Sua próxima vaga de emprego na palma da sua mão.</p>
             </div>
@@ -55,8 +56,8 @@
                   <input type="checkbox" checked="checked"/>
                   <div class="control__indicator"></div>
                 </label>
-                <span class="ml-auto"><a href="#" class="forgot-pass">Esqueceu a senha?</a></span> <br>
-                <span class="ml-auto"><a href="#" class="forgot-pass">Criar Conta</a></span>
+                <span class="ml-auto"><a href="esqueci_senha.php" class="forgot-pass">Esqueceu a senha?</a></span> <br>
+                <span class="ml-auto"><a href="cadastrar_professor.php" class="forgot-pass">Criar Conta</a></span>
               </div>
 
               <input type="submit" value="Entrar" class="btn btn-block btn-primary">
@@ -79,7 +80,7 @@
   
     <script src="scripts/jquery_login.min.js"></script>
     <script src="scripts/popper_login.min.js"></script>
-    <script src="js/bootstrap_login.min.js"></script>
-    <script src="js/main_login.js"></script>
+    <script src="scripts/bootstrap_login.min.js"></script>
+    <script src="scripts/main_login.js"></script>
   </body>
 </html>

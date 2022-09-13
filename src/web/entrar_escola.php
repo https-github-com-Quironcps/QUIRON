@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="styles/styles_m/fonts.css">
 
-    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/styles_m/owl.carousel.min.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles_m/bootstrap.min.css">
     
     <!-- Style -->
-    <link rel="stylesheet" href="styles/entrar_escola.css">
+    <link rel="stylesheet" href="styles/styles_m/entrar_escola.css">
 
     <!-- Navbar Css  -->
     <link rel="stylesheet" href="styles/navbar-index.css">
@@ -35,6 +35,7 @@
           <div class="row justify-content-center">
             <div class="col-md-8">
               <div class="mb-4">
+                <br>
               <h3>QUÍRON</h3>
               <p class="mb-4">Sua próxima vaga de emprego na palma de sua mão.</p>
             </div>
@@ -79,7 +80,7 @@
   
     <script src="scripts/jquery_login.min.js"></script>
     <script src="scripts/popper_login.min.js"></script>
-    <script src="js/bootstrap_login.min.js"></script>
-    <script src="js/main_login.js"></script>
+    <script src="scripts/bootstrap_login.min.js"></script>
+    <script src="scripts/main_login.js"></script>
   </body>
 </html>
