@@ -33,15 +33,6 @@
 
         <center>
         <div class="conteudo">
-            <!-- <div class="etec1">
-                <img class= "foto-perfil" src="images/etec1.jpg">
-
-                <marquee behavior="scroll" direction="right">
-                    <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
-                </marquee>
-
-            </div> -->
-
             <!-- primeira linha -->
             <table class="table1">
                 <tr>
