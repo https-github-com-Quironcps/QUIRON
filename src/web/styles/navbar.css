@@ -109,14 +109,14 @@ nav .fa-bars:hover{
 }
 
 .slide{
-    height: 300px;
+    height: auto;
     width: 240px;
     position: absolute;
     background-color: #F2EFFB;
     transition: 0.5s ease;
     border-radius: 5px;
     right: 195px;
-    
+    padding-bottom: 5px;
     transform: translateX(200vw);
 }
 
@@ -274,6 +274,10 @@ transform: translateX(100px);
         opacity: 0.6;
     }
 
+    .ul1 li a{
+        padding-top: 35px;
+    }
+
     .logo{
         width: 150px;
         margin-left: 30px;
@@ -296,6 +300,10 @@ transform: translateX(100px);
     .toggle{
         right: 30px;
     }
+}
 
-    
+@media screen and (max-width: 450px) {
+    .slide{
+        margin-top: 50px;
+    }
 }

@@ -42,7 +42,8 @@
                 
                 <div class="slide">
                     <ul class="ul1">
-                        <li><a class="hover-lis" href="#">Vagas</a></li>
+                        <li><a class="hover-lis" href="vagas.php">Vagas</a></li>
+                        <li><a class="hover-lis" href="escolas.php">Escolas</a></li>
                         <li><a class="hover-lis"  href="#">Interesses</a></li>
                         <li><a class="hover-lis"  href="sobre.php">Sobre</a></li>
 
@@ -58,7 +59,8 @@
                 <a href="index.php"><img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
                 <div class="container-inner">
                     <ul class="ul2">
-                        <li><a href="#">Vagas</a></li>
+                        <li><a href="vagas.php">Vagas</a></li>
+                        <li><a href="escolas.php">Escolas</a></li>
                         <li><a href="#">Interesses</a></li>
                         <li><a href="sobre.php">Sobre</a></li>
                     </ul>
