@@ -44,7 +44,7 @@
                     <ul class="ul1">
                         <li><a class="hover-lis" href="vagas.php">Vagas</a></li>
                         <li><a class="hover-lis" href="escolas.php">Escolas</a></li>
-                        <li><a class="hover-lis"  href="#">Interesses</a></li>
+                        <li><a class="hover-lis"  href="minhas_vagas.php">Minhas vagas</a></li>
                         <li><a class="hover-lis"  href="sobre.php">Sobre</a></li>
 
                         <li><a href="perfil_escola.php"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
@@ -61,7 +61,7 @@
                     <ul class="ul2">
                         <li><a href="vagas.php">Vagas</a></li>
                         <li><a href="escolas.php">Escolas</a></li>
-                        <li><a href="#">Interesses</a></li>
+                        <li><a href="minhas_vagas.php">Minhas vagas</a></li>
                         <li><a href="sobre.php">Sobre</a></li>
                     </ul>
                 </div>
