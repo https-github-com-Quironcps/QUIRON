@@ -1,0 +1,62 @@
+body{
+    background-color: darkgray;
+    font-family: 'Raleway';
+}
+
+.everybody{
+    background-color: #ffff;
+    opacity: 61%;
+    width: 150vh;
+    height: 80vh;
+    border-radius: 20px;
+    margin-top: 10vh;
+}
+
+.divlateral{
+    background-color: #F2EFFB;
+    width: 40vh;
+    height: 70vh;
+    border-radius: 20px;
+    margin-top: 2.5vh;
+    margin-right: 100vh;
+}
+
+.img_etec{
+    width: 180px;
+    height: 110px;
+    border-radius: 10px;
+    margin-top: 5vh;
+}
+
+.title01{
+    color: #6131eb;
+    opacity: 70%;
+    font-weight: 900;
+}
+
+.linha{
+    background-color: #D9D9D9;
+    width: 33vh;
+    height: 1px;
+}
+
+#locate{
+    margin-left: -29vh;
+    color: #6131eb;
+    width: 21px;
+    height: 21px;
+    display: block;
+    padding: 2vh;
+}
+
+#locate:hover{
+    transition: all 2s;
+    color: #D9D9D9;
+    padding-right: 1vh;
+}
+
+.icons{
+    display: inline;
+}
+
+
