@@ -64,7 +64,7 @@
         <center>
             <table class="table1">
                 <tr>
-                    <td class="td1"><img class= "foto-perfil" src="#"></td>
+                    <td class="td1"><img class= "foto-perfil" src=""></td>
 
                     <td>
                         <h6 class="nome_materia">Nome da matéria</h6>

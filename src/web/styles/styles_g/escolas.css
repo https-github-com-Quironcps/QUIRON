@@ -79,7 +79,7 @@
     color: #8C8398;
 }
 
-.table1{
+.table{
     display: inline;
     background-color: rgb(255, 255, 255);
     width: 49vh;
@@ -92,10 +92,14 @@
     padding-top: 1.5vh;
 }
 
-.table1:hover{
+.table:hover{
     background-color: rgba(168, 149, 225, 0.349);
     transition: all 1s;
     color: #F2EFFB;
+}
+
+tr{
+    padding: 10vh;
 }
 
 .foto-perfil{

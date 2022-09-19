@@ -43,11 +43,7 @@
                             <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
                         </marquee>
                     </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
+           
                     <td class="td1"><img class= "foto-perfil" src="images/etec2.jpg"></td>
 
                     <td>
@@ -55,11 +51,7 @@
                             <h6>Etec Santa Ifigênia</h6>
                         </marquee>
                     </td>
-                </tr>
-            </table>
 
-            <table class="table1">
-                <tr>
                     <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
 
                     <td>
@@ -68,13 +60,11 @@
                         </marquee>
                     </td>
                 </tr>
-            </table>
 
             <!-- fim da primeira linha -->
 
             <!-- segunda linha -->
 
-            <table class="table1">
                 <tr>
                     <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
 
@@ -83,11 +73,7 @@
                             <h6>Etec Albert Ainstein</h6>
                         </marquee>
                     </td>
-                </tr>
-            </table>
 
-            <table class="table1">
-                <tr>
                     <td class="td1"><img class= "foto-perfil" src="images/etec2.jpg"></td>
 
                     <td>
@@ -95,11 +81,7 @@
                             <h6>Etec Professor Camargo Aranha</h6>
                         </marquee>
                     </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
+            
                     <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
 
                     <td>
@@ -108,13 +90,11 @@
                         </marquee>
                     </td>
                 </tr>
-            </table>
 
             <!-- fim da segunda linha -->
 
             <!-- terceira linha -->
 
-            <table class="table1">
                 <tr>
                     <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
 
@@ -123,11 +103,7 @@
                             <h6>Etec Carolina Carinhato Sampaio</h6>
                         </marquee>
                     </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
+    
                     <td class="td1"><img class= "foto-perfil" src="images/etec2.jpg"></td>
 
                     <td>
@@ -135,11 +111,7 @@
                             <h6>Etec Adolpho Berezin </h6>
                         </marquee>
                     </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
+        
                     <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
 
                     <td>
@@ -148,13 +120,11 @@
                         </marquee>
                     </td>
                 </tr>
-            </table>
 
             <!-- fim da terceira linha -->
 
             <!-- quarta linha -->
 
-            <table class="table1">
                 <tr>
                     <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
 
@@ -163,11 +133,7 @@
                             <h6>Etec Carolina Carinhato Sampaio</h6>
                         </marquee>
                     </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
+               
                     <td class="td1"><img class= "foto-perfil" src="images/etec2.jpg"></td>
 
                     <td>
@@ -175,11 +141,7 @@
                             <h6>Etec Adolpho Berezin </h6>
                         </marquee>
                     </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
+            
                     <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
 
                     <td>
@@ -188,13 +150,11 @@
                         </marquee>
                     </td>
                 </tr>
-            </table>
 
             <!-- fim da quarta linha -->
 
             <!-- quinta linha -->
 
-            <table class="table1">
                 <tr>
                     <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
 
@@ -203,11 +163,7 @@
                             <h6>Etec Carolina Carinhato Sampaio</h6>
                         </marquee>
                     </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
+            
                     <td class="td1"><img class= "foto-perfil" src="images/etec2.jpg"></td>
 
                     <td>
@@ -215,11 +171,7 @@
                             <h6>Etec Adolpho Berezin </h6>
                         </marquee>
                     </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
+            
                     <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
 
                     <td>
@@ -228,6 +180,7 @@
                         </marquee>
                     </td>
                 </tr>
+
             </table>
 
             <!-- fim da quinta linha -->
