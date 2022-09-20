@@ -66,7 +66,7 @@
 
 .div-filtros{
     background-color: #F2EFFB;
-    width: 25%;
+    width: 300px;
     height: 420px; 
     margin-top: 5vh;
     margin-bottom: 10vh;
@@ -186,8 +186,30 @@ input[type=text] {
     color: #7E7E7E;
 }
 
+.gaby{
+    width: 200px;
+    text-align: center;
+    align-content: center;
+    background-color: #7e57c2;
+    color: white;
+    opacity: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: none;
+ }
+
+.abo11{
+    background-color: #7e57c2;
+    width: 80px;
+    height: 100px;
+    display: none;
+}
+
 @media screen and (max-width: 1200px) {
  .conteudo{
+    margin-left: 15%;
+    margin-right: 15%;
     background-color: #8C8398;
  }
 
@@ -196,8 +218,33 @@ input[type=text] {
  }
 
  .div-filtros{
-    display: ;
-
     position: absolute;
+    transform: translateX(-200vw);
+ }
+
+ input.abo11:checked ~ .div-filtros{
+    transform: translateX(0);
+    padding: 80px 20%;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 10px;
+    height: auto;
+    margin-right: 10%;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #7E7E7E;
+ }
+
+ input.abo11:checked ~ .gaby{
+    opacity: 60%;
+ }
+
+ .gaby{
+   display: block;
+ }
+
+ input.abo11:checked{
+    
  }
 }
