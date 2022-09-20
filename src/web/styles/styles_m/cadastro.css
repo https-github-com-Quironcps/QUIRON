@@ -45,3 +45,13 @@
 
 
 }
+.linhaMeio{
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    min-height: 400px;
+    width: 3px;
+    background-color: #6131eb;
+    opacity: 50%;
+}
