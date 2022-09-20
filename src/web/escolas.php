@@ -54,7 +54,7 @@
 
                     <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
 
-                    <td>
+                    <td class="td1">
                         <marquee behavior="slide" direction="left">
                             <h6>Etec Paulistano</h6>
                         </marquee>
