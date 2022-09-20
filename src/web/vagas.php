@@ -19,13 +19,17 @@
 
     <?php include('partials/header.php') ?>
     <br>
+
+    <div class="filtros1">
+        <a href="">Filtros</a>
+    </div>
     <div class="filtros">
             <form action="" class="form" method="POST">
                 <label class="label" for="name">Código da instituição: </label>
                 <input class='input-textarea' type="text" maxlength="3" placeholder="Digite aqui">
                 <input type="submit" class='botao-001' value="">
             </form>
-        </div>
+    </div>
     <div>
 
         <div class="div-total">
@@ -65,6 +69,66 @@
             <table class="table1">
                 <tr>
                     <td class="td1"><img class= "foto-perfil" src=""></td>
+
+                    <td>
+                        <h6 class="nome_materia">Nome da matéria</h6>
+
+                        <h6 class="escola">Nome da escola</h6>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="table1">
+                <tr>
+                    <td class="td1"><img class= "foto-perfil" src="#"></td>
+
+                    <td>
+                        <h6 class="nome_materia">Nome da matéria</h6>
+
+                        <h6 class="escola">Nome da escola</h6>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="table1">
+                <tr>
+                    <td class="td1"><img class= "foto-perfil" src="#"></td>
+
+                    <td>
+                        <h6 class="nome_materia">Nome da matéria</h6>
+
+                        <h6 class="escola">Nome da escola</h6>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="table1">
+                <tr>
+                    <td class="td1"><img class= "foto-perfil" src="#"></td>
+
+                    <td>
+                        <h6 class="nome_materia">Nome da matéria</h6>
+
+                        <h6 class="escola">Nome da escola</h6>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="table1">
+                <tr>
+                    <td class="td1"><img class= "foto-perfil" src="#"></td>
+
+                    <td>
+                        <h6 class="nome_materia">Nome da matéria</h6>
+
+                        <h6 class="escola">Nome da escola</h6>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="table1">
+                <tr>
+                    <td class="td1"><img class= "foto-perfil" src="#"></td>
 
                     <td>
                         <h6 class="nome_materia">Nome da matéria</h6>

@@ -173,7 +173,6 @@ h2 {
 
 .control__indicator:after {
   font-family: 'icomoon';
-  content: '\e5ca';
   position: absolute;
   display: none;
   font-size: 16px;
@@ -191,7 +190,9 @@ h2 {
   margin-top: -1px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%); 
+  border: #7e57c2;
+}
 
 .control--checkbox input:disabled ~ .control__indicator:after {
   border-color: #7b7b7b; }

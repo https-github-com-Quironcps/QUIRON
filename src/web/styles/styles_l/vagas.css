@@ -5,6 +5,10 @@
     justify-content: flex-end;
 }
 
+.filtros1{
+    margin-top: 13vh;
+    position: absolute;
+}
 .label{
     display: inline;
     width: 286px;
@@ -164,8 +168,7 @@
 .nome_materia{
     margin-top: 1vh;
     margin-left: 2vh;
-    color: #6131EB;
-    opacity: 60%;
+    color: rgb(97, 49, 235, 0.6);
     font-size: 17px;
 }
 
@@ -181,4 +184,20 @@ input[type=text] {
     padding-left: 10px;
     font-size: 14px;
     color: #7E7E7E;
+}
+
+@media screen and (max-width: 1200px) {
+ .conteudo{
+    background-color: #8C8398;
+ }
+
+ .div-total{
+    display: contents;
+ }
+
+ .div-filtros{
+    display: ;
+
+    position: absolute;
+ }
 }

@@ -13,7 +13,7 @@
 
 <br><br><br><br>
 
-    <center><h1 class="h1002">Editar Perfil</h1></center>
+    <center><h1 class="h1002">Crie o seu perfil</h1></center>
 
     <div class="div-pai">
 
