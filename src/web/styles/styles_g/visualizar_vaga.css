@@ -5,7 +5,7 @@ body{
 
 .everybody{
     background-color: #ffff;
-    opacity: 61%;
+   
     width: 150vh;
     height: 80vh;
     border-radius: 20px;
@@ -26,6 +26,7 @@ body{
     height: 110px;
     border-radius: 10px;
     margin-top: 5vh;
+   
 }
 
 .title01{
@@ -59,4 +60,40 @@ body{
     display: inline;
 }
 
+.botão-01{
+    background-color: #7e57c2c3;
+    border-radius: 4px;
+    width: 20vh;
+    height: 6vh;
+    border-style: none;
+    color: #ebeaea;
+}
 
+.botão-01:hover{
+    transition: all 0.5s;
+    outline: none;
+    background: #7e57c2;
+}
+
+.table1{
+    cursor: pointer;
+    width: 70vh;
+    margin-left: -9vh;
+    padding-left: 12vh;
+}
+
+.title02{
+    color: #6131eb;
+    opacity: 70%;
+    font-weight: 900;
+    margin-top: -70vh;
+}
+
+.conteudo{
+    width: 90vh;
+    height: 65vh;
+    background: #F8F8F8;
+    border-radius: 17px;
+    margin-left: 50vh;
+    margin-top: -3vh;
+}
