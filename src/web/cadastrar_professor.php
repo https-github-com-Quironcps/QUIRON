@@ -56,8 +56,6 @@
                     <label for="name">Senha:</label><br>
                     <input class='input-textarea' type="password"> <br><br><br>
 
-                    <div class="linhaMeio"></div>
-                    
                     <input type="submit" class='botao-001' value="Cadastrar">
                         <br><br><br>
 

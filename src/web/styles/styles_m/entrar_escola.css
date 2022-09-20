@@ -190,7 +190,8 @@ h2 {
   margin-top: -1px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%); 
+  box-shadow: 0 0 0 3px #7e57c2;}
 
 .control--checkbox input:disabled ~ .control__indicator:after {
   border-color: #7b7b7b; }
