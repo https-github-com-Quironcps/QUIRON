@@ -1,0 +1,42 @@
+.img-escola{
+    margin-right: 10px;
+    height: 50vh;
+    background-color: black;
+    width: auto;
+    margin-top: 10vh;
+    flex: 1;
+    align-content: space-between;
+    object-fit: cover;
+    object-position: 20% 10%;
+}
+
+.img-div-alterar-01{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    opacity: 40%;
+    display: inline;
+}
+
+.titulo{
+    position: absolute;
+    color: rgb(226, 224, 227);
+    align-items: center;
+    display: inline;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 25vh;
+}
+
+.subtitulo{
+    position: absolute;
+    color: rgb(226, 224, 227);
+    align-items: center;
+    display: inline;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 35vh;
+}
