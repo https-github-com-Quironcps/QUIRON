@@ -53,7 +53,7 @@
               
               <div class="d-flex mb-5 align-items-center">
                 <label class="control control--checkbox mb-0"><span class="caption">Lembrar de mim?</span>
-                  <input type="checkbox" checked="checked"/>
+                  <input type="checkbox"/>
                   <div class="control__indicator"></div>
                 </label>
                 <span class="ml-auto"><a href="esqueci_senha.php" class="forgot-pass">Esqueceu a senha?</a></span> <br>

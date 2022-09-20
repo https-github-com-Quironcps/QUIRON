@@ -173,7 +173,6 @@ h2 {
 
 .control__indicator:after {
   font-family: 'icomoon';
-  content: '\e5ca';
   position: absolute;
   display: none;
   font-size: 16px;
@@ -198,7 +197,7 @@ h2 {
 
 .control--checkbox input:disabled:checked ~ .control__indicator {
   background-color: #7e0cf5;
-  opacity: 100%; }
+  opacity: .2; }
 
   .form input{
     width: 500px;
