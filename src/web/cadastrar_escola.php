@@ -52,7 +52,21 @@
 
                 </form>
             </div>
+            <div class="linhaMeio"></div>
 
+<center>
+<div class="div-sub-container-2">
+    <div class="ab">
+    </div>
+    <div class="ab">
+            <br>
+            <input type="submit" class='botao-001' value="Anunciar Vaga">
+        </form>
+            <br>
+        <img src="images/3.png" class="img-anunciar">
+    </div>
+    <div class="ab">
+    </div>
         </div>
     </div>
 </center>
