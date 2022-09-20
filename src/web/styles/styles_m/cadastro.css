@@ -1,5 +1,5 @@
 .submit{
-    width: 40%;
+    width: 100%;
     padding: 10px;
     background-repeat: no-repeat;
 }
@@ -17,6 +17,7 @@
     .submit, .div-sub-container {
         width: 100%;
         text-align: center;
+        align-items: center;
     }
 
     .linhaMeio{
@@ -49,6 +50,10 @@
         width: 50vw;
         max-width: 250px;
     }
-
+    .img-anunciar{
+        height: auto;
+        width: 50vw;
+        max-width: auto;
+    }
 
 }
