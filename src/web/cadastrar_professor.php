@@ -8,7 +8,7 @@
 
 
     <link rel="stylesheet" href="styles/styles_l/style.css">
-    <link rel="stylesheet" href="styles/styles_m/cadastro.css">
+    <link rel="stylesheet" href="styles/styles_l/anunciar_vaga.css">
 
 
 </head>
