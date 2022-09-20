@@ -61,6 +61,7 @@
                         <br><br><br>
 
                 </form>
+                <div class="linhaMeio"></div>
             </div>
 </center>
         </div>
