@@ -173,6 +173,7 @@ h2 {
 
 .control__indicator:after {
   font-family: 'icomoon';
+  content: icon;
   position: absolute;
   display: none;
   font-size: 16px;
