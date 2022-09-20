@@ -33,7 +33,7 @@
                     <input class='input-textarea' type="text"> <br><br>
 
                     <label for="name">Bairro:</label><br>
-                    <input class='input-textarea' type="text" <br><br><br>
+                    <input class='input-textarea' type="text"> <br><br><br>
 
                     <label for="name">CEP:</label> <br>
                     <input class='input-textarea' type="text"> <br><br>
