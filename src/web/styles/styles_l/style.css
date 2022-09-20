@@ -31,7 +31,7 @@
     border-radius: 10px;
     border: 0;
     font-size: 15px;
-    transition: all 1s;
+    transition: all 0.1s;
     background-color: rgb(242, 239, 251, 61%);
 }
 
@@ -46,7 +46,7 @@
 .form textarea:focus {
   outline: none;
   border-color: #7e57c2;
-  box-shadow: 0 0 0 3px #7e57c2;
+  box-shadow: 0 0 0 1px #7e57c2;
 }
 
 /* Title */
