@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+     <!-- links para os ícones -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
     <!-- link CSS -->
     <link rel="stylesheet" href="../web/styles/styles_g/visualizar_escola.css">
     <title>PERFIL ESCOLA</title>
@@ -72,7 +77,7 @@
     <center>
         <div class="div-info-escola">
 
-        <h3 class="titulo-vagas">Sobre</h4>
+        <h3 class="titulo-info">Sobre</h4>
 
         <center>
         <p class="p-div">
@@ -83,6 +88,37 @@
 
         </div>
     </center>
+
+    <!-- div com as imagens da escola (canto esquerdo) -->
+
+    <div class="imagens">
+
+    </div>
+
+    <!-- div com informações telefone, endereço e email -->
+
+    <section class="div-icones">
+        <div class="icones">
+            <a href=""><i class="bi bi-envelope"></i></a>
+            <a href=""><i class="bi bi-map"></i></a>
+            <a href=""><i class="bi bi-telephone"></i></a>
+        </div>
+
+        <ul class="lista">
+            <li>
+                <a href="">e187dir@cps.sp.gov.br</a>
+            </li>
+            <li>
+                <a href="">R. Fernão Dias Falcão, 196 - Centro, Santana de Parnaíba - SP, 06501-120</a>
+            </li>
+            <li>
+                <a href="">(11) 4154-7185 / 7142</a>
+            </li>
+        </ul>
+
+    </section>
+
+    <?php include('partials/footer.php'); ?>
 
 </body>
 </html>

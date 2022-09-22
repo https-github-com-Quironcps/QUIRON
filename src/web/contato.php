@@ -16,26 +16,7 @@
 
     <!-- CSS interno -->
 
-    <style>
-
-    .formulario{
-        box-sizing: border-box;
-        position: absolute;
-        width: 37vw;
-        height: 580px;
-        left: 770px;
-        top: 150px;
-        background: rgba(242, 239, 251, 0.61);
-        border-radius: 20px;
-        transition: all 1s;
-      }
-
-      @media only screen and (max-width: 1000px){
-        .text_contact3{
-          display: none;
-        }
-      }
-    </style>
+    
 
     <!-- fim do CSS interno -->
 
