@@ -1,7 +1,8 @@
 .filtros{
-    margin-top: 15vh;
-    margin-right: 120px;
+    margin-top: 100px;
+    margin-right: 10%;
     display: flex;
+    transition: all 1s;
     justify-content: flex-end;
 }
 
@@ -52,19 +53,19 @@
 
 .conteudo{
     background-color: #F2EFFB;
-    width: 172.5vh;
-    height: 70vh; 
+    width: 80%;
+    height: 500px; 
     margin-top: 5vh;
     margin-bottom: 10vh;
     border-radius: 12px;
+    transition: all 1s;
     overflow-y: scroll;
 }
 
 .titulo1{
-    width: 294px;
+    width: auto;
     height: 52px;
-    padding-left: 17vh;
-    padding-top: -1vh;
+    text-align: center;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -79,20 +80,29 @@
     color: #8C8398;
 }
 
-.table{
-    display: inline;
-    background-color: rgb(255, 255, 255);
-    width: 49vh;
-    height: 15vh;
-    margin: 4vh;
-    float: left;
-    cursor: pointer;
-    border-radius: 8px;
-    margin-right: 4vh;
-    padding-top: 1.5vh;
+.table1{
+    width: 100%;
+    align-items: center;
+    height: 400px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.table:hover{
+.td1{
+    padding: 10px;
+    background-color: white;
+    margin: 2%;
+    display: flex;
+    cursor: pointer;
+    width: 29%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.td1:hover{
     background-color: rgba(168, 149, 225, 0.349);
     transition: all 1s;
     color: #F2EFFB;
@@ -105,6 +115,7 @@
     border-radius: 5px;
     margin-left: 1.5vh;
     background-color: #7e57c2;
+    transition: all 1s;
 }
 
 marquee{
@@ -119,4 +130,35 @@ input[type=text] {
     padding-left: 10px;
     font-size: 14px;
     color: #7E7E7E;
+}
+
+@media screen and (max-width: 1300px) {
+    .conteudo{
+        width: 90%;
+    }
+
+    .table1 tr{
+        display: contents;
+    }
+
+    .td1{
+        width: auto
+    }
+
+    .foto-perfil{
+        width: 70px;
+        height: 70px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    marquee h6{
+        font-size: 13px;
+    }
+
+    .td1{
+        width: 70%
+    }
+
 }

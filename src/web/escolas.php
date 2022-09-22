@@ -22,166 +22,98 @@
     <div>
         <div class="filtros">
             <form action="" class="form" method="POST">
-                <label class="label" for="name">Código da instituição: </label>
-                <input class='input-textarea' type="text" maxlength="3" placeholder="Digite aqui">
+                <input class='input-textarea' type="text" maxlength="3" placeholder="Código da instituição">
                 <input type="submit" class='botao-001' value="">
             </form>
         </div>
-        <br><br>
-        <h1 class="titulo1">Escolas disponíveis:</h1>
+        <br>
+        <center><h1 class="titulo1">Escolas disponíveis:</h1></center>
+        
         <br>
 
         <center>
         <div class="conteudo">
             <!-- primeira linha -->
-            <table class="table1">
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
-
-                    <td>
+            <div class="table1">
+                
+                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
                         <marquee behavior="slide" direction="left">
                             <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
                         </marquee>
-                    </td>
-           
-                    <td class="td1"><img class= "foto-perfil" src="images/etec2.jpg"></td>
+                    </div>
+                
 
-                    <td>
+                
+                    <div class="td1"><img class= "foto-perfil" src="images/etec2.jpg">
                         <marquee behavior="slide" direction="left">
                             <h6>Etec Santa Ifigênia</h6>
                         </marquee>
-                    </td>
-
-                    <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
-
-                    <td class="td1">
+                    </div>
+                
+                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
                         <marquee behavior="slide" direction="left">
                             <h6>Etec Paulistano</h6>
                         </marquee>
-                    </td>
-                </tr>
-
-            <!-- fim da primeira linha -->
-
-            <!-- segunda linha -->
-
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
-
-                    <td>
+                    </div>
+                
+                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
                         <marquee behavior="slide" direction="left">
-                            <h6>Etec Albert Ainstein</h6>
+                            <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
                         </marquee>
-                    </td>
+                    </div>
+                
 
-                    <td class="td1"><img class= "foto-perfil" src="images/etec2.jpg"></td>
-
-                    <td>
+                
+                    <div class="td1"><img class= "foto-perfil" src="images/etec2.jpg">
                         <marquee behavior="slide" direction="left">
-                            <h6>Etec Professor Camargo Aranha</h6>
+                            <h6>Etec Santa Ifigênia</h6>
                         </marquee>
-                    </td>
-            
-                    <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
-
-                    <td>
+                    </div>
+                
+                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
                         <marquee behavior="slide" direction="left">
-                            <h6>Etec Angêlo Cavalheiro</h6>
+                            <h6>Etec Paulistano</h6>
                         </marquee>
-                    </td>
-                </tr>
-
-            <!-- fim da segunda linha -->
-
-            <!-- terceira linha -->
-
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
-
-                    <td>
+                    </div>
+                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
                         <marquee behavior="slide" direction="left">
-                            <h6>Etec Carolina Carinhato Sampaio</h6>
+                            <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
                         </marquee>
-                    </td>
-    
-                    <td class="td1"><img class= "foto-perfil" src="images/etec2.jpg"></td>
+                    </div>
+                
 
-                    <td>
+                
+                    <div class="td1"><img class= "foto-perfil" src="images/etec2.jpg">
                         <marquee behavior="slide" direction="left">
-                            <h6>Etec Adolpho Berezin </h6>
+                            <h6>Etec Santa Ifigênia</h6>
                         </marquee>
-                    </td>
-        
-                    <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
-
-                    <td>
-                        <marquee behavior="slide" SCROLLAMOUNT=-6 direction="left">
-                            <h6>Etec Antonio Devisate</h6>
-                        </marquee>
-                    </td>
-                </tr>
-
-            <!-- fim da terceira linha -->
-
-            <!-- quarta linha -->
-
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
-
-                    <td>
+                    </div>
+                
+                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
                         <marquee behavior="slide" direction="left">
-                            <h6>Etec Carolina Carinhato Sampaio</h6>
+                            <h6>Etec Paulistano</h6>
                         </marquee>
-                    </td>
-               
-                    <td class="td1"><img class= "foto-perfil" src="images/etec2.jpg"></td>
-
-                    <td>
+                    </div>
+                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
                         <marquee behavior="slide" direction="left">
-                            <h6>Etec Adolpho Berezin </h6>
+                            <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
                         </marquee>
-                    </td>
-            
-                    <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
+                    </div>
+                
 
-                    <td>
-                        <marquee behavior="slide" SCROLLAMOUNT=-6 direction="left">
-                            <h6>Etec Antonio Devisate</h6>
-                        </marquee>
-                    </td>
-                </tr>
-
-            <!-- fim da quarta linha -->
-
-            <!-- quinta linha -->
-
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
-
-                    <td>
+                
+                    <div class="td1"><img class= "foto-perfil" src="images/etec2.jpg">
                         <marquee behavior="slide" direction="left">
-                            <h6>Etec Carolina Carinhato Sampaio</h6>
+                            <h6>Etec Santa Ifigênia</h6>
                         </marquee>
-                    </td>
-            
-                    <td class="td1"><img class= "foto-perfil" src="images/etec2.jpg"></td>
-
-                    <td>
+                    </div>
+                
+                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
                         <marquee behavior="slide" direction="left">
-                            <h6>Etec Adolpho Berezin </h6>
+                            <h6>Etec Paulistano</h6>
                         </marquee>
-                    </td>
-            
-                    <td class="td1"><img class= "foto-perfil" src="images/etec1.jpg"></td>
-
-                    <td>
-                        <marquee behavior="slide" SCROLLAMOUNT=-6 direction="left">
-                            <h6>Etec Antonio Devisate</h6>
-                        </marquee>
-                    </td>
-                </tr>
-
-            </table>
+                    </div>
+            </div>
 
             <!-- fim da quinta linha -->
 
