@@ -262,6 +262,7 @@ transform: translateX(100px);
 }
 
 /* Responsive MENU */
+
 @media screen and (max-width: 1000px) {
     .hover-lis{
         position: relative;

@@ -40,3 +40,48 @@
     left: 0;
     top: 35vh;
 }
+
+.vagas{
+    align-items: center;
+    width: 60vh;
+    height: 80vh;
+    background-color: #f2effbd7;
+    float: right;
+    margin-right: 1.5vh;
+    border-radius: 10px;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.titulo-vagas{
+    color: #8C8398;
+    font-size: 20px;
+    line-height: 10vh;
+}
+
+.div-vaga{
+    background-color: #fff;
+    width: 50vh;
+    height: 17vh;
+    border-radius: 10px;
+    padding: 2vh;
+}
+
+.div-info-escola{
+    align-items: center;
+    width: 70vh;
+    height: 80vh;
+    margin-left: 65vh;
+    /* background-color: #f2effbd7; */
+    border-radius: 10px;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.p-div{
+    color: #8C8398;
+    white-space: pre-line;
+    width: 60vh;
+    text-align: justify;
+    font-size: 15px;
+}

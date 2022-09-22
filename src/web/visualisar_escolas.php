@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link CSS -->
+    <!-- link CSS -->
     <link rel="stylesheet" href="../web/styles/styles_g/visualizar_escola.css">
     <title>PERFIL ESCOLA</title>
 </head>
@@ -29,8 +29,60 @@
         
         </div>
     </center>
+    <br><br>
 
-    
+    <!-- div com vagas disponíveis (canto direito) -->
+
+    <div class="vagas">
+        <h3 class="titulo-vagas">Vagas disponíveis</h4><br>
+        
+        <center>
+        <div class="div-vaga">
+
+        </div>
+        </center><br>
+
+        <center>
+        <div class="div-vaga">
+
+        </div>
+        </center><br>
+
+        <center>
+        <div class="div-vaga">
+
+        </div>
+        </center><br>
+
+        <center>
+        <div class="div-vaga">
+
+        </div>
+        </center><br>
+
+        <center>
+        <div class="div-vaga">
+
+        </div>
+        </center><br>
+    </div>
+
+    <!-- div com informações sobre a escola (ao centro)-->
+
+    <center>
+        <div class="div-info-escola">
+
+        <h3 class="titulo-vagas">Sobre</h4>
+
+        <center>
+        <p class="p-div">
+        The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
+        <br>The passage experienced a surge in popularity during the.
+        </p>
+        </center>
+
+        </div>
+    </center>
 
 </body>
 </html>
