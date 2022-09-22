@@ -72,7 +72,7 @@
     <center>
         <div class="div-info-escola">
 
-        <h3 class="titulo-vagas">Sobre</h4>
+        <h3 class="titulo-info">Sobre</h4>
 
         <center>
         <p class="p-div">
@@ -83,6 +83,15 @@
 
         </div>
     </center>
+
+    <!-- div com as imagens da escola (canto esquerdo) -->
+
+    <div class="imagens">
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <?php include('partials/footer.php'); ?>
 
 </body>
 </html>

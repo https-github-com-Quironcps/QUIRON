@@ -59,6 +59,14 @@
     line-height: 10vh;
 }
 
+.titulo-info{
+    color: #8C8398;
+    font-size: 20px;
+    line-height: 10vh;
+    margin-left: 77vh;
+    width: 60vh;
+}
+
 .div-vaga{
     background-color: #fff;
     width: 50vh;
@@ -72,10 +80,11 @@
     width: 70vh;
     height: 80vh;
     margin-left: 65vh;
-    /* background-color: #f2effbd7; */
+    background-color: #f2effbd7;
     border-radius: 10px;
     text-align: center;
     overflow-y: scroll;
+    display: inline;
 }
 
 .p-div{
@@ -84,4 +93,17 @@
     width: 60vh;
     text-align: justify;
     font-size: 15px;
+}
+
+.imagens{
+    align-items: center;
+    width: 60vh;
+    height: 80vh;
+    background-color: #f2effbd7;
+    float: left;
+    margin-top: -42vh;
+    margin-left: 2.5vh;
+    border-radius: 10px;
+    text-align: center;
+    display: inline;
 }
