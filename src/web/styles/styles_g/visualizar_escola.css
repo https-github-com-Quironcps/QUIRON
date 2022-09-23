@@ -48,6 +48,7 @@
     background-color: #f2effbd7;
     float: right;
     margin-right: 1.5vh;
+    flex: 1;
     border-radius: 10px;
     text-align: center;
     overflow-y: scroll;
@@ -63,8 +64,9 @@
     color: #8C8398;
     font-size: 20px;
     line-height: 10vh;
-    margin-left: 77vh;
-    width: 60vh;
+    /* background-color: #8C8398; */
+    width: auto;
+    text-align: center;
 }
 
 .div-vaga{
@@ -79,8 +81,9 @@
     align-items: center;
     width: 70vh;
     height: 80vh;
-    margin-left: 65vh;
-    background-color: #f2effbd7;
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 10px;
     border-radius: 10px;
     text-align: center;
     overflow-y: scroll;
@@ -97,22 +100,37 @@
 
 .imagens{
     align-items: center;
-    width: 60vh;
+    width: 20%;
     height: 80vh;
-    background-color: #f2effbd7;
+    background-color: #f2effbd7;    
     float: left;
-    margin-top: -42vh;
     margin-left: 2.5vh;
+    padding: 2% 0;
+    flex: 1;
     border-radius: 10px;
+    
     text-align: center;
-    display: inline;
+    
+}
+
+.div-total{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub-imagens{
+    height: 30%;
+    margin: 2%;
+    object-fit: cover;
+    object-position: center;
+    width: 90%;
 }
 
 .div-icones{
     width: 100%;
-    height: 20vh;
+    height: auto;
     background-color: #fff;
-    margin-top: 55vh;
+    margin-top: 30px;
     padding: 20px 0;
     box-shadow: 0 0 0.5em grey;
 }
@@ -122,38 +140,92 @@
     padding-bottom: 25px;
 }
 
-.div-icones .icones a{
-    font-size: 24px;
-    color: inherit;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
-    display: inline-block;
-    text-align: center;
-    margin: 0 8px;
-    padding: 0 240px;
-    color: #6031ebdf;
-    opacity: 0.76;
+.icones{
+    display: flex;
 }
 
-.div-icones ul{
+.lista{
+    width: 95%;
+    margin: 0 2.5%;
+    display: flex;
+
+}
+
+.lista ul{
     margin-top: 0;
     padding: 0;
     list-style: none;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 0;
+    display: flex;
     text-align: center;
+    background-color: aliceblue;
+}
+
+li a .bi-envelope, 
+.bi-map, 
+.bi-telephone{
+    font-size: 24px;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    color: #6031ebdf;
+    opacity: 0.76;
 }
 
 .div-icones ul li a{
     color: inherit;
+    width: 33%;
     text-decoration: none;
     opacity: 0.8;
+    flex: 1;
     color: #9f9f9f;
 }
 
 .div-icones ul li{
     display: inline-block;
-    padding: 0 50px;
+    flex: 1;
+}
+
+@media screen and (max-width: 1240px) {
+    .div-total{
+        background-color: red;
+        display: contents;
+    }
+
+    .imagens, .div-info-escola{
+        width: 48%;
+    }
+
+    .imagens{
+        margin-right: 20px;
+    }
+
+    .p-div{
+        text-align: right;
+        width: 100%;
+        white-space: pre-line;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .vagas{
+        width: 95%;
+        margin-top: 20px;
+        margin-right: 0;
+        padding: 20px 0;
+        float: none;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    
+    }
+
+    .div-icones{
+        margin-top: 100vh;
+    }
+
+    .div-vaga{
+        width: 90vh;  
+    }
 }
