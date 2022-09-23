@@ -64,7 +64,6 @@
     color: #8C8398;
     font-size: 20px;
     line-height: 10vh;
-    /* background-color: #8C8398; */
     width: auto;
     text-align: center;
 }
@@ -93,7 +92,7 @@
 .p-div{
     color: #8C8398;
     white-space: pre-line;
-    width: 60vh;
+    width: 90%;
     text-align: justify;
     font-size: 15px;
 }
@@ -108,9 +107,7 @@
     padding: 2% 0;
     flex: 1;
     border-radius: 10px;
-    
     text-align: center;
-    
 }
 
 .div-total{
@@ -124,6 +121,7 @@
     object-fit: cover;
     object-position: center;
     width: 90%;
+    background-repeat: no-repeat;
 }
 
 .div-icones{
@@ -148,19 +146,10 @@
     width: 95%;
     margin: 0 2.5%;
     display: flex;
-
 }
 
 .lista ul{
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    display: flex;
-    text-align: center;
-    background-color: aliceblue;
+    
 }
 
 li a .bi-envelope, 
@@ -188,10 +177,10 @@ li a .bi-envelope,
     flex: 1;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1300px) {
     .div-total{
-        background-color: red;
         display: contents;
+        background-color: #8C8398;
     }
 
     .imagens, .div-info-escola{
@@ -199,33 +188,96 @@ li a .bi-envelope,
     }
 
     .imagens{
-        margin-right: 20px;
+        margin-right: 1%;
     }
 
     .p-div{
         text-align: right;
-        width: 100%;
+        width: 47.5%;
+        float: right;
         white-space: pre-line;
         text-align: justify;
         padding: 20px;
+        height: 470px;
+        display: -webkit-box;
+        -webkit-line-clamp: 20;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .titulo-info{
+        line-height: 5vh;
     }
 
     .vagas{
-        width: 95%;
-        margin-top: 20px;
+        width: 90%;
+        margin-top: 10px;
         margin-right: 0;
-        padding: 20px 0;
+        padding: 20px 10px;
         float: none;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-    
-    }
-
-    .div-icones{
-        margin-top: 100vh;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .div-vaga{
-        width: 90vh;  
+        width: 100%;  
     }
+}
+
+@media screen and (max-width: 600px) {
+    .div-icones{
+        padding: 20px;
+    }
+
+    .imagens, .div-info-escola{
+        width: 90%;
+    }
+
+    .p-div{
+        width: 100%;
+    }
+
+    .sub-imagens{
+        flex: 1;
+        height: 150px;
+        object-fit: cover;
+        width: 28%;
+        object-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+
+    .imagens{
+        display: flex;
+        height: 200px;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+    .lista{
+        display: contents;
+    }
+
+    .div-icones ul li{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .titulo{
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    .subtitulo{
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .div-total{
+        width: 100%;
+        background-color: #8C8398;
+    }
+
 }
