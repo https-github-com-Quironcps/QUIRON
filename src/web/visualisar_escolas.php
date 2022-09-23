@@ -36,8 +36,35 @@
     </center>
     <br><br>
 
-    <!-- div com vagas disponíveis (canto direito) -->
+<div class="div-total">
+    <!-- div com as imagens da escola (canto esquerdo) -->
 
+    <div class="imagens">
+
+    <img class="sub-imagens" src="images/etec.jpeg" alt=""><br>
+    <img class="sub-imagens" src="images/etec.jpeg" alt=""><br>
+    <img class="sub-imagens" src="images/etec.jpeg" alt="">
+
+    </div>
+
+    <!-- div com informações sobre a escola (ao centro)-->
+
+    
+    <div class="div-info-escola">
+
+        <h3 class="titulo-info">Sobre</h4>
+
+        <center>
+        <p class="p-div">
+        The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
+        <br>The passage experienced a surge in popularity during the.
+        </p>
+        </center>
+
+    </div>
+
+    <!-- div com vagas disponíveis (canto direito) -->
+    
     <div class="vagas">
         <h3 class="titulo-vagas">Vagas disponíveis</h4><br>
         
@@ -71,54 +98,27 @@
         </div>
         </center><br>
     </div>
-
-    <!-- div com informações sobre a escola (ao centro)-->
-
-    <center>
-        <div class="div-info-escola">
-
-        <h3 class="titulo-info">Sobre</h4>
-
-        <center>
-        <p class="p-div">
-        The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
-        <br>The passage experienced a surge in popularity during the.
-        </p>
-        </center>
-
-        </div>
-    </center>
-
-    <!-- div com as imagens da escola (canto esquerdo) -->
-
-    <div class="imagens">
-
-    </div>
+</div>
 
     <!-- div com informações telefone, endereço e email -->
 
     <section class="div-icones">
-        <div class="icones">
-            <a href=""><i class="bi bi-envelope"></i></a>
-            <a href=""><i class="bi bi-map"></i></a>
-            <a href=""><i class="bi bi-telephone"></i></a>
-        </div>
-
+        <center>
         <ul class="lista">
             <li>
+                <a href=""><i class="bi bi-envelope"></i></a><br>
                 <a href="">e187dir@cps.sp.gov.br</a>
             </li>
             <li>
+                <a href=""><i class="bi bi-map"></i></a><br>
                 <a href="">R. Fernão Dias Falcão, 196 - Centro, Santana de Parnaíba - SP, 06501-120</a>
             </li>
             <li>
+                <a href=""><i class="bi bi-telephone"></i></a><br>
                 <a href="">(11) 4154-7185 / 7142</a>
             </li>
         </ul>
-
+        </center>
     </section>
-
-    <?php include('partials/footer.php'); ?>
-
 </body>
 </html>
