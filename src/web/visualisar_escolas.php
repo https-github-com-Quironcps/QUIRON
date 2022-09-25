@@ -26,8 +26,7 @@
             <h1 class="titulo">ETEC Profª Ermelinda Giannini Teixeira</h1>
 
             <h5 class="subtitulo">
-                <p>Administração, Desenvolvimento de sistemas e</p>
-                <p>Recursos Humanos</p>
+                <p>Administração, Desenvolvimento de sistemas, Recursos Humanos, Programação de Jogos e Marketing
             </h5>
 
             <div class="div-ponta"><img class="img-div-alterar-01" src="../web/images/ermelinda.jpeg"></div>
@@ -42,7 +41,7 @@
     <div class="imagens">
 
     <img class="sub-imagens" src="images/etec.jpeg" alt=""><br>
-    <img class="sub-imagens" src="images/etec.jpeg" alt=""><br>
+    <img class="sub-imagens" src="images/nav2.1.PNG" alt=""><br>
     <img class="sub-imagens" src="images/etec.jpeg" alt="">
 
     </div>
@@ -57,11 +56,14 @@
         <center>
         <p class="p-div">
         The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
+        The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
+        The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
         <br>The passage experienced a surge in popularity during the.
         </p>
         </center>
 
     </div>
+    
 
     <!-- div com vagas disponíveis (canto direito) -->
     
@@ -72,31 +74,7 @@
         <div class="div-vaga">
 
         </div>
-        </center><br>
-
-        <center>
-        <div class="div-vaga">
-
-        </div>
-        </center><br>
-
-        <center>
-        <div class="div-vaga">
-
-        </div>
-        </center><br>
-
-        <center>
-        <div class="div-vaga">
-
-        </div>
-        </center><br>
-
-        <center>
-        <div class="div-vaga">
-
-        </div>
-        </center><br>
+        </center><br>        
     </div>
 </div>
 
