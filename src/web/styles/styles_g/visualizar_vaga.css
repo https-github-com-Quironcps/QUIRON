@@ -11,34 +11,37 @@ body{
     background-color: #ffff;
     display: flex;
     flex-direction: column;
+    width: 70%;
+    height: 80%;
     align-items: center;
-
     border-radius: 20px;
 }
 
 .divlateral{
-    background-color: lightpink;
-    width: 80%;
+    background-color: #F2EFFB;
+    width: 100%;
+    height: 40%;
     border-radius: 20px;
-    margin: 4vh 4vh;
-    padding: 12px 0;
+    /* padding: 20px 0; */
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+   
 }
 
 .aside {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 0 24px;
+    background-color: aquamarine;
+    width: 80%;
 }
 
 .img_etec{
-    width: 180px;
-    height: 110px;
-    border-radius: 10px;
-    margin-top: 5vh;
-   
+    width: 40%;
+    height: 100%;
+    opacity: 70%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .title01{
@@ -47,29 +50,34 @@ body{
     font-weight: 900;
 }
 
-.linha{
-    background-color: #D9D9D9;
-    width: 100%;
-    height: 1px;
-    margin: 0 auto;
+a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #8C8398;
 }
 
-#locate{
-    color: #6131eb;
-    width: 21px;
-    height: 21px;
+#icon{
+    color: #6031ebc9;
+    font-size: 18px;
+    padding: 1vh;
     display: block;
-    padding: 2vh;
+    background-color: grey;
 }
 
-#locate:hover{
-    transition: all 2s;
-    color: #D9D9D9;
-    padding-right: 1vh;
+#icon:hover{
+    transition: all ;
+    color: #000000;
+    border-radius: 12px;
+    box-shadow: 0 0 5px #838282;
 }
 
 .icons{
-  width: 70%;
+  width: 60%;
+  display: inline;
+  justify-content: space-between;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(255, 0, 123);
 }
 
 .botão-01{
@@ -87,12 +95,6 @@ body{
     background: #7e57c2;
 }
 
-.table1{
-    cursor: pointer;
-    width: 70vh;
-    margin-left: -9vh;
-    padding-left: 12vh;
-}
 
 .title02{
     color: #6131eb;
@@ -101,8 +103,9 @@ body{
 }
 
 .conteudo{
-    width: 90vh;
+    width: 100%;
     height: 80%;
+    background: #7e57c2;
     border-radius: 17px;
 }
 
@@ -110,4 +113,15 @@ body{
     display: flex;
     justify-content: space-around;
 }
+
+@media (max-width: 980px) {
+  
+    .img_etec{
+        display: none;
+    }
+
+    .icons{
+        width: 100%;
+    }
+} 
 

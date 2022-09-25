@@ -48,10 +48,10 @@
             <form class="form-contato"action="">
 
                 <label class="text-form">Nome</label><br>
-                <input class="form-control" type="text" required></input><br>
+                <input id="form-campo" class="form-control" type="text" required></input><br>
 
                 <label class="text-form">E-mail</label><br>
-                <input class="form-control" type="text" required></input><br>
+                <input  id="form-campo" class="form-control" type="text" required></input><br>
 
                 <label class="text-form">Mensagem</label><br>
                 <textarea id="mensagem" class="form-control" type="text" required></textarea><br>
