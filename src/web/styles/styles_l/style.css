@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
-:root{
-    /* Paleta de cores da QUIRON */
-    --cor-palette-1: #2C166B;
-    --cor-palette-2: #9679ED;
-    --cor-palette-3: #6031EB;
-    --cor-palette-4: #44376B;
-    --cor-palette-5: #4B27B8;
-
-    /* Index */
-    --botao-iniciar: #6131EB;
-    --botao-iniciar-hover: #9d88da;
-}
-
 .div-container{
     display: flex;
     width: 100%;
@@ -32,7 +19,7 @@
     border: 0;
     font-size: 15px;
     transition: all 0.1s;
-    background-color: rgb(242, 239, 251, 61%);
+    background-color: var(--cor-rgb-002);
 }
 
 .form label{
@@ -45,8 +32,8 @@
 .form textarea:hover,
 .form textarea:focus {
   outline: none;
-  border-color: #7e57c2;
-  box-shadow: 0 0 0 1px #7e57c2;
+  border-color: var(--cor-001);
+  box-shadow: 0 0 0 1px var(--cor-001);
 }
 
 /* Title */
@@ -57,16 +44,16 @@
     line-height: 52px;
     align-items: center;
     margin-top: 10px;
-    color: #6131eb;
+    color: var(--cor-002);
     opacity: 60%;
 }
 
 /* Botão */
 .botao-001{
-    background-color: #7e57c2;
+    background-color: var(--cor-001);
     width: 150px;
     opacity: 0.7;
-    color: white;
+    color: var(--white);
     padding: 5px;
     border-radius: 5px;
     font-size: 15px;
@@ -85,7 +72,7 @@
     align-self: center;
     display: flex;
     margin-bottom: 10px;
-    background: white;
+    background: var(--white);
     border-radius: 20px;
     justify-content: space-between;
 }
@@ -102,7 +89,7 @@
 .container1{
     width: 70%;
     padding: 20px 60px;
-    border: 1px solid rgb(97, 49, 235, 70%);
+    border: 1px solid var(--cor-rgb-001);
     text-align: left;
     border-radius: 20px;
     margin-top: 100px;
@@ -137,12 +124,12 @@
     font-size: 20px;
     line-height: 52px;
     align-items: center;
-    color: #6131eb;
+    color: var(--cor-002);
     opacity: 60%;
 }
 
 #title2:has(+ h2) {
-    background-color: #9d88da;
+    background-color: var(--cor-003);
 }
 
 @media screen and (max-width: 1000px) {

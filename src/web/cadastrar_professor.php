@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUIRON</title>
+    <title>Cadastrar-se na QUIRON</title>
 
 
     <link rel="stylesheet" href="styles/styles_l/style.css">
-    <link rel="stylesheet" href="styles/styles_l/anunciar_vaga.css">
-
-
+    <link rel="stylesheet" href="styles/styles_m/cadastro.css">
+    <link rel="stylesheet" href="styles/theme.css">
+    
 </head>
 <body>
-   <?php include('partials/navbar-index.php'); ?>
-   <br>
-   <br>
+<?php include('partials/navbar-index.php'); ?>
+<br>
+
+
+
 <center>
     <div class="container1">
         <div class="header">
-            <h1 id="title">Comece criando a sua conta na Quíron</h1>
+            <h1 id="title">Crie sua conta</h1>
         </div>
-<br>
-<br>
+
         <div class="div-container">
             <div class="div-sub-container">
-                <form class="form">
+            <form class="form">
                     <label for="name">Nome Completo:</label><br>
                     <input class='input-textarea' type="text"> <br><br>
 
@@ -58,15 +59,28 @@
 
                     <input type="submit" class='botao-001' value="Cadastrar">
                         <br><br><br>
-
-                </form>
-  
             </div>
-</center>
+
+            <div class="linhaMeio"></div>
+
+                <center>
+                <div class="div-sub-container-2">
+                    
+                    </div>
+
+                            <br>
+                        </form>
+                            
+                        <img src="images/svgs/img_login.svg" class="img-anunciar">
+
+                    <div class="ab">
+
+                    
+                </center>
+            </div>
         </div>
     </div>
-
+</center>
 <br>
-
 </body>
 </html>

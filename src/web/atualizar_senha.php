@@ -9,8 +9,8 @@
 
     <link rel="stylesheet" href="styles/styles_l/style.css">
     <link rel="stylesheet" href="styles/styles_m/cadastro.css">
-
-
+    <link rel="stylesheet" href="styles/theme.css">
+    
 </head>
 <body>
 <?php include('partials/navbar-index.php'); ?>

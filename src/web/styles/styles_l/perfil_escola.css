@@ -6,7 +6,7 @@
 
 .h1002{
     margin-top: 15px;
-    color: #8C8398;
+    color: var(--cor-004);
     font-size: 25px;
 }
 
@@ -33,7 +33,7 @@
     text-align: center;
     width: 70vw;
     height: auto;
-    background-color: rgb(242, 239, 251, 61%);
+    background-color: var(--cor-rgb-002);
     display: flex;
     padding: 10px;
     align-items: center;
@@ -44,7 +44,7 @@
 .div-ultimo{
     padding: 5px;
     margin-right: 10px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 10px;
     height: auto;
     width: auto;
@@ -63,7 +63,7 @@
     border-radius: 20px;
     width: 70%;
     padding: 8vh 20px;
-    border: 1px solid rgb(97, 49, 235, 70%);
+    border: 1px solid var(--cor-rgb-001);
     font-size: 17px;
     font-weight: 590;
     height: auto;
@@ -73,7 +73,7 @@
     font-size: 16px;
     font-weight: 590;
     margin-top: 20px;
-    background-color: rgb(242, 239, 251, 61%);
+    background-color: var(--cor-rgb-002);
     border: 0;
     border-radius: 5px;
     padding: 1px 10px;
@@ -84,7 +84,7 @@
     font-size: 16px;
     font-weight: 590;
     margin-top: 10px;
-    background-color: rgb(242, 239, 251, 61%);
+    background-color: var(--cor-rgb-002);
     border: 0;
     border-radius: 5px;
     padding: 1px 10px;
@@ -124,19 +124,19 @@
 
 #input-text-alterar:hover, #input-text-alterar:focus{
     outline: none;
-    border: 1px solid rgb(97, 49, 235, 70%);
+    border: 1px solid var(--cor-rgb-001);
 }
 
 #input-text-alterar2:hover, #input-text-alterar2:focus{
     outline: none;
-    border: 1px solid rgb(97, 49, 235, 70%);
+    border: 1px solid var(--cor-rgb-001);
 }
 
 
 #submit-text-alterar{
     width: 100px;
     height: 30px;
-    background-color: rgb(97, 49, 235, 61%);
+    background-color: var(--cor-rgb-003);
     color: white;
     margin-top: 5px;
     border-radius: 5px;
@@ -151,11 +151,11 @@
 
 .bi-camera{
     font-size: 80px;
-    color: #6131EB;
+    color: var(--cor-002);
     opacity: 50%;
 }
 .abbs{
-    background-color: #6131EB;
+    background-color: var(--cor-002);
     width: 400px;
     height: 100px;
 }

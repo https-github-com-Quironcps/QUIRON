@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/theme.css">
 
-    <title>ESCOLAS</title>
+    <title>QUIRON - ESCOLAS</title>
 </head>
 <body>
 
@@ -42,8 +43,6 @@
                         </marquee>
                     </div>
                 
-
-                
                     <div class="td1"><img class= "foto-perfil" src="images/etec2.jpg">
                         <marquee behavior="slide" direction="left">
                             <h6>Etec Santa Ifigênia</h6>
@@ -55,15 +54,13 @@
                             <h6>Etec Paulistano</h6>
                         </marquee>
                     </div>
-                
+
                     <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
                         <marquee behavior="slide" direction="left">
                             <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
                         </marquee>
                     </div>
                 
-
-                
                     <div class="td1"><img class= "foto-perfil" src="images/etec2.jpg">
                         <marquee behavior="slide" direction="left">
                             <h6>Etec Santa Ifigênia</h6>
@@ -75,14 +72,13 @@
                             <h6>Etec Paulistano</h6>
                         </marquee>
                     </div>
+
                     <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
                         <marquee behavior="slide" direction="left">
                             <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
                         </marquee>
                     </div>
                 
-
-                
                     <div class="td1"><img class= "foto-perfil" src="images/etec2.jpg">
                         <marquee behavior="slide" direction="left">
                             <h6>Etec Santa Ifigênia</h6>
@@ -94,30 +90,6 @@
                             <h6>Etec Paulistano</h6>
                         </marquee>
                     </div>
-                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
-                        </marquee>
-                    </div>
-                
-
-                
-                    <div class="td1"><img class= "foto-perfil" src="images/etec2.jpg">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Santa Ifigênia</h6>
-                        </marquee>
-                    </div>
-                
-                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Paulistano</h6>
-                        </marquee>
-                    </div>
-            </div>
-
-            <!-- fim da quinta linha -->
-
-
         </div>
         </center>
         

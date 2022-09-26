@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUÍRON</title>
+    <title>QUIRON - EDITAR VAGA</title>
 
     <link rel="stylesheet" href="styles/styles_l/style.css">
     <link rel="stylesheet" href="styles/styles_l/anunciar_vaga.css">
+    <link rel="stylesheet" href="styles/theme.css">
     
 </head>
 <body>

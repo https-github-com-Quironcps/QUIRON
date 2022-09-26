@@ -1,9 +1,8 @@
 .img-escola{
-    margin-right: 10px;
     height: 50vh;
     background-color: black;
     width: auto;
-    margin-top: 10vh;
+    margin-top: 70px;
     flex: 1;
     align-content: space-between;
     object-fit: cover;

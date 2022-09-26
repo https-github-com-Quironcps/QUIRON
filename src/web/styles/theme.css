@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+:root{
+    /* Paleta de cores da QUIRON */
+    --cor-palette-1: #2C166B;
+    --cor-palette-2: #9679ED;
+    --cor-palette-3: #6031EB;
+    --cor-palette-4: #44376B;
+    --cor-palette-5: #4B27B8;
+
+    --botao-iniciar-hover: #9d88da;
+
+    --white: #ffffff;
+    --black: #000000;
+
+    --cor-001: #7e57c2;
+    --cor-002: #6131EB;
+    --cor-003: #9d88da;
+    --cor-004: #8C8398;
+    --cor-005: #7E7E7E;
+    --cor-006: #F2EFFB;
+    --cor-007: #6d6d6d;
+
+
+    --cor-rgb-001: rgb(97, 49, 235, 70%);
+    --cor-rgb-002: rgb(242, 239, 251, 61%);
+    --cor-rgb-003: rgb(97, 49, 235, 61%);
+    --cor-rgb-004: rgba(96, 49, 235, 0.453);
+    --cor-rgb-005: rgba(255, 0, 0, 0.623);
+    --cor-rgb-006: rgba(168, 149, 225, 0.349);
+    --cor-rgb-007: rgb(97, 49, 235, 0.6);
+
+}

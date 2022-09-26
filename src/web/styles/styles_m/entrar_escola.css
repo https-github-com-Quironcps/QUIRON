@@ -149,7 +149,7 @@ h2 {
   left: 0;
   height: 20px;
   width: 20px;
-  background: #e6e6e6;
+  background: var(--cor-006);
   border-radius: 4px; }
 
 .control--radio .control__indicator {
@@ -157,17 +157,17 @@ h2 {
 
 .control:hover input ~ .control__indicator,
 .control input:focus ~ .control__indicator {
-  background: #ccc; }
+  background: var(--cor-006); }
 
 .control input:checked ~ .control__indicator {
-  background: #6c63ff; }
+  background: var(--cor-palette-5); }
 
 .control:hover input:not([disabled]):checked ~ .control__indicator,
 .control input:checked:focus ~ .control__indicator {
-  background: #847dff; }
+  background: var(--cor-003); }
 
 .control input:disabled ~ .control__indicator {
-  background: #e6e6e6;
+  background: var(--cor-006);
   opacity: 0.9;
   pointer-events: none; }
 
@@ -182,7 +182,7 @@ h2 {
 
 .control input:checked ~ .control__indicator:after {
   display: block;
-  color: #fff; }
+  color: var(--white); }
 
 .control--checkbox .control__indicator:after {
   top: 50%;
@@ -191,14 +191,14 @@ h2 {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); 
-  border: #7e57c2;
+  border: var(--cor-001);
 }
 
 .control--checkbox input:disabled ~ .control__indicator:after {
-  border-color: #7b7b7b; }
+  border-color: var(--cor-005); }
 
 .control--checkbox input:disabled:checked ~ .control__indicator {
-  background-color: #7e0cf5;
+  background-color: var(--cor-002);
   opacity: .2; }
 
   .form input{
@@ -221,7 +221,7 @@ h2 {
 }
 
 .form label {
-  color: #8C8398;
+  color: var(--cor-004);
   line-height: 1;
   margin-bottom: 0.5rem;
 }
@@ -246,8 +246,8 @@ h2 {
 .form textarea:hover,
 .form textarea:focus {
   outline: none;
-  border-color: #7e57c2;
-  box-shadow: 0 0 0 3px #7e57c2;
+  border-color: var(--cor-001);
+  box-shadow: 0 0 0 3px var(--cor-001);
 }
 
 .btn{

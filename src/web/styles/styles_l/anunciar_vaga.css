@@ -22,7 +22,7 @@
     margin-bottom: 30px;
     min-height: 400px;
     width: 3px;
-    background-color: #6131eb;
+    background-color: var(--cor-002);
     opacity: 50%;
 }
 
