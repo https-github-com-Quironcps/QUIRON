@@ -27,25 +27,28 @@
                 <!-- <div class="linha"></div> -->
 
                 <!-- icon localização -->
-                <i id="icon" class="bi bi-geo-alt"></i> <a class="info" href=""></a><br>
+                <div class="div-icon">                
+                    <i id="icon" class="bi bi-geo-alt"><a class="info" href=""> Endereço: R. Fernão Dias Falcão, 196 - Centro, Santana de Parnaíba - SP, 06501-120</a></i>
+
+                </div><br>
 
                 <!-- icon telefone -->
-                <i id="icon" class="bi bi-telephone"></i> <a class="info" href=""></a><br>
-
+                <div class="div-icon">
+                    <i id="icon" class="bi bi-telephone"> <a class="info" href="">(11) 4154-7142</a></i>
+                </div><br>
+                
                 <!-- icon link -->
-                <i id="icon" class="bi bi-share"></i> <a class="info" href=""></a><br>
-
+                <div class="div-icon">
+                    <i id="icon" class="bi bi-share"><a class="info" href="">www.cps.sp.gov.br/etecs/etec-prof-a-ermelinda-giannini-teixeira/</a></i>
+                </div><br>
+                
                 <!-- icon email -->
-                <i id="icon" class="bi bi-envelope"></i> <a class="info" href=""></a>
+                <div class="div-icon">
+                    <i id="icon" class="bi bi-envelope"> <a class="info" href="">etec_ermelinda187@gmail.com</a></i> 
+                </div>
 
                 <!-- <div class="linha"></div> -->
 
-                <br>
-
-                <!-- <div class="button-container">
-                    <input class="botão-01" type="button" value="Cadastrar-se">
-                    <i id="icon" class="bi bi-heart"></i> <a class="info" href=""></a><br>
-                </div> -->
 
             </div>
 
@@ -56,7 +59,7 @@
 
             <br>
             <div class="conteudo">
-                <h1>OI JULIO</h1>
+                
             </div>
         </div>
     </div>
