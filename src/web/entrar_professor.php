@@ -18,8 +18,9 @@
 
     <!-- Navbar Css  -->
     <link rel="stylesheet" href="styles/styles_m/navbar-index.css">
+    <link rel="stylesheet" href="styles/theme.css">
 
-    <title>QUIRON</title>
+    <title>Entrar na QUIRON</title>
   </head>
   <body>
   

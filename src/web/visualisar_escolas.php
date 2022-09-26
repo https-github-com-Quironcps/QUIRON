@@ -12,7 +12,11 @@
 
     <!-- link CSS -->
     <link rel="stylesheet" href="../web/styles/styles_g/visualizar_escola.css">
-    <title>PERFIL ESCOLA</title>
+    <link rel="stylesheet" href="styles/theme.css">
+
+    <link rel="icon" type="image/png" href="images/logos/arco-dark-2.png" />
+
+    <title>QUIRON - ESCOLA</title>
 </head>
 <body>
 

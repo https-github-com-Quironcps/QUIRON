@@ -8,8 +8,9 @@
 
 
     <link rel="stylesheet" href="../web/styles/styles_g/visualizar_vaga.css">
+    <link rel="stylesheet" href="styles/theme.css">
 
-    <title>VAGA</title>
+    <title>QUIRON - VAGAS</title>
 </head>
 <body>
     <div class="everybody">

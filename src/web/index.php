@@ -6,7 +6,7 @@
     <title>QUIRON</title>
 
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/styles_l/theme.css">
+    <link rel="stylesheet" href="styles/theme.css">
 </head>
 <body>
 

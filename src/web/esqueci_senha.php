@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="styles/styles_l/style.css">
     <link rel="stylesheet" href="styles/styles_l/anunciar_vaga.css">
-
+    <link rel="stylesheet" href="styles/theme.css">
 
 </head>
 <body>

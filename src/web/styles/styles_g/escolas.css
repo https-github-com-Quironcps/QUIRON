@@ -57,6 +57,7 @@
     height: 500px; 
     margin-top: 5vh;
     margin-bottom: 10vh;
+    padding: 10px;
     border-radius: 12px;
     transition: all 1s;
     overflow-y: scroll;
@@ -89,6 +90,7 @@
     flex-wrap: wrap;
 }
 
+
 .td1{
     padding: 10px;
     background-color: white;
@@ -97,9 +99,9 @@
     cursor: pointer;
     width: 29%;
     border-radius: 8px;
-    display: flex;
     align-items: center;
     flex: 1;
+    margin-bottom: 10px;
 }
 
 .td1:hover{
@@ -142,7 +144,7 @@ input[type=text] {
     }
 
     .td1{
-        width: auto
+        width: 90%;
     }
 
     .foto-perfil{
@@ -152,13 +154,16 @@ input[type=text] {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
     marquee h6{
         font-size: 13px;
     }
 
     .td1{
-        width: 70%
+        width: 90%;
+        
     }
+
+    
 
 }
