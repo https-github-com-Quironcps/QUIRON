@@ -28,17 +28,17 @@ body{
    
 }
 
-.aside {
+.aside{
     display: flex;
-    /* flex-direction: column; */
-    padding: 0 24px;
-    background-color: rgb(255, 127, 206);
-    width: 80%;
+    width: 70vw;
+    flex-direction: column;
+    background-color: #F2EFFB;
+    border-radius: 20px;
 }
 
 .img_etec{
     width: 40%;
-    height: 100%;
+    height: 50vh;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -97,6 +97,7 @@ body{
   border-bottom-right-radius: 20px;
 }
 
+/* 
 .botão-01{
     background-color: #7e57c2c3;
     border-radius: 4px;
@@ -110,12 +111,13 @@ body{
     transition: all 0.5s;
     outline: none;
     background: #7e57c2;
-}
+} */
 
 
 .title02{
     color: #6131eb;
     opacity: 70%;
+    padding: 2vh;
     font-weight: 900;
 }
 
@@ -126,20 +128,28 @@ body{
     border-radius: 17px;
 }
 
-.button-container {
-    display: flex;
-    justify-content: space-around;
+.desc-vaga{
+    padding: 2vh;
+    width: 50%;
+    height: 40vh;
+    text-align: justify;
+    overflow-y: scroll;
 }
-
+ 
 @media (max-width: 1200px) {
   
-    .img_etec{
+    .img_etec, .info{
         display: none;
     }
 
     .icons{
         width: 100%;
         padding: 1vw;
+        flex-direction: row;
+    }
+
+    .divlateral{
+        align-items: center;
     }
 
     #icon{
@@ -152,6 +162,15 @@ body{
 
     .info{
         font-size: 13px;
+    }
+
+    .title02{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .desc-vaga{
+        width: 100%;
     }
 
 } 
