@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Cadastrar-se na QUIRON</title>
 
 
@@ -16,14 +17,13 @@
 <?php include('partials/navbar-index.php'); ?>
 <br>
 
-
-
 <center>
     <div class="container1">
         <div class="header">
             <h1 id="title">Cadastre a sua Instituição</h1>
         </div>
 
+        <br>
         <div class="div-container">
             <div class="div-sub-container">
             <form class="form">
