@@ -46,7 +46,7 @@ nav{
     z-index: 9;
     transition:0.7s;
     background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    box-shadow: 0 0 0.5em grey;
 }
 
 .brand{
