@@ -23,7 +23,7 @@
 
     <div class="filtros">
             <form action="" class="form" method="POST">
-                <input class='input-textarea' type="text" maxlength="3" placeholder="Código da instituição">
+                <input class='input-textarea' type="text" maxlength="3" placeholder="Código da instituição"> <br>
                 <input type="submit" class='botao-001' value="">
             </form>
     </div>

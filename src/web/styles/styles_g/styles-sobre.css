@@ -1,7 +1,3 @@
-body{
-    font-family: Raleway;
-}
-
 .div-sobre{
     width: 100%;
     height: 870px;
@@ -48,9 +44,10 @@ body{
     left: 10vw;
     top: 220px;
 
-    font-family: 'Raleway';
+    text-align: justify;
+    
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     line-height: 31px;
     align-items: center;
@@ -62,6 +59,7 @@ body{
 .text1 p{
     line-height: 10px;
 }
+
 .title2{
     position: absolute;
     width: 80vw;
@@ -74,7 +72,6 @@ body{
     font-weight: 400;
     font-size: 25px;
     line-height: 52px;
-    /* identical to box height */
 
     display: flex;
     align-items: center;
@@ -102,10 +99,10 @@ body{
     height: 155px;
     left: 10vw;
     top: 570px;
+    text-align: justify;
 
-    font-family: 'Raleway';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     line-height: 31px;
     align-items: center;
