@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Cadastrar-se na QUIRON</title>
 
 
     <link rel="stylesheet" href="styles/styles_l/style.css">
-    <link rel="stylesheet" href="styles/styles_l/anunciar_vaga.css">
+    <link rel="stylesheet" href="styles/styles_m/cadastro.css">
     <link rel="stylesheet" href="styles/theme.css">
 </head>
 <body>
@@ -65,21 +65,16 @@
 
                 <center>
                 <div class="div-sub-container-2">
-                    <div class="ab">
+                    
                     </div>
-                    <div class="ab">
+
                             <br>
                         </form>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            
                         <img src="images/svgs/img_login.svg" class="img-anunciar">
-                    </div>
+
                     <div class="ab">
-                    </div>
+
                     
                 </center>
             </div>

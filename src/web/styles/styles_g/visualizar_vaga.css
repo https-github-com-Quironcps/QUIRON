@@ -1,10 +1,10 @@
 body{
     background-color: darkgray;
-    font-family: 'Raleway';
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    font-family: Raleway;
 }
 
 .everybody{
@@ -32,14 +32,14 @@ body{
     display: flex;
     /* flex-direction: column; */
     padding: 0 24px;
-    background-color: aquamarine;
+    background-color: rgb(255, 127, 206);
     width: 80%;
 }
 
 .img_etec{
     width: 40%;
     height: 100%;
-    opacity: 70%;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -50,34 +50,51 @@ body{
     font-weight: 900;
 }
 
-a{
-    font-size: 18px;
-    text-decoration: none;
+.div-icon{
+    display: flex;
+    text-align: justify;
+    width: 60%;
+}
+
+.div-icon:hover{
+    margin-left: 2vw;
+    transition: all 1s;
+}
+
+.text{
+    display: inline;
+    background-color: rgb(186, 136, 173);
+}
+
+.info{
+    font-size: 15px;
     color: #8C8398;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 #icon{
     color: #6031ebc9;
-    font-size: 18px;
+    font-size: 22px;
     padding: 1vh;
-    display: block;
-    background-color: grey;
+    display: inline;
+    margin-left: 1vw;
 }
 
 #icon:hover{
     transition: all ;
     color: #000000;
     border-radius: 12px;
-    box-shadow: 0 0 5px #838282;
 }
 
 .icons{
   width: 60%;
-  display: inline;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: rgb(255, 0, 123);
 }
 
 .botão-01{
@@ -114,7 +131,7 @@ a{
     justify-content: space-around;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1200px) {
   
     .img_etec{
         display: none;
@@ -122,6 +139,20 @@ a{
 
     .icons{
         width: 100%;
+        padding: 1vw;
     }
+
+    #icon{
+        font-size: 18px;
+    }
+
+    .div-icon{
+        width: 100%;
+    }
+
+    .info{
+        font-size: 13px;
+    }
+
 } 
 
