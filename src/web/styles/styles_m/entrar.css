@@ -255,3 +255,15 @@ h2 {
   font-family: "Roboto";
   font-size: larger;
 }
+
+.professor-rl{
+  padding-left: 10px;
+}
+
+.escola-rl{
+  padding-left: 10px;
+}
+
+#Escola-entry{
+  margin-left: 20%;
+}

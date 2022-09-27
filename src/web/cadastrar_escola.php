@@ -4,21 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
 
-=======
->>>>>>> e0a18adda93fa1d3b1e38d7181711aaca494a46e
     <title>Cadastrar-se na QUIRON</title>
 
 
     <link rel="stylesheet" href="styles/styles_l/style.css">
-    <link rel="stylesheet" href="styles/styles_l/anunciar_vaga.css">
     <link rel="stylesheet" href="styles/styles_m/cadastro.css">
     <link rel="stylesheet" href="styles/theme.css">
-<<<<<<< HEAD
-=======
 
->>>>>>> e0a18adda93fa1d3b1e38d7181711aaca494a46e
 </head>
 <body>
 <?php include('partials/navbar-index.php'); ?>
