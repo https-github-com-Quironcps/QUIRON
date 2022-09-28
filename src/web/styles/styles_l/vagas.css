@@ -10,6 +10,11 @@
     margin-top: 13vh;
     position: absolute;
 }
+
+.form{
+    display: flex;
+ }
+
 .label{
     display: inline;
     width: 286px;
@@ -24,8 +29,8 @@
 }
 
 .input-textarea{
-    width: 24vh;
-    height: 4.2vh;
+    width: 170px;
+    height: 40px;
     border-radius: 8px;
     border-style: none;
     background: var(--cor-006);
@@ -40,12 +45,12 @@
 
 .botao-001{
     background: url("../../images/svgs/search.svg") no-repeat 15px;
-    height: 4.2vh;
+    height: 40px;
     width: 45px;
     border-radius: 10px;
     border-style: none;
+    margin-left: 10px;
     background-color: var(--cor-rgb-004);
-    margin-bottom: -9px;
 }
 
 .botao-001:hover{
@@ -65,6 +70,8 @@
     border-radius: 10px;
     overflow-y: scroll;
     transition: all 1s;
+    padding-bottom: 1px;
+    padding-top: 15px;
 }
 
 .div-filtros{
@@ -85,6 +92,7 @@
     opacity: 60%;
     border: 0;
     margin-bottom: 15px;
+    height: 40px;
     margin-top: 5px;
     padding: 2px 10px;
     width: 100%;
@@ -144,13 +152,13 @@
     display: inline;
     background-color: var(--cor-006);
     width: 42%;
-    height: 15vh;
+    height: 130px;
     margin: 3%;
     float: left;
     cursor: pointer;
     border-radius: 8px;
     margin-right: 5%;
-    padding-top: 1.5vh;
+    padding-top: 15px;
 }
 
 .table1:hover{
@@ -161,10 +169,10 @@
 
 .foto-perfil{
     display: inline;
-    width: 12vh;
-    height: 12vh;
+    width: 100px;
+    height: 100px;
     border-radius: 5px;
-    margin-left: 1.5vh;
+    margin-left: 15px;
     object-fit: cover;
     object-position: center;
     background-color: var(--cor-001);
@@ -237,7 +245,8 @@ input[type=text] {
     margin-top: 0;
     margin-bottom: 0;
     border-radius: 10px;
-    height: auto;
+    padding-top: 100px;
+    height: 600px;
     margin-right: 10%;
     margin-top: 10px;
     font-size: 16px;

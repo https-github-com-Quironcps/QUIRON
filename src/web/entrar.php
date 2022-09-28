@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="styles/styles_m/fonts.css">
 
     <link rel="stylesheet" href="styles/styles_m/owl.carousel.min.css">
 
@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="styles/styles_m/bootstrap.min.css">
     
     <!-- Style -->
-    <link rel="stylesheet" href="styles/styles_m/entrar_escola.css">
+    <link rel="stylesheet" href="styles/styles_m/entrar.css">
 
     <!-- Navbar Css  -->
-    <link rel="stylesheet" href="styles/styles_m/navbar-index.css">
+    <link rel="stylesheet" href="styles/navbar-index.css">
     <link rel="stylesheet" href="styles/theme.css">
 
     <title>Entrar na QUIRON</title>
@@ -38,7 +38,7 @@
               <div class="mb-4">
                 <br>
               <h3>QUÍRON</h3>
-              <p class="mb-4">Sua próxima vaga de emprego na palma da sua mão.</p>
+              <p class="mb-4">Sua próxima vaga de emprego na palma de sua mão.</p>
             </div>
             <form action="#" method="post">
               <div class="form input">
@@ -51,7 +51,25 @@
                 <input type="password" class="form-control" id="password">
                 
               </div>
+              <br>
+<div class="div-form-entrys">
+
+              <form id="form-entrada">
+              <p class="mb-4">Entrar como:</p>
+  <input type="radio" id="Professor-entry" name="entrada" value="professor">
+  <label class="professor-rl" for="professor">Professor</label>
+  <input type="radio" id="Escola-entry" name="entrada" value="escola">
+  <label class="escola-rl" for="escola">Escola</label><br>
+
+  
+</form>
+</div>
+              <br>
+
+              <input type="submit" value="Entrar" class="btn btn-block btn-primary">
               
+
+              <br>
               <div class="d-flex mb-5 align-items-center">
                 <label class="control control--checkbox mb-0"><span class="caption">Lembrar de mim?</span>
                   <input type="checkbox"/>
@@ -61,11 +79,7 @@
                 <span class="ml-auto"><a href="cadastrar_professor.php" class="forgot-pass">Criar Conta</a></span>
               </div>
 
-              <input type="submit" value="Entrar" class="btn btn-block btn-primary">
-
-
               
-             
 
               </div>
             </form>

@@ -8,14 +8,8 @@
 
     <link rel="stylesheet" href="../web/styles/styles_g/styles-sobre.css">
     <link rel="stylesheet" href="styles/theme.css">
-
-    <style>
-     
-    </style>
-
 </head>
 <body>
-
  <?php include('partials/header.php'); ?>
 
     <br>
@@ -31,11 +25,11 @@
             <h1 class="text1">
                 <p>Nós somos uma plataforma para divulgação de
                 vagas destinadas à professores.</p> 
-                <br>
+                
                 <p>Temos como objetivo facilitar o processo para a 
                 contratação de docentes nas instituições do CPS.</p>
             </h1>
-            <br><br><br>
+            <br><br>
             <h1 class="title2">Você sabia?</h1>
 
             <div class="linha2"></div>
@@ -45,7 +39,7 @@
                 <p>Na mitologia grega, Quíron foi um centauro que dentre 
                 seus irmãos, se destacava por ser bondoso, inteligente
                 e disciplinado.</p>  
-                <br>
+                
                 <p>Assim como o professor!</p>
             </h1>
         </div>
@@ -53,8 +47,5 @@
 
    
     <?php include('partials/footer.php') ?>
-
-   
-    
 </body>
 </html>

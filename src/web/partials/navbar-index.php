@@ -16,7 +16,7 @@
             </a>
             
             <ul>
-                <li><a class="ab" href="entrar_professor.php">Entrar</a></li>
+                <li><a class="ab" href="entrar.php">Entrar</a></li>
             </ul>
         </nav>
     </div>

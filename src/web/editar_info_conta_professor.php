@@ -7,7 +7,6 @@
     <title>QUIRON - CONFIGURAÇÕES</title>
 
     <link rel="stylesheet" href="styles/styles_l/editar_info.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/theme.css">
 </head>
 <body>
