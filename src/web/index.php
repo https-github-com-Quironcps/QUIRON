@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles/theme.css">
 </head>
 <body>
-
     <?php include('partials/navbar-index.php'); ?>
 
     <div class="container2">
