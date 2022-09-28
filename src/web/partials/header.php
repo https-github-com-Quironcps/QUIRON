@@ -7,6 +7,9 @@
 
     <link rel="stylesheet" href="styles/navbar.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <title>HEADER</title>
 
 </head>
@@ -23,12 +26,12 @@
                 
                 <div class="slide">
                     <ul class="ul1">
-                        <li><a class="hover-lis" href="vagas.php">Vagas</a></li>
+                        <li><a class="hover-lis" href="index.php">Vagas</a></li>
                         <li><a class="hover-lis" href="escolas.php">Escolas</a></li>
                         <li><a class="hover-lis"  href="minhas_vagas.php">Minhas vagas</a></li>
                         <li><a class="hover-lis"  href="sobre.php">Sobre</a></li>
 
-                        <li><a href="perfil_escola.php"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
+                        <li><a href="editar_perfil.php"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
                         <li><a href="editar_info_conta_escola.php"><i class="bi bi-gear-fill"></i>ㅤConfigurações</a></li>
                         <li><a href="contato.php"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
                         <li><a href="anunciar_vaga.php"><i class="bi bi-megaphone-fill"></i>ㅤAnunciar vaga</a></li>
@@ -40,7 +43,7 @@
                 <a href="index.php"><img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
                 <div class="container-inner">
                     <ul class="ul2">
-                        <li><a href="vagas.php">Vagas</a></li>
+                        <li><a href="index.php">Vagas</a></li>
                         <li><a href="escolas.php">Escolas</a></li>
                         <li><a href="minhas_vagas.php">Minhas vagas</a></li>
                         <li><a href="sobre.php">Sobre</a></li>

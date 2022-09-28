@@ -10,6 +10,11 @@
     margin-top: 13vh;
     position: absolute;
 }
+
+.form{
+    display: flex;
+ }
+
 .label{
     display: inline;
     width: 286px;
@@ -65,6 +70,8 @@
     border-radius: 10px;
     overflow-y: scroll;
     transition: all 1s;
+    padding-bottom: 1px;
+    padding-top: 15px;
 }
 
 .div-filtros{
@@ -228,10 +235,6 @@ input[type=text] {
  .div-filtros{
     position: absolute;
     transform: translateX(-200vw);
- }
-
- .form{
-    display: flex;
  }
 
  input.abo11:checked ~ .div-filtros{

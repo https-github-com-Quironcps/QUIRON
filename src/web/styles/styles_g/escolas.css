@@ -6,25 +6,28 @@
     justify-content: flex-end;
 }
 
+.form{
+    display: flex;
+ }
+
+
 .label{
     display: inline;
     width: 286px;
     height: 23px;
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 2.2vh;
     line-height: 23px;
-
     color: #7E7E7E;
 }
 
 .input-textarea{
-    width: 24vh;
-    height: 4.2vh;
+    width: 170px;
+    height: 40px;
     border-radius: 8px;
     border-style: none;
-    background: #F2EFFB;
+    background: var(--cor-006);
 }
 
 .input-textarea:hover{
@@ -36,18 +39,18 @@
 
 .botao-001{
     background: url("../../images/svgs/search.svg") no-repeat 15px;
-    height: 4.2vh;
+    height: 40px;
     width: 45px;
     border-radius: 10px;
     border-style: none;
-    background-color: rgba(96, 49, 235, 0.453);
-    margin-bottom: -9px;
+    margin-left: 5px;
+    background-color: var(--cor-rgb-004);
 }
 
 .botao-001:hover{
     outline: none;
-    border-color: #7e57c2;
-    box-shadow: 0 0 0 2px #7e57c2;
+    border-color: var(--cor-001);
+    box-shadow: 0 0 0 2px var(--cor-001);
     transition: all 1.1s;
 }
 
@@ -104,6 +107,10 @@
     margin-bottom: 10px;
 }
 
+.td2{
+    display: none;
+}
+
 .td1:hover{
     background-color: rgba(168, 149, 225, 0.349);
     transition: all 1s;
@@ -125,6 +132,14 @@ marquee{
     margin-left: 2vh;
     width: 31vh;
     color: #7E7E7E;
+}
+
+.td2{
+    padding: 1px;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
 }
 
 input[type=text] {
