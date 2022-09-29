@@ -68,7 +68,7 @@ body{
 
 .info{
     font-size: 15px;
-    color: #8C8398;
+    color: var(--cor-004);
     font-weight: 600;
     text-decoration: none;
 }
@@ -83,7 +83,7 @@ body{
 
 #icon:hover{
     transition: all ;
-    color: #000000;
+    color: var;
     border-radius: 12px;
 }
 

@@ -12,6 +12,7 @@
 
     --white: #ffffff;
     --black: #000000;
+    --grey: grey;
 
     --cor-001: #7e57c2;
     --cor-002: #6131EB;
@@ -20,7 +21,11 @@
     --cor-005: #7E7E7E;
     --cor-006: #F2EFFB;
     --cor-007: #6d6d6d;
-
+    --cor-008: #7e57c2c3; /* cor do botão */
+    --cor-009: #ebeaea; /* cor texto do botão */
+    --cor-010: #F2EFFB; /* div principal da tela escolas */
+    --cor-011: #c1c1c1e7; /* cor da linha na tela sobre */
+    --cor-012: #9f9f9f; /* cor do texto na footer da tela visualizar escolas */
 
     --cor-rgb-001: rgb(97, 49, 235, 70%);
     --cor-rgb-002: rgb(242, 239, 251, 61%);
@@ -29,5 +34,6 @@
     --cor-rgb-005: rgba(255, 0, 0, 0.623);
     --cor-rgb-006: rgba(168, 149, 225, 0.349);
     --cor-rgb-007: rgb(97, 49, 235, 0.6);
+    --cor-rgb-008: rgb(226, 224, 227);  /* cor do título e sibtítulo da tela visualizar escolas */
 
 }

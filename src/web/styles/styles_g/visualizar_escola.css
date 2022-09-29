@@ -1,6 +1,6 @@
 .img-escola{
     height: 50vh;
-    background-color: black;
+    background-color: var(--black);
     width: auto;
     margin-top: 70px;
     flex: 1;
@@ -20,7 +20,7 @@
 
 .titulo{
     position: absolute;
-    color: rgb(226, 224, 227);
+    color: var(--cor-rgb-008);
     align-items: center;
     display: inline;
     text-align: center;
@@ -31,7 +31,7 @@
 
 .subtitulo{
     position: absolute;
-    color: rgb(226, 224, 227);
+    color: var(--cor-rgb-008);
     align-items: center;
     display: inline;
     text-align: center;
@@ -44,7 +44,7 @@
     align-items: center;
     width: 60vh;
     height: 80vh;
-    background-color: #f2effbd7;
+    background-color: var(--cor-010);
     float: right;
     margin-right: 1.5vh;
     flex: 1;
@@ -54,13 +54,13 @@
 }
 
 .titulo-vagas{
-    color: #8C8398;
+    color: var(--cor-004);
     font-size: 20px;
     line-height: 10vh;
 }
 
 .titulo-info{
-    color: #8C8398;
+    color: var(--cor-004);
     font-size: 20px;
     line-height: 10vh;
     width: auto;
@@ -68,7 +68,7 @@
 }
 
 .div-vaga{
-    background-color: #fff;
+    background-color: var(--white);
     width: 50vh;
     height: 17vh;
     border-radius: 10px;
@@ -89,7 +89,7 @@
 }
 
 .p-div{
-    color: #8C8398;
+    color: var(--cor-004);
     white-space: pre-line;
     width: 90%;
     text-align: justify;
@@ -100,7 +100,7 @@
     align-items: center;
     width: 20%;
     height: 80vh;
-    background-color: #f2effbd7;    
+    background-color: var(--cor-010);    
     float: left;
     margin-left: 2.5vh;
     padding: 2% 0;
@@ -126,10 +126,10 @@
 .div-icones{
     width: 100%;
     height: auto;
-    background-color: #fff;
+    background-color: var(--white);
     margin-top: 30px;
     padding: 20px 0;
-    box-shadow: 0 0 0.5em grey;
+    box-shadow: 0 0 0.5em var(--grey);
 }
 
 .div-icones .icones{
@@ -158,7 +158,7 @@ li a .bi-envelope,
     color: inherit;
     width: 40px;
     height: 40px;
-    color: #6031ebdf;
+    color: var(--cor-001);
     opacity: 0.76;
 }
 
@@ -168,7 +168,7 @@ li a .bi-envelope,
     text-decoration: none;
     opacity: 0.8;
     flex: 1;
-    color: #9f9f9f;
+    color: var(--cor-012);
 }
 
 .div-icones ul li{
@@ -179,7 +179,7 @@ li a .bi-envelope,
 @media screen and (max-width: 1300px) {
     .div-total{
         display: contents;
-        background-color: #8C8398;
+        background-color: var(--cor-004);
     }
 
     .imagens, .div-info-escola{
@@ -245,8 +245,6 @@ li a .bi-envelope,
         object-position: center;
         background-repeat: no-repeat;
     }
-
-
 
     .imagens{
         display: flex;

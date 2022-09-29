@@ -4,16 +4,16 @@
 }
 
 h4{
-    color: #8C8398;
+    color: var(--cor-004);
 }
 
 #icon{
-    color: #6031ebd6;
+    color: var(--cor-001);
     font-size: 6vh;
 }
 
 .info{
-    color: #8C8398;
+    color: var(--cor-004);
     text-decoration: none;
     font-size: 3.5vh;
     padding: 2vh;
@@ -21,7 +21,7 @@ h4{
 
 .info:hover{
     opacity: 1.0;   
-    color: 	#7e57c2;
+    color: var(--cor-001);
     margin: 0 20px 0;
     transition: all 0.8s ease;
 }
@@ -29,11 +29,11 @@ h4{
 .linha{
     width: 370px;
     height: 1.5px;
-    background: #989898;
+    background: var(--cor-005);
 }
 
 .formulario{
-    background-color: rgba(242, 239, 251, 0.61);
+    background-color: var(--cor-rgb-002);
     width: 75vh;
     height: 70vh;
     border-radius: 20px;
@@ -53,8 +53,8 @@ h4{
 }
 
 #mensagem:hover, input:hover {
-    border-color: #7e57c2;
-    box-shadow: 0 0 0 2px #7e57c2;
+    border-color: var(--cor-001);
+    box-shadow: 0 0 0 2px var(--cor-001);
     transition: all 0.9s;
 }
 
@@ -64,22 +64,22 @@ h4{
 }
 
 .text-form{
-    color: #8C8398;
+    color: var(--cor-004);
 }
 
 .btn-enviar{
-    background-color: #7e57c2c3;
+    background-color: var(--cor-008);
     border-radius: 4px;
     width: 20vh;
     height: 6vh;
     border-style: none;
-    color: #ebeaea;
+    color: var(--cor-009);
 }
 
 .btn-enviar:hover{
     transition: all 0.5s;
     outline: none;
-    background: #7e57c2;
+    background: var(--cor-001);
 }
 
 .div-contato{
