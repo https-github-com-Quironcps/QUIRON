@@ -1,9 +1,9 @@
 body {
   font-family: "Ralawey";
-  background-color: #f8fafb; }
+  background-color: var(--white); }
 
 p {
-  color: #b3b3b3;
+  color: var(--cor-012);
   font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6,
@@ -38,8 +38,8 @@ h2 {
     padding: 15px 15px;
     border-bottom: none;
     position: relative;
-    background: #edf2f5;
-    border-bottom: 1px solid #e6edf1; }
+    background: var(--white);
+    border-bottom: 1px solid var(--white); }
     .content .contents .form-group label, .content .bg .form-group label {
       position: absolute;
       top: 50%;
@@ -61,9 +61,9 @@ h2 {
       font-size: 12px;
       display: block;
       margin-bottom: 0;
-      color: #b3b3b3; }
+      color: var(--grey); }
     .content .contents .form-group.focus, .content .bg .form-group.focus {
-      background: #fff; }
+      background: var(--white); }
     .content .contents .form-group.field--not-empty label, .content .bg .form-group.field--not-empty label {
       margin-top: -20px; }
   .content .contents .form-control, .content .bg .form-control {
@@ -81,13 +81,14 @@ h2 {
   background-position: center; }
 
 .content a {
-  color: #888;
+  color: var(--grey);
   text-decoration: underline; }
 
 .content .btn {
   height: 54px;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+ }
 
 .content .forgot-pass {
   position: relative;
@@ -98,7 +99,7 @@ h2 {
   text-decoration: none;
   position: relative;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 10px;
   width: 50px;
   height: 50px;
@@ -111,20 +112,6 @@ h2 {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-  .social-login a:hover {
-    color: #fff; }
-  .social-login a.facebook {
-    background: #3b5998; }
-    .social-login a.facebook:hover {
-      background: #344e86; }
-  .social-login a.twitter {
-    background: #1da1f2; }
-    .social-login a.twitter:hover {
-      background: #0d95e8; }
-  .social-login a.google {
-    background: #ea4335; }
-    .social-login a.google:hover {
-      background: #e82e1e; }
 
 .control {
   display: block;
@@ -136,7 +123,7 @@ h2 {
   .control .caption {
     position: relative;
     top: .2rem;
-    color: #888; }
+    color: var(--grey); }
 
 .control input {
   position: absolute;
@@ -222,6 +209,7 @@ h2 {
 
 .form label {
   color: var(--cor-004);
+  opacity: 100%;
   line-height: 1;
   margin-bottom: 0.5rem;
 }
@@ -248,12 +236,14 @@ h2 {
   outline: none;
   border-color: var(--cor-001);
   box-shadow: 0 0 0 3px var(--cor-001);
+
 }
 
 .btn{
   border-radius: 14px;
   font-family: "Roboto";
   font-size: larger;
+  background-color: var(--botao-iniciar-hover);
 }
 
 .professor-rl{
