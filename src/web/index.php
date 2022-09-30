@@ -1,5 +1,7 @@
 <?php
     $dbh = new PDO('mysql:host=localhost; dbname=test', 'quirondb', 'quiron2022tcc*');
+
+    $sth = $dbh->prepare('SELECT * FROM `abcd`');
 ?>
 
 <!DOCTYPE html>
@@ -25,23 +27,7 @@
                 <button type="submit" class='botao-001' value=""></button>
             </form>
 
-            <?php
-
-            if (isset($_GET['cod']))
-            {
-                $cod = trim($_GET['cod'])."%";
-
-                $sth = $dbh->prepare('SELECT * FROM `abcd` WHERE `cod` LIKE :cod');
-                $sth->bindParam(':cod', $cod, PDO::PARAM_STR);
-                $sth->execute();
-            }
-
-            if (!isset($_GET['cod']))
-            {
-                $cod = "%";
-            }
-
-            ?>
+            <?php include('../server/filtrar_cod_instituicao.php') ?>
     </div>
 
     <div>
@@ -91,8 +77,6 @@
         <div class="conteudo">
         <center>
             <?php   
-            
-            
             $sth->execute();
 
             $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
