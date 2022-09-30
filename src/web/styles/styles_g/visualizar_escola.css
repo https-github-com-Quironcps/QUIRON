@@ -1,3 +1,7 @@
+body{
+    background-color: var(--white);
+}
+
 .img-escola{
     height: 50vh;
     background-color: var(--black);
@@ -20,7 +24,7 @@
 
 .titulo{
     position: absolute;
-    color: var(--cor-rgb-008);
+    color: var(--color-003);
     align-items: center;
     display: inline;
     text-align: center;
@@ -31,7 +35,7 @@
 
 .subtitulo{
     position: absolute;
-    color: var(--cor-rgb-008);
+    color: var(--color-003);
     align-items: center;
     display: inline;
     text-align: center;
@@ -44,7 +48,7 @@
     align-items: center;
     width: 60vh;
     height: 80vh;
-    background-color: var(--cor-010);
+    background-color: var(--color-005);
     float: right;
     margin-right: 1.5vh;
     flex: 1;
@@ -54,13 +58,13 @@
 }
 
 .titulo-vagas{
-    color: var(--cor-004);
+    color: var(--color-003);
     font-size: 20px;
     line-height: 10vh;
 }
 
 .titulo-info{
-    color: var(--cor-004);
+    color: var(--color-003);
     font-size: 20px;
     line-height: 10vh;
     width: auto;
@@ -89,7 +93,7 @@
 }
 
 .p-div{
-    color: var(--cor-004);
+    color: var(--color-003);
     white-space: pre-line;
     width: 90%;
     text-align: justify;
@@ -100,7 +104,7 @@
     align-items: center;
     width: 20%;
     height: 80vh;
-    background-color: var(--cor-010);    
+    background-color: var(--color-005);    
     float: left;
     margin-left: 2.5vh;
     padding: 2% 0;
@@ -158,7 +162,7 @@ li a .bi-envelope,
     color: inherit;
     width: 40px;
     height: 40px;
-    color: var(--cor-001);
+    color: var(--color-001);
     opacity: 0.76;
 }
 
@@ -168,7 +172,7 @@ li a .bi-envelope,
     text-decoration: none;
     opacity: 0.8;
     flex: 1;
-    color: var(--cor-012);
+    color: var(--color-003);
 }
 
 .div-icones ul li{
@@ -179,7 +183,7 @@ li a .bi-envelope,
 @media screen and (max-width: 1300px) {
     .div-total{
         display: contents;
-        background-color: var(--cor-004);
+        background-color: var(--color-003);
     }
 
     .imagens, .div-info-escola{
@@ -274,7 +278,7 @@ li a .bi-envelope,
 
     .div-total{
         width: 100%;
-        background-color: #8C8398;
+        background-color: var(--color-003);
     }
 
 }
