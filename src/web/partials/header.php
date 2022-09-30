@@ -1,4 +1,6 @@
-<?php include("../server/conexao.php"); ?>
+<?php
+    include_once '../server/PDO/conexao.php';
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">

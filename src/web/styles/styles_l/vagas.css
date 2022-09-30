@@ -29,11 +29,12 @@
 }
 
 .input-textarea{
-    width: 170px;
+    width: 180px;
     height: 40px;
     border-radius: 8px;
     border-style: none;
     background: var(--cor-006);
+    padding-left: 10px;
 }
 
 .input-textarea:hover{

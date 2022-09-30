@@ -1,8 +1,8 @@
-<?php
-    $dbh = new PDO('mysql:host=localhost; dbname=test', 'quirondb', 'quiron2022tcc*');
+<!-- <?php
+    // include('../server/PDO/conexao.php');
 
-    $sth = $dbh->prepare('SELECT * FROM `abcd`');
-?>
+    // $sth = $pdo->prepare('SELECT * FROM `TB_VAGA`');
+?> -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -23,11 +23,9 @@
 
     <div class="filtros">
             <form class="form" method="GET">
-                <input class='input-textarea' name="cod" type="number" maxlength="3" placeholder="Código da instituição">
-                <button type="submit" class='botao-001' value=""></button>
+                <input class='input-textarea' name="cod" value="<?php echo $cod; ?>" type="number" maxlength="3" placeholder="Código da instituição">
+                <button type="submit" class='botao-001' value="<?php echo $cod; ?>"></button>
             </form>
-
-            <?php include('../server/filtrar_cod_instituicao.php') ?>
     </div>
 
     <div>
@@ -39,7 +37,7 @@
 
                 <div class="div-filtros">
 
-                    <form method="GET" class="form-filtros" method="../server/filtrar_vagas.php">
+                    <form method="GET" class="form-filtros">
                         Localização: <br>
                         <input type="text" name="localizacao" id="text-filtro"><br><br>
 
@@ -67,9 +65,6 @@
                         </center>
                         <br><br>
                     </form>
-
-                    <?php include('../server/filtrar_vagas.php') ?>
-
                 </div>
             </div>
 
@@ -89,9 +84,9 @@
                             <td class="td1"><img class= "foto-perfil" src=""></td>
 
                             <td>
-                                <h6 class="nome_materia"><?php echo $Resultado['vaga']; ?></h6>
+                                <h6 class="nome_materia"><?php echo $Resultado['TB_VAGA_MATERIA']; ?></h6>
 
-                                <h6 class="escola"><?php echo $Resultado['escola']; ?></h6>
+                                <h6 class="escola"><?php echo $Resultado['TB_INSTITUIÇÃO_NOME']; ?></h6>
                             </td>
                         </tr>
                     </table> 
