@@ -176,7 +176,9 @@
     margin-left: 15px;
     object-fit: cover;
     object-position: center;
-    background-color: var(--cor-001);
+    padding: 8px;
+    border-radius: 10px;
+    color: var(--cor-001);
 }
 
 .nome_materia{

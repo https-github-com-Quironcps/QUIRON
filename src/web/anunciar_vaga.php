@@ -83,7 +83,7 @@
                             <input type="submit" name="input-enviar" class='botao-001' value="Anunciar Vaga">
                         </form>
                             <br>
-                        <img src="images/2.png" class="img-anunciar">
+                        <img src="images/2.png" onerror="handleError(this)" class="img-anunciar">
                     </div>
                     <div class="ab">
                     </div>

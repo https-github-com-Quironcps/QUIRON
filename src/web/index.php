@@ -1,8 +1,8 @@
-<!-- <?php
-    // include('../server/PDO/conexao.php');
+<?php
+    include('../server/PDO/conexao.php');
 
-    // $sth = $pdo->prepare('SELECT * FROM `TB_VAGA`');
-?> -->
+    include('../server/busca_vagas.php');
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -68,25 +68,20 @@
                 </div>
             </div>
 
-
         <div class="conteudo">
         <center>
             <?php   
-            $sth->execute();
-
-            $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
-            
                 if (count($resultados)) {
                 foreach($resultados as $Resultado){
                 ?>
                     <table class="table1">
                         <tr>
-                            <td class="td1"><img class= "foto-perfil" src=""></td>
+                            <td class="td1"><img class="foto-perfil" onerror="handleError(this)" src=""></td>
 
                             <td>
                                 <h6 class="nome_materia"><?php echo $Resultado['TB_VAGA_MATERIA']; ?></h6>
 
-                                <h6 class="escola"><?php echo $Resultado['TB_INSTITUIÇÃO_NOME']; ?></h6>
+                                <h6 class="escola"><?php echo $Resultado['FK_INSTITUICAO']; ?></h6>
                             </td>
                         </tr>
                     </table> 
