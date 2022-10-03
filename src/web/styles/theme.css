@@ -48,7 +48,7 @@
     --color-003: #8C8398;   /* para os textos das páginas e das "linhas" que separam parágrafos (na tela de contato tem um exemplo) */
     --color-004: #f0efef;   /* para o texto que vai dentro dos botões */
     --color-005: #F2EFFB;   /* cor das divs que estão ao fundo de outros elementos (no formulário da tela contato, por exemplo), ou dos campos de texto com fundo branco (tela de escolas, por exemplo */
-    --color-006: rgba(54, 54, 54, 0.8); /* cor da footer */
+    --color-006: #ffff; /* cor da navbar */
 
 }
 
@@ -62,6 +62,7 @@
     --color-002: #414141;   /* cor para o "hover" dos botões, inputs, entre outros */
     --color-003: #D3D3D3;   /* para os textos das páginas e das "linhas" que separam parágrafos (na tela de contato tem um exemplo) */
     --color-004: #D3D3D3;   /* para o texto que vai dentro dos botões */
-    --color-005: #646464;   /* cor das divs que estão ao fundo de outros elementos (no formulário da tela contato, por exemplo), ou dos campos de texto com fundo branco (tela de escolas, por exemplo */
+    --color-005: #737373;   /* cor das divs que estão ao fundo de outros elementos (no formulário da tela contato, por exemplo), ou dos campos de texto com fundo branco (tela de escolas, por exemplo */
+    --color-006: rgba(54, 54, 54, 0.8); /* cor da navbar */
 
 } 

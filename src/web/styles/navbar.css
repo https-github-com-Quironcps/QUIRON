@@ -34,8 +34,8 @@ nav{
     height: 75px;
     z-index: 9;
     transition:0.7s;
-    background-color: #ffffff;
-    box-shadow: 0 0 0.5em grey;
+    background-color: var(--color-006);
+    box-shadow: 0 0 0.5em var(--grey);
 }
 
 .brand{
@@ -65,11 +65,11 @@ nav a{
     transition: 0.3s;
     font-weight: 560;
     font-family: Raleway;
-    color: rgb(35, 36, 40);
+    color: var(--color-003);
 }
 
 nav a:hover{
-    color: #532ec1;
+    color: var(--color-002);
     transition: all 0.5s ease;
     padding-left: 20px;
 }
@@ -82,7 +82,7 @@ nav .fa-bars{
 }
 
 nav .fa-bars:hover{
-    color: #6131eb;
+    color: var(--color-002);
 }
 
 .logo{
@@ -101,7 +101,7 @@ nav .fa-bars:hover{
     height: auto;
     width: 240px;
     position: absolute;
-    background-color: #effbf3;
+    background-color: var(--color-005);
     transition: 0.5s ease;
     border-radius: 5px;
     right: 195px;
@@ -130,15 +130,15 @@ nav .fa-bars:hover{
     width: 40px;
     height: 40px;
     text-align: center;
-    color: rgba(97, 49, 235, 0.70);
+    color: var(--color-001);
 }
 
 .slide ul li a{
-    color:rgb(36, 36, 36);
+    color: var(--color-003);
 }
 
 .slide ul li a:hover{
-    color: #6131eb;
+    color: var(--color-002);
 }
 
 .inputNav{
@@ -163,7 +163,7 @@ nav .fa-bars:hover{
     position: absolute;
     height: 2px;
     width: 20px;
-    background-color: rgb(57, 57, 57);
+    background-color: var(--color-003);
     border-radius: 50px;
     transition: 0.3s ease;
 }
@@ -206,8 +206,8 @@ input:checked ~ .toggle .middle_line{
 }
 
 input:checked ~ .toggle{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    background-color: #6031eb8a;
+    box-shadow: 0 0 10px var(--grey);
+    background-color: var(--color-001);
 }
 
 input:checked ~ .slide{
@@ -216,15 +216,15 @@ transform: translateX(100px);
 
 ::-webkit-scrollbar{
     width: 8px;
-    background-color: rgba(200, 200, 200);
-    border: 5px solid white;
+    background-color: var(--color-003);
+    border: 5px solid var(--white);
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #DCDCDC;
+    background-color: var(--grey);
     border-radius: 50px;
    
-    border: 2px solid white;
+    border: 2px solid var(--color-004);
 }
 
 .hover-lis{
@@ -233,15 +233,15 @@ transform: translateX(100px);
     text-align: center;
     transition: all 1.8s ease;
     margin-right: 35px;
-    color: #6131eb;
+    color: var(--color-002);
     font-size: 15px;
     font-weight: 800;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background-color: #a0a0a0;
+    background-color: var(--color-003);
     border-radius: 50px;
-    border: 2px solid white;
+    border: 2px solid var(--white);
     transition: all 0.8s ease;
 }
 
@@ -259,7 +259,7 @@ transform: translateX(100px);
     }
 
     .hover-lis:hover{
-        color: #6131eb;
+        color: var(--color-002);
         opacity: 0.6;
     }
 
