@@ -37,11 +37,21 @@
     border-radius: 20px;
     margin-left: 7.5%;
     margin-right: 7.5%;
-    background-color: var(--white);
+    background-color: green;
     width: 85%;
     height: 50%;
     padding-bottom: 15%;
     padding-top: 15%;
+}
+
+.bi-camera{
+    font-size: 80px;
+    color: var(--cor-002);
+    opacity: 50%;
+}
+
+img[src=""], img:not([src]) {
+    display: none;
 }
 
 .div-alterar-texto{
@@ -186,12 +196,6 @@
     float: right;
     margin-top: 25px;
     margin-left: 10px;
-}
-
-.bi-camera{
-    font-size: 80px;
-    color: var(--cor-002);
-    opacity: 50%;
 }
 
 @media screen and (max-width: 1255px) {

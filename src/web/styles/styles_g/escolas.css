@@ -119,18 +119,17 @@
 
 .foto-perfil{
     display: inline;
-    width: 12vh;
-    height: 12vh;
+    width: 10vh;
+    height: 10vh;
     border-radius: 5px;
     margin-left: 1.5vh;
-    background-color: #7e57c2;
     transition: all 1s;
 }
 
 marquee{
     margin-top: 2vh;
     margin-left: 2vh;
-    width: 31vh;
+    width: 31vw;
     color: #7E7E7E;
 }
 
@@ -163,9 +162,13 @@ input[type=text] {
     }
 
     .foto-perfil{
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         margin-left: 10px;
+    }
+
+    marquee{
+        width: 61vw;
     }
 }
 

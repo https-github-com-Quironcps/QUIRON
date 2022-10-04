@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="styles/styles_l/editar_info.css">
     <link rel="stylesheet" href="styles/theme.css">
+    <script src="scripts/ImagenError.js"></script>
+    
 </head>
 <body>
 <?php include('partials/header.php') ?>
@@ -21,6 +23,7 @@
             <h3>Divulgue sua escola</h3>
 
             <div class="sub-div-alterar-img">
+                <img src="" alt="">
                 <i class="bi bi-camera"></i>
             </div>
 

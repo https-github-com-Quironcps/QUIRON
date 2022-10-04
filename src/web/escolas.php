@@ -8,6 +8,7 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="../web/styles/styles_g/escolas.css">
     <link rel="stylesheet" href="styles/theme.css">
+    <script src="scripts/ImagenError.js"></script>
 
     <title>QUIRON - ESCOLAS</title>
 </head>
@@ -31,61 +32,42 @@
         <div class="conteudo">
             <!-- primeira linha -->
             <div class="table1">
-                
-                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
+                    <div class="td1"><img class= "foto-perfil" onerror="handleError(this)" src="#">
                         <marquee behavior="slide" direction="left">
                             <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
                         </marquee>
                     </div>
-                
-                    <div class="td1"><img class= "foto-perfil" src="images/etec2.jpg">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Santa Ifigênia</h6>
-                        </marquee>
-                    </div>
-                
-                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Paulistano</h6>
-                        </marquee>
-                    </div>
 
-                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
+                    <div class="td1"><img class= "foto-perfil" onerror="handleError(this)" src="#">
                         <marquee behavior="slide" direction="left">
                             <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
                         </marquee>
                     </div>
-                
-                    <div class="td1"><img class= "foto-perfil" src="images/etec2.jpg">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Santa Ifigênia</h6>
-                        </marquee>
-                    </div>
-                
-                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Paulistano</h6>
-                        </marquee>
-                    </div>
 
-                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
+
+                    <div class="td1"><img class= "foto-perfil" onerror="handleError(this)" src="#">
                         <marquee behavior="slide" direction="left">
                             <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
                         </marquee>
                     </div>
-                
-                    <div class="td1"><img class= "foto-perfil" src="images/etec2.jpg">
+
+                    <div class="td1"><img class= "foto-perfil" onerror="handleError(this)" src="images/etec.jpeg">
                         <marquee behavior="slide" direction="left">
-                            <h6>Etec Santa Ifigênia</h6>
-                        </marquee>
-                    </div>
-                
-                    <div class="td1"><img class= "foto-perfil" src="images/etec1.jpg">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Paulistano</h6>
+                            <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
                         </marquee>
                     </div>
 
+                    <div class="td1"><img class= "foto-perfil" onerror="handleError(this)" src="#">
+                        <marquee behavior="slide" direction="left">
+                            <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
+                        </marquee>
+                    </div>
+
+                    <div class="td1"><img class= "foto-perfil" onerror="handleError(this)" src="#">
+                        <marquee behavior="slide" direction="left">
+                            <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
+                        </marquee>
+                    </div>
                     <div class="td2">ㅤ</div>
         </div>
         </center>
