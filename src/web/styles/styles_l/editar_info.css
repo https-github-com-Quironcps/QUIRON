@@ -10,21 +10,23 @@
 
 .h1002{
     margin-top: 15px;
-    color: var(--cor-004);
+    color: var(--cor-rgb-008);
     font-size: 25px;
+    font-weight: 100;
 }
 
 .div-alterar-img{
     border-radius: 20px;
     text-align: center;
     width: 30%;
-    background-color: var(--cor-rgb-002);
+    background-color: var(--color-005);
 }
 
 .div-alterar-img h3{
     font-size: 17px;
-    font-weight: 590;
+    font-weight: 390;
     line-height: 60px;
+    color: var(--color-troca);
     margin-top: 15%;
 }
 
@@ -49,9 +51,9 @@
     width: 70%;
     margin-left: 5vw;
     padding: 8vh 20px;
-    border: 1px solid var(--cor-rgb-001);
+    border: 1px solid var(--color-001);
     font-size: 17px;
-    font-weight: 590;
+    font-weight: 390;
 }
 
 .div-alterar-form{
@@ -60,12 +62,13 @@
 
 #input-text-alterar{
     font-size: 16px;
-    font-weight: 590;
+    font-weight: 390;
     margin-top: 20px;
-    background-color: var(--cor-rgb-002);
+    background-color: var(--color-005);
     border: 0;
     border-radius: 5px;
     padding: 1px 10px;
+    color: var(--color-troca);
     align-content: space-between;
 }
 
@@ -167,7 +170,7 @@
 #submit-text-alterar{
     width: 110px;
     height: 30px;
-    background-color: var(--cor-rgb-003);
+    background-color: var(--color-001);
     color: var(--white);
     border-radius: 5px;
     border: none;
@@ -177,7 +180,7 @@
     width: 130px;
     height: 30px;
     background-color: var(--cor-rgb-005);
-    color: var(--white);
+    color: white;
     border-radius: 5px;
     border: none;
 }
@@ -237,7 +240,7 @@
 
     .div-alterar-img h3{
         font-size: 15px;
-        font-weight: 590;
+        font-weight: 390;
         flex: 1;
         line-height: 60px;
         margin-top: 1%;
@@ -293,7 +296,7 @@
     
     .div-alterar-img h3{
         font-size: 15px;
-        font-weight: 590;
+        font-weight: 390;
         flex: 1;
         line-height: normal;
         margin-top: 5%;

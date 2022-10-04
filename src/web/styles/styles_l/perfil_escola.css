@@ -6,8 +6,9 @@
 
 .h1002{
     margin-top: 15px;
-    color: var(--cor-004);
+    color: var(--cor-rgb-008);
     font-size: 25px;
+    font-weight: 290;
 }
 
 .div-imagens{
@@ -34,7 +35,7 @@
     text-align: center;
     width: 70vw;
     height: auto;
-    background-color: var(--cor-rgb-002);
+    background-color: var(--color-005);
     display: flex;
     padding: 10px;
     align-items: center;
@@ -64,17 +65,16 @@
     border-radius: 20px;
     width: 70%;
     padding: 8vh 20px;
-    border: 1px solid var(--cor-rgb-001);
+    border: 1px solid var(--color-001);
     font-size: 17px;
-    font-weight: 590;
+    font-weight: 490;
     height: auto;
 }
 
 #input-text-alterar{
     font-size: 16px;
-    font-weight: 590;
     margin-top: 20px;
-    background-color: var(--cor-rgb-002);
+    background-color: var(--color-004);
     border: 0;
     border-radius: 5px;
     padding: 1px 10px;
@@ -85,7 +85,7 @@
     font-size: 16px;
     font-weight: 590;
     margin-top: 10px;
-    background-color: var(--cor-rgb-002);
+    background-color: var(--color-004);
     border: 0;
     border-radius: 5px;
     padding: 1px 10px;
@@ -137,7 +137,7 @@
 #submit-text-alterar{
     width: 100px;
     height: 30px;
-    background-color: var(--cor-rgb-003);
+    background-color: var(--cor-008);
     color: white;
     margin-top: 5px;
     border-radius: 5px;

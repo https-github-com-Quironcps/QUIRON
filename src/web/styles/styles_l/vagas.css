@@ -28,18 +28,19 @@
     color: var(--cor-005);
 }
 
+
 .input-textarea{
     width: 170px;
     height: 40px;
     border-radius: 8px;
     border-style: none;
-    background: var(--cor-006);
+    background-color: var(--color-005);
 }
 
 .input-textarea:hover{
     outline: none;
-    border-color: var(--cor-001);
-    box-shadow: 0 0 0 3px var(--cor-001);
+    border-color: var(--color-002);
+    box-shadow: 0 0 0 3px var(--color-002);
     transition: all 1.1s;
 }
 
@@ -49,19 +50,19 @@
     width: 45px;
     border-radius: 10px;
     border-style: none;
-    margin-left: 10px;
-    background-color: var(--cor-rgb-004);
+    margin-left: 5px;
+    background-color: var(--color-001);
 }
 
 .botao-001:hover{
     outline: none;
-    border-color: var(--cor-001);
-    box-shadow: 0 0 0 2px var(--cor-001);
+    border-color: var(--color-002);
+    box-shadow: 0 0 0 2px var(--color-002);
     transition: all 1.1s;
 }
 
 .conteudo{
-    border: 1px solid var(--cor-rgb-001);
+    border: 1px solid var(--color-001);
     width: 70%;
     height: 420px; 
     margin-top: 5vh;
@@ -75,7 +76,7 @@
 }
 
 .div-filtros{
-    background-color: var(--cor-006);
+    background-color: var(--color-005);
     width: 300px;
     height: 420px; 
     margin-top: 5vh;
@@ -84,7 +85,7 @@
     margin-right: 10%;
     padding: 45px 25px;
     font-size: 15px;
-    color: var(--cor-005);
+    color: var(--color-troca);
 }
 
 #text-filtro{
@@ -103,10 +104,9 @@
 .submit-filtrar{
     width: 60%;
     margin-top: 10px;
-    background-color: var(--cor-001);
+    background-color: var(--color-001);
     color: var(--white);
     border: 0;
-    opacity: 70%;
     border-radius: 5px;
     padding: 5px;
     font-size: 15px;
@@ -150,7 +150,7 @@
 
 .table1{
     display: inline;
-    background-color: var(--cor-006);
+    background-color: var(--white);
     width: 42%;
     height: 130px;
     margin: 3%;
@@ -162,33 +162,33 @@
 }
 
 .table1:hover{
-    background-color: var(--cor-rgb-006);
+    background-color: rgba(148, 148, 148, 0.867);
     transition: all 1s;
     color: var(--cor-006);
+    opacity: 0.9;
 }
 
 .foto-perfil{
     display: inline;
     width: 100px;
     height: 100px;
-    border-radius: 5px;
     margin-left: 15px;
     object-fit: cover;
     object-position: center;
-    background-color: var(--cor-001);
+    background-color: var(--color-troca);
 }
 
 .nome_materia{
     margin-top: 1vh;
     margin-left: 2vh;
-    color: var(--cor-rgb-007);
+    color: var(--color-001);
     font-size: 17px;
 }
 
 .escola{
     margin-top: 1vh;
     margin-left: 2vh;
-    color: var(--cor-005);
+    color: var(--color-003);
     font-size: 15px;
 }
 

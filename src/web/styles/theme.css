@@ -49,7 +49,7 @@
     --color-004: #f0efef;   /* para o texto que vai dentro dos botões */
     --color-005: #F2EFFB;   /* cor das divs que estão ao fundo de outros elementos (no formulário da tela contato, por exemplo), ou dos campos de texto com fundo branco (tela de escolas, por exemplo */
     --color-006: #ffff; /* cor da navbar */
-
+    --color-troca: #666666;
 }
 
 .dark:root{
@@ -64,5 +64,5 @@
     --color-004: #D3D3D3;   /* para o texto que vai dentro dos botões */
     --color-005: #737373;   /* cor das divs que estão ao fundo de outros elementos (no formulário da tela contato, por exemplo), ou dos campos de texto com fundo branco (tela de escolas, por exemplo */
     --color-006: rgba(54, 54, 54, 0.8); /* cor da navbar */
-
+    --color-troca: #F2EFFB;
 } 

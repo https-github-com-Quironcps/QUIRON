@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,21 +12,6 @@
     <title>QUIRON - VAGAS</title>
 </head>
 <body>
-    <?php include('partials/navbar-index.php'); ?>
-
-    <div class="container2">
-        <img src="images/logos/arco-light.png" class='fundo_logo'>
-        <div class='fundo_texto'>
-            <br>
-            <h1>O futuro emprego na palma das mãos</h1>
-            <br>
-            <p>Uma proposta de avanço para a empregabilidade de docentes nas instituições de ensino do Centro Paula Souza (CPS)</p>
-            <br>
-            <button class='fundo_botao'>CONFIRA</button>
-        </div>
-        
-        <div>
-
     <?php include('partials/header.php') ?>
     <br>
 
