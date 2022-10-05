@@ -49,20 +49,20 @@
 }
 
 .conteudo{
-    border: 1px solid var(--cor-rgb-001);
     width: 100%;
     height: 420px; 
     margin-top: 5vh;
     margin-bottom: 10vh;
     border-radius: 20px;
     overflow-y: scroll;
+    background-color: var(--color-005);
 }
 
 .h1002{
     margin-top: 115px;
-    color: var(--cor-004);
+    color: var(--cor-rgb-008);
     font-size: 25px;
-
+    font-weight: 300;
 }
 
 .div-total{
@@ -73,12 +73,10 @@
 }
 
 .anunciar{
-    background-color: var(--cor-002);
+    background-color: var(--cor-008);
     width: 140px;
     margin-top: 20px;
     float: right;
-    color: var(--white);
-    opacity: 0.61;
     text-align: center;
     border-radius: 10px;
     padding: 5px;
@@ -87,14 +85,10 @@
 
 .anunciar a{
     text-decoration: none;
-    color: var(--white);
+    color: var(--color-004);
     font-size: 15px;
 }
 
-.anunciar a:hover{
-    text-decoration: none;
-    color: var(--white);
-}
 .titulo1{
     width: 294px;
     height: 52px;
@@ -126,14 +120,14 @@
 }
 
 .td1{
-    background-color: var(--cor-002);
+    background-color: var(--cor-008);
     width: 50px;
     height: 40px;
     text-align: center;
     border-radius: 5px;
-    color: var(--white);
-    font-size: 20px;
-    opacity: 0.61;
+    color: var(--color-004);
+    padding: 8px;
+    font-size: 15px;
     flex: 2;
 }
 
@@ -145,7 +139,7 @@
     border-radius: 5px;
     margin-left: 20px;
     color: var(--cor-007);
-    background-color: var(--cor-006);
+    background-color: var(--color-006);
     width: 100%;
     height: 40px;
     opacity: 61%;

@@ -1,5 +1,11 @@
+<?php
+    include('../server/PDO/conexao.php');
+
+    include('../server/busca_vagas.php');
+?>
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,28 +18,13 @@
     <title>QUIRON - VAGAS</title>
 </head>
 <body>
-    <?php include('partials/navbar-index.php'); ?>
-
-    <div class="container2">
-        <img src="images/logos/arco-light.png" class='fundo_logo'>
-        <div class='fundo_texto'>
-            <br>
-            <h1>O futuro emprego na palma das mãos</h1>
-            <br>
-            <p>Uma proposta de avanço para a empregabilidade de docentes nas instituições de ensino do Centro Paula Souza (CPS)</p>
-            <br>
-            <button class='fundo_botao'>CONFIRA</button>
-        </div>
-        
-        <div>
-
     <?php include('partials/header.php') ?>
     <br>
 
     <div class="filtros">
-            <form action="" class="form" method="POST">
-                <input class='input-textarea' type="text" maxlength="3" placeholder="Código da instituição">
-                <input type="submit" class='botao-001' value="">
+            <form class="form" method="GET">
+                <input class='input-textarea' name="cod" value="<?php echo $cod; ?>" type="number" maxlength="3" placeholder="Código da instituição">
+                <button type="submit" class='botao-001' value="<?php echo $cod; ?>"></button>
             </form>
     </div>
 
@@ -46,12 +37,12 @@
 
                 <div class="div-filtros">
 
-                    <form class="form-filtros" action="">
+                    <form method="GET" class="form-filtros">
                         Localização: <br>
-                        <input type="text" id="text-filtro"><br><br>
+                        <input type="text" name="localizacao" id="text-filtro"><br><br>
 
                         Faixa Salarial: <br>
-                        <input type="text" id="text-filtro" list="faixa">
+                        <input type="text" name="faixa" id="text-filtro" list="faixa">
                         <datalist id="faixa">
                             <option value="">Grade:</option>
                             <option value="Mil - Dois mil"></option>
@@ -62,7 +53,7 @@
                         <br><br>
 
                         Tipo de Grade: <br>
-                        <input type="text" id="text-filtro" list="grade">
+                        <input type="text" name="grade" id="text-filtro" list="grade">
                         <datalist id="grade">
                             <option value="Ensino Médio">Componente Comum</option>
                             <option value="Técnico">Curso</option>
@@ -76,135 +67,33 @@
                     </form>
                 </div>
             </div>
-            
 
         <div class="conteudo">
         <center>
-            <table class="table1">
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src=""></td>
+            <?php   
+                if (count($resultados)) {
+                foreach($resultados as $Resultado){
+                ?>
+                    <table class="table1">
+                        <tr>
+                            <td class="td1"><img class="foto-perfil" onerror="handleError(this)" src=""></td>
 
-                    <td>
-                        <h6 class="nome_materia">Nome da matéria</h6>
+                            <td>
+                                <h6 class="nome_materia"><?php echo $Resultado['TB_VAGA_MATERIA']; ?></h6>
 
-                        <h6 class="escola">Nome da escola</h6>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="#"></td>
-
-                    <td>
-                        <h6 class="nome_materia">Nome da matéria</h6>
-
-                        <h6 class="escola">Nome da escola</h6>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="#"></td>
-
-                    <td>
-                        <h6 class="nome_materia">Nome da matéria</h6>
-
-                        <h6 class="escola">Nome da escola</h6>
-                    </td>
-                </tr>
-            </table><table class="table1">
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="#"></td>
-
-                    <td>
-                        <h6 class="nome_materia">Nome da matéria</h6>
-
-                        <h6 class="escola">Nome da escola</h6>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="#"></td>
-
-                    <td>
-                        <h6 class="nome_materia">Nome da matéria</h6>
-
-                        <h6 class="escola">Nome da escola</h6>
-                    </td>
-                </tr>
-            </table><table class="table1">
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="#"></td>
-
-                    <td>
-                        <h6 class="nome_materia">Nome da matéria</h6>
-
-                        <h6 class="escola">Nome da escola</h6>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="#"></td>
-
-                    <td>
-                        <h6 class="nome_materia">Nome da matéria</h6>
-
-                        <h6 class="escola">Nome da escola</h6>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="#"></td>
-
-                    <td>
-                        <h6 class="nome_materia">Nome da matéria</h6>
-
-                        <h6 class="escola">Nome da escola</h6>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="#"></td>
-
-                    <td>
-                        <h6 class="nome_materia">Nome da matéria</h6>
-
-                        <h6 class="escola">Nome da escola</h6>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="table1">
-                <tr>
-                    <td class="td1"><img class= "foto-perfil" src="#"></td>
-
-                    <td>
-                        <h6 class="nome_materia">Nome da matéria</h6>
-
-                        <h6 class="escola">Nome da escola</h6>
-                    </td>
-                </tr>
-            </table>
-            
+                                <h6 class="escola"><?php echo $Resultado['FK_INSTITUICAO']; ?></h6>
+                            </td>
+                        </tr>
+                    </table> 
+                <?php
+                }}
+            ?>
         <div>ㅤ</div>
         </div>
-
-        
         </center>
         </div>
     </div>
 
     <?php include('partials/footer.php'); ?>
-
 </body>
 </html>

@@ -123,8 +123,8 @@ body{
 
 .foto-perfil{
     display: inline;
-    width: 12vh;
-    height: 12vh;
+    width: 10vh;
+    height: 10vh;
     border-radius: 5px;
     margin-left: 1.5vh;
     background-color: var(--color-002);
@@ -134,8 +134,8 @@ body{
 marquee{
     margin-top: 2vh;
     margin-left: 2vh;
-    width: 31vh;
     color: var(--color-003);
+    width: 31vw;
 }
 
 .td2{
@@ -167,9 +167,13 @@ input[type=text] {
     }
 
     .foto-perfil{
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         margin-left: 10px;
+    }
+
+    marquee{
+        width: 61vw;
     }
 }
 

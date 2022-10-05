@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="styles/styles_l/editar_info.css">
     <link rel="stylesheet" href="styles/theme.css">
+    <script src="scripts/ImagenError.js"></script>
+    
 </head>
 <body>
 <?php include('partials/header.php') ?>
@@ -21,7 +23,8 @@
             <h3>Divulgue sua escola</h3>
 
             <div class="sub-div-alterar-img">
-                <i class="bi bi-camera"></i>
+                <img src="" onerror="handleError(this)" class="imagem-anexo" alt="">
+                <!-- <i class="bi bi-camera"></i> -->
             </div>
 
             <button id="submit-text-alterar" class="abc001">Anexar</button>

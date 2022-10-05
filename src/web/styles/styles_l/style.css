@@ -19,7 +19,7 @@
     border: 0;
     font-size: 15px;
     transition: all 0.1s;
-    background-color: var(--cor-rgb-002);
+    background-color: var(--color-004);
 }
 
 .form label{
@@ -44,16 +44,15 @@
     line-height: 52px;
     align-items: center;
     margin-top: 10px;
-    color: var(--cor-002);
+    color: var(--color-001);
     opacity: 60%;
 }
 
 /* Botão */
 .botao-001{
-    background-color: var(--cor-001);
+    background-color: var(--cor-008);
     width: 150px;
-    opacity: 0.7;
-    color: var(--white);
+    color: var(--color-004);
     padding: 5px;
     border-radius: 5px;
     font-size: 15px;
@@ -89,7 +88,7 @@
 .container1{
     width: 70%;
     padding: 20px 60px;
-    border: 1px solid var(--cor-rgb-001);
+    border: 1px solid var(--color-001);
     text-align: left;
     border-radius: 20px;
     margin-top: 100px;

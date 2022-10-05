@@ -66,7 +66,7 @@
                             <br>
                         </form>
                             
-                        <img src="images/svgs/img_login.svg" class="img-anunciar">
+                        <img src="images/svgs/img_login.svg" onerror="handleError(this)" class="img-anunciar">
                     
                     <div class="ab">
                    

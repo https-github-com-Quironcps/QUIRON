@@ -15,7 +15,7 @@
     --grey: grey;
 
     --cor-001: #7e57c2;
-    --cor-002: #6131EB;
+    --cor-002:- #6131EB;
     --cor-003: #9d88da;
     --cor-004: #8C8398;
     --cor-005: #7E7E7E;
@@ -48,8 +48,13 @@
     --color-003: #8C8398;   /* para os textos das páginas e das "linhas" que separam parágrafos (na tela de contato tem um exemplo) */
     --color-004: #f0efef;   /* para o texto que vai dentro dos botões */
     --color-005: #F2EFFB;   /* cor das divs que estão ao fundo de outros elementos (no formulário da tela contato, por exemplo), ou dos campos de texto com fundo branco (tela de escolas, por exemplo */
+<<<<<<< HEAD
     --color-006: #ffff;     /* cor da navbar */
     
+=======
+    --color-006: #ffff; /* cor da navbar */
+    --color-troca: #666666;
+>>>>>>> 16f4ac38b78cd4e96009039861f9fddfa654cdbc
 }
 
 .dark:root{
@@ -64,4 +69,9 @@
     --color-004: #D3D3D3;   /* para o texto que vai dentro dos botões */
     --color-005: #737373;   /* cor das divs que estão ao fundo de outros elementos (no formulário da tela contato, por exemplo), ou dos campos de texto com fundo branco (tela de escolas, por exemplo */
     --color-006: rgba(54, 54, 54, 0.8); /* cor da navbar */
+<<<<<<< HEAD
 } 
+=======
+    --color-troca: #F2EFFB;
+} 
+>>>>>>> 16f4ac38b78cd4e96009039861f9fddfa654cdbc
