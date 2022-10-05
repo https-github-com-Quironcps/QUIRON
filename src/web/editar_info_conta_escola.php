@@ -23,8 +23,8 @@
             <h3>Divulgue sua escola</h3>
 
             <div class="sub-div-alterar-img">
-                <img src="" alt="">
-                <i class="bi bi-camera"></i>
+                <img src="" onerror="handleError(this)" class="imagem-anexo" alt="">
+                <!-- <i class="bi bi-camera"></i> -->
             </div>
 
             <button id="submit-text-alterar" class="abc001">Anexar</button>

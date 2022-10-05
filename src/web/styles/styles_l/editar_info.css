@@ -1,6 +1,6 @@
 .div-mae{
     width: 80vw;
-    height: 70vh;
+    height: 450px;
     margin-left: 10vw;
     margin-right: 10vw;
     display: flex;
@@ -37,12 +37,17 @@
     border-radius: 20px;
     margin-left: 7.5%;
     margin-right: 7.5%;
-    background-color: green;
     width: 85%;
     height: 50%;
-    padding-bottom: 15%;
-    padding-top: 15%;
+    background-color: white;
 }
+
+img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
+    height: 80px;
+    width: auto;
+    margin-top: 10vh;
+}
+
 
 .bi-camera{
     font-size: 80px;
@@ -50,28 +55,28 @@
     opacity: 50%;
 }
 
-img[src=""], img:not([src]) {
-    display: none;
+.imagem-anexo{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .div-alterar-texto{
     border-radius: 20px;
     width: 70%;
     margin-left: 5vw;
-    padding: 8vh 20px;
+    padding: 40px 20px;
     border: 1px solid var(--cor-rgb-001);
     font-size: 17px;
     font-weight: 590;
 }
 
-.div-alterar-form{
-    height: 25vw;
-}
-
 #input-text-alterar{
     font-size: 16px;
     font-weight: 590;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: var(--cor-rgb-002);
     border: 0;
     border-radius: 5px;
@@ -82,7 +87,7 @@ img[src=""], img:not([src]) {
 /* Nome */
 .form-nome{
     width: 26%;
-    line-height: 10vh;
+    line-height: 20px;
 }
 
 .input-sozinho{
@@ -91,7 +96,7 @@ img[src=""], img:not([src]) {
 
 .form-nome-completo{
     width: 22%;
-    line-height: 10vh;
+    line-height: 20px;
 }
 
 .input-nome{
@@ -101,7 +106,7 @@ img[src=""], img:not([src]) {
 /* Endereco e Nº */
 .form-endereco{
     width: 14%;
-    line-height: 10vh;
+    line-height: 20px;
 }
 
 .input-endereco{
@@ -120,7 +125,7 @@ img[src=""], img:not([src]) {
 /* Bairro e CEP */
 .form-bairro{
     width: 10%;
-    line-height: 10vh;
+    line-height: 20px;
 }
 
 .input-bairro{
@@ -138,7 +143,7 @@ img[src=""], img:not([src]) {
 
 /* Telefone e E-mail */
 .form-tel{
-    line-height: 10vh;
+    line-height: 20px;
     width: 13%;
 }
 
@@ -211,6 +216,18 @@ img[src=""], img:not([src]) {
         height: auto;
     }
 
+    .imagem-anexo{
+        width: 92.5%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
+        height: 50px;
+        width: auto;
+        margin-top: 0;
+    }
+
     .div-alterar-img{
         display: flex;
         width: 90vw;
@@ -261,7 +278,7 @@ img[src=""], img:not([src]) {
 
 @media screen and (max-width: 660px) {
     .div-alterar-texto{
-        height: 680px;
+        height: 770px;
     }
 
     .input-bairro, 
@@ -301,5 +318,11 @@ img[src=""], img:not([src]) {
         flex: 1;
         line-height: normal;
         margin-top: 5%;
+    }
+
+    img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
+        height: 40px;
+        margin-top: 5px;
+        padding: 5%;
     }
 }
