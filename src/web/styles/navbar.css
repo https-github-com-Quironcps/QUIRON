@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+body {
+    background-color: var(--white);
+}
+
 .ul2{
     list-style: none;
     padding: 0;
@@ -105,6 +109,7 @@ nav .fa-bars:hover{
     transition: 0.5s ease;
     border-radius: 5px;
     right: 195px;
+    box-shadow:  0px 0px 16px 0px var(--color-006);
     padding-bottom: 5px;
     transform: translateX(200vw);
 }
@@ -205,11 +210,6 @@ input:checked ~ .toggle .middle_line{
     transform: translateX(-20px);
 }
 
-input:checked ~ .toggle{
-    box-shadow: 0 0 10px var(--grey);
-    background-color: var(--color-001);
-}
-
 input:checked ~ .slide{
 transform: translateX(100px);
 }
@@ -247,6 +247,44 @@ transform: translateX(100px);
 
 .div-nav{
     padding-top: -1000px;
+}
+
+input[type="checkbox"]{
+    width: 3vw;
+    display: flex; 
+    height: 3vh;
+    margin-left: 0.5vw;
+    appearance: none;
+    background-color: var(--color-006);
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 6px 0px var(--color-001);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+}
+
+input:checked[type="checkbox"]{
+    background-color: var(--color-005);
+
+}
+
+input[type="checkbox"]::before{
+    content: '';
+    height: 3vh;
+    width: 3vh;
+    background-color: var(--color-001);
+    border-radius: 50px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+input:checked[type="checkbox"]::before{
+    left: 1.5vw;
+}
+
+.div-modo{
+    display: flex;
+    align-self: center;
 }
 
 /* Responsive MENU */

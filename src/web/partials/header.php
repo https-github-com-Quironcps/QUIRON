@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="styles/navbar.css">
 
+    <script src="../web/scripts/modo-dark.js"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
@@ -34,8 +36,17 @@
                         <li><a href="editar_perfil.php"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
                         <li><a href="editar_info_conta_escola.php"><i class="bi bi-gear-fill"></i>ㅤConfigurações</a></li>
                         <li><a href="contato.php"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
-                        <li><a href="anunciar_vaga.php"><i class="bi bi-megaphone-fill"></i>ㅤAnunciar vaga</a></li>
+                        <li><a href="anunciar_vaga.php"><i class="bi bi-megaphone-fill"></i>ㅤAnunciar vaga</a></li><br><br>
+
+                        <div class="div-modo">
+                            <a class="text-modo">Modo escuro:</a>
+                            <input type="checkbox" onclick="javascript:themeToggle()" class="check-modo" name="" id="">
+                        </div>
+
+                        
+
                     </ul>
+
                 </div>
             </label>
 
