@@ -210,49 +210,6 @@ input:checked ~ .toggle .middle_line{
     transform: translateX(-20px);
 }
 
-<<<<<<< HEAD
-=======
-input:checked ~ .toggle{
-    box-shadow: 0 0 10px var(--grey);
-    background-color: var(--color-001);
-}
-
-.mensagem{
-    background: url("../images/svgs/check.svg") no-repeat 50% 10%;
-    background-size: 100px;
-    background-color: var(--white);
-    position: absolute;
-    align-content: center;
-    width: 60%;
-    left: 20%;
-    right: 20%;
-    top: 30%;
-    height: 420px;
-    align-items: center;
-    padding-top: 200px;
-    text-align: center;
-    border: 1px solid var(--cor-rgb-001);
-    border-radius: 20px;
-    transition: all 1s;
-    padding-left: 10px;
-    padding-right: 10px;
-    z-index: 1000;
-}
-
-.confirmar{
-    background-color: var(--cor-001);
-    width: 150px;
-    opacity: 0.7;
-    color: var(--white);
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 15px;
-    transition: all 1s;
-    border: 0;
-    margin-top: 100px;
-}
-
->>>>>>> 16f4ac38b78cd4e96009039861f9fddfa654cdbc
 input:checked ~ .slide{
 transform: translateX(100px);
 }
