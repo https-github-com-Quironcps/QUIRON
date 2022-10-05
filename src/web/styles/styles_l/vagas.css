@@ -30,11 +30,12 @@
 
 
 .input-textarea{
-    width: 170px;
+    width: 180px;
     height: 40px;
     border-radius: 8px;
     border-style: none;
     background-color: var(--color-005);
+    padding-left: 10px;
 }
 
 .input-textarea:hover{
@@ -176,6 +177,9 @@
     object-fit: cover;
     object-position: center;
     background-color: var(--color-troca);
+    padding: 8px;
+    border-radius: 10px;
+    color: var(--cor-001);
 }
 
 .nome_materia{

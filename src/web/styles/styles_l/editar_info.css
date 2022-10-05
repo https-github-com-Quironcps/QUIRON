@@ -1,6 +1,6 @@
 .div-mae{
     width: 80vw;
-    height: 70vh;
+    height: 450px;
     margin-left: 10vw;
     margin-right: 10vw;
     display: flex;
@@ -39,11 +39,30 @@
     border-radius: 20px;
     margin-left: 7.5%;
     margin-right: 7.5%;
-    background-color: var(--white);
     width: 85%;
     height: 50%;
-    padding-bottom: 15%;
-    padding-top: 15%;
+    background-color: white;
+}
+
+img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
+    height: 80px;
+    width: auto;
+    margin-top: 10vh;
+}
+
+
+.bi-camera{
+    font-size: 80px;
+    color: var(--cor-002);
+    opacity: 50%;
+}
+
+.imagem-anexo{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .div-alterar-texto{
@@ -52,18 +71,16 @@
     margin-left: 5vw;
     padding: 8vh 20px;
     border: 1px solid var(--color-001);
+    padding: 40px 20px;
+    border: 1px solid var(--color-001);
     font-size: 17px;
     font-weight: 390;
-}
-
-.div-alterar-form{
-    height: 25vw;
 }
 
 #input-text-alterar{
     font-size: 16px;
     font-weight: 390;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: var(--color-005);
     border: 0;
     border-radius: 5px;
@@ -75,7 +92,7 @@
 /* Nome */
 .form-nome{
     width: 26%;
-    line-height: 10vh;
+    line-height: 20px;
 }
 
 .input-sozinho{
@@ -84,7 +101,7 @@
 
 .form-nome-completo{
     width: 22%;
-    line-height: 10vh;
+    line-height: 20px;
 }
 
 .input-nome{
@@ -94,7 +111,7 @@
 /* Endereco e Nº */
 .form-endereco{
     width: 14%;
-    line-height: 10vh;
+    line-height: 20px;
 }
 
 .input-endereco{
@@ -113,7 +130,7 @@
 /* Bairro e CEP */
 .form-bairro{
     width: 10%;
-    line-height: 10vh;
+    line-height: 20px;
 }
 
 .input-bairro{
@@ -131,7 +148,7 @@
 
 /* Telefone e E-mail */
 .form-tel{
-    line-height: 10vh;
+    line-height: 20px;
     width: 13%;
 }
 
@@ -191,12 +208,6 @@
     margin-left: 10px;
 }
 
-.bi-camera{
-    font-size: 80px;
-    color: var(--cor-002);
-    opacity: 50%;
-}
-
 @media screen and (max-width: 1255px) {
     .div-alterar-texto{
         font-size: 15px;
@@ -208,6 +219,18 @@
         display: contents;
         align-items: center;
         height: auto;
+    }
+
+    .imagem-anexo{
+        width: 92.5%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
+        height: 50px;
+        width: auto;
+        margin-top: 0;
     }
 
     .div-alterar-img{
@@ -260,7 +283,7 @@
 
 @media screen and (max-width: 660px) {
     .div-alterar-texto{
-        height: 680px;
+        height: 770px;
     }
 
     .input-bairro, 
@@ -300,5 +323,11 @@
         flex: 1;
         line-height: normal;
         margin-top: 5%;
+    }
+
+    img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
+        height: 40px;
+        margin-top: 5px;
+        padding: 5%;
     }
 }

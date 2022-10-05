@@ -21,7 +21,7 @@
             <h3>Foto de perfil</h3>
 
             <div class="sub-div-alterar-img">
-                <i class="bi bi-camera"></i>
+                <img src="" onerror="handleError(this)" class="imagem-anexo" alt="">
             </div>
 
             <button id="submit-text-alterar" class="abc001">Anexar</button>
