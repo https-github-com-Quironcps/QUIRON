@@ -1,7 +1,7 @@
 <?php
     include('../server/PDO/conexao.php');
-
     include('../server/busca_vagas.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -76,12 +76,12 @@
                 ?>
                     <table class="table1">
                         <tr>
-                            <td class="td1"><img class="foto-perfil" onerror="handleError(this)" src=""></td>
+                            <td class="td1"><img class="foto-perfil" onerror="handleError(this)" src="<?php echo $Resultado['Foto']; ?>"></td>
 
                             <td>
                                 <h6 class="nome_materia"><?php echo $Resultado['TB_VAGA_MATERIA']; ?></h6>
 
-                                <h6 class="escola"><?php echo $Resultado['FK_INSTITUICAO']; ?></h6>
+                                <h6 class="escola"><?php echo $Resultado['Nome']; ?></h6>
                             </td>
                         </tr>
                     </table> 
