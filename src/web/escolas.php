@@ -1,3 +1,7 @@
+<?php
+    include ('../server/busca_escolas.php'); 
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br" class="light">
 <head>
@@ -18,10 +22,10 @@
     
     <div>
         <div class="filtros">
-            <form action="" class="form" method="POST">
-                <input class='input-textarea' type="text" maxlength="3" placeholder="Código da instituição">
-                <input type="submit" class='botao-001' value="">
-            </form>
+                <form class="form" method="POST">
+                    <input class='input-textarea' name="cod" value="<?php echo $cod; ?>" type="number" maxlength="3" placeholder="Código da instituição">
+                    <button type="submit" class='botao-001'></button>
+                </form>
         </div>
         <br>
         <center><h1 class="titulo1">Escolas disponíveis:</h1></center>
@@ -32,42 +36,21 @@
         <div class="conteudo">
             <!-- primeira linha -->
             <div class="table1">
-                    <div class="td1"><img class= "foto-perfil" onerror="handleError(this)" src="#">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
-                        </marquee>
-                    </div>
+                <?php   
+                    if (count($resultados)) {
+                    foreach($resultados as $Resultado){
+                ?>
+                        <div class="td1">
+                            <img class="foto-perfil" onerror="handleError(this)" src="<?php echo $Resultado['Foto']; ?>">
 
-                    <div class="td1"><img class= "foto-perfil" onerror="handleError(this)" src="#">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
-                        </marquee>
-                    </div>
-
-
-                    <div class="td1"><img class= "foto-perfil" onerror="handleError(this)" src="#">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
-                        </marquee>
-                    </div>
-
-                    <div class="td1"><img class= "foto-perfil" onerror="handleError(this)" src="images/etec.jpeg">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
-                        </marquee>
-                    </div>
-
-                    <div class="td1"><img class= "foto-perfil" onerror="handleError(this)" src="#">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
-                        </marquee>
-                    </div>
-
-                    <div class="td1"><img class= "foto-perfil" onerror="handleError(this)" src="#">
-                        <marquee behavior="slide" direction="left">
-                            <h6>Etec Professora Ermelinda Giannini Teixeira</h6>
-                        </marquee>
-                    </div>
+                            <marquee behavior="slide" direction="left">
+                                <h6><?php echo $Resultado['Nome']; ?></h6>
+                            </marquee>
+                        </div>
+                   
+                <?php
+                    }}
+                ?>
                     <div class="td2">ㅤ</div>
         </div>
         </center>
