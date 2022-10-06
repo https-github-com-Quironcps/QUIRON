@@ -1,7 +1,6 @@
 <?php
     include('../server/PDO/conexao.php');
     include('../server/busca_vagas.php');
-
 ?>
 
 <!DOCTYPE html>
@@ -22,9 +21,9 @@
     <br>
 
     <div class="filtros">
-            <form class="form" method="GET">
+            <form class="form" method="POST">
                 <input class='input-textarea' name="cod" value="<?php echo $cod; ?>" type="number" maxlength="3" placeholder="Código da instituição">
-                <button type="submit" class='botao-001' value="<?php echo $cod; ?>"></button>
+                <button type="submit" class='botao-001'></button>
             </form>
     </div>
 
@@ -37,7 +36,7 @@
 
                 <div class="div-filtros">
 
-                    <form method="GET" class="form-filtros">
+                    <form method="POST" class="form-filtros">
                         Localização: <br>
                         <input type="text" name="localizacao" id="text-filtro"><br><br>
 

@@ -1,9 +1,9 @@
 <?php
 
 // Busca por CODIGO DA ETEC
-if (!empty($_GET['cod']))
+if (!empty($_POST['cod']))
 {
-    $cod = trim($_GET['cod']);
+    $cod = trim($_POST['cod']);
 
     $sth = $pdo->prepare('SELECT 
     TB_VAGA.TB_VAGA_MATERIA,
@@ -20,12 +20,12 @@ if (!empty($_GET['cod']))
     $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
 }
 
-elseif (isset($_GET['localizacao'], $_GET['grade'], $_GET['faixa'])
-&& !empty($_GET['localizacao'] && $_GET['grade'] && $_GET['faixa']))
+elseif (isset($_POST['localizacao'], $_POST['grade'], $_POST['faixa'])
+&& !empty($_POST['localizacao'] && $_POST['grade'] && $_POST['faixa']))
 {
-    $localizacao = trim($_GET['localizacao']);
-    $faixa = trim($_GET['faixa']);
-    $grade = trim($_GET['grade']);
+    $localizacao = trim($_POST['localizacao']);
+    $faixa = trim($_POST['faixa']);
+    $grade = trim($_POST['grade']);
 
     $sth = $pdo->prepare('SELECT 
     TB_VAGA.TB_VAGA_MATERIA,
@@ -46,11 +46,11 @@ elseif (isset($_GET['localizacao'], $_GET['grade'], $_GET['faixa'])
     $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
 }
 
-elseif (isset($_GET['localizacao'], $_GET['grade'], $_GET['faixa'])
-&& !empty($_GET['localizacao'])){
-    if (!empty($_GET['grade'])){
-        $localizacao = trim($_GET['localizacao']);
-        $grade = trim($_GET['grade']);
+elseif (isset($_POST['localizacao'], $_POST['grade'], $_POST['faixa'])
+&& !empty($_POST['localizacao'])){
+    if (!empty($_POST['grade'])){
+        $localizacao = trim($_POST['localizacao']);
+        $grade = trim($_POST['grade']);
 
         $sth = $pdo->prepare('SELECT 
         TB_VAGA.TB_VAGA_MATERIA,
@@ -69,9 +69,9 @@ elseif (isset($_GET['localizacao'], $_GET['grade'], $_GET['faixa'])
         $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    elseif (!empty($_GET['faixa'])){
-        $localizacao = trim($_GET['localizacao']);
-        $faixa = trim($_GET['faixa']);
+    elseif (!empty($_POST['faixa'])){
+        $localizacao = trim($_POST['localizacao']);
+        $faixa = trim($_POST['faixa']);
 
         $sth = $pdo->prepare('SELECT 
         TB_VAGA.TB_VAGA_MATERIA,
@@ -91,7 +91,7 @@ elseif (isset($_GET['localizacao'], $_GET['grade'], $_GET['faixa'])
     }
 
     else {
-        $localizacao = trim($_GET['localizacao']);
+        $localizacao = trim($_POST['localizacao']);
 
         $sth = $pdo->prepare('SELECT 
         TB_VAGA.TB_VAGA_MATERIA,
@@ -109,11 +109,11 @@ elseif (isset($_GET['localizacao'], $_GET['grade'], $_GET['faixa'])
     }
 }
 
-elseif (isset($_GET['localizacao'], $_GET['grade'], $_GET['faixa'])
-&& !empty($_GET['grade'])){
-    if (!empty($_GET['faixa'])){
-        $faixa = trim($_GET['faixa']);
-        $grade = trim($_GET['grade']);
+elseif (isset($_POST['localizacao'], $_POST['grade'], $_POST['faixa'])
+&& !empty($_POST['grade'])){
+    if (!empty($_POST['faixa'])){
+        $faixa = trim($_POST['faixa']);
+        $grade = trim($_POST['grade']);
 
         $sth = $pdo->prepare('SELECT 
         TB_VAGA.TB_VAGA_MATERIA,
@@ -133,7 +133,7 @@ elseif (isset($_GET['localizacao'], $_GET['grade'], $_GET['faixa'])
     }
 
     else {
-        $grade = trim($_GET['grade']);
+        $grade = trim($_POST['grade']);
 
         $sth = $pdo->prepare('SELECT 
         TB_VAGA.TB_VAGA_MATERIA,
@@ -151,9 +151,9 @@ elseif (isset($_GET['localizacao'], $_GET['grade'], $_GET['faixa'])
     }
 }
 
-elseif (isset($_GET['localizacao'], $_GET['grade'], $_GET['faixa'])
-&& !empty($_GET['faixa'])){
-    $faixa = trim($_GET['faixa']);
+elseif (isset($_POST['localizacao'], $_POST['grade'], $_POST['faixa'])
+&& !empty($_POST['faixa'])){
+    $faixa = trim($_POST['faixa']);
 
     $sth = $pdo->prepare('SELECT 
     TB_VAGA.TB_VAGA_MATERIA,

@@ -41,7 +41,22 @@
                     <input class='input-textarea' type="text"> <br><br>
 
                     <label for="name">Média salarial:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' type="text" name="salarial" list="faixa">
+                        <datalist id="faixa">
+                            <option value="">Grade:</option>
+                            <option value="Mil - Dois mil"></option>
+                            <option value="Três mil - Quatro mil"></option>
+                            <option value="Cinco mil - Seis mil"></option>
+                            <option value="Mais"></option>
+                        </datalist> <br><br>
+
+                    <label for="name">Tipo de Grade:</label><br>
+                    <input placeholder="ENSINO MÉDIO / TÉCNICO / TECNÓLOGO" class='input-textarea' type="text" name="grade" list="grade">
+                        <datalist id="grade">
+                            <option value="Ensino Médio">Componente Comum</option>
+                            <option value="Técnico">Curso</option>
+                            <option value="Tecnólogo">Curso</option>
+                        </datalist> <br><br>
             </div>
 
             <div class="linhaMeio"></div>
