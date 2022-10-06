@@ -38,10 +38,10 @@
 
     <div class="imagens">
 
-    <img class="sub-imagens" src="images/etec.jpeg" alt=""><br>
-    <img class="sub-imagens" src="images/nav2.1.PNG" alt=""><br>
-    <img class="sub-imagens" src="images/etec.jpeg" alt="">
-
+        <img class="sub-imagens" onerror="handleError(this)" src="" alt="">
+        <img class="sub-imagens" onerror="handleError(this)" src="" alt=""><br>
+        <img class="sub-imagens" onerror="handleError(this)" src="" alt=""><br>
+        
     </div>
 
     <!-- div com informações sobre a escola (ao centro)-->
