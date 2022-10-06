@@ -127,7 +127,7 @@ body{
     height: 10vh;
     border-radius: 5px;
     margin-left: 1.5vh;
-    background-color: var(--color-002);
+
     transition: all 1s;
 }
 
