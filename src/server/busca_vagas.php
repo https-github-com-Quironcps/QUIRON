@@ -21,8 +21,18 @@ if (isset($_GET['cod']) >= 1)
 }
 
 elseif (isset($_GET['localizacao'], $_GET['grade'], $_GET['faixa'])
-&& empty($_GET['localizacao'] && $_GET['grade'] && $_GET['faixa'])){
-    echo 'ok';
+&& !empty($_GET['localizacao'])){
+    if (!empty($_GET['grade'])){
+        echo 'loca e grade';
+    }
+
+    elseif (!empty($_GET['faixa'])){
+        echo 'loca e faixa';
+    }
+
+    else {
+        echo 'so localizacao';
+    }
 }
 
 
