@@ -87,7 +87,7 @@
                 <?php
                 }}
             ?>
-        <div>ㅤ</div>
+            <div class="td2">ㅤ</div>
         </div>
         </center>
         </div>

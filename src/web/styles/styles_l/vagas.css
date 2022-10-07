@@ -178,6 +178,14 @@
     padding-top: 15px;
 }
 
+.td2{
+    padding: 0.5px;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+}
+
 .table1:hover{
     background-color: rgba(148, 148, 148, 0.867);
     transition: all 1s;
