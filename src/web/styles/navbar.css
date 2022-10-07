@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body {
-    background-color: var(--white);
+    background-color: var(--white) !important;
 }
 
 .ul2{
@@ -39,7 +39,8 @@ nav{
     z-index: 9;
     transition:0.7s;
     background-color: var(--color-006);
-    box-shadow: 0 0 0.5em var(--grey);
+   
+    /* box-shadow: 0 0 0.5em var(--grey); */
 }
 
 .brand{
@@ -250,8 +251,7 @@ transform: translateX(100px);
 }
 
 input[type="checkbox"]{
-    width: 3vw;
-    display: flex; 
+    width: 3vw; 
     height: 3vh;
     margin-left: 0.5vw;
     appearance: none;
@@ -321,6 +321,7 @@ input:checked[type="checkbox"]::before{
     .slide{
         height: 500px;
     }
+
 }
 
 @media screen and (max-width: 550px) {
