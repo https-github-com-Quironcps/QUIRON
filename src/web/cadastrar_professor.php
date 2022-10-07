@@ -1,3 +1,8 @@
+<?php
+//Incluir conexão
+include("../server/PDO/conexao.php");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br" class="light">
 <head>
@@ -23,41 +28,43 @@
         <div class="header">
             <h1 id="title">Crie sua conta</h1>
         </div>
-
+<?php
+include("../server/PDO/conexao.php")
+?>
         <div class="div-container">
             <div class="div-sub-container">
-            <form class="form">
+            <form action="" method="POST" class="form">
                     <label for="name">Nome Completo:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="nome-p" id="nome-p" type="text"> <br><br>
 
                     <label for="name">CEP:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="cep-p" id="cep-p" type="text"> <br><br>
 
                     <label for="name">Endereço:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="end-p" id="end-p" type="text"> <br><br>
 
                     <label for="name">N°:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="num-p" id="num-p" type="text"> <br><br>
 
                     <label for="name">Bairro:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="bairro-p" id="bairro-p" type="text"> <br><br>
 
                     <label for="name">Telefone:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="tel-p" id="tel-p" type="text"> <br><br>
 
                     <label for="name">CPF:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="cpf-p" id="cpf-p" type="text"> <br><br>
 
                     <label for="name">Data de Nascimento:</label><br>
-                    <input class='input-textarea' type="date"> <br><br>
+                    <input class='input-textarea' name="data-p" id="data-p" type="date"> <br><br>
 
                     <label for="name">Email:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="email-p" id="email-p" type="text"> <br><br>
 
                     <label for="name">Senha:</label><br>
-                    <input class='input-textarea' type="password"> <br><br><br>
+                    <input class='input-textarea' name="senha-p" id="senha-p" type="password"> <br><br><br>
 
-                    <input type="submit" class='botao-001' value="Cadastrar">
+                    <input type="submit" name="submit" class='botao-001' value="Cadastrar">
                         <br><br><br>
             </div>
 
