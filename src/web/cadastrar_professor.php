@@ -1,6 +1,7 @@
 <?php
 //Incluir conexão
 include("../server/PDO/conexao.php");
+include("../server/cad_professor.php")
 ?>
 
 <!DOCTYPE html>
@@ -28,9 +29,7 @@ include("../server/PDO/conexao.php");
         <div class="header">
             <h1 id="title">Crie sua conta</h1>
         </div>
-<?php
-include("../server/PDO/conexao.php")
-?>
+
         <div class="div-container">
             <div class="div-sub-container">
             <form action="" method="POST" class="form">
