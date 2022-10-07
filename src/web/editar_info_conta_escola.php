@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<html lang="pt-br" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,7 +43,7 @@
 
                 <center> <label class="form-senha">Senha: </label><input type="password" class="input-senha" id="input-text-alterar"> </center> 
                 
-                <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"> <input type="submit" value="Excluir Conta" id="submit-text-alterar-2" class="submit-class"> 
+                <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"> <input type="submit" value="Deletar Conta" id="submit-text-alterar-2" class="submit-class"> 
             </form>
         </div>
     </div>

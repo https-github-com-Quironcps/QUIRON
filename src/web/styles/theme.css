@@ -49,6 +49,8 @@
     --color-004: #f0efef;   /* para o texto que vai dentro dos botões */
     --color-005: #F2EFFB;   /* cor das divs que estão ao fundo de outros elementos (no formulário da tela contato, por exemplo), ou dos campos de texto com fundo branco (tela de escolas, por exemplo */
     --color-006: #ffff;     /* cor da navbar */
+
+    --color-rgb-001: rgba(237, 56, 56, 0.623);  /* cor do botão "deletar conta" */
     
 }
 
@@ -64,4 +66,6 @@
     --color-004: #D3D3D3;   /* para o texto que vai dentro dos botões */
     --color-005: #1e1e1e;   /* cor das divs que estão ao fundo de outros elementos (no formulário da tela contato, por exemplo), ou dos campos de texto com fundo branco (tela de escolas, por exemplo */
     --color-006: rgba(38, 38, 38, 0.838); /* cor da navbar */
+
+    --color-rgb-001: rgba(238, 48, 48, 0.438);  /* cor do botão "deletar conta" */
 } 
