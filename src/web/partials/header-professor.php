@@ -39,9 +39,9 @@
                         <li><a class="hover-lis" href="escolas.php">Escolas</a></li>
                         <li><a class="hover-lis"  href="sobre.php">Sobre</a></li>
 
-                        <li><a href="editar_perfil.php"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
-                        <li><a href="editar_info_conta_professor.php"><i class="bi bi-gear-fill"></i>ㅤConfigurações</a></li>
+                        <li><a href="editar_info_conta_professor.php"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
                         <li><a href="contato.php"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
+                        <br><br>
 
                         <div class="div-modo">
                             <a class="text-modo">Modo escuro:</a>
