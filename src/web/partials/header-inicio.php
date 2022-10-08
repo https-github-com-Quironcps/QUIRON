@@ -27,8 +27,11 @@
 
             <div class="container">
                 <a href="index.php"><img src="../images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
+                <a class="text-modo">Modo escuro:</a>
+                <input type="checkbox" onclick="javascript:themeToggle()" class="check-modo" name="" id="">
             </div>
         </nav>
     </header>
+
 </body>
 </html>
