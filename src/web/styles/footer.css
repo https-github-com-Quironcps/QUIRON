@@ -1,6 +1,6 @@
 .footer{
     padding: 40px 0;
-    background: rgba(54, 54, 54, 0.8);
+    background: var(--color-005);
 }
 
 .footer .social{

@@ -19,7 +19,7 @@
 <center>
     <div class="container1">
         <div class="header">
-            <h1 id="title">Anunciar Vaga</h1>
+             <h1 id="title">Anunciar Vaga</h1>
         </div>
 
         <div class="div-container">

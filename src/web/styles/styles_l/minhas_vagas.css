@@ -60,7 +60,7 @@
 
 .h1002{
     margin-top: 115px;
-    color: var(--cor-rgb-008);
+    color: var(--color-003);
     font-size: 25px;
     font-weight: 300;
 }
@@ -73,19 +73,23 @@
 }
 
 .anunciar{
-    background-color: var(--cor-008);
-    width: 140px;
+    background-color: var(--color-001);
+    width: 20vh;
+    height: 6vh;
     margin-top: 20px;
     float: right;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 5px;
     margin-right: 3%;
+    border-style: none;
+    color: var(--color-004);
 }
 
 .anunciar a{
     text-decoration: none;
     color: var(--color-004);
+    align-self: center;
     font-size: 15px;
 }
 
@@ -139,7 +143,7 @@
     border-radius: 5px;
     margin-left: 20px;
     color: var(--cor-007);
-    background-color: var(--color-006);
+    background-color: var(--white);
     width: 100%;
     height: 40px;
     opacity: 61%;

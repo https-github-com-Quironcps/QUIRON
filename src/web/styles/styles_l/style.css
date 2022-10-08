@@ -15,15 +15,16 @@
     width: 100%;
     max-width: 520px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 0;
     font-size: 15px;
     transition: all 0.1s;
-    background-color: var(--color-004);
+    background-color: var(--white);
 }
 
 .form label{
     font-size: 15px;
+    color: var(--color-003);
 }
 
 /* Input e Textarea dentro do form class '.form' */
@@ -42,27 +43,26 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 52px;
-    align-items: center;
     margin-top: 10px;
-    color: var(--color-001);
+    color: var(--color-003);
     opacity: 60%;
 }
 
 /* Botão */
 .botao-001{
-    background-color: var(--cor-008);
-    width: 150px;
+    background-color: var(--color-001);
+    border-radius: 4px;
+    width: 20vh;
+    height: 6vh;
+    border-style: none;
     color: var(--color-004);
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 15px;
-    transition: all 1s;
-    border: 0;
 }
 
 /* Botão Hover */
 .botao-001:hover{
-    opacity: 90%;
+    transition: all 0.5s;
+    outline: none;
+    background: var(--color-002);
 }
 
 .edit-div-info{
@@ -88,7 +88,7 @@
 .container1{
     width: 70%;
     padding: 20px 60px;
-    border: 1px solid var(--color-001);
+    background: var(--color-005);
     text-align: left;
     border-radius: 20px;
     margin-top: 100px;
