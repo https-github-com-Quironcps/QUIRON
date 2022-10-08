@@ -1,12 +1,13 @@
 
 <!DOCTYPE html>
-<html lang="pt-br" class="dark">
+<html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../styles/navbar-inicio.css">
+    <link rel="stylesheet" href="../styles/theme.css">
 
     <script src="../web/scripts/modo-dark.js"></script>
 
@@ -22,13 +23,11 @@
     <header>
         <nav id="navbar">
             <label>
-                <input type="submit" value="Entrar">
+                <input class="botao-001" type="submit" value="Entrar">
             </label>
 
             <div class="container">
                 <a href="index.php"><img src="../images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
-                <a class="text-modo">Modo escuro:</a>
-                <input type="checkbox" onclick="javascript:themeToggle()" class="check-modo" name="" id="">
             </div>
         </nav>
     </header>
