@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="styles/navbar-index.css">
     <link rel="stylesheet" href="styles/theme.css">
 
+    <link rel="icon" href="../web/images/logos/arco-dark-2.png">
+
     <title>Entrar na QUIRON</title>
   </head>
   <body>

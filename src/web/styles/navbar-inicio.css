@@ -36,8 +36,8 @@ nav{
 .logo{
     width: 10em;
     margin-top: -20px;
-    margin-left: -85vw;
-    transition: all 0.5s;
+    margin-left: -86vw;
+    transition: all 0.2s;
     cursor: pointer;
 }
 
@@ -73,35 +73,27 @@ nav{
 .botao-001{
     background-color: var(--color-001);
     border-radius: 4px;
-    width: 20vh;
+    width: 100vw;
     height: 6vh;
-    margin-left: 82vw;
+    margin-left: 85vw;
     border-style: none;
+    transition: all 0.2s;
+    cursor: pointer;
     color: var(--color-004);
 }
 
 /* Responsive MENU */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 550px) {
     .logo{
         width: 150px;
         float: left;
-        margin-left: -91vw;
+        margin-left: -220%;
     
     }
 
     .botao-001{
-        width: 15vh;
-        height: 6vh;
-        margin-left: 65vw;
+        margin-left: 68vw;
     }
-
-}
-
-@media screen and (max-width: 550px) {
-   
-}
-
-@media screen and (max-width: 450px) {
     
 }

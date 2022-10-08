@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles/theme.css">
     <script src="../web/scripts/modo-dark.js"></script>
 
+    <link rel="icon" href="../web/images/logos/arco-dark-2.png">
+
     <title>FALE CONOSCO</title>
 </head>
 <body>

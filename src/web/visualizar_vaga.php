@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../web/styles/styles_g/visualizar_vaga.css">
     <link rel="stylesheet" href="styles/theme.css">
 
+    <link rel="icon" href="../web/images/logos/arco-dark-2.png">
+
     <title>QUIRON - VAGAS</title>
 </head>
 <body>

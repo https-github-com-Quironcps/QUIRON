@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/styles_l/perfil_escola.css">
     <link rel="stylesheet" href="styles/theme.css">
 
+    <link rel="icon" href="../web/images/logos/arco-dark-2.png">
+
 </head>
 <body>
 <?php include('partials/header.php') ?>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../web/styles/styles_g/visualizar_escola.css">
     <link rel="stylesheet" href="styles/theme.css">
 
-    <link rel="icon" type="image/png" href="images/logos/arco-dark-2.png" />
+    <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
     <title>QUIRON - ESCOLA</title>
 </head>

@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="../web/styles/styles_g/styles-sobre.css">
     <link rel="stylesheet" href="styles/theme.css">
+
+    <link rel="icon" href="../web/images/logos/arco-dark-2.png">
+
 </head>
 <body>
  <?php include('partials/header.php'); ?>

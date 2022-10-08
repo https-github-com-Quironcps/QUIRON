@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="styles/styles_l/style.css">
     <link rel="stylesheet" href="styles/styles_l/anunciar_vaga.css">
     <link rel="stylesheet" href="styles/theme.css">
+
+    <link rel="icon" href="../web/images/logos/arco-dark-2.png">
+
     
 </head>
 <body>

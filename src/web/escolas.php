@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="styles/theme.css">
     <script src="scripts/ImagenError.js"></script>
 
+    <link rel="icon" href="../web/images/logos/arco-dark-2.png">
+
     <title>QUIRON - ESCOLAS</title>
 </head>
 <body>
