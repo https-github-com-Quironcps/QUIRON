@@ -22,7 +22,7 @@ body{
     width: 90%;
     height: 40%;
     border-radius: 15px;
-    margin: 20px 0;
+    margin-top: 3vh;
     display: flex;
     /* flex-direction: column; */
    
@@ -31,6 +31,7 @@ body{
 .aside{
     display: flex;
     width: 90%;
+    margin-bottom: 3vh;
     flex-direction: column;
     overflow-y: scroll;
     background-color: var(--color-005);
@@ -116,7 +117,7 @@ body{
 
 
 .title02{
-    color: var(--color-001);
+    color: var(--color-003);
     opacity: 70%;
     padding: 2vh;
     font-weight: 900;
