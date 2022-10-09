@@ -20,6 +20,7 @@
 
     <center><h1 class="h1002">Editar informações da conta</h1></center>
 
+    <form action="" method="post">
     <div class="div-mae">
         <div class="div-alterar-img">
             <h3>Divulgue sua escola</h3>
@@ -33,7 +34,7 @@
         </div>
 
         <div class="div-alterar-texto">
-            <form action="" class="div-alterar-form">
+            <div class="div-alterar-form">
 
                 <label class="form-nome">Nome da instituição: </label><input class="input-sozinho" type="text" id="input-text-alterar"><br>
                 
@@ -43,13 +44,14 @@
                 
                 <label class="form-tel">Telefone: </label><input type="number" class="input-tel" id="input-text-alterar"> <label class="form-email"> E-mail: </label><input class="input-email" type="email" id="input-text-alterar"><br>
 
-                <center> <label class="form-senha">Senha: </label><input type="password" class="input-senha" id="input-text-alterar"> </center>
+                <center> <label class="form-senha">Senha: </label><input type="password" class="input-senha" id="input-text-alterar"> <label class="form-cod">Código: </label><input type="number" class="input-cod" id="input-text-alterar"></center>
                 
                 <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"> <input type="submit" value="Deletar Conta" id="submit-text-alterar-2" class="submit-class"> 
-            </form>
+            </div>
         </div>
     </div>
 
+    </form>
 <?php include('partials/footer.php') ?>
 </body>
 </html>

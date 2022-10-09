@@ -130,6 +130,16 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     width: 15%;
 }
 
+.form-cod{
+    width: 10%;
+    color: var(--color-003);
+    font-weight: 600;
+}
+
+.input-cod{
+    width: 15%;
+}
+
 /* Bairro e CEP */
 .form-bairro{
     width: 10%;
@@ -198,7 +208,7 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     background-color: var(--color-001);
     border-radius: 4px;
     width: 20vh;
-    height: 6vh;
+    height: 40px;
     border-style: none;
     color: var(--color-004);
 }
@@ -213,7 +223,7 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     background-color: var(--cor-rgb-005);
     border-radius: 4px;
     width: 20vh;
-    height: 6vh;
+    height: 40px;
     border-style: none;
     color: var(--color-004);
 }
@@ -226,8 +236,11 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
 
 .submit-class{
     float: right;
-    margin-top: 25px;
     margin-left: 10px;
+}
+
+#submit-text-alterar, #submit-text-alterar-2{
+    margin-top: 25px;
 }
 
 @media screen and (max-width: 1255px) {
@@ -241,6 +254,10 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
         display: contents;
         align-items: center;
         height: auto;
+    }
+
+    #submit-text-alterar, #submit-text-alterar-2{
+        margin-top: 20px;
     }
 
     .imagem-anexo{
@@ -305,7 +322,11 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
 
 @media screen and (max-width: 660px) {
     .div-alterar-texto{
-        height: 770px;
+        height: 100%;
+    }
+
+    .div-alterar-form{
+        height: 820px;
     }
 
     .input-bairro, 
@@ -317,19 +338,21 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     .input-nome,
     .input-senha, 
     .input-sozinho, 
+    .input-cod,
     .input-tel
     {
         width: 60%;
         margin-bottom: 20px;
         margin-top: 0;
     }
-
+    
     .form-bairro,
     .form-cep,
     .form-email,
     .form-nome,
     .form-nome-completo,
     .form-endereco,
+    .form-cod,
     .form-num,
     .form-senha,
     .form-tel{
