@@ -116,7 +116,7 @@ body{
 } */
 
 
-.title02{
+.title02, .title03{
     /* color: var(--color-003);
     opacity: 70%;
     padding: 2vh;
@@ -126,6 +126,7 @@ body{
     border-radius: 5px;
     color: var(--color-003);
     font-size: 22px;
+    flex-direction: row;
     transition: all 0.5s;
 }
 
@@ -140,8 +141,17 @@ body{
     padding: 2vh;
     width: 50%;
     height: 40vh;
+    flex-direction: row;
     text-align: justify;
     /* overflow-y: scroll; */
+}
+
+.req-vaga{
+    padding: 2vh;
+    width: 50%;
+    height: 40vh;
+    flex-direction: row;
+    text-align: justify;
 }
 
 h5{
