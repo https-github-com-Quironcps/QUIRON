@@ -117,10 +117,16 @@ body{
 
 
 .title02{
-    color: var(--color-003);
+    /* color: var(--color-003);
     opacity: 70%;
     padding: 2vh;
-    font-weight: 900;
+    font-weight: 900; */
+    flex: 14;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--color-003);
+    font-size: 17px;
+    transition: all 0.5s;
 }
 
 .conteudo{
@@ -133,7 +139,7 @@ body{
 .desc-vaga{
     padding: 2vh;
     width: 50%;
-    height: 40vh;
+    height: 20%;
     text-align: justify;
     /* overflow-y: scroll; */
 }

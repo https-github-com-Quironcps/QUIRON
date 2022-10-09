@@ -57,6 +57,7 @@
         </div><br>
 
         <div class="aside">
+            <!-- descrição da vaga -->
             <h5 class="title02">Professor para Programação Mobile</h5>
 
             <div class="desc-vaga">
@@ -65,7 +66,6 @@
              </h5>
             </div>
 
-            <!-- descrição da vaga -->
             <!-- requisitos da vaga -->
             <!-- carga horária semanal -->
             <!-- média salarial -->
