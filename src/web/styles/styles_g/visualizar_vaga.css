@@ -116,7 +116,7 @@ body{
 } */
 
 
-.title02, .title03{
+.title02{
     /* color: var(--color-003);
     opacity: 70%;
     padding: 2vh;
@@ -124,8 +124,25 @@ body{
    
     padding: 10px 20px;
     border-radius: 5px;
+    display: inline;
     color: var(--color-003);
     font-size: 22px;
+    flex-direction: row;
+    transition: all 0.5s;
+}
+
+.title03{
+    /* color: var(--color-003);
+    opacity: 70%;
+    padding: 2vh;
+    font-weight: 900; */
+   
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline;
+    color: var(--color-003);
+    font-size: 22px;
+    margin-left: 50%;
     flex-direction: row;
     transition: all 0.5s;
 }
@@ -150,6 +167,7 @@ body{
     padding: 2vh;
     width: 50%;
     height: 40vh;
+    margin-left: 50%;
     flex-direction: row;
     text-align: justify;
 }
