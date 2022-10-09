@@ -8,21 +8,21 @@ body{
 }
 
 .everybody{
-    background-color: #ffff;
+    background-color: var(--color-006);
     display: flex;
     flex-direction: column;
-    width: 70%;
-    height: 80%;
+    width: 60%;
+    height: 70%;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .divlateral{
-    background-color: #F2EFFB;
-    width: 100%;
+    background-color: var(--color-005);
+    width: 90%;
     height: 40%;
-    border-radius: 20px;
-    /* padding: 20px 0; */
+    border-radius: 15px;
+    margin: 20px 0;
     display: flex;
     /* flex-direction: column; */
    
@@ -30,18 +30,19 @@ body{
 
 .aside{
     display: flex;
-    width: 70vw;
+    width: 90%;
     flex-direction: column;
-    background-color: #F2EFFB;
-    border-radius: 20px;
+    overflow-y: scroll;
+    background-color: var(--color-005);
+    border-radius: 15px;
 }
 
 .img_etec{
     width: 40%;
     height: 50vh;
     object-fit: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .title01{
@@ -115,7 +116,7 @@ body{
 
 
 .title02{
-    color: #6131eb;
+    color: var(--color-001);
     opacity: 70%;
     padding: 2vh;
     font-weight: 900;
@@ -133,7 +134,7 @@ body{
     width: 50%;
     height: 40vh;
     text-align: justify;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
  
 @media (max-width: 1200px) {
