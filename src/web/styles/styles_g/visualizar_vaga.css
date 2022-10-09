@@ -125,7 +125,7 @@ body{
     padding: 10px 20px;
     border-radius: 5px;
     color: var(--color-003);
-    font-size: 20px;
+    font-size: 22px;
     transition: all 0.5s;
 }
 
@@ -182,8 +182,12 @@ h5{
     }
 
     .title02{
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
+    }
+
+    h5{
+        font-size: 14px;
     }
 
     .desc-vaga{
