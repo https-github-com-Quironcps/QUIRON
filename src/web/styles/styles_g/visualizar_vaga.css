@@ -121,11 +121,11 @@ body{
     opacity: 70%;
     padding: 2vh;
     font-weight: 900; */
-    flex: 14;
+   
     padding: 10px 20px;
     border-radius: 5px;
     color: var(--color-003);
-    font-size: 17px;
+    font-size: 20px;
     transition: all 0.5s;
 }
 
@@ -139,9 +139,18 @@ body{
 .desc-vaga{
     padding: 2vh;
     width: 50%;
-    height: 20%;
+    height: 40vh;
     text-align: justify;
     /* overflow-y: scroll; */
+}
+
+h5{
+    color: var(--color-003);
+    flex: 14;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    transition: all 0.5s;
 }
  
 @media (max-width: 1200px) {
