@@ -1,5 +1,10 @@
+<?php
+//Incluir conexão
+include("../server/PDO/conexao.php");
+include("../server/cad_escola.php");
+?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,30 +36,33 @@
             <div class="div-sub-container">
             <form class="form">
                     <label for="name">Nome da Instituição (ETEC/FATEC):</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="nome-e" id="nome-e" type="text"> <br><br>
+
+                    <label for="name">Código da Instituição:</label> <br>
+                    <input class='input-textarea' name="cod-e" id="cod-e" type="text"> <br><br>
 
                     <label for="name">Endereço:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="end-e" id="end-e" type="text"> <br><br>
 
                     <label for="name">N°:</label> <br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="num-e" id="num-e" type="text"> <br><br>
 
                     <label for="name">Bairro:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="bairro-e" id="bairro-e" type="text"> <br><br>
 
                     <label for="name">CEP:</label> <br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="cep-e" id="cep-e" type="text"> <br><br>
 
                     <label for="name">Telefone:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="tel-e" id="tel-e" type="text"> <br><br>
 
                     <label for="name">Email:</label> <br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input class='input-textarea' name="email-e" id="email-e" type="text"> <br><br>
 
                     <label for="name">Senha:</label> <br>
-                    <input class='input-textarea' type="password"> <br><br><br>
+                    <input class='input-textarea' name="senha-e" id="senha-e" type="password"> <br><br><br>
 
-                    <input type="submit" class='botao-001' value="Cadastrar Escola">
+                    <input type="submit" class='botao-001' name="submit" value="Cadastrar Escola">
                         <br><br><br>
                 </form>
             </div>

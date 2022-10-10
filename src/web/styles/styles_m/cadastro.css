@@ -1,3 +1,7 @@
+body{
+    background-color: var(--white);
+}
+
 .submit{
     width: 40%;
     padding: 10px;
