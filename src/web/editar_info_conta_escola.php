@@ -1,3 +1,7 @@
+<?php
+include('../server/visualiza_escolas.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br" class="light">
 <head>
@@ -22,33 +26,44 @@
 
     <form action="" method="post">
     <div class="div-mae">
+        <?php   
+            if (count($resultados)) {
+            foreach($resultados as $Resultado){
+        ?>
+
         <div class="div-alterar-img">
             <h3>Divulgue sua escola</h3>
 
             <div class="sub-div-alterar-img">
-                <img src="" onerror="handleError(this)" class="imagem-anexo" alt="">
+                <img src="<?php echo $Resultado['Foto']; ?>" onerror="handleError(this)" class="imagem-anexo" alt="">
                 <!-- <i class="bi bi-camera"></i> -->
             </div>
 
             <button id="submit-text-alterar" class="abc001">Anexar</button>
         </div>
 
+
         <div class="div-alterar-texto">
             <div class="div-alterar-form">
 
-                <label class="form-nome">Nome da instituição: </label><input class="input-sozinho" type="text" id="input-text-alterar"><br>
+                <label class="form-nome">Nome da instituição: </label><input value="<?php echo $Resultado['Nome']; ?>" class="input-sozinho" type="text" id="input-text-alterar"><br>
                 
-                <label class="form-endereco">Endereço: </label><input type="text" class="input-endereco" id="input-text-alterar"> <label class="form-num"> Nº: </label><input class="input-num" type="number" id="input-text-alterar"><br>
+                <label class="form-endereco">Endereço: </label><input value="<?php echo $Resultado['Endereco']; ?>" type="text" class="input-endereco" id="input-text-alterar"> <label class="form-num"> Nº: </label><input value="<?php echo $Resultado['Numero_endereco']; ?>" class="input-num" type="number" id="input-text-alterar"><br>
                 
-                <label class="form-bairro">Bairro: </label><input type="text" class="input-bairro" id="input-text-alterar"> <label class="form-cep"> CEP: </label><input class="input-cep" type="number" id="input-text-alterar"><br>
+                <label class="form-bairro">Bairro: </label><input value="<?php echo $Resultado['Bairro']; ?>" type="text" class="input-bairro" id="input-text-alterar"> <label class="form-cep"> CEP: </label><input value="<?php echo $Resultado['Cep']; ?>" class="input-cep" type="number" id="input-text-alterar"><br>
                 
-                <label class="form-tel">Telefone: </label><input type="number" class="input-tel" id="input-text-alterar"> <label class="form-email"> E-mail: </label><input class="input-email" type="email" id="input-text-alterar"><br>
+                <label class="form-tel">Telefone: </label><input type="number" value="<?php echo $Resultado['Telefone']; ?>" class="input-tel" id="input-text-alterar"> <label class="form-email"> E-mail: </label><input class="input-email" value="<?php echo $Resultado['Email']; ?>" type="email" id="input-text-alterar"><br>
 
-                <center> <label class="form-senha">Senha: </label><input type="password" class="input-senha" id="input-text-alterar"> <label class="form-cod">Código: </label><input type="number" class="input-cod" id="input-text-alterar"></center>
+                <center> <label class="form-senha">Senha: </label><input type="password" value="<?php echo $Resultado['Senha']; ?>" class="input-senha" id="input-text-alterar"> <label class="form-cod">Código: </label><input type="number" class="input-cod" value="<?php echo $Resultado['Codigo']; ?>" id="input-text-alterar"></center>
                 
                 <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"> <input type="submit" value="Deletar Conta" id="submit-text-alterar-2" class="submit-class"> 
+            
             </div>
         </div>
+
+        <?php
+            }}
+        ?>
     </div>
 
     </form>
