@@ -12,7 +12,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 60%;
-    height: 70%;
+    height: 80vh;
     align-items: center;
     border-radius: 15px;
 }
@@ -22,7 +22,7 @@ body{
     width: 90%;
     height: 40%;
     border-radius: 15px;
-    margin-top: 3vh;
+    margin-top: 6vh;
     display: flex;
     /* flex-direction: column; */
    
@@ -31,8 +31,8 @@ body{
 .aside{
     display: flex;
     width: 90%;
-    margin-bottom: 3vh;
-    flex-direction: column;
+    padding: 2vw;
+    margin-bottom: 6vh;
     overflow-y: scroll;
     background-color: var(--color-005);
     border-radius: 15px;
@@ -40,7 +40,7 @@ body{
 
 .img_etec{
     width: 40%;
-    height: 50vh;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -66,13 +66,6 @@ body{
 .text{
     display: inline;
     background-color: rgb(186, 136, 173);
-}
-
-.info{
-    font-size: 15px;
-    color: var(--cor-004);
-    font-weight: 600;
-    text-decoration: none;
 }
 
 #icon{
@@ -122,28 +115,10 @@ body{
     padding: 2vh;
     font-weight: 900; */
    
-    padding: 10px 20px;
+    padding: 10px 0px;
     border-radius: 5px;
-    display: inline;
     color: var(--color-003);
-    font-size: 22px;
-    flex-direction: row;
-    transition: all 0.5s;
-}
-
-.title03{
-    /* color: var(--color-003);
-    opacity: 70%;
-    padding: 2vh;
-    font-weight: 900; */
-   
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline;
-    color: var(--color-003);
-    font-size: 22px;
-    margin-left: 50%;
-    flex-direction: row;
+    font-size: 20px;
     transition: all 0.5s;
 }
 
@@ -157,27 +132,23 @@ body{
 .desc-vaga{
     padding: 2vh;
     width: 50%;
-    height: 40vh;
-    flex-direction: row;
-    text-align: justify;
-    /* overflow-y: scroll; */
+    height: 50vh;
+    display: inline;
+    overflow-y: scroll;
 }
 
 .req-vaga{
     padding: 2vh;
     width: 50%;
-    height: 40vh;
-    margin-left: 50%;
-    flex-direction: row;
-    text-align: justify;
+    height: 50vh;
+    display: inline;
+    overflow-y: scroll;
 }
 
 h5{
     color: var(--color-003);
-    flex: 14;
-    padding: 10px 10px;
-    border-radius: 5px;
     font-size: 17px;
+    text-align: justify;
     transition: all 0.5s;
 }
  
@@ -220,6 +191,16 @@ h5{
 
     .desc-vaga{
         width: 100%;
+        display: block;
+    }
+
+    .req-vaga{
+        width: 100%;
+        display: block;
+    }
+
+    .aside{
+        flex-direction: row;
     }
 
 } 
