@@ -1,6 +1,4 @@
-body{
-    background-color: var(--white);
-}
+
 
 .submit{
     width: 40%;
@@ -26,7 +24,7 @@ body{
     margin-bottom: 30px;
     min-height: 400px;
     width: 3px;
-    background-color: var(--cor-002);
+    background-color: var(--cor-003);
     opacity: 50%;
 }
 
