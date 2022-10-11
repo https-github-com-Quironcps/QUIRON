@@ -210,6 +210,7 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     width: 20vh;
     height: 40px;
     border-style: none;
+    padding: 5px;
     color: var(--color-004);
 }
 
@@ -232,6 +233,10 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     transition: all 0.5s;
     outline: none;
     background: var(--color-002);
+}
+
+.input-file{
+    display: none;
 }
 
 .submit-class{
@@ -261,7 +266,7 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     }
 
     .imagem-anexo{
-        width: 92.5%;
+        width: 90%;
         height: 100%;
         border-radius: 15px;
     }
