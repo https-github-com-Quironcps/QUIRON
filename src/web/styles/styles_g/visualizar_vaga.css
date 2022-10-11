@@ -31,7 +31,8 @@ body{
 .aside{
     display: flex;
     width: 90%;
-    padding: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
     margin-bottom: 6vh;
     overflow-y: scroll;
     background-color: var(--color-005);
@@ -132,7 +133,7 @@ body{
 .desc-vaga{
     padding: 2vh;
     width: 50%;
-    height: 50vh;
+    height: 20vh;
     display: inline;
     overflow-y: scroll;
 }
@@ -140,9 +141,16 @@ body{
 .req-vaga{
     padding: 2vh;
     width: 50%;
-    height: 50vh;
+    height: 20vh;
     display: inline;
     overflow-y: scroll;
+}
+
+.linha1{
+    padding: 2vh;
+    height: 40vh;
+    overflow-y: scroll;
+    background: #7e57c2;
 }
 
 h5{
@@ -151,7 +159,11 @@ h5{
     text-align: justify;
     transition: all 0.5s;
 }
- 
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
 @media (max-width: 1200px) {
   
     .img_etec, .info{
@@ -166,6 +178,7 @@ h5{
 
     .divlateral{
         align-items: center;
+        height: 15%;
     }
 
     #icon{
@@ -201,6 +214,7 @@ h5{
 
     .aside{
         flex-direction: row;
+        height: 100%;
     }
 
 } 
