@@ -31,23 +31,23 @@
 
                 <!-- icon localização -->
                 <div class="div-icon">                
-                    <i id="icon" class="bi bi-geo-alt"> </i> <a class="info" href="">Endereço: R. Fernão Dias Falcão, 196 - Centro, Santana de Parnaíba - SP, 06501-120</a>
+                    <i id="icon" class="bi bi-geo-alt"></i><a class="info" href="">Endereço: R. Fernão Dias Falcão, 196 - Centro, Santana de Parnaíba - SP, 06501-120</a>
 
-                </div><br>
+                </div>
 
                 <!-- icon telefone -->
                 <div class="div-icon">
-                    <i id="icon" class="bi bi-telephone"> </i> <a class="info" href="">(11) 4154-7142</a>
-                </div><br>
+                    <i id="icon" class="bi bi-telephone"></i><a class="info" href="">(11) 4154-7142</a>
+                </div>
                 
                 <!-- icon link -->
                 <div class="div-icon">
-                    <i id="icon" class="bi bi-share"> </i> <a class="info" href="">www.cps.sp.gov.br/etecs/etec-prof-a-ermelinda-giannini-teixeira/</a>
-                </div><br>
+                    <i id="icon" class="bi bi-share"></i><a class="info" href="">www.cps.sp.gov.br/etecs/etec-prof-a-ermelinda-giannini-teixeira/</a>
+                </div>
                 
                 <!-- icon email -->
                 <div class="div-icon">
-                    <i id="icon" class="bi bi-envelope"> </i> <a class="info" href="">etec_ermelinda187@gmail.com</a> 
+                    <i id="icon" class="bi bi-envelope"></i><a class="info" href="">etec_ermelinda187@gmail.com</a> 
                 </div>
 
                 <!-- <div class="linha"></div> -->
@@ -70,7 +70,7 @@
             <!-- requisitos da vaga -->
             <div class="req-vaga">
             <h6 class="title02">Requisitos da Vaga</h6>
-             <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui oficia deserunt mollit anim id est laborum.
+             <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
              </h5>
             </div>
         </div>
@@ -85,7 +85,8 @@
              <!-- média salarial -->
             <div class="req-vaga">
             <h6 class="title02">Média salarial</h6>
-                <div class="carg-horaria"><h5>R$2.000 a R$2.500/mês.</h5></div>
+                <div class="carg-horaria"><h5>R$2.000 a R$2.500/mês.</h5></div><br>
+                <button class="botão-01" type="submit">Favoritar</button>
             </div>
         </div>
     

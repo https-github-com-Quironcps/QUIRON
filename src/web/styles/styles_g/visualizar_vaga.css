@@ -20,7 +20,7 @@ body{
 .divlateral{
     background-color: var(--color-005);
     width: 90%;
-    height: 40%;
+    height: 35%;
     border-radius: 15px;
     margin-top: 6vh;
     display: flex;
@@ -55,8 +55,9 @@ body{
 
 .div-icon{
     display: flex;
+    padding: 0.5vh;
     text-align: justify;
-    width: 60%;
+    width: 90%;
 }
 
 .div-icon:hover{
@@ -71,8 +72,7 @@ body{
 
 #icon{
     color: #6031ebc9;
-    font-size: 22px;
-    padding: 1vh;
+    font-size: 17px;
     display: inline;
     margin-left: 1vw;
 }
@@ -87,15 +87,16 @@ body{
   width: 60%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   justify-content: center;
+  align-self: center;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-/* 
+
 .botão-01{
-    background-color: #7e57c2c3;
+    background-color: var(--color-001);
     border-radius: 4px;
     width: 20vh;
     height: 6vh;
@@ -106,16 +107,11 @@ body{
 .botão-01:hover{
     transition: all 0.5s;
     outline: none;
-    background: #7e57c2;
-} */
+    background: var(--color-002);
+}
 
 
 .title02{
-    /* color: var(--color-003);
-    opacity: 70%;
-    padding: 2vh;
-    font-weight: 900; */
-   
     padding: 10px 0px;
     border-radius: 5px;
     color: var(--color-003);
@@ -123,11 +119,16 @@ body{
     transition: all 0.5s;
 }
 
-.conteudo{
-    width: 100%;
-    height: 80%;
-    background: #7e57c2;
-    border-radius: 17px;
+.info{
+    text-decoration: none;
+    color: var(--color-003);
+    padding-left: 1vh;
+    font-size: 13px;
+    align-self: center;
+}
+
+.info:hover{
+    color: var(--cor-007);
 }
 
 .desc-vaga{
