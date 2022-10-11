@@ -8,7 +8,7 @@ body{
 }
 
 .everybody{
-    background-color: var(--color-006);
+    background-color: var(--color-005);
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -18,7 +18,7 @@ body{
 }
 
 .divlateral{
-    background-color: var(--color-005);
+    background-color: var(--color-006);
     width: 90%;
     height: 35%;
     border-radius: 15px;
@@ -31,11 +31,10 @@ body{
 .aside{
     display: flex;
     width: 90%;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding: 3vh;
     margin-bottom: 6vh;
     overflow-y: scroll;
-    background-color: var(--color-005);
+    background-color: var(--color-006);
     border-radius: 15px;
 }
 
@@ -45,12 +44,6 @@ body{
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-}
-
-.title01{
-    color: #6131eb;
-    opacity: 70%;
-    font-weight: 900;
 }
 
 .div-icon{
@@ -63,11 +56,6 @@ body{
 .div-icon:hover{
     margin-left: 2vw;
     transition: all 1s;
-}
-
-.text{
-    display: inline;
-    background-color: rgb(186, 136, 173);
 }
 
 #icon{
@@ -150,7 +138,6 @@ body{
     height: 40vh;
     width: 50%;
     overflow-y: scroll;
-    background: #7e57c2;
 }
 
 .linha2{
@@ -158,7 +145,6 @@ body{
     height: 40vh;
     width: 50%;
     overflow-y: scroll;
-    background: #3d2f56;
 }
 
 h5{
@@ -191,10 +177,13 @@ h5{
 
     #icon{
         font-size: 18px;
+        margin-left: 0vw;
+        
     }
 
     .div-icon{
         width: 100%;
+        justify-content: center;
     }
 
     .info{
@@ -223,6 +212,14 @@ h5{
     .aside{
         flex-direction: row;
         height: 100%;
+    }
+
+    .linha1, .linha2{
+
+        width: 100%;
+        height: 100%;
+        display: block;
+
     }
 
 } 

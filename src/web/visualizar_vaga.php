@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="dark">
+<html lang="pt-br" class="light">
 <head>
     
     <meta charset="UTF-8">
@@ -31,13 +31,13 @@
 
                 <!-- icon localização -->
                 <div class="div-icon">                
-                    <i id="icon" class="bi bi-geo-alt"></i><a class="info" href="">Endereço: R. Fernão Dias Falcão, 196 - Centro, Santana de Parnaíba - SP, 06501-120</a>
+                    <i id="icon" class="bi bi-geo-alt" onclick="alert('Endereço: R. Fernão Dias Falcão, 196 - Centro, Santana de Parnaíba - SP, 06501-120')"></i><a class="info" href="">Endereço: R. Fernão Dias Falcão, 196 - Centro, Santana de Parnaíba - SP, 06501-120</a>
 
                 </div>
 
                 <!-- icon telefone -->
                 <div class="div-icon">
-                    <i id="icon" class="bi bi-telephone"></i><a class="info" href="">(11) 4154-7142</a>
+                    <i id="icon" class="bi bi-telephone" onclick="alert('(11) 4154-7142')"></i><a class="info" href="">(11) 4154-7142</a>
                 </div>
                 
                 <!-- icon link -->
