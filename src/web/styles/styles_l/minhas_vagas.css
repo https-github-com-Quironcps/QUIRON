@@ -74,8 +74,8 @@
 
 .anunciar{
     background-color: var(--color-001);
-    width: 20vh;
-    height: 6vh;
+    width: 150px;
+    height: 37px;
     margin-top: 20px;
     float: right;
     text-align: center;
