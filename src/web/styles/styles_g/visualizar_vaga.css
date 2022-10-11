@@ -135,7 +135,6 @@ body{
     width: 50%;
     height: 20vh;
     display: inline;
-    overflow-y: scroll;
 }
 
 .req-vaga{
@@ -143,14 +142,22 @@ body{
     width: 50%;
     height: 20vh;
     display: inline;
-    overflow-y: scroll;
 }
 
 .linha1{
     padding: 2vh;
     height: 40vh;
+    width: 50%;
     overflow-y: scroll;
     background: #7e57c2;
+}
+
+.linha2{
+    padding: 2vh;
+    height: 40vh;
+    width: 50%;
+    overflow-y: scroll;
+    background: #3d2f56;
 }
 
 h5{
