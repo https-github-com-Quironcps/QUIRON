@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="dark">
+<html lang="pt-br" class="light">
 <head>
     
     <meta charset="UTF-8">
@@ -86,7 +86,7 @@
             <div class="req-vaga">
             <h6 class="title02">Média salarial</h6>
                 <div class="carg-horaria"><h5>R$2.000 a R$2.500/mês.</h5></div><br>
-                <button class="botão-01" type="submit">Favoritar</button>
+                <button class="botão-01" type="submit" href="#">Favoritar</button>
             </div>
         </div>
     

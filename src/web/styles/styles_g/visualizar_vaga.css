@@ -66,8 +66,7 @@ body{
 }
 
 #icon:hover{
-    transition: all ;
-    color: var;
+    color: var(--color-003);
     border-radius: 12px;
 }
 
@@ -195,6 +194,11 @@ h5{
     .div-icon{
         width: 100%;
         justify-content: center;
+    }
+
+    .div-icon:hover{
+        margin-left: 0vw;
+        transition: all 1s;
     }
 
     .info{
