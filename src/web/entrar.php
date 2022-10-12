@@ -1,3 +1,10 @@
+<?php
+//conexão e login
+include("../server/PDO/conexao.php");
+include("../server/login.php");
+?>
+
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -42,7 +49,7 @@
               <h3>QUÍRON</h3>
               <p class="mb-4">Sua próxima vaga de emprego na palma de sua mão.</p>
             </div>
-            <form action="#" method="post">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
               <div class="form input">
                 <label for="username">Usuário</label>
                 <input type="text" name="usuario" class="form-control" id="usuario">
@@ -68,7 +75,7 @@
 </div>
               <br>
 
-              <input type="submit" value="Entrar" class="btn btn-block btn-primary">
+              <input type="submit" name="submit" value="Entrar" class="btn btn-block btn-primary">
               
 
               <br>
