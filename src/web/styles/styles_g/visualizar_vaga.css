@@ -59,7 +59,7 @@ body{
 }
 
 #icon{
-    color: #6031ebc9;
+    color: var(--cor-002);
     font-size: 17px;
     display: inline;
     margin-left: 1vw;
@@ -88,8 +88,10 @@ body{
     border-radius: 4px;
     width: 20vh;
     height: 6vh;
+    font-weight: 600;
+    font-size: 15px;
     border-style: none;
-    color: #ebeaea;
+    color: var(--color-004);
 }
 
 .botão-01:hover{
@@ -101,7 +103,7 @@ body{
 
 .title02{
     padding: 10px 0px;
-    border-radius: 5px;
+    font-weight: 900;
     color: var(--color-003);
     font-size: 20px;
     transition: all 0.5s;
@@ -149,7 +151,8 @@ body{
 
 h5{
     color: var(--color-003);
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: 500;
     text-align: justify;
     transition: all 0.5s;
 }
@@ -164,9 +167,17 @@ h5{
         display: none;
     }
 
+    .everybody{
+        width: 80%;
+    }
+
+    .botão-01{
+        width: 15vh;
+        height: 6vh;
+    }
+
     .icons{
         width: 100%;
-        padding: 1vw;
         flex-direction: row;
     }
 
@@ -191,8 +202,8 @@ h5{
     }
 
     .title02{
-        font-size: 16px;
-        text-align: center;
+        font-size: 15px;
+        
     }
 
     h5{
@@ -201,17 +212,18 @@ h5{
 
     .desc-vaga{
         width: 100%;
-        display: block;
+        padding: 0vh;
     }
 
     .req-vaga{
         width: 100%;
-        display: block;
+        padding: 0vh;
     }
 
     .aside{
-        flex-direction: row;
+        flex-direction: column;
         height: 100%;
+        padding: 0vh;
     }
 
     .linha1, .linha2{

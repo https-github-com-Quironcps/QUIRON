@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<html lang="pt-br" class="dark">
 <head>
     
     <meta charset="UTF-8">
@@ -42,12 +42,12 @@
                 
                 <!-- icon link -->
                 <div class="div-icon">
-                    <i id="icon" class="bi bi-share"></i><a class="info" href="">www.cps.sp.gov.br/etecs/etec-prof-a-ermelinda-giannini-teixeira/</a>
+                    <i id="icon" class="bi bi-share" onclick="alert('www.cps.sp.gov.br/etecs/etec-prof-a-ermelinda-giannini-teixeira/')"></i><a class="info" href="">www.cps.sp.gov.br/etecs/etec-prof-a-ermelinda-giannini-teixeira/</a>
                 </div>
                 
                 <!-- icon email -->
                 <div class="div-icon">
-                    <i id="icon" class="bi bi-envelope"></i><a class="info" href="">etec_ermelinda187@gmail.com</a> 
+                    <i id="icon" class="bi bi-envelope" onclick="alert('etec_ermelinda187@gmail.com')" ></i><a class="info" href="">etec_ermelinda187@gmail.com</a> 
                 </div>
 
                 <!-- <div class="linha"></div> -->
