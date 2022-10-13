@@ -220,6 +220,10 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     background: var(--color-002);
 }
 
+.sumir{
+    background-color: blue;
+}
+
 #submit-text-alterar-2{
     background-color: var(--cor-rgb-005);
     border-radius: 4px;
@@ -270,6 +274,8 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
         height: 100%;
         border-radius: 15px;
     }
+
+
 
     img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
         height: 50px;

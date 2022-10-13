@@ -1,5 +1,4 @@
 <?php
-    include('../server/visualiza_escolas.php');
     include('../server/atualiza_escola.php');
 ?>
 
@@ -20,7 +19,7 @@
 </head>
 <body>
 <?php 
-include('partials/header.php'); 
+    include('partials/header.php'); 
 ?>
 
 <br><br><br><br>
@@ -38,24 +37,15 @@ include('partials/header.php');
         <div class="div-alterar-img">
             <h3>Divulgue sua escola</h3>
 
-            <?php
-        
-            $base64 = 'data:image/' . $tipo . ';base64,' . base64_encode($Resultado['Foto']);
-            
-            echo $base64;
-            
-            echo $Resultado['Foto'];
-            
-            ?>
-
             <div class="sub-div-alterar-img">
-                <img src="<?php $base64; ?>" onerror="handleError(this)" id="preview" class="imagem-anexo" alt="">
+                <img src="<?php echo $Resultado['Foto']; ?>" onerror="handleError(this)" name="imagem" id="preview" class="imagem-anexo" alt="">
             </div>
 
             <input type="file" name="foto" class="input-file" id="base"> <label id="submit-text-alterar" class="abc001" for="base">Anexar</label>
         </div>
 
         <script src="scripts/mostrar_imagem.js"></script>
+
 
         <div class="div-alterar-texto">
             <div class="div-alterar-form">
@@ -78,6 +68,7 @@ include('partials/header.php');
             }}
         ?>
     </div>
+    <textarea style="display:none" name="imagem"><?php echo $Resultado['Foto']; ?></textarea>
 </form>
 
 <?php include('partials/footer.php') ?>

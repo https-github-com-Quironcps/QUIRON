@@ -12,6 +12,13 @@
     font-weight: 290;
 }
 
+.sumir{
+    /* display: none; */
+    background-color: blue;
+    width: 300px;
+    height: 80px;
+}
+
 .div-imagens{
     display: flex;
     width: 100%;

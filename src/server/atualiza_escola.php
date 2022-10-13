@@ -1,8 +1,8 @@
 <?php
 
-if (isset($_POST['editar'])) {
-
 include ('PDO/conexao.php');
+
+if (isset($_POST['nome'])) {
 
     $nome = trim($_POST['nome']);
     $endereco = trim($_POST['endereco']); 
@@ -13,15 +13,7 @@ include ('PDO/conexao.php');
     $email = trim($_POST['email']);
     $senha = trim($_POST['senha']);
     $cod = trim($_POST['cod']);
-
-    $imagem = $_FILES['foto']['tmp_name'];
-    $tamanho = $_FILES['foto']['size'];
-    $tipo = $_FILES['foto']['type'];
-    $nome_foto = $_FILES['foto']['name'];
-   
-    $data = file_get_contents($nome_foto);
-
-    $base64 = 'data:image/' . $tipo . ';base64,' . $data;
+    $textarea = trim($_POST['imagem']);
 
     $sth = $pdo->prepare('UPDATE TB_INSTITUICAO SET TB_INSTITUICAO_NOME = :nome,
     TB_INSTITUICAO_COD = :cod, 
@@ -38,7 +30,7 @@ include ('PDO/conexao.php');
     $sth->bindParam(':nome', $nome, PDO::PARAM_STR);
     $sth->bindParam(':email', $email, PDO::PARAM_STR);
     $sth->bindParam(':senha', $senha, PDO::PARAM_STR);
-    $sth->bindParam(':img', $base64, PDO::PARAM_STR);
+    $sth->bindParam(':img', $textarea, PDO::PARAM_STR);
     $sth->bindParam(':bairro', $bairro, PDO::PARAM_STR);
     $sth->bindParam(':telefone', $telefone, PDO::PARAM_STR);
     $sth->bindParam(':cep', $cep, PDO::PARAM_STR);
@@ -47,9 +39,9 @@ include ('PDO/conexao.php');
     $sth->bindParam(':cod', $cod, PDO::PARAM_STR);
 
     $sth->execute();
+
 }
 
-else {
     $sto = $pdo->prepare('SELECT TB_INSTITUICAO.TB_INSTITUICAO_NOME AS Nome,
     TB_INSTITUICAO.TB_INSTITUICAO_ENDERECO AS Endereco,
     TB_INSTITUICAO.TB_INSTITUICAO_COD AS Codigo,
@@ -66,5 +58,4 @@ else {
     $sto->execute();
 
     $resultados = $sto->fetchAll(PDO::FETCH_ASSOC);
-}
 ?>
