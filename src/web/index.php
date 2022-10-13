@@ -19,7 +19,7 @@
     <title>QUIRON - VAGAS</title>
 </head>
 <body>
-    <?php include('partials/header.php') ?>
+<?php include('partials/header-professor.php'); ?>
     <br>
 
     <div class="filtros">

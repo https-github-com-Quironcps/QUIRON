@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../styles/navbar-professor.css">
-    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="styles/navbar-professor.css">
+    <link rel="stylesheet" href="styles/theme.css">
 
     <script src="../web/scripts/modo-dark.js"></script>
 
@@ -56,7 +56,7 @@
             </label>
 
             <div class="container">
-                <a href="index.php"><img src="../images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
+                <a href="index.php"><img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
                 <div class="container-inner">
                     <ul class="ul2">
                         <li><a href="index.php">Vagas</a></li>

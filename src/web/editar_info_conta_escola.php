@@ -41,7 +41,8 @@
                 <img src="<?php echo $Resultado['Foto']; ?>" onerror="handleError(this)" name="imagem" id="preview" class="imagem-anexo" alt="">
             </div>
 
-            <input type="file" name="foto" class="input-file" id="base"> <label id="submit-text-alterar" class="abc001" for="base">Anexar</label>
+            <input type="file" name="foto" class="input-file" id="base"> 
+            <label id="submit-text-alterar" class="abc001" for="base">Anexar</label>
         </div>
 
         <script src="scripts/mostrar_imagem.js"></script>
@@ -63,12 +64,12 @@
             
             </div>
         </div>
-
+        
+        <textarea style="display:none" name="imagem"><?php echo $Resultado['Foto']; ?></textarea>
         <?php
             }}
         ?>
     </div>
-    <textarea style="display:none" name="imagem"><?php echo $Resultado['Foto']; ?></textarea>
 </form>
 
 <?php include('partials/footer.php') ?>

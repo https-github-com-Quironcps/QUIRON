@@ -203,7 +203,7 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
 }
 
 .input-senha{
-    width: 50%;
+    width: 30%;
 }
 
 #input-text-alterar:hover, #input-text-alterar:focus{
