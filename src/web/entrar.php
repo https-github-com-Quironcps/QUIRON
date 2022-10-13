@@ -1,3 +1,10 @@
+<?php
+//conexão e login
+include("../server/PDO/conexao.php");
+include("../server/login.php");
+?>
+
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -42,33 +49,29 @@
               <h3>QUÍRON</h3>
               <p class="mb-4">Sua próxima vaga de emprego na palma de sua mão.</p>
             </div>
-            <form action="#" method="post">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+            
               <div class="form input">
-                <label for="username">Usuário</label>
-                <input type="text" name="usuario" class="form-control" id="usuario">
+                <label for="username">Email</label>
+                <input type="email" name="usuario" required class="form-control" id="usuario">
 
               </div>
               <div class="form input">
                 <label for="password">Senha</label>
-                <input type="password" name="senha" class="form-control" id="senha">
+                <input type="password" name="senha" required class="form-control" id="senha">
                 
               </div>
               <br>
-<div class="div-form-entrys">
-
-              <form id="form-entrada">
-              <p class="mb-4">Entrar como:</p>
-  <input type="radio" id="Professor-entry" name="entrada" value="professor">
-  <label class="professor-rl" for="professor">Professor</label>
-  <input type="radio" id="Escola-entry" name="entrada" value="escola">
-  <label class="escola-rl" for="escola">Escola</label><br>
-
-  
-</form>
-</div>
+                <div class="div-form-entrys">
+                  <p class="mb-4">Entrar como:</p>
+                  <input type="radio" id="Professor-entry" name="entrada" value="professor">
+                  <label class="professor-rl" for="professor">Professor</label>
+                  <input type="radio" id="Escola-entry" name="entrada" value="escola">
+                  <label class="escola-rl" for="escola">Escola</label><br>
+                </div>
               <br>
 
-              <input type="submit" value="Entrar" class="btn btn-block btn-primary">
+              <input type="submit" name="submit" value="Entrar" class="btn btn-block btn-primary">
               
 
               <br>

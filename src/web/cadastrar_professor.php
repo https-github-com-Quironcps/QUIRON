@@ -1,7 +1,7 @@
 <?php
 //Incluir conexão
 include("../server/PDO/conexao.php");
-include("../server/cad_professor.php")
+include("../server/cad_professor.php");
 ?>
 
 <!DOCTYPE html>

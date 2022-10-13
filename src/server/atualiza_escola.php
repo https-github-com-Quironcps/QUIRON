@@ -1,8 +1,9 @@
 <?php
 
-if (isset($_POST['nome'], $_POST['endereco'], $_POST['cep'], $_POST['num'], $_POST['bairro'], $_POST['telefone'], $_POST['email'], $_POST['senha'], $_POST['cod'])
-&& !empty($_POST['nome'] && $_POST['endereco'] && $_POST['cep'] && $_POST['num'] && $_POST['bairro'] && $_POST['telefone'] && $_POST['email'] && $_POST['senha'] && $_POST['cod']))
-{
+if (isset($_POST['editar'])) {
+
+include ('PDO/conexao.php');
+
     $nome = trim($_POST['nome']);
     $endereco = trim($_POST['endereco']); 
     $cep = trim($_POST['cep']);
@@ -12,11 +13,15 @@ if (isset($_POST['nome'], $_POST['endereco'], $_POST['cep'], $_POST['num'], $_PO
     $email = trim($_POST['email']);
     $senha = trim($_POST['senha']);
     $cod = trim($_POST['cod']);
-    
-    $foto = $_FILES['foto'];
-    $nome1 = $foto['name'];
-    $tipo = $foto['type'];
-    $tamanho = $foto['size'];
+
+    $imagem = $_FILES['foto']['tmp_name'];
+    $tamanho = $_FILES['foto']['size'];
+    $tipo = $_FILES['foto']['type'];
+    $nome_foto = $_FILES['foto']['name'];
+   
+    $data = file_get_contents($nome_foto);
+
+    $base64 = 'data:image/' . $tipo . ';base64,' . $data;
 
     $sth = $pdo->prepare('UPDATE TB_INSTITUICAO SET TB_INSTITUICAO_NOME = :nome,
     TB_INSTITUICAO_COD = :cod, 
@@ -33,7 +38,7 @@ if (isset($_POST['nome'], $_POST['endereco'], $_POST['cep'], $_POST['num'], $_PO
     $sth->bindParam(':nome', $nome, PDO::PARAM_STR);
     $sth->bindParam(':email', $email, PDO::PARAM_STR);
     $sth->bindParam(':senha', $senha, PDO::PARAM_STR);
-    $sth->bindParam(':img', $_FILES['foto'], PDO::PARAM_STR);
+    $sth->bindParam(':img', $base64, PDO::PARAM_STR);
     $sth->bindParam(':bairro', $bairro, PDO::PARAM_STR);
     $sth->bindParam(':telefone', $telefone, PDO::PARAM_STR);
     $sth->bindParam(':cep', $cep, PDO::PARAM_STR);
@@ -44,6 +49,7 @@ if (isset($_POST['nome'], $_POST['endereco'], $_POST['cep'], $_POST['num'], $_PO
     $sth->execute();
 }
 
+else {
     $sto = $pdo->prepare('SELECT TB_INSTITUICAO.TB_INSTITUICAO_NOME AS Nome,
     TB_INSTITUICAO.TB_INSTITUICAO_ENDERECO AS Endereco,
     TB_INSTITUICAO.TB_INSTITUICAO_COD AS Codigo,
@@ -60,5 +66,5 @@ if (isset($_POST['nome'], $_POST['endereco'], $_POST['cep'], $_POST['num'], $_PO
     $sto->execute();
 
     $resultados = $sto->fetchAll(PDO::FETCH_ASSOC);
-
+}
 ?>
