@@ -284,7 +284,6 @@ input:checked[type="checkbox"]::before{
 
 .div-modo{
     display: flex;
-    background-color: aquamarine;
     align-items: center;
     align-self: center;
 }
@@ -292,7 +291,12 @@ input:checked[type="checkbox"]::before{
 #exit{
     font-size: 20px;
     color: var(--color-001);
-    
+    margin-left: 70%;
+    position: absolute;
+}
+
+#exit:hover{
+    color: var(--color-002);
 }
 
 /* Responsive MENU */
