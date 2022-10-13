@@ -319,7 +319,7 @@ input:checked[type="checkbox"]::before{
     }
 
     .slide{
-        height: 500px;
+        height: 560px;
     }
 
 }
