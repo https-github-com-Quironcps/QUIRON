@@ -140,6 +140,15 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     width: 15%;
 }
 
+.form-cpf{
+    width: 10%;
+    color: var(--color-003);
+}
+
+.input-cpf{
+    width: 25%;
+}
+
 /* Bairro e CEP */
 .form-bairro{
     width: 10%;
@@ -220,10 +229,6 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     background: var(--color-002);
 }
 
-.sumir{
-    background-color: blue;
-}
-
 #submit-text-alterar-2{
     background-color: var(--cor-rgb-005);
     border-radius: 4px;
@@ -274,8 +279,6 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
         height: 100%;
         border-radius: 15px;
     }
-
-
 
     img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
         height: 50px;
@@ -350,6 +353,7 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     .input-senha, 
     .input-sozinho, 
     .input-cod,
+    .input-cpf,
     .input-tel
     {
         width: 60%;
@@ -365,6 +369,7 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     .form-endereco,
     .form-cod,
     .form-num,
+    .form-cpf,
     .form-senha,
     .form-tel{
         width: 39%;

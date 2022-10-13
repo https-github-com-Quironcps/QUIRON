@@ -41,7 +41,7 @@
                 
                 <label class="form-tel">Telefone: </label><input type="number" class="input-tel" id="input-text-alterar"> <label class="form-email"> E-mail: </label><input class="input-email" type="email" id="input-text-alterar"><br>
 
-                <center> <label class="form-senha">Senha: </label><input type="password" class="input-senha" id="input-text-alterar"> </center> 
+                <center> <label class="form-cpf">CPF: </label><input type="number" class="input-cpf" value="<?php echo $Resultado['CPF']; ?>" name="cpf" id="input-text-alterar"> <label class="form-senha">Senha: </label><input type="password" class="input-senha" id="input-text-alterar"> </center> 
                 
                 <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"> <input type="submit" value="Excluir Conta" id="submit-text-alterar-2" class="submit-class"> 
             </form>
