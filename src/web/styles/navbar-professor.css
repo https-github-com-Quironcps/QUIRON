@@ -286,6 +286,18 @@ input:checked[type="checkbox"]::before{
 .div-modo{
     display: flex;
     align-self: center;
+    align-items: center;
+}
+
+#exit{
+    font-size: 20px;
+    color: var(--color-001);
+    margin-left: 70%;
+    position: absolute;
+}
+
+#exit:hover{
+    color: var(--color-002);
 }
 
 /* Responsive MENU */
@@ -323,6 +335,18 @@ input:checked[type="checkbox"]::before{
         height: 500px;
     }
 
+    input[type="checkbox"]{
+        width: 4vw;
+        height: 3vh;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    input[type="checkbox"]{
+        width: 5vw;
+        height: 3vh;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -332,6 +356,11 @@ input:checked[type="checkbox"]::before{
 
     .toggle{
         right: 30px;
+    }
+
+    input[type="checkbox"]{
+        width: 8vw;
+        height: 3vh;
     }
 }
 

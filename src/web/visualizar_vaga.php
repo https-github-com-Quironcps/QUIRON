@@ -21,6 +21,9 @@
 </head>
 <body>
     <div class="everybody">
+
+    <i id="icon1" class="bi bi-arrow-left-short" onclick=""></i>
+    <!-- <i id="icon1"  class="bi bi-x"></i> -->
        
         <div class="divlateral">
 

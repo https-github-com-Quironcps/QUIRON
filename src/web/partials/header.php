@@ -47,7 +47,10 @@
                         <div class="div-modo">
                             <a class="text-modo">Modo escuro:</a>
                             <input type="checkbox" onclick="javascript:themeToggle()" class="check-modo" name="" id="">
+                            <i id="exit" class="bi bi-box-arrow-left"></i>
                         </div>
+
+                      
 
                         
 
