@@ -17,7 +17,7 @@ body{
 }
 
 .confirm{
-    margin-top: 10%;
+    margin-top: 3%;
     height: 7vh;
     width: 7vh;
     border-radius: 100%;
@@ -36,9 +36,16 @@ body{
 }
 
 .star{
-    background-color: aqua;
-    width: 50%;
-    height: 100%;
+    background-color: rgb(14, 38, 38);
+    width: 9%;
+    margin-right: 30%;
+    margin-top: 2%;
+}
+
+.star2{
+    background-color: rgb(55, 67, 67);
+    width: 9%;
+    margin-left: 30%;
 }
 
 h3{

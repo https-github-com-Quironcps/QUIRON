@@ -15,10 +15,12 @@
 </head>
 <body>
 
-        <div class="principal"><br><br>
+        <div class="principal"><br>
             <center>
                 <div class="star">
                     <i id="star" class="bi bi-stars"></i>
+                </div>
+                <div class="star2">
                     <i id="star" class="bi bi-stars"></i>
                 </div>
                 <div class="confirm">
