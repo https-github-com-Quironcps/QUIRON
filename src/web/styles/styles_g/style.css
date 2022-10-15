@@ -1,7 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Raleway;
+}
 
 .principal{
-    height: 50%;
-    width: 50%;
+    height: 50vh;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
     background-color: var(--color-005);
+}
+
+.confirm{
+    margin-top: 10%;
+    height: 7vh;
+    width: 7vh;
+    justify-content: center;
+    justify-self: center;
+    border-radius: 100%;
+    background-color: var(--color-001);
+}
+
+#icon{
+    font-size: 3em;
+    color: var(--white);
+}
+
+h3{
+    margin-top: 30%;
 }
