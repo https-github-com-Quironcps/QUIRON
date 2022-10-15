@@ -12,8 +12,6 @@ body{
 .principal{
     height: 50vh;
     width: 30%;
-    display: flex;
-    justify-content: center;
     border-radius: 12px;
     background-color: var(--color-005);
 }
@@ -22,8 +20,6 @@ body{
     margin-top: 10%;
     height: 7vh;
     width: 7vh;
-    justify-content: center;
-    justify-self: center;
     border-radius: 100%;
     background-color: var(--color-001);
 }
@@ -33,6 +29,20 @@ body{
     color: var(--white);
 }
 
+#star{
+    padding: 10%;
+    color: rgb(240, 214, 14);
+    font-size: 2em;
+}
+
+.star{
+    background-color: aqua;
+    width: 50%;
+    height: 100%;
+}
+
 h3{
-    margin-top: 30%;
+    color: var(--color-003);
+    font-weight: 700;
+
 }

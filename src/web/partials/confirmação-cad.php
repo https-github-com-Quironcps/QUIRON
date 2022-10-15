@@ -15,10 +15,18 @@
 </head>
 <body>
 
-        <div class="principal">
-            <div class="confirm">
-                <i id="icon" class="bi bi-check"></i>
-            </div>
+        <div class="principal"><br><br>
+            <center>
+                <div class="star">
+                    <i id="star" class="bi bi-stars"></i>
+                    <i id="star" class="bi bi-stars"></i>
+                </div>
+                <div class="confirm">
+                    <i id="icon" class="bi bi-check"></i>
+                </div>
+
+                <h3>Cadastro Realizado!</h3>
+            </center>
         </div>
  
 </body>
