@@ -15,19 +15,21 @@
 </head>
 <body>
 
-        <div class="principal"><br>
+        <div class="principal">
+            <i id="exit" class="bi bi-x"></i>
             <center>
-                <div class="star">
-                    <i id="star" class="bi bi-stars"></i>
-                </div>
-                <div class="star2">
-                    <i id="star" class="bi bi-stars"></i>
-                </div>
-                <div class="confirm">
-                    <i id="icon" class="bi bi-check"></i>
-                </div>
+                <div class="conteudo">
+                    
+                        <i id="star" class="bi bi-stars"></i><br>
+                    
+                        <i id="star2" class="bi bi-stars"></i>
+              
+                    <div class="confirm">
+                        <i id="icon" class="bi bi-check"></i>
+                    </div><br>
 
-                <h3>Cadastro Realizado!</h3>
+                    <h3>Cadastro Realizado!</h3>
+                </div>
             </center>
         </div>
  

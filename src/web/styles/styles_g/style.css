@@ -33,19 +33,25 @@ body{
     padding: 10%;
     color: rgb(240, 214, 14);
     font-size: 2em;
-}
-
-.star{
-    background-color: rgb(14, 38, 38);
-    width: 9%;
     margin-right: 30%;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
-.star2{
-    background-color: rgb(55, 67, 67);
-    width: 9%;
+#star2{
+    color: rgb(240, 214, 14);
+    font-size: 2em;
+    margin-top: 5%;
     margin-left: 30%;
+}
+
+.conteudo{
+    margin-top: 20%;
+}
+
+#exit{
+    color: var(--color-001);
+    font-size: 1.7em;
+    float: right;
 }
 
 h3{
