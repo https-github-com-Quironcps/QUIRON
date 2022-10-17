@@ -1,5 +1,6 @@
 <?php
     include('../server/PDO/conexao.php');
+    include('../server/PDO/theme.php');
     include('../server/busca_vagas.php');
 ?>
 

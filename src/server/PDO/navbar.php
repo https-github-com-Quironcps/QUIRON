@@ -25,6 +25,6 @@ if ($user_situacao == true){
 
 else{
     include("partials/header-inicio.php");
-}
 
+}
 ?>
