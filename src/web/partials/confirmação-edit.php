@@ -25,10 +25,10 @@
                         <i id="star2" class="bi bi-stars"></i>
               
                     <div class="confirm">
-                        <i id="icon" class="bi bi-check-lg"></i>
+                        <i id="icon" class="bi bi-pencil"></i>
                     </div><br>
 
-                    <h3>Cadastro Confirmado!</h3>
+                    <h3>Edição Confirmada!</h3>
                 </div>
             </center>
         </div>
