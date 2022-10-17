@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br" class="dark">
+<html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,11 @@
 
 </head>
 <body>
-<?php include('partials/header.php') ?>
+<?php 
+    include('../server/PDO/navbar.php'); 
+    include('../server/PDO/verifica_logado.php');
+    include('../server/PDO/acesso_telas_professor.php');
+?>
 
 <br><br><br><br>
 

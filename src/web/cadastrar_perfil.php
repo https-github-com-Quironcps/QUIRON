@@ -13,7 +13,11 @@
 
 </head>
 <body>
-<?php include('partials/header.php') ?>
+
+<?php 
+    include('../server/PDO/navbar.php'); 
+    include('../server/PDO/acesso_telas_desconhecido.php');
+?>
 
 <br><br><br><br>
 

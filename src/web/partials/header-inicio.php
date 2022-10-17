@@ -23,13 +23,15 @@
     <header>
         <nav id="navbar">
 
-            <button class="botao-001" href="#" type="submit">Entrar</button>
-
+            
             <div class="container">
-                <a href="index.php"><img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
+                <a href="index.php">
+                    <img src="images/logos/arco-e-texto-dark.png" id="imagemNav" class="logo" alt="Logo">
+                </a>
             </div>
+            
+            <a href="entrar.php"><button class="botao-002" href="entrar.php" type="submit">Entrar</button></a>
         </nav>
     </header>
-
 </body>
 </html>

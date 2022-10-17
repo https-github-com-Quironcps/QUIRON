@@ -17,7 +17,11 @@
 <body>
 <br>
 
-<?php include('partials/header.php'); ?>
+<?php 
+    include('../server/PDO/navbar.php'); 
+    include('../server/PDO/verifica_logado.php');
+    include('../server/PDO/acesso_telas_escola.php');
+?>
 
 <center>
     <div class="container1">

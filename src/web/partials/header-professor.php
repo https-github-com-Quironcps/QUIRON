@@ -46,7 +46,7 @@
                         <div class="div-modo">
                             <a class="text-modo">Modo escuro:</a>
                             <input type="checkbox" onclick="javascript:themeToggle()" class="check-modo" name="" id="">
-                            <i id="exit" class="bi bi-box-arrow-left"></i>
+                            <a id="exit" href="../server/sair.php"><i class="bi bi-box-arrow-left"></i></a>
                         </div>            
 
                     </ul>
@@ -55,7 +55,7 @@
             </label>
 
             <div class="container">
-                <a href="index.php"><img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
+                <a href="index.php"><img src="images/logos/arco-e-texto-dark.png" id="imagemNav" class="logo" alt="Logo"></a>
                 <div class="container-inner">
                     <ul class="ul2">
                         <li><a href="index.php">Vagas</a></li>

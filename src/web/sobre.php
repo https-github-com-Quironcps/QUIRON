@@ -13,7 +13,10 @@
 
 </head>
 <body>
- <?php include('partials/header.php'); ?>
+<?php 
+    include('../server/PDO/navbar.php'); 
+    include('../server/PDO/verifica_logado.php');
+?>
 
     <br>
     <div class="div-sobre">

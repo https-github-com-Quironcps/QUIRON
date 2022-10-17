@@ -44,7 +44,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         if($stmt = $pdo->prepare($sql)){
             // Vincule as variáveis à instrução preparada como parâmetros
             $stmt->bindParam(":TB_PROFESSOR_EMAIL", $param_usuario, PDO::PARAM_STR);
-            
+
             // Definir parâmetros
             $param_usuario = trim($_POST["usuario"]);
             
@@ -62,13 +62,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         if (password_verify($senha, $hashed_senha)){
 
                             echo '<br>asaasa';
+
                             // A senha está correta, então inicie uma nova sessão
                             session_start();
                             
                             // Armazene dados em variáveis de sessão
-                            $_SESSION["loggedin"] = true;
-                            $_SESSION["TB_PROFESSOR_ID"] = $id;
-                            $_SESSION["TB_PROFESSOR_EMAIL"] = $usuario;                            
+                            $_SESSION["user_sit"] = true;
+                            $_SESSION["user_cod"] = $id;
+                            $_SESSION["user_type"] = 'professor';
+                            $_SESSION["user_email"] = $usuario;
+                            $_SESSION["theme"] = 'light';
                             
                             // Redirecionar o usuário para a página de boas-vindas
                             header("location: ../web/index.php");

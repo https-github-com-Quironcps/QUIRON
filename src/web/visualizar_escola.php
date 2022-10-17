@@ -14,7 +14,10 @@
 </head>
 <body>
 
-    <?php include ('partials/header.php') ?>
+<?php 
+    include('../server/PDO/navbar.php'); 
+    include('../server/PDO/verifica_logado.php');
+?>
 
     <!-- div com informações (nome da escola, cursos) sobrepondo a imagem do topo -->
 

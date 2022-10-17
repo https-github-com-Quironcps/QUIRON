@@ -5,17 +5,15 @@ body {
 }
 
 .container{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1350px;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* width: 200px; */
+    /* position: relative; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 5fr 1fr; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
     height: 1vh;
-    margin-left: 7%;
+    /* margin-left: 7%; */
 }
 
 nav{
@@ -29,14 +27,26 @@ nav{
     z-index: 9;
     transition:0.7s;
     background-color: var(--color-006);
-   
+
     /* box-shadow: 0 0 0.5em var(--grey); */
+}
+
+#nav1{
+    box-shadow: 0 0 0.5em var(--grey);
+    background-color: white;
 }
 
 .logo{
     width: 10em;
     margin-top: -20px;
-    margin-left: -86vw;
+    transition: all 0.2s;
+    margin-left: 7%;
+    cursor: pointer;
+}
+
+.logo2{
+    width: 9.5em;
+    margin-top: -20px;
     transition: all 0.2s;
     cursor: pointer;
 }
@@ -66,16 +76,12 @@ nav{
     transition: all 0.8s ease;
 }
 
-.div-nav{
-    padding-top: -1000px;
-}
-
-.botao-001{
+.botao-002{
     background-color: var(--color-001);
     border-radius: 4px;
-    width: 100vw;
-    height: 6vh;
-    margin-left: 85vw;
+    width: 100px;
+    height: 40px;
+    margin-right: 10vw;
     border-style: none;
     transition: all 0.2s;
     cursor: pointer;
@@ -87,13 +93,5 @@ nav{
 @media screen and (max-width: 550px) {
     .logo{
         width: 150px;
-        float: left;
-        margin-left: -220%;
-    
     }
-
-    .botao-001{
-        margin-left: 68vw;
-    }
-    
 }

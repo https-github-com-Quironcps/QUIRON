@@ -1,6 +1,7 @@
 <?php
 
 include ('PDO/conexao.php');
+include ('PDO/situacao.php');
 
 if (isset($_POST['nome'])) {
 
@@ -25,7 +26,7 @@ if (isset($_POST['nome'])) {
     TB_PROFESSOR_EMAIL = :email,
     TB_PROFESSOR_SENHA = :senha,
     TB_PROFESSOR_IMG_USER = :img
-    WHERE TB_PROFESSOR_ID LIKE 1');
+    WHERE TB_PROFESSOR_ID LIKE :id');
     
     $sth->bindParam(':nome', $nome, PDO::PARAM_STR);
     $sth->bindParam(':email', $email, PDO::PARAM_STR);
@@ -35,6 +36,7 @@ if (isset($_POST['nome'])) {
     $sth->bindParam(':telefone', $telefone, PDO::PARAM_STR);
     $sth->bindParam(':cep', $cep, PDO::PARAM_STR);
     $sth->bindParam(':num', $num, PDO::PARAM_INT);
+    $sth->bindParam(':id', $user_id, PDO::PARAM_INT);
     $sth->bindParam(':endereco', $endereco, PDO::PARAM_STR);
     $sth->bindParam(':cpf', $cpf, PDO::PARAM_STR);
 
@@ -52,8 +54,9 @@ if (isset($_POST['nome'])) {
     TB_PROFESSOR.TB_PROFESSOR_SENHA AS Senha,
     TB_PROFESSOR.TB_PROFESSOR_IMG_USER AS Foto 
     FROM `TB_PROFESSOR`
-    WHERE TB_PROFESSOR.TB_PROFESSOR_ID LIKE 1');
+    WHERE TB_PROFESSOR.TB_PROFESSOR_ID LIKE :id');
 
+    $sto->bindParam(':id', $user_id, PDO::PARAM_INT);
     $sto->execute();
 
     $resultados = $sto->fetchAll(PDO::FETCH_ASSOC);

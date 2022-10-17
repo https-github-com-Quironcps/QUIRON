@@ -14,7 +14,11 @@
     <title>QUIRON - MINHAS VAGAS</title>
 </head>
 <body>
-    <?php include('partials/header.php') ?>
+<?php 
+    include('../server/PDO/navbar.php'); 
+    include('../server/PDO/verifica_logado.php');
+    include('../server/PDO/acesso_telas_escola.php');
+?>
 
     <center><h1 class="h1002">Minhas vagas</h1></center>
 

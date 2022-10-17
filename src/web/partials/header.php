@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br" class="dark">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +31,7 @@
                     <span class="middle_line common"></span>
                     <span class="bottom_line common"></span>
                 </div>
-                
+
                 <div class="slide">
                     <ul class="ul1">
                         <li><a class="hover-lis" href="index.php">Vagas</a></li>
@@ -46,21 +46,20 @@
 
                         <div class="div-modo">
                             <a class="text-modo">Modo escuro:</a>
-                            <input type="checkbox" onclick="javascript:themeToggle()" class="check-modo" name="" id="">
-                            <i id="exit" class="bi bi-box-arrow-left"></i>
+                            <input type="checkbox" onclick="themeToggle()" class="check-modo" name="" id="">
+                            <a id="exit" href="../server/sair.php"><i class="bi bi-box-arrow-left"></i></a>
                         </div>
-
-                      
-
-                        
-
                     </ul>
 
                 </div>
             </label>
 
+
             <div class="container">
-                <a href="index.php"><img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
+                <a href="index.php">
+                    <img src="images/logos/arco-e-texto-dark.png" id="imagemNav" class="logo" alt="Logo">
+                </a>
+
                 <div class="container-inner">
                     <ul class="ul2">
                         <li><a href="index.php">Vagas</a></li>
@@ -70,6 +69,7 @@
                     </ul>
                 </div>
             </div>
+
         </nav>
     </header>
 </body>

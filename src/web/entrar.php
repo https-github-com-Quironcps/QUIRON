@@ -29,11 +29,23 @@ include("../server/login.php");
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
+    <link rel="stylesheet" href="styles/navbar-inicio.css">
+
     <title>Entrar na QUIRON</title>
   </head>
   <body>
   
-  <?php include('partials/navbar-index.php'); ?>
+  <header>
+        <nav id="nav1">
+            <div class="container">
+                <a href="index.php">
+                  <center>
+                    <img src="images/logos/arco-e-texto-dark.png" id="imagemNav" class="logo2" alt="Logo">
+                  </center>
+                </a>
+            </div>
+        </nav>
+  </header>
   
   <div class="content">
     <div class="container">
@@ -46,28 +58,32 @@ include("../server/login.php");
             <div class="col-md-8">
               <div class="mb-4">
                 <br>
-              <h3>QUÍRON</h3>
-              <p class="mb-4">Sua próxima vaga de emprego na palma de sua mão.</p>
+              <h3>Entre na QUÍRON</h3>
+              <p class="mb-4">A próxima vaga de emprego na palma da sua mão</p>
             </div>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
             
               <div class="form input">
                 <label for="username">Email</label>
-                <input type="email" name="usuario" required class="form-control" id="usuario">
+                <input type="email" name="usuario" required class="input-text-alterar" id="usuario">
 
               </div>
               <div class="form input">
                 <label for="password">Senha</label>
-                <input type="password" name="senha" required class="form-control" id="senha">
+                <input type="password" name="senha" required class="input-text-alterar" id="senha">
                 
               </div>
               <br>
-                <div class="div-form-entrys">
-                  <p class="mb-4">Entrar como:</p>
-                  <input type="radio" id="Professor-entry" name="entrada" value="professor">
-                  <label class="professor-rl" for="professor">Professor</label>
-                  <input type="radio" id="Escola-entry" name="entrada" value="escola">
-                  <label class="escola-rl" for="escola">Escola</label><br>
+              <div class="div-form-entrys">
+                <p class="mb-4">Entrar como:</p>
+                <center>
+
+                  <input  type="radio" id="Professor-entry" id="prof" name="entrada" value="professor">
+                  <label class="professor-rl" for="prof">Professor</label>
+
+                  <input  type="radio" id="Escola-entry" id="esco" name="entrada" value="escola">
+                  <label class="escola-rl" for="esco">Escola</label><br>
+                </center>
                 </div>
               <br>
 

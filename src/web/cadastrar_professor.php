@@ -22,7 +22,10 @@ include("../server/cad_professor.php");
 
 </head>
 <body>
-<?php include('partials/navbar-index.php'); ?>
+<?php 
+    include('../server/PDO/navbar.php'); 
+    include('../server/PDO/acesso_telas_desconhecido.php');
+?>
 <br>
 
 

@@ -4,7 +4,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<html lang="pt-br" class="light" id="page">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,10 @@
     <title>QUIRON - VAGAS</title>
 </head>
 <body>
-<?php include('partials/header-professor.php'); ?>
+    
+<?php 
+    include('../server/PDO/navbar.php'); 
+?>
     <br>
 
     <div class="filtros">
@@ -95,6 +98,33 @@
         </div>
     </div>
 
+    <center><h6>
+        <?php 
+            include('../server/PDO/situacao.php');
+
+            try{
+                if(!empty($email_usuario)){
+                    $sta = $pdo->prepare('SELECT TB_PROFESSOR.TB_PROFESSOR_NOME as nome
+                    FROM `TB_PROFESSOR` 
+                    WHERE TB_PROFESSOR_EMAIL = :email');
+                
+                    $sta->bindParam(':email', $email_usuario, PDO::PARAM_STR);
+
+                    $sta->execute();
+
+                    $res = $sta->fetchAll(PDO::FETCH_ASSOC);
+
+                    if (count($res)) {
+                        foreach($res as $Nome_Usuario){
+                            echo 'Conectado - '.$Nome_Usuario['nome'];
+                        }
+                    }
+                }
+            }
+
+            catch(PDOException $e) {}
+        ?>
+    </h6></center>
     <?php include('partials/footer.php'); ?>
 </body>
 </html>
