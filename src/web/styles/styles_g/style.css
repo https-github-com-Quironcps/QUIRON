@@ -45,12 +45,12 @@ body{
 }
 
 .conteudo{
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 #exit{
     color: var(--color-001);
-    font-size: 1.7em;
+    font-size: 2em;
     float: right;
 }
 
