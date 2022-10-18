@@ -2,8 +2,7 @@
     include ('PDO/conexao.php');
     include ('PDO/situacao.php');
 
-    $escola_fk = $user_id;
-    $id_vaga = $codigo;
+    $id_vaga = $_SESSION['id_vaga'];
 
     if (isset($_POST['nome'])) {
         $nome = trim($_POST['nome']);

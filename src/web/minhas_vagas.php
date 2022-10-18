@@ -42,9 +42,9 @@
 
                     <div class="td2"><h6 class="nome_materia"><?php echo $Resultado['Materia']; ?></h6></div>
 
-                    <div class="td3"><a href="editar_vaga" onclick="location.href=this.href+'?cod='+<?php echo $Resultado['Id'];?>;return false;"><img class="trash-square" src="images/svgs/editar.svg"></a></div>
+                    <div class="td3"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?cod='+<?php echo $Resultado['Id'];?>;return false;"><img class="trash-square" src="images/svgs/editar.svg"></a></div>
 
-                    <div class="td4"><a href=""><img class="trash-square" src="images/svgs/trash.svg"></a></div>
+                    <div class="td4"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?codigoex='+<?php echo $Resultado['Id'];?>;return false;"><img class="trash-square" src="images/svgs/trash.svg"></a></div>
                 </div>
                 <?php
                     }}

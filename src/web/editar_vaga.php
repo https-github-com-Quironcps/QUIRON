@@ -21,8 +21,6 @@
     include('../server/PDO/verifica_logado.php');
     include('../server/PDO/acesso_telas_escola.php');
     include('../server/edita_vaga.php');
-
-    $codigo = trim($_GET['cod']);
 ?>
 
 <center>
@@ -34,6 +32,7 @@
         <?php
             if (count($resultados)) {
                 foreach ($resultados as $Resultado) {
+
             ?>
         <div class="div-container">
             <div class="div-sub-container">
