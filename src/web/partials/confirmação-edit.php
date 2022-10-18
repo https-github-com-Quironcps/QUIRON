@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="scripts/ImagenError.js"></script>
 
+    <link rel="icon" href="../web/images/logos/arco-dark-2.png">
+
     <title>QUIRON - CONFIRMAÇÃO</title>
 </head>
 <body>

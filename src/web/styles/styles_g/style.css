@@ -66,6 +66,15 @@ body{
     color: var(--color-002);
 }
 
+.btn-enviar{
+    background-color: var(--color-001);
+    border-radius: 4px;
+    width: 15vh;
+    height: 6vh;
+    border-style: none;
+    color: var(--color-004);
+}
+
 h3{
     color: var(--color-003);
     font-weight: 900;

@@ -21,17 +21,11 @@
             <a><i id="exit" class="bi bi-x"></i></a>
             <center>
                 <div class="conteudo">
-                    
-                        <i id="star" class="bi bi-stars"></i><br>
-                    
-                        <i id="star2" class="bi bi-stars"></i>
               
-                    <div class="confirm">
-                        <i id="icon" class="bi bi-trash"></i>
-                        
-                    </div><br>
+                        <h3>Deseja Sair?</h3><br>
 
-                    <h3>Exclusão Confirmada!</h3>
+                        <input type="submit" value="Sim" class="btn-enviar">
+                        <input type="submit" value="Não" class="btn-enviar">
                 </div>
             </center>
         </div>
