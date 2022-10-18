@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="dark">
+<html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,11 +21,10 @@
             <center>
                 <div class="conteudo">
               
-                        <h3>Deseja Sair?</h3><br>
+                        <h3>Informações Inválidas</h3><br>
 
-                        <input type="submit" value="Sim" class="btn-enviar">
-                        <input type="submit" value="Não" class="btn-enviar">
-
+                        <input type="submit" value="OK" class="btn-enviar">
+  
                 </div>
             </center>
         </div>

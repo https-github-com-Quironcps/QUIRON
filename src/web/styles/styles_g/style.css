@@ -18,6 +18,15 @@ body{
     transition: all 2s;
 }
 
+.principal2{
+    height: 40vh;
+    width: 27%;
+    align-items: center;
+    border-radius: 12px;
+    background-color: var(--color-005);
+    transition: all 2s;
+}
+
 .confirm{
     height: 7vh;
     width: 7vh;
@@ -75,23 +84,35 @@ body{
     color: var(--color-004);
 }
 
+.btn-enviar:hover{
+    transition: all 0.5s;
+    outline: none;
+    background: var(--color-002);
+}
+
 h3{
     color: var(--color-003);
     font-weight: 900;
 }
 
 @media (max-width: 880px){
-    .principal{
+    .principal, .principal2{
         width: 40%;
     }
 }
 
 @media (max-width: 680px){
-    .principal{
+    .principal, .principal2{
         width: 60%;
     }
 
     h3{
         font-size: 1em;
+    }
+}
+
+@media (max-width: 414px){
+    .btn-enviar{
+        width: 8vh;
     }
 }
