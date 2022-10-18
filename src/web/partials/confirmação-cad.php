@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<html lang="pt-br" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +25,9 @@
                         <i id="star2" class="bi bi-stars"></i>
               
                     <div class="confirm">
+                        <center>
                         <i id="icon" class="bi bi-check-lg"></i>
+                        </center>
                     </div><br>
 
                     <h3>Cadastro Confirmado!</h3>

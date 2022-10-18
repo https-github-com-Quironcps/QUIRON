@@ -18,14 +18,19 @@ body{
 }
 
 .confirm{
-    margin-top: 3%;
     height: 7vh;
     width: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2%;
     border-radius: 100%;
     background-color: var(--color-001);
 }
 
 #icon{
+    display: flex;
+    justify-content: center;
     font-size: 1.8em;
     color: var(--white);
 }
@@ -53,6 +58,10 @@ body{
     color: var(--color-001);
     font-size: 2em;
     float: right;
+}
+
+#exit:hover{
+    color: var(--color-002);
 }
 
 h3{
