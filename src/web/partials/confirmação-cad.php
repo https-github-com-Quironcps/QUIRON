@@ -25,9 +25,7 @@
                         <i id="star2" class="bi bi-stars"></i>
               
                     <div class="confirm">
-                        <center>
                         <i id="icon" class="bi bi-check-lg"></i>
-                        </center>
                     </div><br>
 
                     <h3>Cadastro Confirmado!</h3>

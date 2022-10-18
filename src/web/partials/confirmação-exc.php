@@ -28,7 +28,7 @@
                         <i id="icon" class="bi bi-x-lg"></i>
                     </div><br>
 
-                    <h3>Exclusão Realizada!</h3>
+                    <h3>Exclusão Confirmada!</h3>
                 </div>
             </center>
         </div>
