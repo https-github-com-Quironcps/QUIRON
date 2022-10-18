@@ -25,7 +25,8 @@
                         <i id="star2" class="bi bi-stars"></i>
               
                     <div class="confirm">
-                        <i id="icon" class="bi bi-x-lg"></i>
+                        <i id="icon" class="bi bi-trasha"></i>
+                        
                     </div><br>
 
                     <h3>Exclusão Confirmada!</h3>
