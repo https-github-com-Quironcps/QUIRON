@@ -33,7 +33,7 @@ include("../server/login.php");
   </head>
   <body>
   
-  <?php include('partials/navbar-index.php'); ?>
+  <?php include('partials/header.php'); ?>
   
   <div class="content">
     <div class="container">
