@@ -124,10 +124,11 @@ body{
 .foto-perfil{
     display: inline;
     width: 10vh;
-    height: 10vh;
+    height: 100px;
     border-radius: 5px;
     margin-left: 1.5vh;
-
+    object-fit: cover;
+    object-position: center;
     transition: all 1s;
 }
 
