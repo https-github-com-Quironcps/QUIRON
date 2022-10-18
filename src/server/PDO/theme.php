@@ -6,6 +6,6 @@ include("situacao.php");
     }
 
     else {
-        $modo = 'light';
+        $modo = 'dark';
     }
 ?>

@@ -88,7 +88,7 @@
 
         <ul class="list">
             <li>
-                <a href="index.php">Home</a>
+                <a href="./">Home</a>
             </li>
             <li>
                 <a href="sobre.php">Sobre</a>

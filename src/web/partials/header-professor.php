@@ -35,12 +35,12 @@
                 
                 <div class="slide">
                     <ul class="ul1">
-                        <li><a class="hover-lis" href="index.php">Vagas</a></li>
-                        <li><a class="hover-lis" href="escolas.php">Escolas</a></li>
-                        <li><a class="hover-lis"  href="sobre.php">Sobre</a></li>
+                        <li><a class="hover-lis" href="./">Vagas</a></li>
+                        <li><a class="hover-lis" href="escolas">Escolas</a></li>
+                        <li><a class="hover-lis"  href="sobre">Sobre</a></li>
 
-                        <li><a href="editar_info_conta_professor.php"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
-                        <li><a href="contato.php"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
+                        <li><a href="editar_info_conta_professor"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
+                        <li><a href="contato"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
                         <br><br>
 
                         <div class="div-modo">
@@ -55,12 +55,12 @@
             </label>
 
             <div class="container">
-                <a href="index.php"><img src="images/logos/arco-e-texto-dark.png" id="imagemNav" class="logo" alt="Logo"></a>
+                <a href="./"><img src="images/logos/arco-e-texto-dark.png" id="imagemNav" class="logo" alt="Logo"></a>
                 <div class="container-inner">
                     <ul class="ul2">
-                        <li><a href="index.php">Vagas</a></li>
-                        <li><a href="escolas.php">Escolas</a></li>
-                        <li><a href="sobre.php">Sobre</a></li>
+                        <li><a href="./">Vagas</a></li>
+                        <li><a href="escolas">Escolas</a></li>
+                        <li><a href="sobre">Sobre</a></li>
                     </ul>
                 </div>
             </div>

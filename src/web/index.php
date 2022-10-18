@@ -4,6 +4,7 @@
     include('../server/busca_vagas.php');
 ?>
 
+
 <!DOCTYPE html>
 <html lang="pt-br" class="light" id="page">
 <head>
@@ -20,7 +21,6 @@
     <title>QUIRON - VAGAS</title>
 </head>
 <body>
-    
 <?php 
     include('../server/PDO/navbar.php'); 
 ?>
@@ -105,19 +105,39 @@
 
             try{
                 if(!empty($email_usuario)){
-                    $sta = $pdo->prepare('SELECT TB_PROFESSOR.TB_PROFESSOR_NOME as nome
-                    FROM `TB_PROFESSOR` 
-                    WHERE TB_PROFESSOR_EMAIL = :email');
-                
-                    $sta->bindParam(':email', $email_usuario, PDO::PARAM_STR);
+                    if ($user_type == 'professor'){
+                        $sta = $pdo->prepare('SELECT TB_PROFESSOR.TB_PROFESSOR_NOME as nome
+                        FROM `TB_PROFESSOR` 
+                        WHERE TB_PROFESSOR_EMAIL = :email');
+                    
+                        $sta->bindParam(':email', $email_usuario, PDO::PARAM_STR);
 
-                    $sta->execute();
+                        $sta->execute();
 
-                    $res = $sta->fetchAll(PDO::FETCH_ASSOC);
+                        $res = $sta->fetchAll(PDO::FETCH_ASSOC);
 
-                    if (count($res)) {
-                        foreach($res as $Nome_Usuario){
-                            echo 'Conectado - '.$Nome_Usuario['nome'];
+                        if (count($res)) {
+                            foreach($res as $Nome_Usuario){
+                                echo 'Conectado - '.$Nome_Usuario['nome'];
+                            }
+                        }
+                    }
+
+                    elseif ($user_type == 'escola'){
+                        $sta = $pdo->prepare('SELECT TB_INSTITUICAO.TB_INSTITUICAO_NOME as nome
+                        FROM `TB_INSTITUICAO` 
+                        WHERE TB_INSTITUICAO_EMAIL = :email');
+                    
+                        $sta->bindParam(':email', $email_usuario, PDO::PARAM_STR);
+
+                        $sta->execute();
+
+                        $res = $sta->fetchAll(PDO::FETCH_ASSOC);
+
+                        if (count($res)) {
+                            foreach($res as $Nome_Usuario){
+                                echo 'Conectado - '.$Nome_Usuario['nome'];
+                            }
                         }
                     }
                 }

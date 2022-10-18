@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="dark">
+<html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="styles/theme.css">
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
-
-    
 </head>
 <body>
 <br>
@@ -21,6 +19,7 @@
     include('../server/PDO/navbar.php'); 
     include('../server/PDO/verifica_logado.php');
     include('../server/PDO/acesso_telas_escola.php');
+    include('../server/cadastra_vaga.php');
 ?>
 
 <center>
@@ -31,49 +30,24 @@
 
         <div class="div-container">
             <div class="div-sub-container">
-
-            <?php
-                $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-
-                if (!empty($dados['input-enviar'])){
-
-                    $query_vaga = "INSERT INTO TB_VAGA (TB_VAGA_MATERIA, TB_VAGA_LINK, TB_VAGA_DESC, 
-                    TB_VAGA_REQ, TB_VAGA_CARGA, TB_VAGA_FAIXA_SALARIAL, TB_VAGA_GRADE, FK_INSTITUICAO) 
-                    VALUES ('".$dados['nome']."', '".$dados['link']."', '".$dados['descricao']."', '".
-                    $dados['requisitos']."', '".$dados['carga']."', '".$dados['salarial']."', '".$dados['grade']."', '1');";
-
-                    $pdo = new PDO("mysql:dbname=DB_QUIRON; host=localhost","quirondb", "quiron2022tcc*");
-                    $cad_vaga = $pdo->prepare($query_vaga);
-                    $cad_vaga->execute();
-
-                    if($cad_vaga->rowCount()){
-                        echo "<div class='mensagem'> Usuário cadastrado com sucesso <br> <button class='confirmar'>Fechar</button> </div>";
-                    }
-
-                    else {
-                        echo "Usuário não cadastrado";
-                    }
-                } 
-                
-            ?>
                 <form class="form" method="POST">
                     <label for="name">Nome da matéria: </label><br>
-                    <input class='input-textarea' name="nome" type="text"> <br><br>
+                    <input maxlength="44" class='input-textarea' name="nome" type="text"> <br><br>
 
                     <label for="name">Link de acesso no CPS:</label><br>
-                    <input class='input-textarea' name="link" type="url"> <br><br>
+                    <input maxlength="127" class='input-textarea' name="link" type="url"> <br><br>
 
                     <label for="name">Descrição da vaga:</label><br>
-                    <textarea class='input-textarea' name="descricao"></textarea> <br><br>
+                    <textarea maxlength="512" class='input-textarea' name="descricao"></textarea> <br><br>
 
                     <label for="name">Requisito da vaga:</label><br>
-                    <textarea class='input-textarea' name="requisitos"></textarea> <br><br>
+                    <textarea maxlength="512" class='input-textarea' name="requisitos"></textarea> <br><br>
 
                     <label for="name">Carga horária semanal:</label><br>
-                    <input class='input-textarea' type="text" name="carga"> <br><br>
+                    <input maxlength="64" class='input-textarea' type="text" name="carga"> <br><br>
 
                     <label for="name">Média salarial:</label><br>
-                    <input class='input-textarea' type="text" name="salarial" list="faixa">
+                    <input maxlength="45" class='input-textarea' type="text" name="salarial" list="faixa">
                         <datalist id="faixa">
                             <option value="">Grade:</option>
                             <option value="Mil - Dois mil"></option>
@@ -83,7 +57,7 @@
                         </datalist> <br><br>
 
                     <label for="name">Tipo de Grade:</label><br>
-                    <input placeholder="ENSINO MÉDIO / TÉCNICO / TECNÓLOGO" class='input-textarea' type="text" name="grade" list="grade">
+                    <input maxlength="45" placeholder="ENSINO MÉDIO / TÉCNICO / TECNÓLOGO" class='input-textarea' type="text" name="grade" list="grade">
                         <datalist id="grade">
                             <option value="Ensino Médio">Componente Comum</option>
                             <option value="Técnico">Curso</option>

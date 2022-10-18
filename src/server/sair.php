@@ -6,5 +6,5 @@ $_SESSION["user_cod"] = 0;
 $_SESSION["user_type"] = '';
 $_SESSION["user_email"] = '';
 
-header("location: ../web/index.php");
+header("location: ../web/./");
 ?>

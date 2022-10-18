@@ -13,10 +13,18 @@ function themeToggle()
     if (num % 2 == 0){
         mudar = dark;
     }
-
+    
     else{
         mudar = light;
     }
-
+    
+    
     document.getElementById("imagemNav").src = mudar;
+}
+
+function tema(){
+    if (mudar == dark){
+        document.documentElement.classList.toggle('dark');
+        document.getElementById("imagemNav").src = mudar;
+    }
 }

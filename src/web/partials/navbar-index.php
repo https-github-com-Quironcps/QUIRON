@@ -11,7 +11,7 @@
 <body>
     <div class="navbar-indice">
         <nav>
-            <a href="index.php">
+            <a href="./">
                 <img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo">
             </a>
             

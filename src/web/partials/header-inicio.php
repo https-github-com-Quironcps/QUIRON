@@ -25,12 +25,12 @@
 
             
             <div class="container">
-                <a href="index.php">
+                <a href="./">
                     <img src="images/logos/arco-e-texto-dark.png" id="imagemNav" class="logo" alt="Logo">
                 </a>
             </div>
             
-            <a href="entrar.php"><button class="botao-002" href="entrar.php" type="submit">Entrar</button></a>
+            <a href="entrar"><button class="botao-002" href="entrar" type="submit">Entrar</button></a>
         </nav>
     </header>
 </body>

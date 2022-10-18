@@ -1,5 +1,6 @@
 <?php
     include ('../server/busca_escolas.php'); 
+    include('../server/PDO/theme.php');
 ?>
 
 <!DOCTYPE html>

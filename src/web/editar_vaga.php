@@ -20,6 +20,9 @@
     include('../server/PDO/navbar.php'); 
     include('../server/PDO/verifica_logado.php');
     include('../server/PDO/acesso_telas_escola.php');
+    include('../server/edita_vaga.php');
+
+    $codigo = trim($_GET['cod']);
 ?>
 
 <center>
@@ -28,26 +31,30 @@
             <h1 id="title">Editar Vaga</h1>
         </div>
 
+        <?php
+            if (count($resultados)) {
+                foreach ($resultados as $Resultado) {
+            ?>
         <div class="div-container">
             <div class="div-sub-container">
-                <form class="form">
+                <form method="POST" class="form">
                     <label for="name">Nome da matéria: </label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input maxlength="45" name="nome" class='input-textarea' value="<?php echo $Resultado['Materia']; ?>" type="text"> <br><br>
 
                     <label for="name">Link de acesso no CPS:</label><br>
-                    <input class='input-textarea' type="url"> <br><br>
+                    <input maxlength="127" name="link" class='input-textarea' value="<?php echo $Resultado['Link']; ?>" type="url"> <br><br>
 
                     <label for="name">Descrição da vaga:</label><br>
-                    <textarea class='input-textarea'></textarea> <br><br>
+                    <textarea maxlength="512" name="desc" class='input-textarea'><?php echo $Resultado['Descricao']; ?></textarea> <br><br>
 
                     <label for="name">Requisito da vaga:</label><br>
-                    <textarea class='input-textarea'></textarea> <br><br>
+                    <textarea maxlength="512" name="req" class='input-textarea'><?php echo $Resultado['Req']; ?></textarea> <br><br>
 
                     <label for="name">Carga horária semanal:</label><br>
-                    <input class='input-textarea' type="text"> <br><br>
+                    <input maxlength="64" name="carga" value="<?php echo $Resultado['Carga']; ?>" class='input-textarea' type="text"> <br><br>
 
                     <label for="name">Média salarial:</label><br>
-                    <input class='input-textarea' type="text" name="salarial" list="faixa">
+                    <input maxlength="45" name="faixa" value="<?php echo $Resultado['Faixa']; ?>" class='input-textarea' type="text" name="salarial" list="faixa">
                         <datalist id="faixa">
                             <option value="">Grade:</option>
                             <option value="Mil - Dois mil"></option>
@@ -57,7 +64,7 @@
                         </datalist> <br><br>
 
                     <label for="name">Tipo de Grade:</label><br>
-                    <input placeholder="ENSINO MÉDIO / TÉCNICO / TECNÓLOGO" class='input-textarea' type="text" name="grade" list="grade">
+                    <input maxlength="45" name="grade" value="<?php echo $Resultado['Grade']; ?>" placeholder="ENSINO MÉDIO / TÉCNICO / TECNÓLOGO" class='input-textarea' type="text" name="grade" list="grade">
                         <datalist id="grade">
                             <option value="Ensino Médio">Componente Comum</option>
                             <option value="Técnico">Curso</option>
@@ -83,6 +90,10 @@
                 </center>
             </div>
         </div>
+        <?php
+                }
+            }
+            ?>
     </div>
 </center>
 <br>

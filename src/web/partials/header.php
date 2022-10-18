@@ -34,15 +34,15 @@
 
                 <div class="slide">
                     <ul class="ul1">
-                        <li><a class="hover-lis" href="index.php">Vagas</a></li>
-                        <li><a class="hover-lis" href="escolas.php">Escolas</a></li>
-                        <li><a class="hover-lis"  href="minhas_vagas.php">Minhas vagas</a></li>
-                        <li><a class="hover-lis"  href="sobre.php">Sobre</a></li>
+                        <li><a class="hover-lis" href="./">Vagas</a></li>
+                        <li><a class="hover-lis" href="escolas">Escolas</a></li>
+                        <li><a class="hover-lis"  href="minhas_vagas">Minhas vagas</a></li>
+                        <li><a class="hover-lis"  href="sobre">Sobre</a></li>
 
-                        <li><a href="editar_perfil.php"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
-                        <li><a href="editar_info_conta_escola.php"><i class="bi bi-gear-fill"></i>ㅤConfigurações</a></li>
-                        <li><a href="contato.php"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
-                        <li><a href="anunciar_vaga.php"><i class="bi bi-megaphone-fill"></i>ㅤAnunciar vaga</a></li><br><br>
+                        <li><a href="editar_perfil"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
+                        <li><a href="editar_info_conta_escola"><i class="bi bi-gear-fill"></i>ㅤConfigurações</a></li>
+                        <li><a href="contato"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
+                        <li><a href="anunciar_vaga"><i class="bi bi-megaphone-fill"></i>ㅤAnunciar vaga</a></li><br><br>
 
                         <div class="div-modo">
                             <a class="text-modo">Modo escuro:</a>
@@ -56,16 +56,16 @@
 
 
             <div class="container">
-                <a href="index.php">
+                <a href="./">
                     <img src="images/logos/arco-e-texto-dark.png" id="imagemNav" class="logo" alt="Logo">
                 </a>
 
                 <div class="container-inner">
                     <ul class="ul2">
-                        <li><a href="index.php">Vagas</a></li>
-                        <li><a href="escolas.php">Escolas</a></li>
-                        <li><a href="minhas_vagas.php">Minhas vagas</a></li>
-                        <li><a href="sobre.php">Sobre</a></li>
+                        <li><a href="./">Vagas</a></li>
+                        <li><a href="escolas">Escolas</a></li>
+                        <li><a href="minhas_vagas">Minhas vagas</a></li>
+                        <li><a href="sobre">Sobre</a></li>
                     </ul>
                 </div>
             </div>
