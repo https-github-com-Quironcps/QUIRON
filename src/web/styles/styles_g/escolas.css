@@ -123,13 +123,13 @@ body{
 
 .foto-perfil{
     display: inline;
-    width: 10vh;
-    height: 100px;
-    border-radius: 5px;
+    width: 100%;
+    max-width: 80px;
+    height: 80px;
     margin-left: 1.5vh;
     object-fit: cover;
     object-position: center;
-    transition: all 1s;
+    border-radius: 10px;
 }
 
 marquee{
