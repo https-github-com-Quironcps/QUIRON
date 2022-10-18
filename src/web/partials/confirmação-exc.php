@@ -25,7 +25,7 @@
                         <i id="star2" class="bi bi-stars"></i>
               
                     <div class="confirm">
-                        <i id="icon" class="bi bi-trasha"></i>
+                        <i id="icon" class="bi bi-trash"></i>
                         
                     </div><br>
 
