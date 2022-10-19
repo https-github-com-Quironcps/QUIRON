@@ -27,11 +27,12 @@ body{
 }
 
 .input-textarea{
-    width: 170px;
+    width: 180px;
     height: 40px;
     border-radius: 8px;
     border-style: none;
-    background: var(--color-005);
+    background-color: var(--color-005);
+    padding-left: 10px;
 }
 
 .input-textarea:hover{

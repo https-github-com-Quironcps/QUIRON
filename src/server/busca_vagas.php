@@ -36,10 +36,10 @@ elseif (isset($_POST['localizacao'], $_POST['grade'], $_POST['faixa'])
     ON TB_VAGA.FK_INSTITUICAO = TB_INSTITUICAO.TB_INSTITUICAO_ID
     WHERE `TB_VAGA_GRADE` LIKE :grade 
     AND `TB_VAGA_FAIXA_SALARIAL` LIKE :faixa 
-    AND `TB_INSTITUICAO_CEP` LIKE :cep ');
+    AND `TB_INSTITUICAO_ENDERECO` LIKE :endereco');
     
     $sth->bindParam(':grade', $grade, PDO::PARAM_STR);
-    $sth->bindParam(':cep', $localizacao, PDO::PARAM_STR);
+    $sth->bindParam(':endereco', $localizacao, PDO::PARAM_STR);
     $sth->bindParam(':faixa', $faixa, PDO::PARAM_STR);
     $sth->execute();
     
@@ -60,10 +60,10 @@ elseif (isset($_POST['localizacao'], $_POST['grade'], $_POST['faixa'])
         INNER JOIN `TB_INSTITUICAO` 
         ON TB_VAGA.FK_INSTITUICAO = TB_INSTITUICAO.TB_INSTITUICAO_ID
         WHERE `TB_VAGA_GRADE` LIKE :grade 
-        AND `TB_INSTITUICAO_CEP` LIKE :cep ');
+        AND `TB_INSTITUICAO_ENDERECO` LIKE :endereco');
 
         $sth->bindParam(':grade', $grade, PDO::PARAM_STR);
-        $sth->bindParam(':cep', $localizacao, PDO::PARAM_STR);
+        $sth->bindParam(':endereco', $localizacao, PDO::PARAM_STR);
         $sth->execute();
 
         $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
@@ -81,10 +81,10 @@ elseif (isset($_POST['localizacao'], $_POST['grade'], $_POST['faixa'])
         INNER JOIN `TB_INSTITUICAO` 
         ON TB_VAGA.FK_INSTITUICAO = TB_INSTITUICAO.TB_INSTITUICAO_ID
         WHERE `TB_VAGA_FAIXA_SALARIAL` LIKE :faixa 
-        AND `TB_INSTITUICAO_CEP` LIKE :cep ');
+        AND `TB_INSTITUICAO_ENDERECO` LIKE :endereco');
 
         $sth->bindParam(':faixa', $faixa, PDO::PARAM_STR);
-        $sth->bindParam(':cep', $localizacao, PDO::PARAM_STR);
+        $sth->bindParam(':endereco', $localizacao, PDO::PARAM_STR);
         $sth->execute();
 
         $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
@@ -100,9 +100,9 @@ elseif (isset($_POST['localizacao'], $_POST['grade'], $_POST['faixa'])
         FROM `TB_VAGA` 
         INNER JOIN `TB_INSTITUICAO` 
         ON TB_VAGA.FK_INSTITUICAO = TB_INSTITUICAO.TB_INSTITUICAO_ID
-        WHERE `TB_INSTITUICAO_CEP` LIKE :cep ');
+        AND `TB_INSTITUICAO_ENDERECO` LIKE :endereco ');
 
-        $sth->bindParam(':cep', $localizacao, PDO::PARAM_STR);
+        $sth->bindParam(':endereco', $localizacao, PDO::PARAM_STR);
         $sth->execute();
 
         $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
