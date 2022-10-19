@@ -67,7 +67,6 @@
 }
 
 .conteudo{
-    
     background-color: var(--color-005);
     width: 70%;
     height: 420px; 
@@ -121,7 +120,8 @@
     background-color: var(--color-001);
     border-radius: 4px;
     width: 20vh;
-    height: 6vh;
+    max-width: 200px;
+    height: 50px;
     border-style: none;
     color: var(--color-004);
 }
@@ -247,6 +247,16 @@ input[type=text] {
     width: 80px;
     height: 100px;
     display: none;
+}
+
+@media screen and (min-height: 900px) {
+    .conteudo{
+        height: 80%;
+    }
+
+    .div-total{
+        height: 70vh;
+    }
 }
 
 @media screen and (max-width: 1200px) {

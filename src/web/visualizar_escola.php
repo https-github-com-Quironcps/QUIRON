@@ -17,6 +17,7 @@
 <?php 
     include('../server/PDO/navbar.php'); 
     include('../server/PDO/verifica_logado.php');
+    include('../server/lista_escola.php');
 ?>
 
     <!-- div com informações (nome da escola, cursos) sobrepondo a imagem do topo -->
@@ -72,9 +73,19 @@
         <h3 class="titulo-vagas">Vagas disponíveis</h4><br>
         
         <center>
-        <div class="div-vaga">
+        
+        <table class="div-vaga">
+                        <tr>
+                            <td class="td1"><img class="foto-perfil" onerror="handleError(this)" src="<?php echo $Resultado['Foto']; ?>"></td>
 
-        </div>
+                            <td>
+                                <h6 class="nome_materia"><?php echo $Resultado['TB_VAGA_MATERIA']; ?></h6>
+
+                                <h6 class="escola"><?php echo $Resultado['Nome']; ?></h6>
+                            </td>
+                        </tr>
+                    </table>
+        
         </center><br>        
     </div>
 </div>

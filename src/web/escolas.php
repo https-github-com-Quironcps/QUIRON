@@ -45,14 +45,15 @@
                     if (count($resultados)) {
                     foreach($resultados as $Resultado){
                 ?>
-                        <div class="td1">
+                <a class="td1" href="../server/pega_id_escola.php" onclick="location.href=this.href+'?cod='+<?php echo $Resultado['Id'];?>;return false;">
+                        
                             <img class="foto-perfil" onerror="handleError(this)" src="<?php echo $Resultado['Foto']; ?>">
 
                             <marquee behavior="slide" direction="left">
                                 <h6><?php echo $Resultado['Nome']; ?></h6>
                             </marquee>
-                        </div>
-                   
+                        
+                        </a>
                 <?php
                     }}
                 ?>
