@@ -17,20 +17,16 @@
 </head>
 <body>
 
-        <div class="principal">
+        <div class="principal2">
             <a><i id="exit" class="bi bi-x"></i></a>
             <center>
                 <div class="conteudo">
-                    
-                        <i id="star" class="bi bi-stars"></i><br>
-                    
-                        <i id="star2" class="bi bi-stars"></i>
-              
+                                  
                     <div class="confirm">
-                        <i id="icon" class="bi bi-check-lg"></i>
+                        <i id="icon" class="bi bi-emoji-frown"></i>
                     </div><br>
 
-                    <h3>Cadastro Confirmado!</h3>
+                    <h3>Ops! Não encontramos nada...</h3>
                 </div>
             </center>
         </div>

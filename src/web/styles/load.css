@@ -6,25 +6,25 @@ body{
    align-items: center;
 }
 
-.load{
+.overlay{
     display: flex;
     margin-top: 40vh;
 }
 
-.load div{
+.overlay div{
     width: 50px;
     height: 50px;
-    background-color: var(--color-003);
+    background-color: var(--white);
     margin: 15px;
     border-radius: 50%;
     animation: anima 1s ease-in-out infinite alternate;
 }
 
-.load div:nth-child(1){
+.overlay div:nth-child(1){
     animation-delay: -0.4s;
 }
 
-.load div:nth-child(2){
+.overlay div:nth-child(2){
     animation-delay: -0.2s;
 }
 

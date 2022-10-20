@@ -7,11 +7,13 @@
 
     <link rel="stylesheet" href="../styles/load.css">
     <link rel="stylesheet" href="../styles/theme.css">
+    <script type="text/javascript" src="../scripts/preloader.js"></script>
+
     <title>QUIRON - CARREGANDO</title>
 </head>
 <body>
    
-    <div class="load">
+    <div class="overlay">
         <div></div>
         <div></div>
         <div></div>

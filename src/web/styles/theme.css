@@ -50,6 +50,7 @@
     --color-005: #F2EFFB;   /* cor das divs que estão ao fundo de outros elementos (no formulário da tela contato, por exemplo), ou dos campos de texto com fundo branco (tela de escolas, por exemplo */
     --color-006: #ffff;     /* cor da navbar */
     --color-007: rgba(54, 54, 54, 0.8);   /* cor da footer */
+    --color-008: rgb(54, 54, 54);   /* cor da footer */
 
     --color-rgb-001: rgba(237, 56, 56, 0.623);  /* cor do botão "deletar conta" */
     
