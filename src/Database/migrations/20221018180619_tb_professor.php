@@ -19,7 +19,7 @@ final class TbProfessor extends AbstractMigration
             `TB_PROFESSOR_ENDERECO` VARCHAR(128) NOT NULL,
             `TB_PROFESSOR_END_NUM` INT NOT NULL,
             `TB_PROFESSOR_BAIRRO` VARCHAR(64) NOT NULL,
-            `TB_PROFESSOR_TELEFONE` INT NOT NULL,
+            `TB_PROFESSOR_TELEFONE` INT(11) NOT NULL,
             `TB_PROFESSOR_IMG_USER` LONGBLOB NULL)");
     }
 }
