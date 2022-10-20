@@ -12,8 +12,8 @@ return
         'production' => [
             'adapter' => 'mysql',
             'host' => 'localhost',
-            'user' => 'quirondb',
-            'pass' => 'quiron2022tcc*',
+            'user' => 'root',
+            'pass' => '',
             'charset' => 'utf8',
             'name' => 'DB_QUIRON',
         ],
@@ -21,8 +21,8 @@ return
         'development' => [
             'adapter' => 'mysql',
             'host' => 'localhost',
-            'user' => 'quirondb',
-            'pass' => 'quiron2022tcc*',
+            'user' => 'root',
+            'pass' => '',
             'charset' => 'utf8',
             'name' => 'DB_QUIRON',
         ],
@@ -30,8 +30,8 @@ return
         'testing' => [
             'adapter' => 'mysql',
             'host' => 'localhost',
-            'user' => 'quirondb',
-            'pass' => 'quiron2022tcc*',
+            'user' => 'root',
+            'pass' => '',
             'charset' => 'utf8',
             'name' => 'DB_QUIRON',
         ]
