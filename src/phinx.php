@@ -10,28 +10,30 @@ return
         'default_migration_table' => 'phinxlog',
         'default_environment' => 'development',
         'production' => [
-            'adapter' => 'sqlite',
-            'name' => './server',
-            'suffix' => '.sqlite3',
+            'adapter' => 'mysql',
+            'host' => 'localhost',
             'user' => 'quirondb',
             'pass' => 'quiron2022tcc*',
-            'host' => 'localhost',
+            'charset' => 'utf8',
+            'name' => 'DB_QUIRON',
         ],
+
         'development' => [
-            'adapter' => 'sqlite',
-            'name' => './server',
-            'suffix' => '.sqlite3',
+            'adapter' => 'mysql',
+            'host' => 'localhost',
             'user' => 'quirondb',
             'pass' => 'quiron2022tcc*',
-            'host' => 'localhost',
+            'charset' => 'utf8',
+            'name' => 'DB_QUIRON',
         ],
+
         'testing' => [
-            'adapter' => 'sqlite',
-            'name' => './server',
-            'suffix' => '.sqlite3',
-            'user' => 'quirondb',
-            'pass' => 'quiron2022tcc*',
+            'adapter' => 'mysql',
             'host' => 'localhost',
+            'user' => 'root',
+            'pass' => '',
+            'charset' => 'utf8',
+            'name' => 'DB_QUIRON',
         ]
     ],
     'version_order' => 'creation'

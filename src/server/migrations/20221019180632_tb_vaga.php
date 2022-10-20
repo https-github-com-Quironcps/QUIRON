@@ -7,7 +7,7 @@ final class TbVaga extends AbstractMigration
 {
     public function change()
     {
-        $this->execute("CREATE TABLE `TB_VAGA` (
+        $this->execute("CREATE TABLE TB_VAGA (
         `TB_VAGA_ID` INT NOT NULL PRIMARY KEY,
         `TB_VAGA_MATERIA` VARCHAR(45) NOT NULL,
         `TB_VAGA_LINK` VARCHAR(128) NOT NULL,
@@ -17,7 +17,7 @@ final class TbVaga extends AbstractMigration
         `TB_VAGA_FAIXA_SALARIAL` VARCHAR(45) NOT NULL,
         `TB_VAGA_GRADE` VARCHAR(45) NOT NULL,
         `FK_INSTITUICAO` INT,
-        CONSTRAINT `FK_INSTITUICAO` FOREIGN KEY (FK_INSTITUICAO) 
+        CONSTRAINT `FK_INSTITUICAO_2` FOREIGN KEY (FK_INSTITUICAO) 
         REFERENCES TB_INSTITUICAO (TB_INSTITUICAO_ID))");
     }
 }
