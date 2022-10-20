@@ -9,7 +9,7 @@ final class TbProfessor extends AbstractMigration
     public function change()
     {
         $this->execute("CREATE TABLE IF NOT EXISTS `TB_PROFESSOR` (
-            `TB_PROFESSOR_ID` INT NOT NULL primary key,
+            `TB_PROFESSOR_ID` INT NOT NULL primary key AUTO_INCREMENT,
             `TB_PROFESSOR_NOME` VARCHAR(64) NOT NULL,
             `TB_PROFESSOR_NASCIMENTO` DATE NOT NULL,
             `TB_PROFESSOR_CPF` VARCHAR(14) NOT NULL,

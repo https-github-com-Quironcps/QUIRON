@@ -9,7 +9,7 @@ final class TbPerfil extends AbstractMigration
     public function change()
     {
         $this->execute("CREATE TABLE `TB_PERFIL` (
-            `TB_PERFIL_ID` INT NOT NULL PRIMARY KEY,
+            `TB_PERFIL_ID` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
             `TB_PERFIL_CURSOS` VARCHAR(256) NOT NULL,
             `TB_PERFIL_SOBRE` VARCHAR(512) NOT NULL,
             `TB_PERFIL_EQUIPE` VARCHAR(512) NOT NULL,

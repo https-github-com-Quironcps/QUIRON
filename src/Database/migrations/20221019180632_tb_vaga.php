@@ -8,7 +8,7 @@ final class TbVaga extends AbstractMigration
     public function change()
     {
         $this->execute("CREATE TABLE TB_VAGA (
-        `TB_VAGA_ID` INT NOT NULL PRIMARY KEY,
+        `TB_VAGA_ID` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
         `TB_VAGA_MATERIA` VARCHAR(45) NOT NULL,
         `TB_VAGA_LINK` VARCHAR(128) NOT NULL,
         `TB_VAGA_DESC` VARCHAR(512) NOT NULL,

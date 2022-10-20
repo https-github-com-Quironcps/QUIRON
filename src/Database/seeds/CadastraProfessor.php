@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types = 1);
-
 use Phinx\Seed\AbstractSeed;
 
 class CadastraProfessor extends AbstractSeed
@@ -19,12 +17,13 @@ class CadastraProfessor extends AbstractSeed
             TB_PROFESSOR_NASCIMENTO,
             TB_PROFESSOR_EMAIL,
             TB_PROFESSOR_SENHA) 
-            VALUES ('Matheus Gomes', 
+            VALUES (
+            'Matheus Gomes', 
             '06503112', 
             'Rua Alberto Frediane', 
             '235', 
             'Centro', 
-            '11982374532', 
+            '119823742', 
             '456.789.123-45', 
             '2003-10-16', 
             'matheus.gomes@gmail.com', 

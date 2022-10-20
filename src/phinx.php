@@ -3,8 +3,8 @@
 return
 [
     'paths' => [
-        'migrations' => '%%PHINX_CONFIG_DIR%%/server/migrations',
-        'seeds' => '%%PHINX_CONFIG_DIR%%/server/seeds'
+        'migrations' => '%%PHINX_CONFIG_DIR%%/Database/migrations',
+        'seeds' => '%%PHINX_CONFIG_DIR%%/Database/seeds'
     ],
     'environments' => [
         'default_migration_table' => 'phinxlog',
@@ -30,8 +30,8 @@ return
         'testing' => [
             'adapter' => 'mysql',
             'host' => 'localhost',
-            'user' => 'root',
-            'pass' => '',
+            'user' => 'quirondb',
+            'pass' => 'quiron2022tcc*',
             'charset' => 'utf8',
             'name' => 'DB_QUIRON',
         ]
