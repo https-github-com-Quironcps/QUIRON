@@ -1,6 +1,6 @@
 <?php
     try {
-        $pdo = new PDO("mysql:dbname=DB_QUIRON; host=localhost","quirondb", "quiron2022tcc*");
+        $pdo = new PDO("mysql:dbname=DB_QUIRON; port=3306; host=localhost","root", "");
     } 
 
     catch (PDOException $e) {
