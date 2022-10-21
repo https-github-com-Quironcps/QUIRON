@@ -15,7 +15,7 @@
     <section class="footer">
         <div class="social">
             <a href="https://instagram.com/quiron_cps?igshid=YmMyMTA2M2Y="><i class="bi bi-instagram"></i></a>
-            <a href="https://github.com/Uluketa/QUIRON"><i class="bi bi-github"></i></a>
+            <a href="https://github.com/https-github-com-Quironcps"><i class="bi bi-github"></i></a>
             <a href="https://mail.google.com/mail/u/1/#inbox"><i class="bi bi-envelope"></i></a>
         </div>
 
