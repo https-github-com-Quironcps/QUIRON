@@ -16,7 +16,7 @@ class CreateVaga1 extends AbstractSeed
                 'TB_VAGA_CARGA' => 'X horas por semana',
                 'TB_VAGA_FAIXA_SALARIAL' => 'Mil - Dois mil',
                 'TB_VAGA_GRADE' => 'Tecnólogo',
-                'FK_INSTITUICAO' => '1'
+                'FK_INSTITUICAO' => '2'
             ]
         ];
             
