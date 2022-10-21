@@ -8,12 +8,15 @@
 
     <link rel="stylesheet" href="../web/styles/styles_g/styles-sobre.css">
     <link rel="stylesheet" href="styles/theme.css">
+    <script type="text/javascript" src="../scripts/preloader.js"></script>
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
 </head>
-<body>
- <?php include('partials/header.php'); ?>
+<body onLoad="loading()">
+    
+<?php include('../web/partials/loadpage.php'); ?>
+<?php include('partials/header.php'); ?>
 
     <br>
     <div class="div-sobre">
