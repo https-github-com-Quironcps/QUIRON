@@ -100,7 +100,7 @@ body{
     width: 20px;
     height: 3px;
     border-radius: 50%;
-    background-color: var(--color-003);
+    background-color: var(--cor-006);
     position: absolute;
     top: 62px;
     transform-origin: 50%;
