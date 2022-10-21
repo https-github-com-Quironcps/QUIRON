@@ -40,6 +40,7 @@
     border-style: none;
     background-color: var(--color-005);
     padding-left: 10px;
+    color: var(--troca);
 }
 
 .input-textarea:hover{
@@ -106,17 +107,11 @@
     border-radius: 5px;
 }
 
-.submit-filtrar{
-    /* width: 60%;
-    margin-top: 10px;
-    background-color: var(--color-001);
-    color: var(--color-004);
-    border: 0;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 15px;
-    transition: all 1s; */
+.conectado{
+    color: var(--botao-iniciar-hover);
+}
 
+.submit-filtrar{
     background-color: var(--color-001);
     border-radius: 4px;
     width: 20vh;
@@ -124,6 +119,10 @@
     height: 50px;
     border-style: none;
     color: var(--color-004);
+}
+
+img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
+    padding: 15px;
 }
 
 .submit-filtrar:hover{
@@ -203,13 +202,12 @@
     background-color: var(--color-troca);
     padding: 8px;
     border-radius: 10px;
-    color: var(--cor-001);
 }
 
 .nome_materia{
     margin-top: 1vh;
     margin-left: 2vh;
-    color: var(--color-001);
+    color: var(--botao-iniciar-hover);
     font-size: 17px;
 }
 

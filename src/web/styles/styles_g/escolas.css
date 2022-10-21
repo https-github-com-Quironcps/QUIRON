@@ -132,6 +132,7 @@ body{
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+    padding: 8px;
 }
 
 marquee{

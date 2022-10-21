@@ -42,6 +42,7 @@
     --white: #ffffff;
     --black: #000000;
     --grey:  #666666;
+    --troca: #000;
 
     --color-001: #7e57c2c3; /* cor dos ícones e dos botões, bem como títulos em destaque (como na tela "sobre", por exemplo) */
     --color-002: #7e57c2;   /* cor para o "hover" dos botões, inputs, entre outros */
@@ -60,6 +61,7 @@
     --white: rgba(23, 23, 23, 0.937);
     --black: #000000;
     --grey:  #666666;
+    --troca: #666666;
 
     --color-001: #323232; /* cor dos ícones e dos botões, bem como títulos em destaque (como na tela "sobre", por exemplo) */
     --color-002: #181818;   /* cor para o "hover" dos botões, inputs, entre outros */

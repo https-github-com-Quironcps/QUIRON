@@ -43,7 +43,7 @@
                 <div class="div-filtros">
 
                     <form method="POST" class="form-filtros">
-                        Localização: <br>
+                        Localização - Cidade: <br>
                         <input type="text" name="localizacao" id="text-filtro"><br><br>
 
                         Faixa Salarial: <br>
@@ -74,6 +74,7 @@
             </div>
 
         <div class="conteudo">
+
         <center>
             <?php   
                 if (count($resultados)) {
@@ -81,7 +82,7 @@
                 ?>
                     <table class="table1">
                         <tr>
-                            <td class="td1"><img class="foto-perfil" onerror="handleError(this)" src="<?php echo $Resultado['Foto']; ?>"></td>
+                            <td class="td1"><img class="foto-perfil" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['Foto']; ?>"></td>
 
                             <td>
                                 <h6 class="nome_materia"><?php echo $Resultado['TB_VAGA_MATERIA']; ?></h6>
@@ -118,7 +119,7 @@
 
                         if (count($res)) {
                             foreach($res as $Nome_Usuario){
-                                echo 'Conectado - '.$Nome_Usuario['nome'];
+                                echo "<h6 class='conectado'>Conectado - ".$Nome_Usuario['nome']."</h6>";                            
                             }
                         }
                     }
@@ -136,7 +137,7 @@
 
                         if (count($res)) {
                             foreach($res as $Nome_Usuario){
-                                echo 'Conectado - '.$Nome_Usuario['nome'];
+                                echo "<h6 class='conectado'>Conectado - ".$Nome_Usuario['nome']."</h6>";
                             }
                         }
                     }
