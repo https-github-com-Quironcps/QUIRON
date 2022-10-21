@@ -12,7 +12,7 @@ class CreateProfessor extends AbstractSeed
                 'TB_PROFESSOR_CEP' => '06503112',
                 'TB_PROFESSOR_ENDERECO' => 'Rua Alberto Frediane',
                 'TB_PROFESSOR_END_NUM' => '235',
-                'TB_PROFESSOR_BAIRRO' => 'Centro',
+                'TB_PROFESSOR_CIDADE' => 'Osasco',
                 'TB_PROFESSOR_TELEFONE' => '119823742',
                 'TB_PROFESSOR_CPF' => '456.789.123-45',
                 'TB_PROFESSOR_NASCIMENTO' => '2003-10-16',

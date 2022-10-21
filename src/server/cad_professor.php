@@ -11,7 +11,7 @@ if(!empty($dados['submit'])) {
     TB_PROFESSOR_CEP,
     TB_PROFESSOR_ENDERECO, 
     TB_PROFESSOR_END_NUM, 
-    TB_PROFESSOR_BAIRRO, 
+    TB_PROFESSOR_CIDADE, 
     TB_PROFESSOR_TELEFONE,
     TB_PROFESSOR_CPF,
     TB_PROFESSOR_NASCIMENTO,
@@ -21,7 +21,7 @@ if(!empty($dados['submit'])) {
     :TB_PROFESSOR_CEP, 
     :TB_PROFESSOR_ENDERECO, 
     :TB_PROFESSOR_END_NUM, 
-    :TB_PROFESSOR_BAIRRO, 
+    :TB_PROFESSOR_CIDADE, 
     :TB_PROFESSOR_TELEFONE, 
     :TB_PROFESSOR_CPF, 
     :TB_PROFESSOR_NASCIMENTO, 
@@ -35,7 +35,7 @@ if(!empty($dados['submit'])) {
     $cad_professor->bindParam(':TB_PROFESSOR_CEP', $dados['cep-p']);
     $cad_professor->bindParam(':TB_PROFESSOR_ENDERECO', $dados['end-p']);
     $cad_professor->bindParam(':TB_PROFESSOR_END_NUM', $dados['num-p']);
-    $cad_professor->bindParam(':TB_PROFESSOR_BAIRRO', $dados['bairro-p']);
+    $cad_professor->bindParam(':TB_PROFESSOR_CIDADE', $dados['bairro-p']);
     $cad_professor->bindParam(':TB_PROFESSOR_TELEFONE', $dados['tel-p']);
     $cad_professor->bindParam(':TB_PROFESSOR_CPF', $dados['cpf-p']);
     $cad_professor->bindParam(':TB_PROFESSOR_NASCIMENTO', $dados['data-p']);

@@ -13,7 +13,7 @@ $sth = $pdo->prepare('SELECT TB_INSTITUICAO.TB_INSTITUICAO_NOME AS Nome,
                       TB_INSTITUICAO.TB_INSTITUICAO_ENDERECO AS Endereco,
                       TB_INSTITUICAO.TB_INSTITUICAO_END_NUM AS EndNum,
                       TB_INSTITUICAO.TB_INSTITUICAO_TELEFONE AS Telefone,
-                      TB_INSTITUICAO.TB_INSTITUICAO_BAIRRO AS Bairro,
+                      TB_INSTITUICAO.TB_INSTITUICAO_CIDADE AS Bairro,
                       TB_INSTITUICAO.TB_INSTITUICAO_CEP AS CEP,
                       TB_INSTITUICAO.TB_INSTITUICAO_IMG_USER AS Foto
                       FROM `TB_INSTITUICAO`

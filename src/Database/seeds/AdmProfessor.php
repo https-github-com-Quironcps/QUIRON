@@ -13,7 +13,7 @@ class AdmProfessor extends AbstractSeed
                 'TB_PROFESSOR_CEP' => '77777777',
                 'TB_PROFESSOR_ENDERECO' => 'Administrador',
                 'TB_PROFESSOR_END_NUM' => '777',
-                'TB_PROFESSOR_BAIRRO' => 'Administrador',
+                'TB_PROFESSOR_CIDADE' => 'Administrador',
                 'TB_PROFESSOR_TELEFONE' => '77777777777',
                 'TB_PROFESSOR_CPF' => '777.777.777-77',
                 'TB_PROFESSOR_NASCIMENTO' => '2001-01-01',

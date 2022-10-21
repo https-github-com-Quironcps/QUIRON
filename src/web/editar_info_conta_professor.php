@@ -59,7 +59,7 @@ include('../server/atualiza_professor.php');
 
                             <label class="form-endereco">Endereço: </label><input required value="<?php echo $Resultado['Endereco']; ?>" name="endereco" type="text" class="input-endereco" id="input-text-alterar"> <label class="form-num"> Nº: </label><input required value="<?php echo $Resultado['Numero_endereco']; ?>" name="num" class="input-num" type="number" id="input-text-alterar"><br>
 
-                            <label class="form-bairro">Bairro: </label><input required value="<?php echo $Resultado['Bairro']; ?>" name="bairro" type="text" class="input-bairro" id="input-text-alterar"> <label class="form-cep"> CEP: </label><input required value="<?php echo $Resultado['Cep']; ?>" name="cep" class="input-cep" type="number" id="input-text-alterar"><br>
+                            <label class="form-bairro">Cidade: </label><input required value="<?php echo $Resultado['Bairro']; ?>" name="bairro" type="text" class="input-bairro" id="input-text-alterar"> <label class="form-cep"> CEP: </label><input required value="<?php echo $Resultado['Cep']; ?>" name="cep" class="input-cep" type="number" id="input-text-alterar"><br>
 
                             <label class="form-tel">Telefone: </label><input required value="<?php echo $Resultado['Telefone']; ?>" name="telefone" type="number" class="input-tel" id="input-text-alterar"> <label class="form-email"> E-mail: </label><input required value="<?php echo $Resultado['Email']; ?>" name="email" class="input-email" type="email" id="input-text-alterar"><br>
 

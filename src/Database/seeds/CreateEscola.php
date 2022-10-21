@@ -13,7 +13,7 @@ class CreateEscola extends AbstractSeed
                 'TB_INSTITUICAO_CEP' => '06503112',
                 'TB_INSTITUICAO_ENDERECO' => 'Rua Luiz Antônio Maranhão',
                 'TB_INSTITUICAO_END_NUM' => '225',
-                'TB_INSTITUICAO_BAIRRO' => 'Centro',
+                'TB_INSTITUICAO_CIDADE' => 'Santana de Parnaíba',
                 'TB_INSTITUICAO_TELEFONE' => '11975823742',
                 'TB_INSTITUICAO_COD' => '187',
                 'TB_INSTITUICAO_EMAIL' => 'ermelinda@etec.sp.gov.br', 

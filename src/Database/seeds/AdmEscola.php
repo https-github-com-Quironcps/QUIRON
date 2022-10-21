@@ -13,7 +13,7 @@ class AdmEscola extends AbstractSeed
                 'TB_INSTITUICAO_CEP' => '77777777',
                 'TB_INSTITUICAO_ENDERECO' => 'Administrador',
                 'TB_INSTITUICAO_END_NUM' => '777',
-                'TB_INSTITUICAO_BAIRRO' => 'Administrador',
+                'TB_INSTITUICAO_CIDADE' => 'Administrador',
                 'TB_INSTITUICAO_TELEFONE' => '77777777777',
                 'TB_INSTITUICAO_COD' => '777',
                 'TB_INSTITUICAO_EMAIL' => 'adm@email.com', 
