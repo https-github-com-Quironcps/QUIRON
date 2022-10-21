@@ -43,6 +43,7 @@ body{
     margin: 0;
     width: 100%;
     height: 100vh;
+    background-color: var(--cor-013);
 }
 
 .wrapper{
@@ -59,7 +60,7 @@ body{
     height: 20px;
     position: absolute;
     border-radius: 50%;
-    background-color: aqua;
+    background-color: var(--cor-001);
     left: 15%;
     transform-origin: 50%;
     animation: circle .5s alternate infinite ease;
@@ -97,9 +98,9 @@ body{
 
 .shadow{
     width: 20px;
-    height: 4px;
+    height: 3px;
     border-radius: 50%;
-    background-color: yellow;
+    background-color: var(--color-003);
     position: absolute;
     top: 62px;
     transform-origin: 50%;
