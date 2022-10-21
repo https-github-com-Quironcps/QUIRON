@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../styles/theme.css">
-    <link rel="stylesheet" href="../styles/styles_g/style.css">
+    <link rel="stylesheet" href="../styles/navbar-inicio.css">
+    <link rel="stylesheet" href="../styles/navbar-professor.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="scripts/ImagenError.js"></script>
@@ -18,7 +20,7 @@
 <body>
 
         <div class="principal">
-            <i id="exit" class="bi bi-x"></i>
+            <i id="exit2" class="bi bi-x"></i>
             <center>
                 <div class="conteudo">
                     
