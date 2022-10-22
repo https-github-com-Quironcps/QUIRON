@@ -40,7 +40,6 @@
     border-style: none;
     background-color: var(--color-005);
     padding-left: 10px;
-    color: var(--troca);
 }
 
 .input-textarea:hover{
@@ -68,6 +67,7 @@
 }
 
 .conteudo{
+    
     background-color: var(--color-005);
     width: 70%;
     height: 420px; 
@@ -107,22 +107,23 @@
     border-radius: 5px;
 }
 
-.conectado{
-    color: var(--botao-iniciar-hover);
-}
-
 .submit-filtrar{
+    /* width: 60%;
+    margin-top: 10px;
+    background-color: var(--color-001);
+    color: var(--color-004);
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    transition: all 1s; */
+
     background-color: var(--color-001);
     border-radius: 4px;
     width: 20vh;
-    max-width: 200px;
-    height: 50px;
+    height: 6vh;
     border-style: none;
     color: var(--color-004);
-}
-
-img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
-    padding: 15px;
 }
 
 .submit-filtrar:hover{
@@ -202,12 +203,13 @@ img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
     background-color: var(--color-troca);
     padding: 8px;
     border-radius: 10px;
+    color: var(--cor-001);
 }
 
 .nome_materia{
     margin-top: 1vh;
     margin-left: 2vh;
-    color: var(--botao-iniciar-hover);
+    color: var(--color-001);
     font-size: 17px;
 }
 
@@ -245,16 +247,6 @@ input[type=text] {
     width: 80px;
     height: 100px;
     display: none;
-}
-
-@media screen and (min-height: 900px) {
-    .conteudo{
-        height: 80%;
-    }
-
-    .div-total{
-        height: 70vh;
-    }
 }
 
 @media screen and (max-width: 1200px) {

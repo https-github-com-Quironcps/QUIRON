@@ -3,7 +3,6 @@
 include("../server/PDO/conexao.php");
 include("../server/update_senha.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br" class="light">
 <head>
@@ -34,14 +33,14 @@ include("../server/update_senha.php");
         </div> <br>
 
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="form">
-  <label for="name">Nova Senha:</label><br>
-  <input class='input-textarea' name="nova-senha" type="text" id="nova-senha"> <br><br>
+                    <label for="name">Nova Senha:</label><br>
+                    <input class='input-textarea' name="nova-senha" type="text" id="nova-senha"> <br><br>
 
-  <label for="name">Confirmar Senha:</label><br>
-  <input class='input-textarea'name="confirmar-senha" type="text" id="confirmar-senha"> <br><br><br>
+                    <label for="name">Confirmar Senha:</label><br>
+                    <input class='input-textarea'name="confirmar-senha" type="text" id="confirmar-senha"> <br><br><br>
 
-  <input type="submit" name="submit" class='botao-001' value="Atualizar Senha">
-  <br>
+                    <input type="submit" name="submit" class='botao-001' value="Atualizar Senha">
+                    <br>
 <br>
 <br>
 </div>     

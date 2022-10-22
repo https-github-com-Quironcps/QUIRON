@@ -27,12 +27,11 @@ body{
 }
 
 .input-textarea{
-    width: 180px;
+    width: 170px;
     height: 40px;
     border-radius: 8px;
     border-style: none;
-    background-color: var(--color-005);
-    padding-left: 10px;
+    background: var(--color-005);
 }
 
 .input-textarea:hover{
@@ -110,7 +109,6 @@ body{
     align-items: center;
     flex: 1;
     margin-bottom: 10px;
-    text-decoration: none;
 }
 
 .td2{
@@ -125,14 +123,12 @@ body{
 
 .foto-perfil{
     display: inline;
-    width: 100%;
-    max-width: 80px;
-    height: 80px;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 5px;
     margin-left: 1.5vh;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
-    padding: 8px;
+
+    transition: all 1s;
 }
 
 marquee{
