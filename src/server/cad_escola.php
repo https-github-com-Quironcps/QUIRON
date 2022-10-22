@@ -11,7 +11,7 @@ if(!empty($dados['submit'])) {
     TB_INSTITUICAO_COD,
     TB_INSTITUICAO_ENDERECO, 
     TB_INSTITUICAO_END_NUM, 
-    TB_INSTITUICAO_BAIRRO,
+    TB_INSTITUICAO_CIDADE,
     TB_INSTITUICAO_CEP 
     TB_PROFESSOR_TELEFONE,
     TB_PROFESSOR_EMAIL,
@@ -20,7 +20,7 @@ if(!empty($dados['submit'])) {
     :TB_INSTITUICAO_COD,
     :TB_INSTITUICAO_ENDERECO, 
     :TB_INSTITUICAO_END_NUM, 
-    :TB_INSTITUICAO_BAIRRO,
+    :TB_INSTITUICAO_CIDADE,
     :TB_INSTITUICAO_CEP 
     :TB_INSTITUICAO_TELEFONE,
     :TB_INSTITUICAO_EMAIL,
@@ -33,7 +33,7 @@ if(!empty($dados['submit'])) {
     $cad_professor->bindParam(':TB_INSTITUICAO_COD', $dados['cod-e']);
     $cad_professor->bindParam(':TB_INSTITUICAO_ENDERECO', $dados['end-e']);
     $cad_professor->bindParam(':TB_INSTITUICAO_END_NUM', $dados['num-e']);
-    $cad_professor->bindParam(':TB_INSTITUICAO_BAIRRO', $dados['bairro-e']);
+    $cad_professor->bindParam(':TB_INSTITUICAO_CIDADE', $dados['bairro-e']);
     $cad_professor->bindParam(':TB_INSTITUICAO_CEP', $dados['cep-e']);
     $cad_professor->bindParam(':TB_INSTITUICAO_TELEFONE', $dados['tel-e']);
     $cad_professor->bindParam(':TB_INSTITUICAO_EMAIL', $dados['email-e']);

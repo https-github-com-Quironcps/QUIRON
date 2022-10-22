@@ -19,7 +19,9 @@
 </head>
 <body>
 <?php 
-    include('partials/header.php'); 
+    include('../server/PDO/navbar.php'); 
+    include('../server/PDO/verifica_logado.php');
+    include('../server/PDO/acesso_telas_escola.php');
 ?>
 
 <br><br><br><br>
@@ -54,7 +56,7 @@
                 
                 <label class="form-endereco">Endereço: </label><input value="<?php echo $Resultado['Endereco']; ?>" name="endereco" type="text" class="input-endereco" id="input-text-alterar"> <label class="form-num"> Nº: </label><input value="<?php echo $Resultado['Numero_endereco']; ?>" name="num" class="input-num" type="number" id="input-text-alterar"><br>
                 
-                <label class="form-bairro">Bairro: </label><input value="<?php echo $Resultado['Bairro']; ?>" name="bairro" type="text" class="input-bairro" id="input-text-alterar"> <label class="form-cep"> CEP: </label><input value="<?php echo $Resultado['Cep']; ?>" name="cep" class="input-cep" type="number" id="input-text-alterar"><br>
+                <label class="form-bairro">Cidade: </label><input value="<?php echo $Resultado['Bairro']; ?>" name="bairro" type="text" class="input-bairro" id="input-text-alterar"> <label class="form-cep"> CEP: </label><input value="<?php echo $Resultado['Cep']; ?>" name="cep" class="input-cep" type="number" id="input-text-alterar"><br>
                 
                 <label class="form-tel">Telefone: </label><input type="number" value="<?php echo $Resultado['Telefone']; ?>" name="telefone" class="input-tel" id="input-text-alterar"> <label class="form-email"> E-mail: </label><input class="input-email" value="<?php echo $Resultado['Email']; ?>" name="email" type="email" id="input-text-alterar"><br>
 

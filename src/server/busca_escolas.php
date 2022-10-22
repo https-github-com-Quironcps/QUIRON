@@ -4,7 +4,8 @@ include ('PDO/conexao.php');
 if (!empty($_POST['cod'])){
     $cod = trim($_POST['cod']);
 
-    $sth = $pdo->prepare('SELECT TB_INSTITUICAO.TB_INSTITUICAO_NOME AS Nome,
+    $sth = $pdo->prepare('SELECT TB_INSTITUICAO.TB_INSTITUICAO_ID AS Id,
+    TB_INSTITUICAO.TB_INSTITUICAO_NOME AS Nome,
     TB_INSTITUICAO.TB_INSTITUICAO_IMG_USER AS Foto 
     FROM `TB_INSTITUICAO`
     WHERE `TB_INSTITUICAO_COD` LIKE :cod');
@@ -16,7 +17,8 @@ if (!empty($_POST['cod'])){
 }
 
 else {
-    $sth = $pdo->prepare('SELECT TB_INSTITUICAO.TB_INSTITUICAO_NOME AS Nome,
+    $sth = $pdo->prepare('SELECT TB_INSTITUICAO.TB_INSTITUICAO_ID AS Id,
+    TB_INSTITUICAO.TB_INSTITUICAO_NOME AS Nome,
     TB_INSTITUICAO.TB_INSTITUICAO_IMG_USER AS Foto 
     FROM `TB_INSTITUICAO`');
 

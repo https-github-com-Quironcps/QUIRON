@@ -20,8 +20,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     justify-content: space-between;
-    align-items: center;
-    margin: 3vh auto;
     height: 1vh;
     margin-left: 7%;
 }
@@ -73,7 +71,7 @@ nav a{
     color: var(--color-003);
 }
 
-nav a:hover{
+ul li a:hover{
     color: var(--color-002);
     transition: all 0.5s ease;
     padding-left: 20px;
@@ -109,7 +107,7 @@ nav .fa-bars:hover{
     background-color: var(--color-005);
     transition: 0.5s ease;
     border-radius: 5px;
-    margin-top: 3vh;
+
     right: 195px;
     box-shadow:  0px 0px 16px 0px var(--color-006);
     padding-bottom: 5px;
@@ -332,7 +330,7 @@ input:checked[type="checkbox"]::before{
     }
 
     .slide{
-        height: 500px;
+        height: 400px;
     }
 
     input[type="checkbox"]{

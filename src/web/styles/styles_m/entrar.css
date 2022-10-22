@@ -1,14 +1,12 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+¨* {
   font-family: "Ralawey";
-  background-color: var(--white); }
+}
 
 p {
   color: var(--cor-012);
   font-weight: 300; }
-
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Roboto"; }
 
 a {
   -webkit-transition: .3s all ease;
@@ -19,6 +17,25 @@ a {
 
 .content {
   padding: 7rem 0; }
+
+  .input-text-alterar{
+    font-size: 16px;
+    font-weight: 390;
+    margin-top: 30px;
+    background-color: var(--white);
+    border: 0;
+    border-radius: 5px;
+    padding: 1px 10px;
+    color: var(--color-003);
+    align-content: space-between;
+}
+
+.input-text-alterar:hover, .input-text-alterar:focus{
+    outline: none;
+    border-color: var(--color-002);
+    box-shadow: 0 0 0 2px var(--color-002);
+    transition: all 0.9s;
+}
 
 h2 {
   font-size: 20px; }
@@ -49,8 +66,6 @@ h2 {
       -webkit-transition: .3s all ease;
       -o-transition: .3s all ease;
       transition: .3s all ease; }
-    .content .contents .form-group input, .content .bg .form-group input {
-      background: transparent; }
     .content .contents .form-group.first, .content .bg .form-group.first {
       border-top-left-radius: 7px;
       border-top-right-radius: 7px; }
@@ -159,7 +174,6 @@ h2 {
   pointer-events: none; }
 
 .control__indicator:after {
-  font-family: 'icomoon';
   position: absolute;
   display: none;
   font-size: 16px;
@@ -216,12 +230,16 @@ h2 {
 
 .form input,
 .form textarea {
-  font: inherit;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  transition: border-color, box-shadow 0.2s;
+    font-size: 16px;
+    font-weight: 390;
+    margin-top: 0;
+    margin-bottom: 20px;
+    background-color: #F2EFFB;
+    border: 0;
+    border-radius: 5px;
+    padding: 1px 10px;
+    color: var(--color-003);
+    align-content: space-between;
 }
 
 .form textarea {
@@ -233,15 +251,15 @@ h2 {
 .form input:focus,
 .form textarea:hover,
 .form textarea:focus {
-  outline: none;
-  border-color: var(--cor-001);
-  box-shadow: 0 0 0 3px var(--cor-001);
+    outline: none;
+    border-color: var(--color-002);
+    box-shadow: 0 0 0 2px var(--color-002);
+    transition: all 0.9s;
 
 }
 
 .btn{
   border-radius: 14px;
-  font-family: "Roboto";
   font-size: larger;
   background-color: var(--botao-iniciar-hover);
 }
@@ -255,5 +273,5 @@ h2 {
 }
 
 #Escola-entry{
-  margin-left: 20%;
+  margin-left: 10%;
 }

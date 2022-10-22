@@ -1,6 +1,7 @@
 <?php
 
 include ('PDO/conexao.php');
+include ('PDO/situacao.php');
 
 if (isset($_POST['nome'])) {
 
@@ -19,13 +20,13 @@ if (isset($_POST['nome'])) {
     TB_INSTITUICAO_COD = :cod, 
     TB_INSTITUICAO_ENDERECO = :endereco,
     TB_INSTITUICAO_END_NUM = :num,
-    TB_INSTITUICAO_BAIRRO = :bairro,
+    TB_INSTITUICAO_CIDADE = :bairro,
     TB_INSTITUICAO_CEP = :cep,
     TB_INSTITUICAO_TELEFONE = :telefone,
     TB_INSTITUICAO_EMAIL = :email,
     TB_INSTITUICAO_SENHA = :senha,
     TB_INSTITUICAO_IMG_USER = :img
-    WHERE TB_INSTITUICAO_ID LIKE 1');
+    WHERE TB_INSTITUICAO_ID LIKE :id');
     
     $sth->bindParam(':nome', $nome, PDO::PARAM_STR);
     $sth->bindParam(':email', $email, PDO::PARAM_STR);
@@ -37,6 +38,7 @@ if (isset($_POST['nome'])) {
     $sth->bindParam(':num', $num, PDO::PARAM_INT);
     $sth->bindParam(':endereco', $endereco, PDO::PARAM_STR);
     $sth->bindParam(':cod', $cod, PDO::PARAM_STR);
+    $sth->bindParam(':id', $user_id, PDO::PARAM_INT);
 
     $sth->execute();
 
@@ -46,15 +48,16 @@ if (isset($_POST['nome'])) {
     TB_INSTITUICAO.TB_INSTITUICAO_ENDERECO AS Endereco,
     TB_INSTITUICAO.TB_INSTITUICAO_COD AS Codigo,
     TB_INSTITUICAO.TB_INSTITUICAO_END_NUM AS Numero_endereco,
-    TB_INSTITUICAO.TB_INSTITUICAO_BAIRRO AS Bairro,
+    TB_INSTITUICAO.TB_INSTITUICAO_CIDADE AS Bairro,
     TB_INSTITUICAO.TB_INSTITUICAO_CEP AS Cep,
     TB_INSTITUICAO.TB_INSTITUICAO_TELEFONE AS Telefone,
     TB_INSTITUICAO.TB_INSTITUICAO_EMAIL AS Email,
     TB_INSTITUICAO.TB_INSTITUICAO_SENHA AS Senha,
     TB_INSTITUICAO.TB_INSTITUICAO_IMG_USER AS Foto 
     FROM `TB_INSTITUICAO`
-    WHERE TB_INSTITUICAO.TB_INSTITUICAO_ID LIKE 1');
+    WHERE TB_INSTITUICAO.TB_INSTITUICAO_ID LIKE :id');
 
+    $sto->bindParam(':id', $user_id, PDO::PARAM_INT);
     $sto->execute();
 
     $resultados = $sto->fetchAll(PDO::FETCH_ASSOC);
