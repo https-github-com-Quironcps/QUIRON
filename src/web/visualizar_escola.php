@@ -14,20 +14,27 @@
 </head>
 <body>
 
-    <?php include ('partials/header.php') ?>
+<?php 
+    include('../server/PDO/navbar.php'); 
+    include('../server/PDO/verifica_logado.php');
+    include('../server/lista_escola.php');
+
+    if (count($resultados)) {
+        foreach($resultados as $Resultado){
+?>
 
     <!-- div com informações (nome da escola, cursos) sobrepondo a imagem do topo -->
 
     <center>
         <div class="img-escola">
 
-            <h1 class="titulo">ETEC Profª Ermelinda Giannini Teixeira</h1>
+            <h1 class="titulo"><?php echo $Resultado['Nome']; ?></h1>
 
             <h5 class="subtitulo">
-                <p>Administração, Desenvolvimento de sistemas, Recursos Humanos, Programação de Jogos e Marketing
+                <p><?php echo $Resultado['Cursos']; ?>
             </h5>
 
-            <div class="div-ponta"><img class="img-div-alterar-01" src="../web/images/ermelinda.jpeg"></div>
+            <div class="div-ponta"><img class="img-div-alterar-01" src="<?php echo $Resultado['Foto']; ?>"></div>
         
         </div>
     </center>
@@ -38,9 +45,9 @@
 
     <div class="imagens">
 
-        <img class="sub-imagens" onerror="handleError(this)" src="" alt="">
-        <img class="sub-imagens" onerror="handleError(this)" src="" alt=""><br>
-        <img class="sub-imagens" onerror="handleError(this)" src="" alt=""><br>
+        <img class="sub-imagens" onerror="handleError(this)" src="<?php echo $Resultado['ImgPost1']; ?>" alt="">
+        <img class="sub-imagens" onerror="handleError(this)" src="<?php echo $Resultado['ImgPost2']; ?>" alt=""><br>
+        <img class="sub-imagens" onerror="handleError(this)" src="<?php echo $Resultado['ImgPost3']; ?>" alt=""><br>
         
     </div>
 
@@ -53,10 +60,7 @@
 
         <center>
         <p class="p-div">
-        The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
-        The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
-        The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
-        <br>The passage experienced a surge in popularity during the.
+        <?php echo $Resultado['Sobre']; ?>
         </p>
         </center>
 
@@ -69,9 +73,29 @@
         <h3 class="titulo-vagas">Vagas disponíveis</h4><br>
         
         <center>
-        <div class="div-vaga">
+    <?php
+        }}
 
-        </div>
+        if (count($vagas)) {
+            foreach($vagas as $Vagas){
+    ?>
+        <table class="div-vaga">
+            <tr>
+                <td>
+                    <a class="vagas_link" href="sobre">
+                        <h6 class="nome_materia"><?php echo $Vagas['Vaga']; ?></h6>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    <?php
+
+        }}
+
+        if (count($resultados)) {
+            foreach($resultados as $Resultado){
+    ?>
+        
         </center><br>        
     </div>
 </div>
@@ -82,19 +106,22 @@
         <center>
         <ul class="lista">
             <li>
-                <a href=""><i class="bi bi-envelope"></i></a><br>
-                <a href="">e187dir@cps.sp.gov.br</a>
+                <a href="#"><i class="bi bi-envelope"></i></a><br>
+                <a href="#"><?php echo $Resultado['Email']; ?></a>
             </li>
             <li>
-                <a href=""><i class="bi bi-map"></i></a><br>
-                <a href="">R. Fernão Dias Falcão, 196 - Centro, Santana de Parnaíba - SP, 06501-120</a>
+                <a href="#"><i class="bi bi-map"></i></a><br>
+                <a href="#"><?php echo $Resultado['Endereco'].', '.$Resultado['EndNum'].' - '.$Resultado['Bairro'].' - '.$Resultado['CEP']?></a>
             </li>
             <li>
-                <a href=""><i class="bi bi-telephone"></i></a><br>
-                <a href="">(11) 4154-7185 / 7142</a>
+                <a href="#"><i class="bi bi-telephone"></i></a><br>
+                <a href="#"><?php echo $Resultado['Telefone']; ?></a>
             </li>
         </ul>
         </center>
     </section>
+<?php
+    }}
+?>
 </body>
 </html>

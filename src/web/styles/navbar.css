@@ -73,10 +73,14 @@ nav a{
     color: var(--color-003);
 }
 
-nav a:hover{
+ul li a:hover{
     color: var(--color-002);
     transition: all 0.5s ease;
     padding-left: 20px;
+}
+
+.div-modo a{
+    padding-left: 0px;
 }
 
 nav .fa-bars{
@@ -286,6 +290,10 @@ input:checked[type="checkbox"]::before{
     display: flex;
     align-items: center;
     align-self: center;
+}
+
+.div-modo a:hover{
+    transform: none;
 }
 
 #exit{

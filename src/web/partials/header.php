@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br" class="dark">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,45 +31,45 @@
                     <span class="middle_line common"></span>
                     <span class="bottom_line common"></span>
                 </div>
-                
+
                 <div class="slide">
                     <ul class="ul1">
-                        <li><a class="hover-lis" href="index.php">Vagas</a></li>
-                        <li><a class="hover-lis" href="escolas.php">Escolas</a></li>
-                        <li><a class="hover-lis"  href="minhas_vagas.php">Minhas vagas</a></li>
-                        <li><a class="hover-lis"  href="sobre.php">Sobre</a></li>
+                        <li><a class="hover-lis" href="./">Vagas</a></li>
+                        <li><a class="hover-lis" href="escolas">Escolas</a></li>
+                        <li><a class="hover-lis"  href="minhas_vagas">Minhas vagas</a></li>
+                        <li><a class="hover-lis"  href="sobre">Sobre</a></li>
 
-                        <li><a href="editar_perfil.php"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
-                        <li><a href="editar_info_conta_escola.php"><i class="bi bi-gear-fill"></i>ㅤConfigurações</a></li>
-                        <li><a href="contato.php"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
-                        <li><a href="anunciar_vaga.php"><i class="bi bi-megaphone-fill"></i>ㅤAnunciar vaga</a></li><br><br>
+                        <li><a href="editar_perfil"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
+                        <li><a href="editar_info_conta_escola"><i class="bi bi-gear-fill"></i>ㅤConfigurações</a></li>
+                        <li><a href="contato"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
+                        <li><a href="anunciar_vaga"><i class="bi bi-megaphone-fill"></i>ㅤAnunciar vaga</a></li><br><br>
 
                         <div class="div-modo">
                             <a class="text-modo">Modo escuro:</a>
-                            <input type="checkbox" onclick="javascript:themeToggle()" class="check-modo" name="" id="">
-                            <i id="exit" class="bi bi-box-arrow-left"></i>
+                            <input type="checkbox" onclick="themeToggle()" class="check-modo" name="" id="">
+                            <a id="exit" href="../server/sair.php"><i class="bi bi-box-arrow-left"></i></a>
                         </div>
-
-                      
-
-                        
-
                     </ul>
 
                 </div>
             </label>
 
+
             <div class="container">
-                <a href="index.php"><img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
+                <a href="./">
+                    <img src="images/logos/arco-e-texto-dark.png" id="imagemNav" class="logo" alt="Logo">
+                </a>
+
                 <div class="container-inner">
                     <ul class="ul2">
-                        <li><a href="index.php">Vagas</a></li>
-                        <li><a href="escolas.php">Escolas</a></li>
-                        <li><a href="minhas_vagas.php">Minhas vagas</a></li>
-                        <li><a href="sobre.php">Sobre</a></li>
+                        <li><a href="./">Vagas</a></li>
+                        <li><a href="escolas">Escolas</a></li>
+                        <li><a href="minhas_vagas">Minhas vagas</a></li>
+                        <li><a href="sobre">Sobre</a></li>
                     </ul>
                 </div>
             </div>
+
         </nav>
     </header>
 </body>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="dark">
+<html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,15 +15,17 @@
 
 </head>
 <body>
-<?php include('partials/header.php'); ?>
+<?php 
+    include('../server/PDO/navbar.php'); 
+    include('../server/PDO/acesso_telas_desconhecido.php');
+?>
+
    <br>
    <br>
    <br>
-   <br>
-   <br>
-   <br>
+
  <center>
-   <div class="container1">
+   <div class="container2">
         <div class="header">
             <h1 id="title">Confirme seu e-mail para redefinir sua senha</h1>
         </div> <br>

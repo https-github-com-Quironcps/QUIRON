@@ -149,6 +149,13 @@
     opacity: 61%;
     font-size: 17px;
     transition: all 0.5s;
+    overflow: hidden;
+}
+
+.nome_materia{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .td3, .td4{
@@ -206,5 +213,8 @@ input[type=text] {
     .td2{
         flex: 10;
         margin-left: 10px;
+    }
+    .nome_materia{
+        font-size: 14px;
     }
 }

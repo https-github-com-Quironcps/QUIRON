@@ -10,15 +10,7 @@ body {
 }
 
 .container{
-    /* margin: 0 auto; */
-    /* width: 200px; */
-    /* position: relative; */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 5fr 1fr; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
     height: 1vh;
-    /* margin-left: 7%; */
 }
 
 nav{
@@ -184,9 +176,6 @@ h3{
 @media screen and (max-width: 550px) {
     .logo{
         width: 150px;
-        float: left;
-        margin-left: -220%;
-    
     }
 
     .botao-002{
