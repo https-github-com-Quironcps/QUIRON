@@ -8,16 +8,17 @@
 
     <link rel="stylesheet" href="../web/styles/styles_g/styles-sobre.css">
     <link rel="stylesheet" href="styles/theme.css">
+    <script type="text/javascript" src="../scripts/preloader.js"></script>
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
 </head>
-<body>
+
+<body onLoad="loading()">
 <?php 
     include('../server/PDO/navbar.php'); 
     include('../server/PDO/verifica_logado.php');
 ?>
-
     <br>
     <div class="div-sobre">
     <img class= "img" src="images/sobre1.png">
@@ -51,7 +52,7 @@
         </div>
     </div>
 
-   
+
     <?php include('partials/footer.php') ?>
 </body>
 </html>

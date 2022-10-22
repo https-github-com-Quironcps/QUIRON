@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<html lang="pt-br" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,21 +19,15 @@
 </head>
 <body>
 
-        <div class="principal">
-            <a><i id="exit2" class="bi bi-x"></i></a>
+        <div class="principal2">
             <center>
                 <div class="conteudo">
-                    
-                        <i id="star" class="bi bi-stars"></i><br>
-                    
-                        <i id="star2" class="bi bi-stars"></i>
               
-                    <div class="confirm">
-                        <i id="icon" class="bi bi-trash"></i>
-                        
-                    </div><br>
+                        <h3>Deseja Sair?</h3><br>
 
-                    <h3>Exclusão Confirmada!</h3>
+                        <input type="submit" value="Sim" class="btn-enviar">
+                        <input type="submit" value="Não" class="btn-enviar">
+
                 </div>
             </center>
         </div>

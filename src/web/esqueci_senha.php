@@ -30,11 +30,11 @@
             <h1 id="title">Confirme seu e-mail para redefinir sua senha</h1>
         </div> <br>
 
-<form class="form">
+<form class="form" method="POST" action="">
                     <label for="name">E-mail:</label><br>
-                    <input class='input-textarea' type="text"> <br><br><br>
+                    <input class='input-textarea' name="email_send" id="email_send" type="text"> <br><br><br>
 
-                    <input type="submit" class='botao-001' value="Enviar">
+                    <input type="submit" class='botao-001' name="submit" id="submit" value="Enviar">
                     <br><br><br>
 </div>     
 <center>

@@ -6,34 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../styles/theme.css">
-    <link rel="stylesheet" href="../styles/navbar-inicio.css">
-    <link rel="stylesheet" href="../styles/navbar-professor.css">
-    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/styles_g/style.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="scripts/ImagenError.js"></script>
 
-    <link rel="icon" href="../images/logos/arco-dark-2.png">
+    <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
     <title>QUIRON - CONFIRMAÇÃO</title>
 </head>
 <body>
 
-        <div class="principal">
-            <a><i id="exit2" class="bi bi-x"></i></a>
+        <div class="principal2">
+            <a><i id="exit" class="bi bi-x"></i></a>
             <center>
                 <div class="conteudo">
-                    
-                        <i id="star" class="bi bi-stars"></i><br>
-                    
-                        <i id="star2" class="bi bi-stars"></i>
-              
+                                  
                     <div class="confirm">
-                        <i id="icon" class="bi bi-trash"></i>
-                        
+                        <i id="icon" class="bi bi-emoji-frown"></i>
                     </div><br>
 
-                    <h3>Exclusão Confirmada!</h3>
+                    <h3>Ops! Não encontramos nada...</h3>
                 </div>
             </center>
         </div>

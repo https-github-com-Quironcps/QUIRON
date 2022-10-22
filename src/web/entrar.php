@@ -48,6 +48,7 @@ include("../server/login.php");
       </div>
     </nav>
   </header>
+    <title>Entrar na QUIRON</title>
 
   <div class="content">
     <div class="container">

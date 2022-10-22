@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="scripts/ImagenError.js"></script>
 
-    <link rel="icon" href="../images/logos/arco-dark-2.png">
+    <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
     <title>QUIRON - CONFIRMAÇÃO</title>
 </head>
 <body>
 
         <div class="principal">
-            <a><i id="exit2" class="bi bi-x"></i></a>
+            <i id="exit2" class="bi bi-x"></i>
             <center>
                 <div class="conteudo">
                     
@@ -29,11 +29,10 @@
                         <i id="star2" class="bi bi-stars"></i>
               
                     <div class="confirm">
-                        <i id="icon" class="bi bi-trash"></i>
-                        
+                        <i id="icon" class="bi bi-pencil"></i>
                     </div><br>
 
-                    <h3>Exclusão Confirmada!</h3>
+                    <h3>Edição Confirmada!</h3>
                 </div>
             </center>
         </div>
