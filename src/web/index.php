@@ -1,12 +1,10 @@
 <?php
     include('../server/PDO/conexao.php');
-    include('../server/PDO/theme.php');
     include('../server/busca_vagas.php');
 ?>
 
-
 <!DOCTYPE html>
-<html lang="pt-br" class="light" id="page">
+<html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,9 +19,7 @@
     <title>QUIRON - VAGAS</title>
 </head>
 <body>
-<?php 
-    include('../server/PDO/navbar.php'); 
-?>
+<?php include('partials/header-professor.php'); ?>
     <br>
 
     <div class="filtros">
@@ -43,7 +39,7 @@
                 <div class="div-filtros">
 
                     <form method="POST" class="form-filtros">
-                        Localização - Cidade: <br>
+                        Localização: <br>
                         <input type="text" name="localizacao" id="text-filtro"><br><br>
 
                         Faixa Salarial: <br>
@@ -74,7 +70,6 @@
             </div>
 
         <div class="conteudo">
-
         <center>
             <?php   
                 if (count($resultados)) {
@@ -82,7 +77,7 @@
                 ?>
                     <table class="table1">
                         <tr>
-                            <td class="td1"><img class="foto-perfil" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['Foto']; ?>"></td>
+                            <td class="td1"><img class="foto-perfil" onerror="handleError(this)" src="<?php echo $Resultado['Foto']; ?>"></td>
 
                             <td>
                                 <h6 class="nome_materia"><?php echo $Resultado['TB_VAGA_MATERIA']; ?></h6>
@@ -100,53 +95,6 @@
         </div>
     </div>
 
-    <center><h6>
-        <?php 
-            include('../server/PDO/situacao.php');
-
-            try{
-                if(!empty($email_usuario)){
-                    if ($user_type == 'professor'){
-                        $sta = $pdo->prepare('SELECT TB_PROFESSOR.TB_PROFESSOR_NOME as nome
-                        FROM `TB_PROFESSOR` 
-                        WHERE TB_PROFESSOR_EMAIL = :email');
-                    
-                        $sta->bindParam(':email', $email_usuario, PDO::PARAM_STR);
-
-                        $sta->execute();
-
-                        $res = $sta->fetchAll(PDO::FETCH_ASSOC);
-
-                        if (count($res)) {
-                            foreach($res as $Nome_Usuario){
-                                echo "<h6 class='conectado'>Conectado - ".$Nome_Usuario['nome']."</h6>";                            
-                            }
-                        }
-                    }
-
-                    elseif ($user_type == 'escola'){
-                        $sta = $pdo->prepare('SELECT TB_INSTITUICAO.TB_INSTITUICAO_NOME as nome
-                        FROM `TB_INSTITUICAO` 
-                        WHERE TB_INSTITUICAO_EMAIL = :email');
-                    
-                        $sta->bindParam(':email', $email_usuario, PDO::PARAM_STR);
-
-                        $sta->execute();
-
-                        $res = $sta->fetchAll(PDO::FETCH_ASSOC);
-
-                        if (count($res)) {
-                            foreach($res as $Nome_Usuario){
-                                echo "<h6 class='conectado'>Conectado - ".$Nome_Usuario['nome']."</h6>";
-                            }
-                        }
-                    }
-                }
-            }
-
-            catch(PDOException $e) {}
-        ?>
-    </h6></center>
     <?php include('partials/footer.php'); ?>
 </body>
 </html>

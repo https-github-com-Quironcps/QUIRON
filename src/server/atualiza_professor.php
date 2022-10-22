@@ -1,7 +1,6 @@
 <?php
 
 include ('PDO/conexao.php');
-include ('PDO/situacao.php');
 
 if (isset($_POST['nome'])) {
 
@@ -20,13 +19,13 @@ if (isset($_POST['nome'])) {
     TB_PROFESSOR_CPF = :cpf, 
     TB_PROFESSOR_ENDERECO = :endereco,
     TB_PROFESSOR_END_NUM = :num,
-    TB_PROFESSOR_CIDADE = :bairro,
+    TB_PROFESSOR_BAIRRO = :bairro,
     TB_PROFESSOR_CEP = :cep,
     TB_PROFESSOR_TELEFONE = :telefone,
     TB_PROFESSOR_EMAIL = :email,
     TB_PROFESSOR_SENHA = :senha,
     TB_PROFESSOR_IMG_USER = :img
-    WHERE TB_PROFESSOR_ID LIKE :id');
+    WHERE TB_PROFESSOR_ID LIKE 1');
     
     $sth->bindParam(':nome', $nome, PDO::PARAM_STR);
     $sth->bindParam(':email', $email, PDO::PARAM_STR);
@@ -36,26 +35,25 @@ if (isset($_POST['nome'])) {
     $sth->bindParam(':telefone', $telefone, PDO::PARAM_STR);
     $sth->bindParam(':cep', $cep, PDO::PARAM_STR);
     $sth->bindParam(':num', $num, PDO::PARAM_INT);
-    $sth->bindParam(':id', $user_id, PDO::PARAM_INT);
     $sth->bindParam(':endereco', $endereco, PDO::PARAM_STR);
     $sth->bindParam(':cpf', $cpf, PDO::PARAM_STR);
 
     $sth->execute();
+
 }
     $sto = $pdo->prepare('SELECT TB_PROFESSOR.TB_PROFESSOR_NOME AS Nome,
     TB_PROFESSOR.TB_PROFESSOR_ENDERECO AS Endereco,
     TB_PROFESSOR.TB_PROFESSOR_CPF AS CPF,
     TB_PROFESSOR.TB_PROFESSOR_END_NUM AS Numero_endereco,
-    TB_PROFESSOR.TB_PROFESSOR_CIDADE AS Bairro,
+    TB_PROFESSOR.TB_PROFESSOR_BAIRRO AS Bairro,
     TB_PROFESSOR.TB_PROFESSOR_CEP AS Cep,
     TB_PROFESSOR.TB_PROFESSOR_TELEFONE AS Telefone,
     TB_PROFESSOR.TB_PROFESSOR_EMAIL AS Email,
     TB_PROFESSOR.TB_PROFESSOR_SENHA AS Senha,
     TB_PROFESSOR.TB_PROFESSOR_IMG_USER AS Foto 
     FROM `TB_PROFESSOR`
-    WHERE TB_PROFESSOR.TB_PROFESSOR_ID LIKE :id');
+    WHERE TB_PROFESSOR.TB_PROFESSOR_ID LIKE 1');
 
-    $sto->bindParam(':id', $user_id, PDO::PARAM_INT);
     $sto->execute();
 
     $resultados = $sto->fetchAll(PDO::FETCH_ASSOC);

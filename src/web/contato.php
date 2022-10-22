@@ -17,10 +17,7 @@
 </head>
 <body>
 
-<?php 
-    include('../server/PDO/navbar.php'); 
-    include('../server/PDO/verifica_logado.php');
-?>
+    <?php include('partials/header.php'); ?>
 
     <!-- div contendo o formulário e as demais informações (todo o conteúdo) -->
 

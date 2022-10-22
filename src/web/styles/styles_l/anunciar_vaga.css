@@ -26,16 +26,6 @@
     opacity: 50%;
 }
 
-.container2{
-    width: 40%;
-    padding: 20px 60px;
-    background: var(--color-005);
-    text-align: left;
-    border-radius: 20px;
-    margin-top: 100px;
-    transition: all 1s;
-}
-
 @media screen and (max-width: 1000px) {
     .div-container {
       display: contents;
@@ -54,19 +44,11 @@
     .container1{
         width: 80%;
     }
-
-    .container2{
-        width: 80%;
-    }
 }
 
 @media screen and (max-width: 800px) {
     .container1{
         width: 90%;
-    }
-
-    .container2{
-        width: 100%;
     }
 
     .div-sub-container{

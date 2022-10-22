@@ -13,12 +13,11 @@
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
 </head>
-
 <body onLoad="loading()">
-<?php 
-    include('../server/PDO/navbar.php'); 
-    include('../server/PDO/verifica_logado.php');
-?>
+    
+<?php include('../web/partials/loadpage.php'); ?>
+<?php include('partials/header.php'); ?>
+
     <br>
     <div class="div-sobre">
     <img class= "img" src="images/sobre1.png">

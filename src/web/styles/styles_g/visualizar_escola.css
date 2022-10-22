@@ -22,19 +22,6 @@ body{
     display: inline;
 }
 
-.foto-perfil{
-    display: inline;
-    width: 100px;
-    height: 100px;
-    margin-left: 15px;
-    object-fit: cover;
-    object-position: center;
-    background-color: var(--color-troca);
-    padding: 8px;
-    border-radius: 10px;
-    color: var(--cor-001);
-}
-
 .titulo{
     position: absolute;
     color: var(--color-003);
@@ -87,19 +74,9 @@ body{
 .div-vaga{
     background-color: var(--white);
     width: 50vh;
-    height: 80px;
+    height: 17vh;
     border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.vagas_link{
-    text-decoration: none;
-    color: var(--color-003);
-}
-
-.div-vaga tr td h6{
-    text-align: center;
+    padding: 2vh;
 }
 
 .div-info-escola{
