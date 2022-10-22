@@ -23,7 +23,7 @@
     <header>
         <nav id="navbar">
 
-            <button class="botao-001" href="#" type="submit">Entrar</button>
+            <button class="botao-002" href="#" type="submit">Entrar</button>
 
             <div class="container">
                 <a href="index.php"><img src="images/logos/arco-e-texto-dark.png" class="logo" alt="Logo"></a>
