@@ -22,8 +22,6 @@
 <body>
     <header>
         <nav id="navbar">
-
-            <button class="botao-002" href="#" type="submit">Entrar</button>
             
             <div class="container">
                 <a href="./">

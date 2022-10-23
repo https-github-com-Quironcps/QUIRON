@@ -3,7 +3,6 @@ body{
 }
 
 .img-escola{
-    height: 50vh;
     background-color: var(--black);
     width: auto;
     margin-top: 70px;
@@ -15,7 +14,7 @@ body{
 
 .img-div-alterar-01{
     width: 100%;
-    height: 50vh;
+    height: 380px;
     object-fit: cover;
     object-position: center;
     opacity: 40%;
@@ -43,7 +42,10 @@ body{
     text-align: center;
     width: 100%;
     left: 0;
-    top: 25vh;
+    top: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 59px; 
 }
 
 .subtitulo{
@@ -54,7 +56,14 @@ body{
     text-align: center;
     width: 100%;
     left: 0;
-    top: 35vh;
+    top: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 59px; 
+}
+
+.input-visualiza-vaga{
+    display: none;
 }
 
 .vagas{
@@ -94,8 +103,11 @@ body{
 }
 
 .vagas_link{
-    text-decoration: none;
     color: var(--color-003);
+}
+
+input:checked[type="checkbox"] ~ .totla{
+    display: flex;
 }
 
 .div-vaga tr td h6{
@@ -172,10 +184,6 @@ body{
     width: 95%;
     margin: 0 2.5%;
     display: flex;
-}
-
-.lista ul{
-    
 }
 
 li a .bi-envelope, 

@@ -23,6 +23,7 @@ body {
     align-items: center;
     margin: 0 auto;
     height: 1vh;
+    z-index: 1000;
     margin-left: 7%;
 }
 
@@ -307,6 +308,7 @@ input:checked[type="checkbox"]::before{
     color: var(--color-002);
 }
 
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 
@@ -402,7 +404,7 @@ body{
 h3{
     color: var(--color-003);
     font-weight: 900;
-}
+} */
 
 /* Responsive MENU */
 

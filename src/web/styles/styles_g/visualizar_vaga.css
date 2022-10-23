@@ -1,28 +1,10 @@
-body{
-    background-color: darkgray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    font-family: Raleway;
-}
-
-.everybody{
-    background-color: var(--color-005);
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 80vh;
-    align-items: center;
-    border-radius: 15px;
-}
 
 .divlateral{
     background-color: var(--color-006);
     width: 90%;
     height: 35%;
     border-radius: 15px;
-    margin-top: 2vh;
+    /* margin-top: 2vh; */
     display: flex;
     /* flex-direction: column; */
    
@@ -31,11 +13,12 @@ body{
 .aside{
     display: flex;
     width: 90%;
-    padding: 3vh;
+    padding: 0px 10px;
     margin-bottom: 6vh;
-    overflow-y: scroll;
     background-color: var(--color-006);
     border-radius: 15px;
+    height: auto;
+    max-height: 500px;
 }
 
 .img_etec{
@@ -48,11 +31,27 @@ body{
 
 .div-icon{
     display: flex;
-    padding: 0.5vh;
+    padding: 8px;
     text-align: justify;
     width: 90%;
 }
 
+#coracaovazio{
+    color: var(--color-001);
+    font-size: 20px;
+}
+
+#coracaocheio{
+    color: var(--color-001);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
+    background-color: var(--white);
+    padding: 5vh 5vw;
+
+}
 .div-icon:hover{
     margin-left: 2vw;
     transition: all 1s;
@@ -85,8 +84,8 @@ body{
 .botão-01{
     background-color: var(--color-001);
     border-radius: 4px;
-    width: 20vh;
-    height: 6vh;
+    width: 120px;
+    height: 40px;
     font-weight: 600;
     font-size: 15px;
     border-style: none;
@@ -99,12 +98,48 @@ body{
     background: var(--color-002);
 }
 
+/* .totla{
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Raleway;
+} */
+
+.totla{
+    position: absolute;
+    z-index: 900;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Raleway;
+    margin-top: 1050px;
+}
+
+.everybody{
+    background-color: var(--color-005);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+height: auto;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid var(--color-001);
+}
 
 .title02{
     padding: 10px 0px;
     font-weight: 900;
     color: var(--color-003);
-    font-size: 20px;
+    font-size: 17px;
     transition: all 0.5s;
 }
 
@@ -112,7 +147,7 @@ body{
     text-decoration: none;
     color: var(--color-003);
     padding-left: 1vh;
-    font-size: 13px;
+    font-size: 15px;
     align-self: center;
 }
 
@@ -135,22 +170,21 @@ body{
 }
 
 .linha1{
-    padding: 2vh;
-    height: 40vh;
+    padding: 20px;
+    height: 300px;
     width: 50%;
     overflow-y: scroll;
 }
 
 .linha2{
-    padding: 2vh;
+    padding: 20px;
     height: 40vh;
     width: 50%;
-    overflow-y: scroll;
 }
 
-h5{
+.h5a{
     color: var(--color-003);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     text-align: justify;
     transition: all 0.5s;
@@ -161,10 +195,6 @@ h5{
     font-size: 30px;
     margin-top: 2%;
     margin-left: 87%;
-}
-
-#icon1:hover{
-    color: var(--color-003);
 }
 
 ::-webkit-scrollbar{
@@ -182,13 +212,14 @@ h5{
     }
 
     .botão-01{
-        width: 15vh;
-        height: 6vh;
+        width: 100px;
+        height: 40px;
     }
 
     .icons{
         width: 100%;
         flex-direction: row;
+        padding-top: 10px;
     }
 
     .divlateral{
@@ -212,6 +243,10 @@ h5{
         transition: all 1s;
     }
 
+    .totla{
+        margin-top: 100px;
+    }
+
     .info{
         font-size: 13px;
     }
@@ -221,7 +256,7 @@ h5{
         
     }
 
-    h5{
+    .h5a{
         font-size: 14px;
     }
 
