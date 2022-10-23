@@ -17,6 +17,12 @@ function handleErrorEscola(image3){
     return true;
 }
 
+function Black(ima){
+    ima.onerror = "";
+    ima.src = "images/imageBlack.jpg";
+    return true;
+}
+
 function handleErrorProfessor (image4){
     image4.onerror = "";
     image4.src = "images/svgs/student.svg";

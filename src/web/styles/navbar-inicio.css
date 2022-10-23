@@ -2,11 +2,11 @@
 
 body {
     background-color: var(--white) !important;
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    font-family: Raleway;
+    font-family: Raleway; */
 }
 
 .container{
@@ -85,6 +85,7 @@ nav{
     color: var(--color-004);
 }
 
+/* 
 .principal{
     height: 50vh;
     width: 30%;
@@ -169,7 +170,7 @@ nav{
 h3{
     color: var(--color-003);
     font-weight: 900;
-}
+} */
 
 /* Responsive MENU */
 
@@ -177,11 +178,6 @@ h3{
     .logo{
         width: 150px;
     }
-
-    .botao-002{
-        margin-left: 68vw;
-    }
-    
 }
 
 @media (max-width: 880px){

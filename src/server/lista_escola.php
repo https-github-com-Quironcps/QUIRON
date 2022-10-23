@@ -21,8 +21,14 @@ $sth = $pdo->prepare('SELECT TB_INSTITUICAO.TB_INSTITUICAO_NOME AS Nome,
                       ON TB_INSTITUICAO.TB_INSTITUICAO_ID = TB_INSTITUICAO_TB_INSTITUICAO_ID
                       WHERE TB_INSTITUICAO.TB_INSTITUICAO_ID LIKE :id LIMIT 1');
 
-$sto = $pdo->prepare("SELECT TB_VAGA.TB_VAGA_ID AS Id_vaga,
-                      TB_VAGA.TB_VAGA_MATERIA AS Vaga
+$sto = $pdo->prepare("SELECT TB_VAGA.TB_VAGA_ID AS Idv,
+                      TB_VAGA.TB_VAGA_MATERIA AS Vaga,
+                      TB_VAGA.TB_VAGA_LINK AS VagaLink,
+                      TB_VAGA.TB_VAGA_DESC AS VagaDesc,
+                      TB_VAGA.TB_VAGA_REQ AS VagaReq,
+                      TB_VAGA.TB_VAGA_CARGA AS VagaCarga,
+                      TB_VAGA.TB_VAGA_FAIXA_SALARIAL AS VagaFaixa,
+                      TB_VAGA.TB_VAGA_GRADE AS VagaGrade
                       FROM TB_VAGA
                       WHERE TB_VAGA.FK_INSTITUICAO = :id");
 

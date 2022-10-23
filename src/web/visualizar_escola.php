@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../web/styles/styles_g/visualizar_escola.css">
+    <link rel="stylesheet" href="../web/styles/styles_g/visualizar_vaga.css">
     <link rel="stylesheet" href="styles/theme.css">
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
@@ -28,13 +29,17 @@
     <center>
         <div class="img-escola">
 
-            <h1 class="titulo"><?php echo $Resultado['Nome']; ?></h1>
+            <h1 class="titulo">
+                <?php 
+                echo $Resultado['Nome']; 
+                ?>
+            </h1>
 
             <h5 class="subtitulo">
                 <p><?php echo $Resultado['Cursos']; ?>
             </h5>
 
-            <div class="div-ponta"><img class="img-div-alterar-01" src="<?php echo $Resultado['Foto']; ?>"></div>
+            <div class="div-ponta"><img class="img-div-alterar-01" onerror="Black(this)" src="<?php echo $Resultado['Foto']; ?>"></div>
         
         </div>
     </center>
@@ -45,9 +50,9 @@
 
     <div class="imagens">
 
-        <img class="sub-imagens" onerror="handleError(this)" src="<?php echo $Resultado['ImgPost1']; ?>" alt="">
-        <img class="sub-imagens" onerror="handleError(this)" src="<?php echo $Resultado['ImgPost2']; ?>" alt=""><br>
-        <img class="sub-imagens" onerror="handleError(this)" src="<?php echo $Resultado['ImgPost3']; ?>" alt=""><br>
+        <img class="sub-imagens" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['ImgPost1']; ?>" alt="">
+        <img class="sub-imagens" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['ImgPost2']; ?>" alt=""><br>
+        <img class="sub-imagens" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['ImgPost3']; ?>" alt=""><br>
         
     </div>
 
@@ -82,9 +87,11 @@
         <table class="div-vaga">
             <tr>
                 <td>
-                    <a class="vagas_link" href="sobre">
+                <?php include('visualizar_vaga.php'); ?>
+                <div class="vagas_link" href="" onclick="">
+                        <input class='check-vaga'type="checkbox" name="" id="">
                         <h6 class="nome_materia"><?php echo $Vagas['Vaga']; ?></h6>
-                    </a>
+                    </div>
                 </td>
             </tr>
         </table>
