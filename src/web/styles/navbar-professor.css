@@ -342,14 +342,6 @@ input:checked[type="checkbox"]::before{
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    font-family: Raleway;
-}
-
 .principal{
     height: 50vh;
     width: 30%;
