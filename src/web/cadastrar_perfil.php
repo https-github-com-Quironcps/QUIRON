@@ -1,3 +1,8 @@
+<?php
+//Incluir conexão
+include("../server/PDO/conexao.php");
+include("../server/cad_perfil.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -46,7 +51,7 @@
                     <label class="form-equipe">Equipe: </label><br><textarea type="text" name="equipe" class="input-equipe" id="input-text-alterar2"></textarea>
                     
                     <br>
-                    <input type="submit" value="Editar" name="submit" id="submit-text-alterar" class="submit-class"><br>
+                    <input type="submit" value="Criar perfil" name="submit" id="submit-text-alterar" class="submit-class"><br>
                 </form>
             </div>
         </center>
