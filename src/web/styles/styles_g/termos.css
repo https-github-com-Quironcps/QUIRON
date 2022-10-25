@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Raleway;
+    min-height: 100vh;
+}
+
+.principal{
+    width: 60%;
+    height: 75vh;
+    padding: 5vh;
+    background-color: var(--color-005);
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    border-radius: 12px;
+}
+
+.termos{
+    width: 90%;
+}
+
+.t{
+    color: var(--cor-002);
+    font-weight: 900;
+}
+
+.s{
+    color: var(--color-003);
+}
