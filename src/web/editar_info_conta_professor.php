@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br" class="dark">
+<html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,8 +16,13 @@
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
+    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
+    <script src="../web/scripts/modo-dark.js"></script>
+    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
+
 </head>
 <body>
+    <div class="page">
 <?php include('partials/header.php') ?>
 
 <br><br><br><br>
@@ -71,5 +76,9 @@
     </form>
 
 <?php include('partials/footer.php') ?>
+
+    </div>
+
+    <?php include('partials/loadpage.php') ?>
 </body>
 </html>

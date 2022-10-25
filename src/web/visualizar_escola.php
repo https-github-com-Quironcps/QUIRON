@@ -10,9 +10,15 @@
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
+    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
+    <script src="../web/scripts/modo-dark.js"></script>
+    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
+
     <title>QUIRON - ESCOLA</title>
 </head>
 <body>
+
+    <div class="page">
 
     <?php include ('partials/header.php') ?>
 
@@ -96,5 +102,9 @@
         </ul>
         </center>
     </section>
+
+    </div>
+
+    <?php include('partials/loadpage.php'); ?>
 </body>
 </html>

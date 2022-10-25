@@ -15,8 +15,6 @@
     <script type="text/javascript" src="../web/scripts/preloader.js"></script>
 
     <title>FALE CONOSCO</title>
-
-
 </head>
 <body>
 

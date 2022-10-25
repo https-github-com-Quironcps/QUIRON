@@ -16,12 +16,18 @@ include("../server/cad_escola.php");
     <link rel="stylesheet" href="styles/styles_l/style.css">
     <link rel="stylesheet" href="styles/styles_m/cadastro.css">
     <link rel="stylesheet" href="styles/theme.css">
-
+    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
+
+    <script src="../web/scripts/modo-dark.js"></script>
+    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
 
 
 </head>
 <body>
+
+    <div class="page">
+
 <?php include('partials/navbar-index.php'); ?>
 <br>
 
@@ -85,8 +91,10 @@ include("../server/cad_escola.php");
                 </center>
             </div>
         </div>
-    </div>
 </center>
 <br>
+    </div>
+
+    <?php include('partials/loadage.php'); ?>
 </body>
 </html>

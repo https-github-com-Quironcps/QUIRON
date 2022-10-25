@@ -11,8 +11,15 @@
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
+    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
+    <script src="../web/scripts/modo-dark.js"></script>
+    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
+
 </head>
 <body>
+
+    <div class="page">
+
 <?php include('partials/header.php') ?>
 
 <br><br><br><br>
@@ -53,5 +60,9 @@
     </div>
 
 <?php include('partials/footer.php') ?>
+
+    </div>
+
+    <?php include('partials/loadpage.php') ?>
 </body>
 </html>

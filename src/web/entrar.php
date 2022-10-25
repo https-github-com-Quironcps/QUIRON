@@ -29,10 +29,16 @@ include("../server/login.php");
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
+    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
+    <script src="../web/scripts/modo-dark.js"></script>
+    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
+
     <title>Entrar na QUIRON</title>
   </head>
   <body>
-  
+
+    <div class="page">
+
   <?php include('partials/header.php'); ?>
   
   <div class="content">
@@ -95,12 +101,15 @@ include("../server/login.php");
         
       </div>
     </div>
-  </div>
 
   
     <script src="scripts/jquery_login.min.js"></script>
     <script src="scripts/popper_login.min.js"></script>
     <script src="scripts/bootstrap_login.min.js"></script>
     <script src="scripts/main_login.js"></script>
+
+    </div>
+
+    <?php include('partials/loadpage.php'); ?>
   </body>
 </html>
