@@ -21,4 +21,11 @@
         
         header("location: ../web/visualizar_vaga");
     }
+
+    elseif (isset($_GET['codVagaEscola'])){
+        $id_vaga_escola = trim($_GET['codVagaEscola']);
+        $_SESSION['id_vaga_escola'] = $id_vaga_escola;
+        
+        header("location: favoritar_vaga.php");
+    }
 ?>

@@ -12,6 +12,24 @@ body{
     object-position: 20% 10%;
 }
 
+
+#coracaovazio{
+    color: var(--color-001);
+    font-size: 25px;
+}
+
+#coracaocheio{
+    color: var(--color-001);
+    font-size: 25px;  
+}
+
+.linha1{
+    padding: 20px;
+    height: 300px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
 .img-div-alterar-01{
     width: 100%;
     height: 380px;
@@ -66,6 +84,11 @@ body{
     display: none;
 }
 
+.aside{
+    height: auto;
+    padding-bottom: 20px;
+}
+
 .vagas{
     align-items: center;
     width: 60vh;
@@ -104,6 +127,44 @@ body{
 
 .vagas_link{
     color: var(--color-003);
+}
+
+.h5a{
+    color: var(--color-003);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+    transition: all 0.5s;
+}
+
+.check-vaga{
+    display: none;
+}
+
+.aside{
+    display: none;
+}
+
+.check-vaga:checked ~ .aside{
+    display: block;
+}
+
+.botão-01{
+    background-color: var(--color-001);
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    border-style: none;
+    margin: 15px 0px;
+    color: var(--color-004);
+}
+
+.botão-01:hover{
+    transition: all 0.5s;
+    outline: none;
+    background: var(--color-002);
 }
 
 input:checked[type="checkbox"] ~ .totla{
