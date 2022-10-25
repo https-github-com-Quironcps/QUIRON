@@ -5,7 +5,7 @@ use Phinx\Migration\AbstractMigration;
 
 final class TbVaga extends AbstractMigration
 {
-    public function change()
+    public function up()
     {
         $this->execute("CREATE TABLE TB_VAGA (
         `TB_VAGA_ID` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -19,5 +19,9 @@ final class TbVaga extends AbstractMigration
         `FK_INSTITUICAO` INT NOT NULL,
         CONSTRAINT `FK_INSTITUICAO_2` FOREIGN KEY (FK_INSTITUICAO) 
         REFERENCES TB_INSTITUICAO (TB_INSTITUICAO_ID))");
+    }
+
+    public function down(){
+        $this->execute("DROP TABLE IF EXISTS `TB_VAGA`");
     }
 }

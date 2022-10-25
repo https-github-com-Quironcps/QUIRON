@@ -6,7 +6,7 @@ use Phinx\Db\Adapter\MysqlAdapter;
 
 final class TbInstituicao extends AbstractMigration
 {
-    public function change()
+    public function up()
     {
         $this->execute("CREATE TABLE `TB_INSTITUICAO` (
             `TB_INSTITUICAO_ID` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -20,5 +20,9 @@ final class TbInstituicao extends AbstractMigration
             `TB_INSTITUICAO_EMAIL` VARCHAR(128) NOT NULL,
             `TB_INSTITUICAO_SENHA` VARCHAR(45) NOT NULL,
             `TB_INSTITUICAO_IMG_USER` LONGBLOB NULL)");
+    }
+
+    public function down(){
+        $this->execute("DROP TABLE IF EXISTS `TB_INSTITUICAO`");
     }
 }

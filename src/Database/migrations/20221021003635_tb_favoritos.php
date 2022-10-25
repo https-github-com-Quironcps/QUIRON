@@ -5,7 +5,7 @@ use Phinx\Migration\AbstractMigration;
 
 final class TbFavoritos extends AbstractMigration
 {
-    public function change()
+    public function up()
     {
         $this->execute("CREATE TABLE `TB_FAVORITO` (
             `TB_FAVORITO_ID` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -17,5 +17,9 @@ final class TbFavoritos extends AbstractMigration
 
             CONSTRAINT `FK_PROFESSOR` FOREIGN KEY (FK_PROFESSOR) 
             REFERENCES TB_PROFESSOR (TB_PROFESSOR_ID))");
+    }
+
+    public function down(){
+        $this->execute("DROP TABLE IF EXISTS `TB_FAVORITO`");
     }
 }
