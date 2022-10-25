@@ -1,12 +1,7 @@
 <?php
-//receber dados do form
-$dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
-
-//verificar se o usuário clicou em "cadastrar"
-if(!empty($dados['submit'])) {
     //query de cadastro ao banco
-    $query_perfil = ("INSERT INTO TB_PERFIL(
+    $sql = ("INSERT INTO TB_PERFIL(
     TB_PERFIL_CURSOS,
     TB_PERFIL_SOBRE,
     TB_PERFIL_EQUIPE)
@@ -15,12 +10,19 @@ if(!empty($dados['submit'])) {
     :TB_PERFIL_EQUIPE)");
 
 
-    $cad_perfil = $pdo->prepare($query_professor);
+$_REQUEST = file_get_contents('php://input');
+
+$params = json_decode($_REQUEST, true);
+
+$data = [];
+
+$data = [
 
     $cad_perfil->bindParam(':TB_PERFIL_CURSOS', $dados['cursos']);
     $cad_perfil->bindParam(':TB_PERFIL_SOBRE', $dados['sobre']);
     $cad_perfil->bindParam(':TB_PERFIL_EQUIPE', $dados['equipe']);
 
+];
 
     //executar query
     $cad_perfil->execute();
@@ -34,5 +36,5 @@ if(!empty($dados['submit'])) {
     else{
         echo "<span>Erro: Não foi possivel realizar o cadastro.</span><br><br>";
     }
-}
+
 ?>
