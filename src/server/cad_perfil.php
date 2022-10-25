@@ -1,5 +1,6 @@
 <?php
 
+try{
     //query de cadastro ao banco
     $sql = ("INSERT INTO TB_PERFIL(
     TB_PERFIL_CURSOS,
@@ -18,23 +19,31 @@ $data = [];
 
 $data = [
 
-    $cad_perfil->bindParam(':TB_PERFIL_CURSOS', $dados['cursos']);
-    $cad_perfil->bindParam(':TB_PERFIL_SOBRE', $dados['sobre']);
-    $cad_perfil->bindParam(':TB_PERFIL_EQUIPE', $dados['equipe']);
+    'TB_PERFIL_CURSOS' => $params['cursos'],
+    'TB_PERFIL_SOBRE' => $params['sobre'],
+    'TB_PERFIL_EQUIPE' => $params['equipe'],
 
 ];
 
-    //executar query
-    $cad_perfil->execute();
+$stmt = $pdo->prepare($sql);
 
-    //acessar if ao cadastrar corretamente
-    if($cad_perfil){
-    echo "<span>Cadastrado com Sucesso!</span><br><br>";
+$stmt->execute($data);
 
-    }
 
-    else{
-        echo "<span>Erro: Não foi possivel realizar o cadastro.</span><br><br>";
-    }
+$response = [];
+
+$response['message']  = 'Dados do perfil foram salvos com sucesso!';
+
+echo json_encode($response, JSON_PRETTY_PRINT) . "\n";
+}
+
+catch (PDOException $e) {
+    $error = [];
+
+    $error['message'] = $e->getMessage();
+
+    echo json_encode($error, JSON_PRETTY_PRINT) . "\n";
+}
+
 
 ?>
