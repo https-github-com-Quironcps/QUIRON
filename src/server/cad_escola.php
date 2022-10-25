@@ -12,20 +12,21 @@ if(!empty($dados['submit'])) {
     TB_INSTITUICAO_ENDERECO, 
     TB_INSTITUICAO_END_NUM, 
     TB_INSTITUICAO_CIDADE,
-    TB_INSTITUICAO_CEP 
+    TB_INSTITUICAO_CEP ,
     TB_PROFESSOR_TELEFONE,
     TB_PROFESSOR_EMAIL,
-    TB_PROFESSOR_SENHA) 
+    TB_PROFESSOR_SENHA,
+    TB_INSTITUICAO_IMG_USER) 
     VALUES (:TB_INSTITUICAO_NOME,
     :TB_INSTITUICAO_COD,
     :TB_INSTITUICAO_ENDERECO, 
     :TB_INSTITUICAO_END_NUM, 
     :TB_INSTITUICAO_CIDADE,
-    :TB_INSTITUICAO_CEP 
+    :TB_INSTITUICAO_CEP ,
     :TB_INSTITUICAO_TELEFONE,
     :TB_INSTITUICAO_EMAIL,
-    :TB_INSTITUICAO_SENHA)");
-
+    :TB_INSTITUICAO_SENHA,
+    :TB_INSTITUICAO_IMG_USER)");
 
     $cad_escola = $pdo->prepare($query_escola);
 
@@ -38,6 +39,7 @@ if(!empty($dados['submit'])) {
     $cad_professor->bindParam(':TB_INSTITUICAO_TELEFONE', $dados['tel-e']);
     $cad_professor->bindParam(':TB_INSTITUICAO_EMAIL', $dados['email-e']);
     $cad_professor->bindParam(':TB_INSTITUICAO_SENHA', $dados['senha-e']);
+    $cad_professor->bindParam(':TB_INSTITUICAO_IMG_USER', $dados['imagem']);
 
     //executar query
     $cad_escola->execute();
@@ -45,7 +47,6 @@ if(!empty($dados['submit'])) {
     //acessar if ao cadastrar corretamente
     if($cad_escola){
     echo "<span>Cadastrado com Sucesso!</span><br><br>";
-
     }
 
     else{
