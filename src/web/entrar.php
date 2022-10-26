@@ -95,12 +95,10 @@ include("../server/login.php");
 
                 <br>
                 <div class="d-flex mb-5 align-items-center">
-                  <label class="control control--checkbox mb-0"><span class="caption">Lembrar de mim?</span>
-                    <input type="checkbox" />
-                    <div class="control__indicator"></div>
-                  </label>
+          
+
+
                   <span class="ml-auto"><a href="esqueci_senha" class="forgot-pass">Esqueceu a senha?</a></span> <br>
-                  <span class="ml-auto"><a href="cadastrar_professor" class="forgot-pass">Criar Conta</a></span>
                 </div>
 
 

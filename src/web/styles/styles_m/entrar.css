@@ -159,7 +159,7 @@ h2 {
 
 .control:hover input ~ .control__indicator,
 .control input:focus ~ .control__indicator {
-  background: var(--cor-006); }
+  background: var(--botao-iniciar-hover); }
 
 .control input:checked ~ .control__indicator {
   background: var(--cor-palette-5); }
@@ -196,10 +196,10 @@ h2 {
 }
 
 .control--checkbox input:disabled ~ .control__indicator:after {
-  border-color: var(--cor-005); }
+  border-color: var(--cor-002); }
 
 .control--checkbox input:disabled:checked ~ .control__indicator {
-  background-color: var(--cor-002);
+  background-color: var(--botao-iniciar-hover);
   opacity: .2; }
 
   .form input{
