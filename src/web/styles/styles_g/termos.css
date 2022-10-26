@@ -19,6 +19,7 @@ body{
     justify-content: center;
     overflow-y: scroll;
     border-radius: 12px;
+    transition: all 2s;
 }
 
 .termos{
@@ -32,4 +33,29 @@ body{
 
 .s{
     color: var(--color-003);
+}
+
+.btn-enviar{
+    background-color: var(--color-001);
+    border-radius: 4px;
+    width: 15vh;
+    height: 5vh;
+    border-style: none;
+    color: var(--color-004);
+}
+
+.btn-enviar:hover{
+    transition: all 0.5s;
+    outline: none;
+    background: var(--color-002);
+}
+
+@media (max-width: 880px){
+    .s, .t{
+        font-size: 15px;
+    }
+
+    .principal{
+        padding: 3vh;
+    }
 }

@@ -128,16 +128,18 @@
                 Durante a utilização deste website, certos dados pessoais serão coletados e tratados por Quíron e/ou
                 pelos Parceiros. As regras relacionadas ao tratamento de dados pessoais de Quíron estão estipuladas na
                 Política de Privacidade.
-                </h4>
+                </h4><br>
 
                 <li>Seção 9 - Contato</li><br>
                 <h4 class="s">
                 Caso você tenha qualquer dúvida sobre os Termos de Uso, por favor, entre em contato pelo e-mail
                 quirontcc@gmail.com.
                 </h4>
-                
             </ul>
-        </h4>
+        </h4><br><br>
+
+       <button class="btn-enviar" type="submit">Concordar</button>
+       <br><br><br>
 
         </div>
     </div>
