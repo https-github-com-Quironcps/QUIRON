@@ -27,6 +27,21 @@ include("../server/cad_perfil.php");
 <br><br><br><br>
 
     <center><h1 class="h1002">Crie o seu perfil</h1></center>
+    <?php 
+				if(isset($errors) && count($errors) > 0)
+				{
+					foreach($errors as $error_msg)
+					{
+						echo '<div class="alert alert-danger">'.$error_msg.'</div>';
+					}
+                }
+                
+                if(isset($success))
+                {
+                    
+                    echo '<div class="alert alert-success">'.$success.'</div>';
+                }
+			?>
 
     <div class="div-pai">
 
@@ -55,7 +70,7 @@ include("../server/cad_perfil.php");
                     <label class="form-equipe">Equipe: </label><br><textarea type="text" name="equipe" class="input-equipe" id="input-text-alterar2"></textarea>
                     
                     <br>
-                    <input type="submit" name="submit" value="criar perfil" id="submit-text-alterar" class="submit-class"><br>
+                    <input type="submit" name="submit" value="Criar Perfil" id="submit-text-alterar" class="submit-class"><br>
                 </form>
             </div>
         </center>
