@@ -13,7 +13,8 @@
         <!-- Link CSS -->
         <link rel="stylesheet" href="../web/styles/styles_l/vagas.css">
         <link rel="stylesheet" href="styles/theme.css">
-        
+        <link rel="stylesheet" href="styles/styles_g/style.css">
+
         <link rel="icon" href="../web/images/logos/arco-dark-2.png">
         
         <link rel="stylesheet" href="../web/styles/styles_g/load.css">
@@ -26,10 +27,10 @@
     <title>QUIRON - VAGAS</title>
 </head>
 <body>
-
     <div class="page">
 
-<?php include('partials/header-professor.php'); ?>
+<?php 
+include('partials/header.php'); ?>
     <br>
 
     <div class="filtros">
@@ -78,17 +79,7 @@
                     </form>
                 </div>
             </div>
-            <button onclick='testephp()'>ASCSAC</button>
-
-        <script>
-            const form = document.getElementById('some-form')
-
-            form.addEventListener('submit', e => {
-                e.preventDefault()
-                console.log('Deu certo')
-            })
-            
-        </script>
+            <!-- <button onclick='testephp()'>ASCSAC</button> -->
 
         <div class="conteudo">
         <center>
