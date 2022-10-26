@@ -1,12 +1,8 @@
 <?php
-//receber dados do form
-$dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
-
-//verificar se o usuário clicou em "cadastrar"
-if(!empty($dados['submit'])) {
+try{
     //query de cadastro ao banco
-    $query_perfil = ("INSERT INTO TB_PERFIL(
+    $sql = ("INSERT INTO TB_PERFIL(
     TB_PERFIL_CURSOS,
     TB_PERFIL_SOBRE,
     TB_PERFIL_EQUIPE)
@@ -15,24 +11,39 @@ if(!empty($dados['submit'])) {
     :TB_PERFIL_EQUIPE)");
 
 
-    $cad_perfil = $pdo->prepare($query_professor);
+$_REQUEST = file_get_contents('php://input');
 
-    $cad_perfil->bindParam(':TB_PERFIL_CURSOS', $dados['cursos']);
-    $cad_perfil->bindParam(':TB_PERFIL_SOBRE', $dados['sobre']);
-    $cad_perfil->bindParam(':TB_PERFIL_EQUIPE', $dados['equipe']);
+$params = json_decode($_REQUEST, true);
+
+$data = [];
+
+$data = [
+
+    'TB_PERFIL_CURSOS' => $params['cursos'],
+    'TB_PERFIL_SOBRE' => $params['sobre'],
+    'TB_PERFIL_EQUIPE' => $params['equipe'],
+
+];
+
+$stmt = $pdo->prepare($sql);
+
+$stmt->execute($data);
 
 
-    //executar query
-    $cad_perfil->execute();
+$response = [];
 
-    //acessar if ao cadastrar corretamente
-    if($cad_perfil){
-    echo "<span>Cadastrado com Sucesso!</span><br><br>";
+$response['message']  = 'Dados do perfil foram salvos com sucesso!';
 
-    }
-
-    else{
-        echo "<span>Erro: Não foi possivel realizar o cadastro.</span><br><br>";
-    }
+echo json_encode($response, JSON_PRETTY_PRINT) . "\n";
 }
+
+catch (PDOException $e) {
+    $error = [];
+
+    $error['message'] = $e->getMessage();
+
+    echo json_encode($error, JSON_PRETTY_PRINT) . "\n";
+}
+
+
 ?>
