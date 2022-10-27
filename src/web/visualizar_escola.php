@@ -12,6 +12,8 @@
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
+    <script src="scripts/mostraVagas.js"></script>
+
     <title>QUIRON - ESCOLA</title>
 </head>
 
@@ -19,6 +21,7 @@
 
     <?php
     include('../server/PDO/navbar.php');
+    include('../server/AtivarBancoFavorito.php');
     include('../server/PDO/verifica_logado.php');
     include('../server/lista_escola.php');
 
@@ -89,34 +92,72 @@
                 if (count($vagas)) {
                     foreach ($vagas as $Vagas) {
                         ?>
-                            <table class="div-vaga">
+                            <table id="div-vg" class="div-vaga">
                                 <tr>
                                     <td>
-                                        <?php
-                                        //  include('visualizar_vaga.php'); 
-                                        ?>
-                                        <div class="vagas_link" href="" onclick="">
+                                        <div class="vagas_link">
                                             <br>
-                                            <center><label for="checkva">
-                                                    <h6 class="nome_materia"><?php echo $Vagas['Vaga']; ?></h6>
-                                                </label></center><br>
-                                            <input class='check-vaga' type="checkbox" name="" id="checkva<?php echo $num2; ?>">
+                                            <div id="nome-vaga <?php echo $Vagas['Idv']; ?>">
+                                                <center><label for="checkva <?php echo $Vagas['Idv']; ?>">
+                                                        <h6 class="nome_materia"><?php echo $Vagas['Vaga']; ?></h6>
+                                                    </label></center><br>
+                                            </div>
 
-                                            <div class="aside<?php echo $num2; ?>">
+                                            <button class='check-vaga' id="checkva <?php echo $Vagas['Idv']; ?>" onclick='AparecerVaga(<?php echo $Vagas['Idv']; ?>)'></button>
+                                            <div id="aside-vaga <?php echo $Vagas['Idv']; ?>" class="aside">
 
+
+                                                <div class="flex">
+                                                    <i id="voltarbtn" onclick="voltarPVaga(<?php echo $Vagas['Idv']; ?>)" class="bi bi-arrow-left"></i>
+
+                                                    <form id="form-favorito" class='nen' method="post">
+                                                        <label for="enviarFavorito">
+                                                            <?php
+
+                                                            if (count($favoritos)) {
+                                                                foreach ($favoritos as $Fav) {
+
+                                                                    if ($Fav['FKFavVaga'] == $Vagas['Idv']) {
+
+                                                                        if ($Fav['CondFav'] == 1) {
+                                                                            include('partials/coracao-fav-fill.php');
+                                                                        } 
+                                                                    }
+
+                                                                    else {
+                                                                        include('partials/coracao-fav.php');
+                                                                    }
+                                                                }
+                                                            }
+                                                            ?>
+                                                        </label>
+
+                                                        <input type="submit" id="enviarFavorito" style="display: none;" value="">
+                                                    </form>
+                                                </div>
+
+                                                <script>
+                                                    const form_fav = document.getElementById('form-favorito');
+
+                                                    form_fav.addEventListener('submit', e => {
+                                                        e.preventDefault();
+                                                    })
+                                                </script>
+
+                                                <h6 class="title02"><?php echo $Vagas['Vaga']; ?></h6>
+                                                <br>
                                                 <div class="linha1">
                                                     <!-- descrição da vaga -->
                                                     <div class="desc-vaga">
-                                                        <h6 class="title02">Professor para <?php echo $Vagas['Vaga']; ?></h6>
                                                         <h5 class="h5a"><?php echo $Vagas['VagaDesc']; ?>
                                                         </h5>
-                                                    </div>
+                                                    </div><br>
 
                                                     <!-- requisitos da vaga -->
                                                     <div class="req-vaga">
                                                         <h6 class="title02">Requisitos da Vaga</h6>
                                                         <h5 class="h5a"><?php echo $Vagas['VagaReq']; ?></h5>
-                                                    </div>
+                                                    </div><br>
 
 
                                                     <!-- carga horária semanal -->
@@ -125,7 +166,7 @@
                                                         <div class="carg-horaria">
                                                             <h5 class="h5a"><?php echo $Vagas['VagaCarga']; ?></h5>
                                                         </div>
-                                                    </div>
+                                                    </div><br>
 
                                                     <!-- média salarial -->
                                                     <div class="req-vaga">
@@ -138,29 +179,9 @@
 
                                                 <div>
                                                     <center>
-                                                        <button class="botão-01" type="submit" href="#" onclick=" <?php ?>" >Ir para vaga</button><br>
-                                                        <a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?codVagaEscola='+<?php echo $Vagas['Idv'];?>"><span id="coracaovazio" class="bi bi-heart"></span></a>
-                                                        
-                                                        <?php
-                                                        // $active = false;
-                                                        
-                                                        // if ($active){
-                                                        //     echo '<span id="coracaocheio" class="bi bi-heart-fill"></span>';
-                                                        // }
+                                                        <button class="botão-01" type="submit" href="#" onclick=" <?php ?>">Ir para vaga</button><br>
+                                                        <a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?codVagaEscola='+<?php echo $Vagas['Idv']; ?>">
 
-                                                        // else {
-                                                        // }
-                                                        
-                                                        // function funcA($active){
-
-                                                        //     if($active){
-                                                        //         $active = false;
-                                                        //     }
-                                                        //     else{
-                                                        //         $active = true;
-                                                        //     }
-                                                        // }
-                                                        ?>
                                                     </center>
                                                 </div>
 
@@ -170,7 +191,6 @@
                                 </tr>
                             </table>
                         <?php
-
                     }
                 }
 

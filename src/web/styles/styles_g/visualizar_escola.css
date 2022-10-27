@@ -12,15 +12,16 @@ body{
     object-position: 20% 10%;
 }
 
-
-#coracaovazio{
-    color: var(--color-001);
-    font-size: 25px;
+.flex{
+    display: flex;
 }
 
-#coracaocheio{
+.coracaovazio{
     color: var(--color-001);
-    font-size: 25px;  
+    font-size: 25px;
+    float: right;
+    margin-right: 30px;
+    flex: 1;
 }
 
 .linha1{
@@ -50,6 +51,10 @@ body{
     padding: 8px;
     border-radius: 10px;
     color: var(--cor-001);
+}
+
+.title02{
+    top: 0px;
 }
 
 .titulo{
@@ -223,6 +228,27 @@ input:checked[type="checkbox"] ~ .totla{
     background-repeat: no-repeat;
 }
 
+.vagas::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+  }
+  
+  .vagas::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  
+  .vagas::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+#voltarbtn{
+    color: var(--color-001);
+    font-size: 25px;
+    margin-left: 30px;
+    flex: 1;
+}
+
+
 .div-icones{
     width: 100%;
     height: auto;
@@ -331,6 +357,8 @@ li a .bi-envelope,
 
     .p-div{
         width: 100%;
+        height: auto;
+        max-height: 470px;
     }
 
     .sub-imagens{

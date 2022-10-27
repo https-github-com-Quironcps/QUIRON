@@ -2,6 +2,15 @@
 include('PDO/conexao.php');
 
 $id_escola = $_SESSION['id_escola'];
+$tipo_user = $_SESSION["user_type"];
+
+if ($tipo_user == 'professor'){
+    $id_professor = $_SESSION["user_cod"];
+}
+
+else {
+    $id_professor = '';
+}
 
 $sth = $pdo->prepare('SELECT TB_INSTITUICAO.TB_INSTITUICAO_NOME AS Nome,
                       TB_PERFIL.TB_PERFIL_CURSOS AS Cursos,
@@ -32,10 +41,33 @@ $sto = $pdo->prepare("SELECT TB_VAGA.TB_VAGA_ID AS Idv,
                       FROM TB_VAGA
                       WHERE TB_VAGA.FK_INSTITUICAO = :id");
 
-$sth->bindParam(':id', $id_escola, PDO::PARAM_STR);
-$sto->bindParam(':id', $id_escola, PDO::PARAM_STR);
+$sta = $pdo->prepare("SELECT TB_FAVORITO.TB_FAVORITO_ID AS IdFav,
+                      TB_FAVORITO.TB_FAVORITO_CONDICAO AS CondFav,
+                      TB_FAVORITO.FK_PROFESSOR AS FKFavProf,
+                      TB_FAVORITO.FK_VAGA AS FKFavVaga,
+                      TB_VAGA.FK_INSTITUICAO AS FKFavInstituicao
+                      FROM TB_FAVORITO
+  
+                      INNER JOIN TB_VAGA 
+                      ON TB_VAGA.TB_VAGA_ID LIKE FK_VAGA
+  
+                      INNER JOIN TB_PROFESSOR 
+                      ON TB_PROFESSOR.TB_PROFESSOR_ID LIKE FK_PROFESSOR
+
+                      INNER JOIN tb_instituicao 
+                      ON tb_instituicao.TB_INSTITUICAO_ID LIKE FK_INSTITUICAO
+
+                      WHERE FK_INSTITUICAO = :id AND FK_PROFESSOR = :id_professor");
+
+$sth->bindParam(':id', $id_escola, PDO::PARAM_INT);
+$sta->bindParam(':id', $id_escola, PDO::PARAM_INT);
+$sto->bindParam(':id', $id_escola, PDO::PARAM_INT);
+$sta->bindParam(':id_professor', $id_professor, PDO::PARAM_INT);
+
 $sth->execute();
+$sta->execute();
 $sto->execute();
 
 $vagas = $sto->fetchAll(PDO::FETCH_ASSOC);
 $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
+$favoritos = $sta->fetchAll(PDO::FETCH_ASSOC);
