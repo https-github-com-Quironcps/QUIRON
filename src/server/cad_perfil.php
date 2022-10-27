@@ -9,7 +9,7 @@ if(isset($_POST['submit']))
         $sobre = trim($_POST['sobre']);
         $equipe = trim($_POST['equipe']);
         
-        $options = array("cost"=>4); 
+
 
  
         if(filter_var($cursos, FILTER_VALIDATE_EMAIL))
@@ -33,7 +33,7 @@ if(isset($_POST['submit']))
                     
                     $handle->execute($params);
                     
-                    $success = 'User has been created successfully';
+                    $success = 'Perfil Criado com Sucesso!';
                     
                 }
                 catch(PDOException $e){
@@ -51,7 +51,7 @@ if(isset($_POST['submit']))
         }
         else
         {
-            $errors[] = "Houve um erro em algum dos campos";
+            $errors[] = "Ocorreu um erro, tente novamente mais tarde";
         }
     }
     else
