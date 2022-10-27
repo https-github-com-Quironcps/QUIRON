@@ -34,11 +34,26 @@ include("../server/cad_professor.php");
     <div class="container1">
         <div class="header">
             <h1 id="title">Crie sua conta</h1>
+            <?php 
+				if(isset($errors) && count($errors) > 0)
+				{
+					foreach($errors as $error_msg)
+					{
+						echo '<div class="alert alert-danger">'.$error_msg.'</div>';
+					}
+                }
+                
+                if(isset($success))
+                {
+                    
+                    echo '<div class="alert alert-success">'.$success.'</div>';
+                }
+			?>
         </div>
 
         <div class="div-container">
             <div class="div-sub-container">
-            <form action="" method="POST" class="form">
+            <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" class="form">
                     <label for="name">Nome Completo:</label><br>
                     <input class='input-textarea' name="nome-p" id="nome-p" type="text"> <br><br>
 
@@ -51,8 +66,8 @@ include("../server/cad_professor.php");
                     <label for="name">N°:</label><br>
                     <input class='input-textarea' name="num-p" id="num-p" type="text"> <br><br>
 
-                    <label for="name">Bairro:</label><br>
-                    <input class='input-textarea' name="bairro-p" id="bairro-p" type="text"> <br><br>
+                    <label for="name">Cidade:</label><br>
+                    <input class='input-textarea' name="cidade-p" id="cidade-p" type="text"> <br><br>
 
                     <label for="name">Telefone:</label><br>
                     <input class='input-textarea' name="tel-p" id="tel-p" type="text"> <br><br>
