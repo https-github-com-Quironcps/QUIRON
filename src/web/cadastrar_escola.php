@@ -1,7 +1,7 @@
 
 
 <?php
-    // include('../server/atualiza_escola.php');
+    include("../server/PDO/conexao.php");
     include("../server/cad_escola.php");
 ?>
 
@@ -25,12 +25,27 @@
     include('../server/PDO/navbar.php'); 
     include('../server/PDO/acesso_telas_desconhecido.php');
 ?>
-
+    <?php 
+				if(isset($errors) && count($errors) > 0)
+				{
+					foreach($errors as $error_msg)
+					{
+						echo '<div class="alert alert-danger">'.$error_msg.'</div>';
+					}
+                }
+                
+                if(isset($success))
+                {
+                    
+                    echo '<div class="alert alert-success">'.$success.'</div>';
+                }
+			?>
 <br><br><br><br>
 
     <center><h1 class="h1002">Cadastre-se na QUÍRON</h1></center>
 
-    <form method="POST" enctype="multipart/form-data">
+
+    <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data">
 
     <div class="div-mae">
 
@@ -54,13 +69,13 @@
                 
                 <label class="form-endereco">Endereço: </label><input name="end-e" type="text" maxlength="128" class="input-endereco" id="input-text-alterar" required> <label class="form-num"> Nº: </label><input maxlength="6" required name="num-e" class="input-num" type="number" id="input-text-alterar"><br>
                 
-                <label class="form-bairro">Cidade: </label><input name="bairro-e" type="text" maxlength="128" class="input-bairro" id="input-text-alterar" required> <label class="form-cep"> CEP: </label><input name="cep-e" class="input-cep" type="number" id="input-text-alterar" maxlength="8" required><br>
+                <label class="form-bairro">Cidade: </label><input name="cidade-e" type="text" maxlength="128" class="input-bairro" id="input-text-alterar" required> <label class="form-cep"> CEP: </label><input name="cep-e" class="input-cep" type="number" id="input-text-alterar" maxlength="8" required><br>
                 
                 <label class="form-tel">Telefone: </label><input type="number" maxlength="11" name="tel-e" class="input-tel" id="input-text-alterar" required> <label class="form-email"> E-mail: </label><input required class="input-email" maxlength="128" name="email-e" type="email" id="input-text-alterar"><br>
 
                 <center> <label class="form-senha">Senha: </label><input required maxlength="45" type="password" name="senha-e" class="input-senha" id="input-text-alterar"> <label class="form-cod">Código: </label><input maxlength="100" required type="number" class="input-cod" name="cod-e" id="input-text-alterar"></center>
                 
-                <input type="submit" value="Cadastrar-se" id="submit-text-alterar" class="submit-class"> <input type="submit" name="submit" value="Voltar" id="submit-text-alterar-2" class="submit-class"> 
+                <input type="submit" name="submit" value="Cadastrar-se" id="submit-text-alterar" class="submit-class">
             
             </div>
         </div>
