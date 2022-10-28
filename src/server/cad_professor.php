@@ -35,6 +35,7 @@ if(isset($_POST['submit']))
         $data = trim($_POST['data-p']);
         $email = trim($_POST['email-p']);
         $senha = trim($_POST['senha-p']);
+        $textarea = trim($_POST['imagem']);
         
         $options = array("cost"=>4);
         $hashsenha = password_hash($senha,PASSWORD_BCRYPT,$options);
@@ -48,8 +49,8 @@ if(isset($_POST['submit']))
             
             if($stmt->rowCount() == 0)
             {
-                $sql = "INSERT INTO TB_PROFESSOR (TB_PROFESSOR_NOME, TB_PROFESSOR_CEP, TB_PROFESSOR_ENDERECO, TB_PROFESSOR_END_NUM, TB_PROFESSOR_CIDADE, TB_PROFESSOR_TELEFONE, TB_PROFESSOR_CPF,TB_PROFESSOR_NASCIMENTO,TB_PROFESSOR_EMAIL, `TB_PROFESSOR_SENHA`) 
-                values(:TB_PROFESSOR_NOME,:TB_PROFESSOR_CEP,:TB_PROFESSOR_ENDERECO,:TB_PROFESSOR_END_NUM,:TB_PROFESSOR_CIDADE,:TB_PROFESSOR_TELEFONE,:TB_PROFESSOR_CPF,:TB_PROFESSOR_NASCIMENTO,:TB_PROFESSOR_EMAIL,:TB_PROFESSOR_SENHA)";
+                $sql = "INSERT INTO TB_PROFESSOR (TB_PROFESSOR_NOME, TB_PROFESSOR_CEP, TB_PROFESSOR_ENDERECO, TB_PROFESSOR_END_NUM, TB_PROFESSOR_CIDADE, TB_PROFESSOR_TELEFONE, TB_PROFESSOR_CPF,TB_PROFESSOR_NASCIMENTO,TB_PROFESSOR_EMAIL, `TB_PROFESSOR_SENHA`, `TB_PROFESSOR_IMG_USER`) 
+                values(:TB_PROFESSOR_NOME,:TB_PROFESSOR_CEP,:TB_PROFESSOR_ENDERECO,:TB_PROFESSOR_END_NUM,:TB_PROFESSOR_CIDADE,:TB_PROFESSOR_TELEFONE,:TB_PROFESSOR_CPF,:TB_PROFESSOR_NASCIMENTO,:TB_PROFESSOR_EMAIL,:TB_PROFESSOR_SENHA, :FOTO)";
             
                 try{
                     $handle = $pdo->prepare($sql);
@@ -63,7 +64,8 @@ if(isset($_POST['submit']))
                         ':TB_PROFESSOR_CPF'=>$cpf,
                         ':TB_PROFESSOR_NASCIMENTO'=>$data,
                         ':TB_PROFESSOR_EMAIL'=>$email,
-                        ':TB_PROFESSOR_SENHA'=>$senha
+                        ':TB_PROFESSOR_SENHA'=>$senha,
+                        ':FOTO'=>$textarea
                     ];
                     
                     $handle->execute($params);

@@ -81,6 +81,20 @@
     padding-top: 15px;
 }
 
+
+.conteudo::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+  }
+  
+  .conteudo::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  
+  .conteudo::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
 .div-filtros{
     background-color: var(--color-005);
     width: 300px;
@@ -314,6 +328,7 @@ input[type=text] {
 
 @media screen and (max-width: 800px) {
     .table1{
-        width: 96%;
+        width: 94%;
+        margin-right: 100px;
     }
 }

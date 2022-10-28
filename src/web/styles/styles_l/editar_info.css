@@ -76,7 +76,30 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     font-weight: 390;
 }
 
+.div-alterar-texto2{
+    border-radius: 20px;
+    width: 70%;
+    margin-left: 5vw;
+    padding: 8vh 20px;
+    background-color: var(--color-005);
+    padding: 40px 20px;
+    font-size: 17px;
+    font-weight: 390;
+}
+
 #input-text-alterar{
+    font-size: 16px;
+    font-weight: 390;
+    margin-top: 30px;
+    background-color: var(--white);
+    border: 0;
+    border-radius: 5px;
+    padding: 1px 10px;
+    color: var(--color-003);
+    align-content: space-between;
+}
+
+.input-text-alterar{
     font-size: 16px;
     font-weight: 390;
     margin-top: 30px;
@@ -144,8 +167,26 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     width: 10%;
     color: var(--color-003);
 }
-
 .input-cpf{
+    width: 25%;
+}
+
+.input-nasc{
+    width: 20%;
+}
+
+.form-nasc{
+    margin-left: 3%;
+    width: 15.5%;
+    color: var(--color-003);
+}
+
+.form-cpf2{
+    width: 8.5%;
+    color: var(--color-003);
+}
+
+.input-cpf2{
     width: 25%;
 }
 
@@ -213,6 +254,13 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     transition: all 0.9s;
 }
 
+.input-text-alterar:hover, .input-text-alterar:focus{
+    outline: none;
+    border-color: var(--color-002);
+    box-shadow: 0 0 0 2px var(--color-002);
+    transition: all 0.9s;
+}
+
 #submit-text-alterar{
     background-color: var(--color-001);
     border-radius: 4px;
@@ -259,6 +307,10 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
 
 @media screen and (max-width: 1255px) {
     .div-alterar-texto{
+        font-size: 15px;
+    }
+
+    .div-alterar-texto2{
         font-size: 15px;
     }
 }
@@ -332,15 +384,29 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
         height: 450px;
         margin-bottom: 30px;
     }
+
+    .div-alterar-texto2{
+        width: 90vw;
+        height: 500px;
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 660px) {
-    .div-alterar-texto{
+    .div-alterar-texto, .div-alterar-texto2{
         height: 100%;
     }
 
     .div-alterar-form{
         height: 820px;
+    }
+
+    .aas{
+        margin-top: 33px;
+    }
+
+    .div-alterar-form2{
+        height: 870px;
     }
 
     .input-bairro, 
@@ -354,6 +420,8 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     .input-sozinho, 
     .input-cod,
     .input-cpf,
+    .input-cpf2,
+    .input-nasc,
     .input-tel
     {
         width: 60%;
@@ -361,6 +429,9 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
         margin-top: 0;
     }
     
+    .form-nasc{
+        margin-left: 0;
+    }
     .form-bairro,
     .form-cep,
     .form-email,
@@ -370,6 +441,8 @@ img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
     .form-cod,
     .form-num,
     .form-cpf,
+    .form-cpf2,
+    .form-nasc,
     .form-senha,
     .form-tel{
         width: 39%;
