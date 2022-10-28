@@ -32,6 +32,13 @@
     color: var(--cor-005);
 }
 
+tr{
+    background-color: yellow;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
 
 .input-textarea{
     width: 180px;
@@ -179,7 +186,7 @@ img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
 }
 
 .table1{
-    display: inline;
+    display: flex;
     background-color: var(--white);
     width: 42%;
     height: 130px;
@@ -188,7 +195,8 @@ img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
     cursor: pointer;
     border-radius: 8px;
     margin-right: 5%;
-    padding-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .td2{
@@ -197,6 +205,22 @@ img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
     cursor: pointer;
     width: 100%;
     border-radius: 8px;
+}
+
+.td4{
+    width: 65%;
+    text-align: start;
+    align-self: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.td3{
+    align-self: center;
+}
+
+#aside-vaga{
+    display: none;
 }
 
 .table1:hover{
@@ -223,6 +247,8 @@ img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
     margin-left: 2vh;
     color: var(--botao-iniciar-hover);
     font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .escola{

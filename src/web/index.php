@@ -80,17 +80,17 @@
                 if (count($resultados)) {
                 foreach($resultados as $Resultado){
                 ?>
-                    <table class="table1">
+                    <div class="table1">
                         <tr>
-                            <td class="td1"><img class="foto-perfil" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['Foto']; ?>"></td>
+                            <div class="td3"><img class="foto-perfil" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['Foto']; ?>"></div>
 
-                            <td>
-                                <h6 class="nome_materia"><?php echo $Resultado['TB_VAGA_MATERIA']; ?></h6>
+                            <div class="td4">
+                                <h6 class="nome_materia"><?php echo $Resultado['Vaga']; ?></h6>
 
                                 <h6 class="escola"><?php echo $Resultado['Nome']; ?></h6>
-                            </td>
+                            </div>
                         </tr>
-                    </table> 
+                    </div> 
                 <?php
                 }}
             ?>
