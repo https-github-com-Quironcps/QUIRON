@@ -6,6 +6,7 @@ if (!empty($_POST['cod'])) {
 
     $sth = $pdo->prepare('SELECT 
     TB_VAGA.TB_VAGA_MATERIA AS Vaga,
+    TB_VAGA.TB_VAGA_ID AS Idv,
     TB_VAGA.TB_VAGA_LINK AS VagaLink,
     TB_VAGA.TB_VAGA_DESC AS VagaDesc,
     TB_VAGA.TB_VAGA_REQ AS VagaReq,
@@ -33,6 +34,7 @@ if (!empty($_POST['cod'])) {
 
     $sth = $pdo->prepare('SELECT 
     TB_VAGA.TB_VAGA_MATERIA AS Vaga,
+    TB_VAGA.TB_VAGA_ID AS Idv,
     TB_VAGA.TB_VAGA_LINK AS VagaLink,
     TB_VAGA.TB_VAGA_DESC AS VagaDesc,
     TB_VAGA.TB_VAGA_REQ AS VagaReq,
@@ -64,6 +66,7 @@ if (!empty($_POST['cod'])) {
 
         $sth = $pdo->prepare('SELECT 
         TB_VAGA.TB_VAGA_MATERIA AS Vaga,
+    TB_VAGA.TB_VAGA_ID AS Idv,
         TB_VAGA.TB_VAGA_LINK AS VagaLink,
         TB_VAGA.TB_VAGA_DESC AS VagaDesc,
         TB_VAGA.TB_VAGA_REQ AS VagaReq,
@@ -89,6 +92,7 @@ if (!empty($_POST['cod'])) {
 
         $sth = $pdo->prepare('SELECT 
         TB_VAGA.TB_VAGA_MATERIA AS Vaga,
+    TB_VAGA.TB_VAGA_ID AS Idv,
         TB_VAGA.TB_VAGA_LINK AS VagaLink,
         TB_VAGA.TB_VAGA_DESC AS VagaDesc,
         TB_VAGA.TB_VAGA_REQ AS VagaReq,
@@ -113,6 +117,7 @@ if (!empty($_POST['cod'])) {
 
         $sth = $pdo->prepare('SELECT 
         TB_VAGA.TB_VAGA_MATERIA AS Vaga,
+    TB_VAGA.TB_VAGA_ID AS Idv,
         TB_VAGA.TB_VAGA_LINK AS VagaLink,
         TB_VAGA.TB_VAGA_DESC AS VagaDesc,
         TB_VAGA.TB_VAGA_REQ AS VagaReq,
@@ -141,6 +146,7 @@ if (!empty($_POST['cod'])) {
 
         $sth = $pdo->prepare('SELECT 
         TB_VAGA.TB_VAGA_MATERIA AS Vaga,
+    TB_VAGA.TB_VAGA_ID AS Idv,
         TB_VAGA.TB_VAGA_LINK AS VagaLink,
         TB_VAGA.TB_VAGA_DESC AS VagaDesc,
         TB_VAGA.TB_VAGA_REQ AS VagaReq,
@@ -165,6 +171,7 @@ if (!empty($_POST['cod'])) {
 
         $sth = $pdo->prepare('SELECT 
         TB_VAGA.TB_VAGA_MATERIA AS Vaga,
+    TB_VAGA.TB_VAGA_ID AS Idv,
         TB_VAGA.TB_VAGA_LINK AS VagaLink,
         TB_VAGA.TB_VAGA_DESC AS VagaDesc,
         TB_VAGA.TB_VAGA_REQ AS VagaReq,
@@ -192,6 +199,7 @@ if (!empty($_POST['cod'])) {
     $sth = $pdo->prepare('SELECT 
 
     TB_VAGA.TB_VAGA_MATERIA AS Vaga,
+    TB_VAGA.TB_VAGA_ID AS Idv,
     TB_VAGA.TB_VAGA_LINK AS VagaLink,
     TB_VAGA.TB_VAGA_DESC AS VagaDesc,
     TB_VAGA.TB_VAGA_REQ AS VagaReq,
@@ -215,6 +223,7 @@ else{
     $sth = $pdo->prepare('SELECT 
 
     TB_VAGA.TB_VAGA_MATERIA AS Vaga,
+    TB_VAGA.TB_VAGA_ID AS Idv,
     TB_VAGA.TB_VAGA_LINK AS VagaLink,
     TB_VAGA.TB_VAGA_DESC AS VagaDesc,
     TB_VAGA.TB_VAGA_REQ AS VagaReq,

@@ -32,14 +32,6 @@
     color: var(--cor-005);
 }
 
-tr{
-    background-color: yellow;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
-}
-
-
 .input-textarea{
     width: 180px;
     height: 40px;
@@ -186,7 +178,6 @@ img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
 }
 
 .table1{
-    display: flex;
     background-color: var(--white);
     width: 42%;
     height: 130px;
@@ -195,7 +186,6 @@ img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
     cursor: pointer;
     border-radius: 8px;
     margin-right: 5%;
-    white-space: nowrap;
     overflow: hidden;
 }
 
@@ -210,6 +200,7 @@ img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
 .td4{
     width: 65%;
     text-align: start;
+    white-space: nowrap;
     align-self: center;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -219,15 +210,111 @@ img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
     align-self: center;
 }
 
-#aside-vaga{
+.aside{
     display: none;
+    height: 70%;
+    padding: 20px;
+    
 }
 
-.table1:hover{
+.linha1{
+    padding: 20px;
+    height: 240px;
+    overflow-y: scroll;
+}
+
+
+.linha1::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+  }
+  
+  .linha1::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  
+  .linha1::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+.title02{
+    padding: 10px 0px;
+    font-weight: 500;
+    color: var(--color-003);
+    font-size: 17px;
+    transition: all 0.5s;
+}
+
+.title03{
+    font-weight: 500;
+    color: var(--color-003);
+    font-size: 17px;
+    transition: all 0.5s;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+
+}
+
+.h5a{
+    color: var(--color-003);
+    font-size: 16px;
+    font-weight: 200;
+    text-align: justify;
+    transition: all 0.5s;
+}
+
+#voltarbtn{
+    color: var(--color-001);
+    font-size: 25px;
+    margin-left: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+/* .table1:hover{
     background-color: rgba(148, 148, 148, 0.867);
     transition: all 1s;
     color: var(--cor-006);
     opacity: 0.9;
+} */
+
+.botão-01{
+    background-color: var(--color-001);
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    border-style: none;
+    margin: 15px 0px;
+    color: var(--color-004);
+}
+
+.botão-01:hover{
+    transition: all 0.5s;
+    outline: none;
+    background: var(--color-002);
+}
+
+
+.botão-02{
+    background-color: var(--color-002);
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    border-style: none;
+    margin: 15px 0px;
+    color: var(--color-004);
+    margin-left: 10px;
+}
+
+.botão-02:hover{
+    transition: all 0.5s;
+    outline: none;
+    background: var(--color-002);
 }
 
 .foto-perfil{
@@ -240,6 +327,12 @@ img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
     background-color: var(--color-troca);
     padding: 8px;
     border-radius: 10px;
+}
+
+.info_vaga{
+    display: flex;
+    align-self: center;
+    margin-top: 15px;
 }
 
 .nome_materia{
