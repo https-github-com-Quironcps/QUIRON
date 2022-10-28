@@ -27,7 +27,7 @@
                         <h3 class="mensagem">Deseja Sair?</h3><br>
 
                         <input type="submit" value="Sim" class="btn-enviar">
-                        <input type="submit" value="Não" class="btn-enviar">
+                        <input type="submit" value="Não" onclick="sairTela()" class="btn-enviar">
 
                 </div>
             </center>
