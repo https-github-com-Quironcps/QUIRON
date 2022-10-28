@@ -23,9 +23,14 @@ include("../server/cad_professor.php");
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
+    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
+    <script src="../web/scripts/modo-dark.js"></script>
+    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
+
 </head>
 
 <body>
+<div class="page">
     <?php
     include('partials/header-inicio.php');
     ?>
@@ -86,7 +91,13 @@ include("../server/cad_professor.php");
 
             <textarea style="display:none" name="imagem"></textarea>
         </div>
-    </form>
-</body>
 
+    </form>
+
+<br>
+</div>
+
+    <?php include('partials/loadpage.php'); ?>
+
+</body>
 </html>

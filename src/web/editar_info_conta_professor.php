@@ -17,16 +17,23 @@ include('../server/atualiza_professor.php');
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
+    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
+    <script src="../web/scripts/modo-dark.js"></script>
+    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
+
 </head>
 
 <body>
     <?php
-    include('../server/PDO/navbar.php');
     include('../server/PDO/verifica_logado.php');
     include('../server/PDO/acesso_telas_professor.php');
     ?>
 
     <br><br><br><br>
+
+<div class="page">
+<?php include('../server/PDO/navbar.php'); ?>
+
 
     <center>
         <h1 class="h1002">Editar informações da conta</h1>
@@ -79,7 +86,13 @@ include('../server/atualiza_professor.php');
         </div>
     </form>
 
-    <?php include('partials/footer.php') ?>
+
+<?php include('partials/footer.php') ?>
+
+    </div>
+
+    <?php include('partials/loadpage.php') ?>
+
 </body>
 
 </html>

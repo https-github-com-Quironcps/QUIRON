@@ -12,7 +12,13 @@
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
+
     <script src="scripts/mostraVagas.js"></script>
+
+    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
+    <script src="../web/scripts/modo-dark.js"></script>
+    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
+
 
     <title>QUIRON - ESCOLA</title>
 </head>
@@ -20,7 +26,6 @@
 <body>
 
     <?php
-    include('../server/PDO/navbar.php');
     include('../server/AtivarBancoFavorito.php');
     include('../server/PDO/verifica_logado.php');
     include('../server/lista_escola.php');
@@ -28,6 +33,10 @@
     if (count($resultados)) {
         foreach ($resultados as $Resultado) {
     ?>
+    
+    <div class="page">
+    
+    <?php include('../server/PDO/navbar.php'); ?>
 
             <!-- div com informações (nome da escola, cursos) sobrepondo a imagem do topo -->
 
@@ -226,6 +235,10 @@
                     }
                 }
     ?>
+    </div>
+
+    <?php include('partials/loadpage.php'); ?>
+    
 </body>
 
 </html>

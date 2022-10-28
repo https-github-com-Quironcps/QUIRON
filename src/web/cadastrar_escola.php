@@ -14,17 +14,26 @@ include("../server/cad_escola.php");
 
     <link rel="stylesheet" href="styles/styles_l/editar_info.css">
     <link rel="stylesheet" href="styles/theme.css">
+
     <script src="scripts/ImagenError.js"></script>
 
+    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
+    <script src="../web/scripts/modo-dark.js"></script>
+    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
 </head>
 
 <body>
+
     <?php
-    include('partials/header-inicio.php'); 
     include('../server/PDO/acesso_telas_desconhecido.php');
     ?>
+
+    <div class="page">
+
+<?php include('partials/header-inicio.php'); ?>
+<br>
 
     <br><br><br><br>
 
@@ -84,6 +93,12 @@ include("../server/cad_escola.php");
     </form>
 
     <?php include('partials/footer.php') ?>
+
+</center>
+<br>
+    </div>
+
+    <?php include('partials/loadage.php'); ?>
 </body>
 
 </html>

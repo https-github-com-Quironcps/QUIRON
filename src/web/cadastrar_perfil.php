@@ -1,10 +1,12 @@
 <?php
-//conexão e login
+
+//Incluir conexão
+
 include("../server/PDO/conexao.php");
 include("../server/cad_perfil.php");
 ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,16 +15,24 @@ include("../server/cad_perfil.php");
 
     <link rel="stylesheet" href="styles/styles_l/perfil_escola.css">
     <link rel="stylesheet" href="styles/theme.css">
-
+    
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
+    
+    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
+    <script src="../web/scripts/modo-dark.js"></script>
+    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
 
 </head>
 <body>
 
+
 <?php 
-    include('../server/PDO/navbar.php'); 
-    include('../server/PDO/acesso_telas_desconhecido.php');
-?>
+    include('../server/PDO/acesso_telas_desconhecido.php'); ?>
+   
+<div class="page">
+
+<?php include('../server/PDO/navbar.php'); ?>
+
 
 <br><br><br><br>
 
@@ -70,6 +80,7 @@ include("../server/cad_perfil.php");
                     <label class="form-equipe">Equipe: </label><br><textarea type="text" name="equipe" class="input-equipe" id="input-text-alterar2"></textarea>
                     
                     <br>
+
                     <input type="submit" name="submit" value="Criar Perfil" id="submit-text-alterar" class="submit-class"><br>
                 </form>
             </div>
@@ -77,5 +88,10 @@ include("../server/cad_perfil.php");
     </div>
 
 <?php include('partials/footer.php') ?>
+
+    </div>
+
+    <?php include('partials/loadpage.php') ?>
+
 </body>
 </html>

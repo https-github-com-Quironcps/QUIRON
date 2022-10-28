@@ -6,18 +6,26 @@ include('../server/busca_vagas.php');
 
 
 <!DOCTYPE html>
+
 <html lang="pt-br" class="light" id="page">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="../web/styles/styles_l/vagas.css">
+        <link rel="stylesheet" href="styles/theme.css">
+        <link rel="stylesheet" href="styles/styles_g/style.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../web/images/logos/arco-dark-2.png">
+        
+        <link rel="stylesheet" href="../web/styles/styles_g/load.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+       
+        <script src="scripts/teste.js"></script>
 
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="../web/styles/styles_l/vagas.css">
-    <link rel="stylesheet" href="styles/theme.css">
-
-    <link rel="icon" href="../web/images/logos/arco-dark-2.png">
+        <script type="text/javascript" src="../web/scripts/preloader.js"></script>
 
     <script src="scripts/mostrarVagasIndex.js"></script>
 
@@ -25,9 +33,11 @@ include('../server/busca_vagas.php');
 </head>
 
 <body>
+<div class="page">
     <?php
     include('../server/PDO/navbar.php');
     ?>
+
     <br>
 
     <div class="filtros">
@@ -76,6 +86,7 @@ include('../server/busca_vagas.php');
                     </form>
                 </div>
             </div>
+            <!-- <button onclick='testephp()'>ASCSAC</button> -->
 
             <div class="conteudo">
                 <center>
@@ -198,6 +209,10 @@ include('../server/busca_vagas.php');
         </h6>
     </center>
     <?php include('partials/footer.php'); ?>
+
+    </div>
+
+    <?php include('partials/loadpage.php'); ?>
 </body>
 
 </html>

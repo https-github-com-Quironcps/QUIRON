@@ -8,9 +8,6 @@ if(isset($_POST['submit']))
         $cursos = trim($_POST['cursos']);
         $sobre = trim($_POST['sobre']);
         $equipe = trim($_POST['equipe']);
-        
-
-
  
         if(filter_var($cursos, FILTER_VALIDATE_EMAIL))
 		{

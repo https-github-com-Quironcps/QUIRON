@@ -18,8 +18,13 @@ include("../server/update_senha.php");
     <link rel="stylesheet" href="styles/theme.css">
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
     
+    <script src="../web/scripts/modo-dark.js"></script>
+    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
+    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
+    
 </head>
 <body>
+  <div class="page">
 <?php include('partials/header.php'); ?>
    <br>
    <br>
@@ -47,7 +52,8 @@ include("../server/update_senha.php");
 </div>     
 <center>
 
+</div>
 
-            
+<?php include('partials/loadpage.php'); ?>
 </body>
 </html>

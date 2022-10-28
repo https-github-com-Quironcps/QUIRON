@@ -11,13 +11,21 @@
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
+    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
+    <script src="../web/scripts/modo-dark.js"></script>
+    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
+
 </head>
 <body>
+
 <?php 
-    include('../server/PDO/navbar.php'); 
     include('../server/PDO/verifica_logado.php');
     include('../server/PDO/acesso_telas_escola.php');
 ?>
+    <div class="page">
+
+<?php include('../server/PDO/navbar.php'); ?>
+
 
 <br><br><br><br>
 
@@ -57,5 +65,9 @@
     </div>
 
 <?php include('partials/footer.php') ?>
+
+    </div>
+
+    <?php include('partials/loadpage.php') ?>
 </body>
 </html>

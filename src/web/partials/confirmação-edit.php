@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="scripts/ImagenError.js"></script>
+    <script src="scripts/FechaDiv.js"></script>
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
@@ -19,23 +20,26 @@
 </head>
 <body>
 
+        <div id="fecharDiv" class="div-todo">
         <div class="principal">
-            <i id="exit2" class="bi bi-x"></i>
-            <center>
-                <div class="conteudo">
+                    <a><i id="exit2" class="bi bi-x" onclick="sairTela()"></i></a>
+                    <center>
+                        <div class="conteudo6">
+                            
+                                <i id="star" class="bi bi-stars"></i><br>
+                            
+                                <i id="star2" class="bi bi-stars"></i>
                     
-                        <i id="star" class="bi bi-stars"></i><br>
-                    
-                        <i id="star2" class="bi bi-stars"></i>
-              
-                    <div class="confirm">
-                        <i id="icon" class="bi bi-pencil"></i>
-                    </div><br>
+                            <div class="confirm">
+                                <i id="icon" class="bi bi-pencil"></i>
+                            </div><br>
 
-                    <h3>Edição Confirmada!</h3>
+                            <h3 class="mensagem">Edição Confirmada!</h3>
+                        </div>
+                    </center>
                 </div>
-            </center>
         </div>
+
  
 </body>
 </html>

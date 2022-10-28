@@ -1,44 +1,8 @@
-/* body{
-   background-color: var(--color-007);
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
+.page{
+    display: none;
 }
 
-.overlay{
-    display: flex;
-    margin-top: 40vh;
-}
-
-.overlay div{
-    width: 50px;
-    height: 50px;
-    background-color: var(--white);
-    margin: 15px;
-    border-radius: 50%;
-    animation: anima 1s ease-in-out infinite alternate;
-}
-
-.overlay div:nth-child(1){
-    animation-delay: -0.4s;
-}
-
-.overlay div:nth-child(2){
-    animation-delay: -0.2s;
-}
-
-@keyframes anima{
-    from{
-        transform: translateY(-100%);
-    }
-
-    to{
-        transform: translateY(100%)
-    }
-} */
-
-body{
+.fundo-load{
     padding: 0;
     margin: 0;
     width: 100%;

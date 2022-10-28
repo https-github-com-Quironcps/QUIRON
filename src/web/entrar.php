@@ -24,9 +24,13 @@ include("../server/login.php");
   <!-- Style -->
   <link rel="stylesheet" href="styles/styles_m/entrar.css">
 
+
   <!-- Navbar Css  -->
   <link rel="stylesheet" href="styles/navbar-index.css">
   <link rel="stylesheet" href="styles/theme.css">
+  <link rel="stylesheet" href="../web/styles/styles_g/load.css">
+  <script src="../web/scripts/modo-dark.js"></script>
+  <script type="text/javascript" src="../web/scripts/preloader.js"></script>
 
   <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
@@ -36,7 +40,7 @@ include("../server/login.php");
 </head>
 
 <body>
-
+<div class="page">
   <header>
     <nav id="nav1">
       <div class="container">
@@ -119,6 +123,8 @@ include("../server/login.php");
   <script src="scripts/popper_login.min.js"></script>
   <script src="scripts/bootstrap_login.min.js"></script>
   <script src="scripts/main_login.js"></script>
-</body>
+  </div>
 
+    <?php include('partials/loadpage.php'); ?>
+</body>
 </html>
