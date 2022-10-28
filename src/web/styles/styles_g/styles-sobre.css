@@ -14,7 +14,7 @@
     top: 120px;
 
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 25px;
     line-height: 52px;
    
@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     
-    color: var(--color-001);
+    color: var(--color-003);
     opacity: 60%;
 }
 
@@ -69,14 +69,14 @@
     top: 470px;
 
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 25px;
     line-height: 52px;
 
     display: flex;
     align-items: center;
 
-    color: var(--color-001);
+    color: var(--color-003);
     opacity: 60%;
 
 
