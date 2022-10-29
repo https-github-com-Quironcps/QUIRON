@@ -70,7 +70,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 $_SESSION["user_cod"] = $id;
                                 $_SESSION["user_type"] = 'professor';
                                 $_SESSION["user_email"] = $usuario;
-                                $_SESSION["theme"] = 'light';
+                                $_SESSION["theme"] = true;
                                 
                                 // Redirecionar o usuário para a página de boas-vindas
                                 header("location: ../web/./");
@@ -121,8 +121,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                             if (password_verify($senha, $hashed_senha)){
 
-                                echo '<br>asaasa';
-
                                 // A senha está correta, então inicie uma nova sessão
                                 session_start();
                                 
@@ -131,10 +129,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 $_SESSION["user_cod"] = $id;
                                 $_SESSION["user_type"] = 'escola';
                                 $_SESSION["user_email"] = $usuario;
-                                $_SESSION["theme"] = 'light';
                                 
-                                // Redirecionar o usuário para a página de boas-vindas
-                                header("location: ../web/./");
+                                header("location: ../server/pegaTema.php");
                             } 
                             
                             else{

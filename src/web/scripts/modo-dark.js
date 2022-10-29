@@ -1,30 +1,23 @@
 const dark = "images/logos/arco-e-texto-dark.png";
 const light = "images/logos/arco-e-texto-light.png";
 
-let mudar;
-let num = 0;
-
-function themeToggle()
+function themeToggle(tema)
 {
-    num++;
+    if (tema == 1){
+        document.getElementById("imagemNav").src = light;
+    }
+
+    else {
+        document.getElementById("imagemNav").src = dark;
+    }
 
     document.documentElement.classList.toggle('dark');
-
-    if (num % 2 == 0){
-        mudar = dark;
-    }
-    
-    else{
-        mudar = light;
-    }
-    
-    
-    document.getElementById("imagemNav").src = mudar;
 }
 
-function tema(){
-    if (mudar == dark){
-        document.documentElement.classList.toggle('dark');
-        document.getElementById("imagemNav").src = mudar;
-    }
+if (tema == 1){
+    document.getElementById("imagemNav").src = dark;
+}
+
+else {
+    document.getElementById("imagemNav").src = light;
 }

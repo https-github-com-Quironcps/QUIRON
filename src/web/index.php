@@ -36,6 +36,7 @@ include('../server/busca_vagas.php');
 <div class="page">
     <?php
     include('../server/PDO/navbar.php');
+
     ?>
 
     <br>
