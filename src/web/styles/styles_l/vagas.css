@@ -180,7 +180,7 @@ img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
 .table1{
     background-color: var(--white);
     width: 42%;
-    height: 10px;
+    height: 130px;
     margin: 3%;
     float: left;
     cursor: pointer;
