@@ -105,7 +105,6 @@ if (isset($tema)) {
                         </form>
                     </div>
                 </div>
-                <!-- <button onclick='testephp()'>ASCSAC</button> -->
 
                 <div class="conteudo">
                     <center>

@@ -2,7 +2,7 @@
 
 include('PDO/conexao.php');
 include('PDO/situacao.php');
-
+if(isset($user_type)){
 $tipo_user = $user_type;
 
 if ($user_type == 'escola') {
@@ -28,4 +28,5 @@ if ($user_type == 'escola') {
     $stb->execute();
 
     $tema = $stb->fetchAll(PDO::FETCH_ASSOC);
+}
 }
