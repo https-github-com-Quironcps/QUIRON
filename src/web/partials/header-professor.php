@@ -1,5 +1,6 @@
 <?php
     include_once '../server/PDO/conexao.php';
+    include('../server/mandaTema.php');
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +13,7 @@
     <link rel="stylesheet" href="styles/navbar-professor.css">
     <link rel="stylesheet" href="styles/theme.css">
 
-    <script src="../web/scripts/modo-dark.js"></script>
+    <!-- <script src="../web/scripts/modo-dark.js"></script> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -45,7 +46,7 @@
 
                         <div class="div-modo">
                             <a class="text-modo">Modo escuro:</a>
-                            <input type="checkbox" onclick="javascript:themeToggle()" class="check-modo" name="" id="">
+                            <input type="checkbox" onclick="javacript:window.location.href = './../server/mudaTema.php?tema=andamento'" class="check-modo" name="" id="">
                             <a id="exit" href="../server/sair.php"><i class="bi bi-box-arrow-left"></i></a>
                         </div>            
 
@@ -54,8 +55,30 @@
                 </div>
             </label>
 
-            <div class="container">
-                <a href="./"><img src="images/logos/arco-e-texto-dark.png" id="imagemNav" class="logo" alt="Logo"></a>
+            <?php
+            $light = "images/logos/arco-e-texto-light.png";
+            $dark = "images/logos/arco-e-texto-dark.png";
+
+            if (count($tema)) {
+                foreach ($tema as $Tema) {
+
+                    if ($Tema['MODO'] == 1) {
+
+                        $logo_nav = $dark;
+                    } elseif ($Tema['MODO'] == 0) {
+
+                        $logo_nav = $light;
+                    } else {
+
+                        $logo_nav = $dark;
+                    } ?>
+
+                    <div class="container">
+                        <a href="./">
+                            <img src="<?php echo $logo_nav; ?>" id="imagemNav" class="logo" alt="Logo">
+                    <?php
+                }
+            } ?></a>
                 <div class="container-inner">
                     <ul class="ul2">
                         <li><a href="./">Vagas</a></li>

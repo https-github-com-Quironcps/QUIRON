@@ -73,7 +73,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 $_SESSION["theme"] = true;
                                 
                                 // Redirecionar o usuário para a página de boas-vindas
-                                header("location: ../web/./");
+                                // header("location: ../web/./");
+                                header("location: ../server/pegaTema.php");
                             } 
                             
                             else{
@@ -121,7 +122,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                             if (password_verify($senha, $hashed_senha)){
 
-                                // A senha está correta, então inicie uma nova sessão
+                               
                                 session_start();
                                 
                                 // Armazene dados em variáveis de sessão

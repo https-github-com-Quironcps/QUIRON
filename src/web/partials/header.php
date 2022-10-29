@@ -1,9 +1,11 @@
 <?php
-    include_once '../server/PDO/conexao.php';
+include_once '../server/PDO/conexao.php';
+include('../server/mandaTema.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,16 +13,17 @@
 
     <link rel="stylesheet" href="styles/navbar.css">
 
-    <script src="../web/scripts/modo-dark.js"></script>
+    <!-- <!-- <script src="../web/scripts/modo-dark.js"></script> --> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="scripts/ImagenError.js"></script>
-    
+
     <title>HEADER</title>
 
 </head>
+
 <body>
     <header>
         <nav id="navbar">
@@ -36,8 +39,8 @@
                     <ul class="ul1">
                         <li><a class="hover-lis" href="./">Vagas</a></li>
                         <li><a class="hover-lis" href="escolas">Escolas</a></li>
-                        <li><a class="hover-lis"  href="minhas_vagas">Minhas vagas</a></li>
-                        <li><a class="hover-lis"  href="sobre">Sobre</a></li>
+                        <li><a class="hover-lis" href="minhas_vagas">Minhas vagas</a></li>
+                        <li><a class="hover-lis" href="sobre">Sobre</a></li>
 
                         <li><a href="editar_perfil"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
                         <li><a href="editar_info_conta_escola"><i class="bi bi-gear-fill"></i>ㅤConfigurações</a></li>
@@ -45,32 +48,52 @@
                         <li><a href="anunciar_vaga"><i class="bi bi-megaphone-fill"></i>ㅤAnunciar vaga</a></li><br><br>
 
                         <div class="div-modo">
-                            <a class="text-modo">Modo escuro:</a>
-                            <input type="checkbox" onclick="themeToggle()" class="check-modo" name="" id="">
+                            <a href="sobre" class="text-modo">Modo escuro:</a>
+                            <input type="checkbox" onclick="javacript:window.location.href = './../server/mudaTema.php?tema=andamento'" class="check-modo" name="" id="">
                             <a id="exit" href="../server/sair.php"><i class="bi bi-box-arrow-left"></i></a>
                         </div>
                     </ul>
-
                 </div>
             </label>
 
+            <?php
+            $light = "images/logos/arco-e-texto-light.png";
+            $dark = "images/logos/arco-e-texto-dark.png";
 
-            <div class="container">
-                <a href="./">
-                    <img src="images/logos/arco-e-texto-dark.png" id="imagemNav" class="logo" alt="Logo">
-                </a>
+            if (count($tema)) {
+                foreach ($tema as $Tema) {
 
-                <div class="container-inner">
-                    <ul class="ul2">
-                        <li><a href="./">Vagas</a></li>
-                        <li><a href="escolas">Escolas</a></li>
-                        <li><a href="minhas_vagas">Minhas vagas</a></li>
-                        <li><a href="sobre">Sobre</a></li>
-                    </ul>
-                </div>
-            </div>
+                    if ($Tema['MODO'] == 1) {
+
+                        $logo_nav = $dark;
+                    } elseif ($Tema['MODO'] == 0) {
+
+                        $logo_nav = $light;
+                    } else {
+
+                        $logo_nav = $dark;
+                    } ?>
+
+                    <div class="container">
+                        <a href="./">
+                            <img src="<?php echo $logo_nav; ?>" id="imagemNav" class="logo" alt="Logo">
+                    <?php
+                }
+            } ?>
+                        </a>
+
+                        <div class="container-inner">
+                            <ul class="ul2">
+                                <li><a href="./">Vagas</a></li>
+                                <li><a href="escolas">Escolas</a></li>
+                                <li><a href="minhas_vagas">Minhas vagas</a></li>
+                                <li><a href="sobre">Sobre</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
         </nav>
     </header>
 </body>
+
 </html>

@@ -1,5 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<?php
+include('../server/mandaTema.php');
+if (isset($tema)) {
+    if (count($tema)) {
+        foreach ($tema as $Tema) {
+            if ($Tema['MODO'] == 1) {
+                $tela_tema = 'light';
+            } elseif ($Tema['MODO'] == 0) {
+                $tela_tema = 'light dark';
+            } else {
+                $tela_tema = 'light';
+            }
+?>
+
+            <html lang="pt-br" class="<?php echo $tela_tema; ?>" id="page">
+
+<?php }
+    }
+} ?>
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +34,7 @@
     <script src="scripts/mostraVagas.js"></script>
 
     <link rel="stylesheet" href="../web/styles/styles_g/load.css">
-    <script src="../web/scripts/modo-dark.js"></script>
+    <!-- <script src="../web/scripts/modo-dark.js"></script> -->
     <script type="text/javascript" src="../web/scripts/preloader.js"></script>
 
 

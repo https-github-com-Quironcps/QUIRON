@@ -5,7 +5,25 @@ include("../server/cad_professor.php");
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<?php
+include('../server/mandaTema.php');
+if (isset($tema)) {
+    if (count($tema)) {
+        foreach ($tema as $Tema) {
+            if ($Tema['MODO'] == 1) {
+                $tela_tema = 'light';
+            } elseif ($Tema['MODO'] == 0) {
+                $tela_tema = 'light dark';
+            } else {
+                $tela_tema = 'light';
+            }
+?>
+
+            <html lang="pt-br" class="<?php echo $tela_tema; ?>" id="page">
+
+<?php }
+    }
+} ?>
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +42,7 @@ include("../server/cad_professor.php");
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
     <link rel="stylesheet" href="../web/styles/styles_g/load.css">
-    <script src="../web/scripts/modo-dark.js"></script>
+    <!-- <script src="../web/scripts/modo-dark.js"></script> -->
     <script type="text/javascript" src="../web/scripts/preloader.js"></script>
 
 </head>

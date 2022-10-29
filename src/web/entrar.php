@@ -29,7 +29,7 @@ include("../server/login.php");
   <link rel="stylesheet" href="styles/navbar-index.css">
   <link rel="stylesheet" href="styles/theme.css">
   <link rel="stylesheet" href="../web/styles/styles_g/load.css">
-  <script src="../web/scripts/modo-dark.js"></script>
+  <!-- <script src="../web/scripts/modo-dark.js"></script> -->
   <script type="text/javascript" src="../web/scripts/preloader.js"></script>
 
   <link rel="icon" href="../web/images/logos/arco-dark-2.png">
