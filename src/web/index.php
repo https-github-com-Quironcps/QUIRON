@@ -54,7 +54,6 @@ if (isset($tema)) {
     <div class="page">
         <?php
         include('../server/PDO/navbar.php');
-
         ?>
 
         <br>
