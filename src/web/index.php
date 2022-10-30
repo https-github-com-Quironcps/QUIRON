@@ -40,7 +40,7 @@ if (isset($tema)) {
     <link rel="stylesheet" href="../web/styles/styles_g/load.css">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-    <script src="scripts/teste.js"></script>
+    <!-- <script src="scripts/teste.js"></script> -->
 
     <script type="text/javascript" src="../web/scripts/preloader.js"></script>
 
@@ -110,23 +110,25 @@ if (isset($tema)) {
                         if (count($resultados)) {
                             foreach ($resultados as $Resultado) {
                         ?>
-                                <div id='table1 <?php echo $Resultado['Idv']; ?>' class="table1" onclick='AparecerVaga(<?php echo $Resultado['Idv']; ?>)'>
+                                <div id='table1 <?php echo $Resultado['Idv']; ?>' class="table1"'>
 
                                     <div id="nome-vaga <?php echo $Resultado['Idv']; ?>" class="info_vaga">
-
-                                        <div class="td3"><img class="foto-perfil" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['Foto']; ?>"></div>
-
+                                        <div class="td3"><label class="click_vaga" for="checkva <?php echo $Resultado['Idv']; ?>"><img class="foto-perfil" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['Foto']; ?>"></label></div>
+                                        
                                         <div class="td4">
-                                            <h6 class="nome_materia"><?php echo $Resultado['Vaga']; ?></h6>
-
-                                            <h6 class="escola"><?php echo $Resultado['Nome']; ?></h6>
+                                            <label class="click_vaga" for="checkva <?php echo $Resultado['Idv']; ?>">
+                                                <h6 class="nome_materia"><?php echo $Resultado['Vaga']; ?></h6>
+                                                
+                                                <h6 class="escola"><?php echo $Resultado['Nome']; ?></h6>
+                                            </label>
                                         </div>
                                     </div>
 
+                                    <button class=' check-vaga' style="display: none;" id="checkva <?php echo $Resultado['Idv']; ?>" onclick="AparecerVaga(<?php echo $Resultado['Idv']; ?>)"></button>
+
                                     <div id="aside-vaga <?php echo $Resultado['Idv']; ?>" class="aside">
                                         <div class="flex">
-                                            <i id="voltarbtn" onclick="voltarPVaga2(<?php echo $Resultado['Idv']; ?>)" class="bi bi-arrow-left"></i>
-
+                                            <i id="voltarbtn" onclick="voltarPVaga(<?php echo $Resultado['Idv']; ?>)" class="bi bi-arrow-left"></i>
                                             <br>
                                             <h6 class="title03"><?php echo $Resultado['Vaga']; ?></h6>
                                             <br>
@@ -140,13 +142,23 @@ if (isset($tema)) {
 
                                                 <div class="req-vaga">
                                                     <h6 class="title02">Requisitos da Vaga</h6>
-                                                    <h5 class="h5a"><?php echo $Resultado['VagaReq']; ?></h5>
+                                                    <h5 class="h5a"><?php if (isset($user_situacao)){
+                                                                                if ($user_situacao == true){
+                                                                                    echo $Resultado['VagaReq'];
+                                                                                    } else {
+                                                                                        echo '<center>Entre na QUIRON para saber mais</center>'; 
+                                                                                        }}?></h5>
                                                 </div><br>
 
                                                 <div class="req-vaga">
                                                     <h6 class="title02">Média salarial</h6>
                                                     <div class="carg-horaria">
-                                                        <h5 class="h5a"><?php echo $Resultado['VagaFaixa']; ?></h5>
+                                                        <h5 class="h5a"><?php if (isset($user_situacao)){
+                                                                                if ($user_situacao == true){
+                                                                                    echo $Resultado['VagaFaixa'];
+                                                                                    } else {
+                                                                                        echo '<center>---</center>'; 
+                                                                                        }}?></h5>
                                                     </div><br>
                                                 </div>
 
@@ -154,20 +166,35 @@ if (isset($tema)) {
                                                 <div class="desc-vaga">
                                                     <h6 class="title02">Carga Horária</h6>
                                                     <div class="carg-horaria">
-                                                        <h5 class="h5a"><?php echo $Resultado['VagaCarga']; ?></h5>
+                                                        <h5 class="h5a"><?php if (isset($user_situacao)){
+                                                                                if ($user_situacao == true){
+                                                                                    echo $Resultado['VagaCarga'];
+                                                                                    } else {
+                                                                                        echo '<center>---</center>'; 
+                                                                                        }}?></h5>
                                                     </div>
                                                 </div><br>
 
-                                            </div>
-                                            <center>
-                                                <button class="botão-01" type="submit" href="#" onclick=" <?php ?>">Ir para vaga</button><button class="botão-02" type="submit" href="#" onclick=" <?php ?>">Ver Escola</button><br>
-                                            </center>
+                                            </div> <br>
+                                            <?php
+                                                if (isset($user_situacao)){
+                                                    if ($user_situacao == true){
+                                                        include('../server/BotoesAcessoVaga.php');
+                                                    }
 
-                                            <div>
-                                            </div>
+                                                    else{
+                                                        include('../server/BotoesNAcesso.php');
+                                                    }
+                                                }
+
+                                                else{
+                                                    include('../server/BotoesNAcesso.php');
+                                                }
+                                            ?>
+
 
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                         <?php
@@ -182,8 +209,6 @@ if (isset($tema)) {
         <center>
             <h6>
                 <?php
-                include('../server/PDO/situacao.php');
-
                 try {
                     if (!empty($email_usuario)) {
                         if ($user_type == 'professor') {

@@ -10,6 +10,26 @@
    
 }
 
+.linkDVga{
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-001);
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    border-style: none;
+    margin: 15px 0px;
+    color: var(--color-004);
+    padding: 10px;
+}
+
+.linkDVga:hover{
+    color: ghostwhite;
+    opacity: 0.8;
+}
+
 .aside{
     display: flex;
     width: 90%;

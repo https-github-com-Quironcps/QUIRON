@@ -200,6 +200,11 @@ img:not([src]) {
     border-radius: 8px;
 }
 
+.click_vaga{
+    width: 100%;
+    cursor: pointer;
+}
+
 .td4 {
     width: 65%;
     text-align: start;
@@ -282,6 +287,26 @@ img:not([src]) {
     opacity: 0.9;
 } */
 
+.linkDVga{
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-001);
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    border-style: none;
+    margin: 15px 0px;
+    color: var(--color-004);
+    padding: 10px;
+}
+
+.linkDVga:hover{
+    color: ghostwhite;
+    opacity: 0.8;
+}
+
 .botão-01 {
     background-color: var(--color-001);
     border-radius: 4px;
@@ -292,6 +317,7 @@ img:not([src]) {
     border-style: none;
     margin: 15px 0px;
     color: var(--color-004);
+    padding: 10px;
 }
 
 .botão-01:hover {

@@ -154,6 +154,35 @@ body{
     display: block;
 }
 
+
+.nome_materia{
+    /* background-color: darkolivegreen; */
+    width: 300px;
+    height: 40px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.linkDVga{
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-001);
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    border-style: none;
+    margin: 15px 0px;
+    color: var(--color-004);
+    padding: 10px;
+}
+
+.linkDVga:hover{
+    color: ghostwhite;
+    opacity: 0.8;
+}
+
 .botão-01{
     background-color: var(--color-001);
     border-radius: 4px;
