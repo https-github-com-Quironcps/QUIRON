@@ -48,74 +48,74 @@ if (isset($tema)) {
 </head>
 
 <body>
-<div class="page">
-    <?php
-    include('partials/header-inicio.php');
-    ?>
-    <br><br>
-    <br><br>
+    <div class="page">
+        <?php
+        include('partials/header-inicio.php');
+        ?>
+        <br><br>
+        <br><br>
 
-    <center>
-        <h1 class="h1002">Crie sua conta</h1>
-    </center>
-    <?php
-    if (isset($errors) && count($errors) > 0) {
-        foreach ($errors as $error_msg) {
-            echo '<div class="alert alert-danger">' . $error_msg . '</div>';
+        <center>
+            <h1 class="h1002">Crie sua conta</h1>
+        </center>
+        <?php
+        if (isset($errors) && count($errors) > 0) {
+            foreach ($errors as $error_msg) {
+                echo '<div class="alert alert-danger">' . $error_msg . '</div>';
+            }
         }
-    }
 
-    if (isset($success)) {
+        if (isset($success)) {
 
-        echo '<div class="alert alert-success">' . $success . '</div>';
-    }
-    ?>
+            echo '<div class="alert alert-success">' . $success . '</div>';
+        }
+        ?>
 
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" class="form" method="POST" enctype="multipart/form-data">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" class="form" method="POST" enctype="multipart/form-data">
 
-        <div class="div-mae">
-            <div class="div-alterar-img">
-                <h3>Foto de perfil</h3>
+            <div class="div-mae">
+                <div class="div-alterar-img">
+                    <h3>Foto de perfil</h3>
 
-                <div class="sub-div-alterar-img">
-                    <img src="<?php echo $Resultado['Foto']; ?>" onerror="handleError(this)" name="imagem" id="preview" class="imagem-anexo" alt="">
+                    <div class="sub-div-alterar-img">
+                        <img src="<?php echo $Resultado['Foto']; ?>" onerror="handleError(this)" name="imagem" id="preview" class="imagem-anexo" alt="">
+                    </div>
+
+                    <input type="file" name="foto-p" class="input-file" id="base">
+                    <label id="submit-text-alterar" class="abc001" for="base">Anexar</label>
                 </div>
 
-                <input type="file" name="foto-p" class="input-file" id="base">
-                <label id="submit-text-alterar" class="abc001" for="base">Anexar</label>
-            </div>
+                <script src="scripts/mostrar_imagem.js"></script>
 
-            <script src="scripts/mostrar_imagem.js"></script>
+                <div class="div-alterar-texto2">
+                    <div class="div-alterar-form2">
 
-            <div class="div-alterar-texto2">
-                <div class="div-alterar-form2">
+                        <label class="form-nome-completo aas">Nome completo: </label><input required maxlength="128" name="nome-p" class="input-nome input-text-alterar" type="text"><br>
 
-                    <label class="form-nome-completo aas">Nome completo: </label><input required maxlength="128" name="nome-p" class="input-nome input-text-alterar" type="text"><br>
+                        <center> <label class="form-cpf2 aas">CPF: </label><input required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="14" name="cpf-p" type="number" class="input-cpf2 input-text-alterar" name="cpf-p"> <label class="form-nasc aas">Nascimento: </label><input required class='input-nasc input-text-alterar' name="data-p" type="date"><br></center>
 
-                    <center> <label class="form-cpf2 aas">CPF: </label><input required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="14" name="cpf-p" type="number" class="input-cpf2 input-text-alterar" name="cpf-p"> <label class="form-nasc aas">Nascimento: </label><input required class='input-nasc input-text-alterar' name="data-p" type="date"><br></center>
+                        <label class="form-endereco aas">Endereço: </label><input required maxlength="128" name="end-p" type="text" class="input-endereco input-text-alterar"> <label class="form-num aas"> Nº: </label><input required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="30" name="num-p" class="input-num input-text-alterar" type="number"><br>
 
-                    <label class="form-endereco aas">Endereço: </label><input required maxlength="128" name="end-p" type="text" class="input-endereco input-text-alterar"> <label class="form-num aas"> Nº: </label><input required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="30" name="num-p" class="input-num input-text-alterar" type="number"><br>
+                        <label class="form-bairro aas">Cidade: </label><input required maxlength="128" name="cidade-p" type="text" class="input-bairro input-text-alterar"> <label class="form-cep aas"> CEP: </label><input required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="8" name="cep-p" class="input-cep input-text-alterar" type="number"><br>
 
-                    <label class="form-bairro aas">Cidade: </label><input required maxlength="128" name="cidade-p" type="text" class="input-bairro input-text-alterar"> <label class="form-cep aas"> CEP: </label><input required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="8" name="cep-p" class="input-cep input-text-alterar" type="number"><br>
+                        <label class="form-tel aas">Telefone: </label><input required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" name="tel-p" type="number" class="input-tel input-text-alterar"> <label class="form-email aas"> E-mail: </label><input required maxlength="128" name="email-p" class="input-email input-text-alterar" type="email"><br>
 
-                    <label class="form-tel aas">Telefone: </label><input required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" name="tel-p" type="number" class="input-tel input-text-alterar"> <label class="form-email aas"> E-mail: </label><input required maxlength="128" name="email-p" class="input-email input-text-alterar" type="email"><br>
+                        <center> <label name="senha" class="form-senha aas">Senha: </label><input required maxlength="45" name="senha-p" type="password" class="input-senha input-text-alterar"> </center>
 
-                    <center> <label name="senha" class="form-senha aas">Senha: </label><input required maxlength="45" name="senha-p" type="password" class="input-senha input-text-alterar"> </center>
+                        <input type="submit" name="submit" value="Cadastrar-se" id="submit-text-alterar" class="submit-class">
 
-                    <input type="submit" name="submit" value="Cadastrar-se" id="submit-text-alterar" class="submit-class">
-
+                    </div>
                 </div>
+
+                <textarea style="display:none" name="imagem"></textarea>
             </div>
+        </form>
 
-            <textarea style="display:none" name="imagem"></textarea>
-        </div>
-
-    </form>
-
-<br>
-</div>
+        <br>
+    </div>
 
     <?php include('partials/loadpage.php'); ?>
 
 </body>
-</html>
+
+            </html>

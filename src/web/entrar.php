@@ -40,82 +40,84 @@ include("../server/login.php");
 </head>
 
 <body>
-<div class="page">
-  <header>
-    <nav id="nav1">
-      <div class="container">
-        <a href="./">
-          <center>
+  <div class="page">
+    <header>
+      <nav id="nav1">
+        <div class="container">
+          <a href="./">
+            <!-- <center> -->
             <img src="images/logos/arco-e-texto-dark.png" id="imagemNav" class="logo2" alt="Logo">
-          </center>
-        </a>
-      </div>
-    </nav>
-  </header>
+            <!-- </center> -->
+
+          </a>
+        </div>
+        <div class="cadastrar-div">
+          <button onclick="javacript:window.location.href = './partials/escolheCadastro'" class="botao-cadastro-texto">Cadastre-se</button>
+        </div>
+      </nav>
+    </header>
     <title>Entrar na QUIRON</title>
 
-  <div class="content">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="images/svgs/img_login.svg" alt="Image" class="img-fluid">
-        </div>
-        <div class="col-md-6 contents">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="mb-4">
-                <br>
-                <h3>Entre na QUÍRON</h3>
-                <p class="mb-4">A próxima vaga de emprego na palma da sua mão</p>
-              </div>
-              <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
-
-                <div class="form input">
-                  <label for="username">Email</label>
-                  <input type="email" name="usuario" required class="input-text-alterar" id="usuario">
-
-                </div>
-                <div class="form input">
-                  <label for="password">Senha</label>
-                  <input type="password" name="senha" required class="input-text-alterar" id="senha">
-
-                </div>
-                <br>
-                <div class="div-form-entrys">
-                  <p class="mb-4">Entrar como:</p>
-                  <center>
-
-                    <input required type="radio" id="Professor-entry" id="prof" name="entrada" value="professor">
-                    <label class="professor-rl" for="prof">Professor</label>
-
-                    <input required type="radio" id="Escola-entry" id="esco" name="entrada" value="escola">
-                    <label class="escola-rl" for="esco">Escola</label><br>
-                  </center>
-                </div>
-                <br>
-
-                <input type="submit" name="submit" value="Entrar" class="btn btn-block btn-primary">
-
-
-                <br>
-                <div class="d-flex mb-5 align-items-center">
-          
-
-
-                  <span class="ml-auto"><a href="esqueci_senha" class="forgot-pass">Esqueceu a senha?</a></span> <br>
-                </div>
-
-
-
-            </div>
-            </form>
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/svgs/img_login.svg" alt="Image" class="img-fluid">
           </div>
+          <div class="col-md-6 contents">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="mb-4">
+                  <br>
+                  <h3>Entre na QUÍRON</h3>
+                  <p class="mb-4">A próxima vaga de emprego na palma da sua mão</p>
+                </div>
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+
+                  <div class="form input">
+                    <label for="username">Email</label>
+                    <input type="email" name="usuario" required class="input-text-alterar" id="usuario">
+
+                  </div>
+                  <div class="form input">
+                    <label for="password">Senha</label>
+                    <input type="password" name="senha" required class="input-text-alterar" id="senha">
+
+                  </div>
+                  <br>
+                  <div class="div-form-entrys">
+                    <p class="mb-4">Entrar como:</p>
+                    <center>
+
+                      <input required type="radio" id="Professor-entry" id="prof" name="entrada" value="professor">
+                      <label class="professor-rl" for="prof">Professor</label>
+
+                      <input required type="radio" id="Escola-entry" id="esco" name="entrada" value="escola">
+                      <label class="escola-rl" for="esco">Escola</label><br>
+                    </center>
+                  </div>
+                  <br>
+
+                  <input type="submit" name="submit" value="Entrar" class="btn btn-block btn-primary">
+
+
+                  <br>
+                  <div class="d-flex mb-5 align-items-center">
+
+
+
+                    <span class="ml-auto"><a href="esqueci_senha" class="forgot-pass">Esqueceu a senha?</a></span> <br>
+                  </div>
+
+              </div>
+              </form>
+            </div>
+          </div>
+
         </div>
 
       </div>
-
     </div>
-  </div>
   </div>
 
 
@@ -125,6 +127,7 @@ include("../server/login.php");
   <script src="scripts/main_login.js"></script>
   </div>
 
-    <?php include('partials/loadpage.php'); ?>
+  <?php include('partials/loadpage.php'); ?>
 </body>
+
 </html>

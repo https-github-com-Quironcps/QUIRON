@@ -38,7 +38,6 @@ if (isset($tema)) {
     <link rel="stylesheet" href="../web/styles/styles_g/load.css">
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
-    <!-- <script src="../web/scripts/modo-dark.js"></script> -->
     <script type="text/javascript" src="../web/scripts/preloader.js"></script>
 </head>
 
@@ -111,12 +110,12 @@ if (isset($tema)) {
         </form>
 
         <?php include('partials/footer.php') ?>
-
-        </center>
         <br>
     </div>
 
-    <?php include('partials/loadage.php'); ?>
+    <?php
+    include('partials/loadpage.php');
+    ?>
 </body>
 
             </html>

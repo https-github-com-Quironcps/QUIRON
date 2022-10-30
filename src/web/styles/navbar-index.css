@@ -20,6 +20,35 @@
     position: fixed;
     height: 75px;
   }
+
+  .cadastrar-div{
+    display: flex;
+    padding: 5px;
+    
+    border-radius: 10px;
+  }
+/* 
+  .cadastrar-div h6{
+    margin-top: 7.5px;
+  } */
+
+  .botao-cadastro-texto{
+    height: 40px;
+    background-color: #7e57c2c3;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    width: 120px;
+  }
+
+  .botao-cadastro{
+    height: 45px;
+    width: 45px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 0;
+  }
   
   .logo {
     width: 120px;

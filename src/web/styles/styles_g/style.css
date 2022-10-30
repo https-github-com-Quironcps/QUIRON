@@ -11,6 +11,25 @@
     z-index: 1200;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.div-todo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient( to right, var(--cor-008), var(--color-002)); 
+    font-family: Raleway;
+    position: fixed;
+    z-index: 1200;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .principal{
@@ -26,6 +45,15 @@
 .principal2{
     height: 40vh;
     width: 27%;
+    align-items: center;
+    border-radius: 12px;
+    background-color: var(--color-005);
+    transition: all 2s;
+}
+
+.principal3{
+    height: 300px;
+    width: 300px;
     align-items: center;
     border-radius: 12px;
     background-color: var(--color-005);
@@ -94,10 +122,12 @@
 .btn-enviar{
     background-color: var(--color-001);
     border-radius: 4px;
-    width: 15vh;
-    height: 6vh;
+    width: 90px;
+    height: 35px;
     border-style: none;
     color: var(--color-004);
+    padding: 5px;
+    margin-top: 10px;
 }
 
 .btn-enviar:hover{
@@ -112,23 +142,17 @@
 }
 
 @media (max-width: 880px){
-    .principal, .principal2{
+    .principal, .principal2, .principal3{
         width: 40%;
     }
 }
 
 @media (max-width: 680px){
-    .principal, .principal2{
+    .principal, .principal2, .principal3{
         width: 60%;
     }
 
     .mensagem{
         font-size: 1em;
-    }
-}
-
-@media (max-width: 414px){
-    .btn-enviar{
-        width: 8vh;
     }
 }

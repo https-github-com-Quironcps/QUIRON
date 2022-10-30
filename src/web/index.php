@@ -34,7 +34,6 @@ if (isset($tema)) {
     <!-- Link CSS -->
     <link rel="stylesheet" href="../web/styles/styles_l/vagas.css">
     <link rel="stylesheet" href="styles/theme.css">
-    <link rel="stylesheet" href="styles/styles_g/style.css">
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
@@ -168,6 +167,7 @@ if (isset($tema)) {
                                             </div>
 
                                         </div>
+                                        
                                     </div>
                                 </div>
                         <?php
