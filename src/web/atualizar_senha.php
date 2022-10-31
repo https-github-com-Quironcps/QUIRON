@@ -56,7 +56,7 @@ if (isset($tema)) {
             <h1 id="title">Insira sua nova senha</h1>
         </div> <br>
 
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="form">
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="form" method="POST">
   <label for="name">Nova Senha:</label><br>
   <input class='input-textarea' name="nova-senha" type="text" id="nova-senha"> <br><br>
 

@@ -53,9 +53,22 @@ if (isset($tema)) {
    <div class="container2">
         <div class="header">
             <h1 id="title">Confirme seu e-mail para redefinir sua senha</h1>
+            <?php
+                        if(count($errors) > 0){
+                            ?>
+                            <div class="alert alert-danger text-center">
+                                <?php 
+                                    foreach($errors as $error){
+                                        echo $error;
+                                    }
+                                ?>
+                            </div>
+                            <?php
+                        }
+                    ?>
         </div> <br>
 
-<form class="form" method="POST" action="">
+<form name="formsenha" class="form" method="POST" action="esqueci_senha.php">
                     <label for="name">E-mail:</label><br>
                     <input class='input-textarea' name="email_send" id="email_send" type="text"> <br><br><br>
 
