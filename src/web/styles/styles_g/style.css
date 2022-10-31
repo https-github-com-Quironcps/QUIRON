@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 
-.div-todo{
+.div-todo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,12 +16,12 @@
     right: 0;
 }
 
-.div-todo2{
+.div-todo2 {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: linear-gradient( to right, var(--cor-008), var(--color-002)); 
+    background-image: linear-gradient(to right, var(--cor-008), var(--color-002));
     font-family: Raleway;
     position: fixed;
     z-index: 1200;
@@ -32,7 +32,7 @@
     right: 0;
 }
 
-.principal{
+.principal {
     height: 400px;
     width: 30%;
     align-items: center;
@@ -42,7 +42,7 @@
     transition: all 2s;
 }
 
-.principal2{
+.principal2 {
     height: 40vh;
     width: 27%;
     align-items: center;
@@ -51,16 +51,16 @@
     transition: all 2s;
 }
 
-.principal3{
+.principal3 {
     height: 300px;
-    width: 300px;
+    width: 400px;
     align-items: center;
     border-radius: 12px;
     background-color: var(--color-005);
     transition: all 2s;
 }
 
-.confirm{
+.confirm {
     height: 60px;
     width: 60px;
     display: flex;
@@ -71,14 +71,14 @@
     background-color: var(--color-001);
 }
 
-#icon{
+#icon {
     display: flex;
     justify-content: center;
     font-size: 1.8em;
     color: var(--white);
 }
 
-#star{
+#star {
     padding: 10%;
     color: rgb(240, 214, 14);
     font-size: 2em;
@@ -86,40 +86,55 @@
     margin-top: 5%;
 }
 
-#star2{
+#star2 {
     color: rgb(240, 214, 14);
     font-size: 2em;
     margin-top: 5%;
     margin-left: 30%;
 }
 
-.conteudo6{
+.conteudo6 {
     margin-top: 60px;
     height: auto;
     padding: 5px 20px;
 }
 
-#exit{
+#exit {
     color: var(--color-001);
     font-size: 2.5em;
     float: right;
 }
 
-#exit:hover{
+#exit:hover {
     color: var(--color-002);
 }
 
-#exit2{
+#exit2 {
     color: var(--color-001);
     font-size: 2.5em;
     float: right;
 }
 
-#exit2:hover{
+#exit2:hover {
     color: var(--color-002);
 }
 
-.btn-enviar{
+.img-usuario-cadastro {
+    width: 50px;
+}
+
+.tipo-cadastro-user {
+    padding: 10px;
+    width: 100%;
+}
+
+.div-tipos-user {
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(24, 24, 24);
+}
+
+.btn-enviar {
     background-color: var(--color-001);
     border-radius: 4px;
     width: 90px;
@@ -128,31 +143,44 @@
     color: var(--color-004);
     padding: 5px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
-.btn-enviar:hover{
+.btn-enviar:hover {
     transition: all 0.5s;
     outline: none;
     background: var(--color-002);
 }
 
-.mensagem{
+.mensagem {
     color: var(--color-003);
     font-weight: 900;
 }
 
-@media (max-width: 880px){
-    .principal, .principal2, .principal3{
+@media (max-width: 880px) {
+
+    .principal,
+    .principal2{
         width: 40%;
+    }
+
+    .principal3 {
+        width: 50%;
     }
 }
 
-@media (max-width: 680px){
-    .principal, .principal2, .principal3{
+@media (max-width: 680px) {
+
+    .principal,
+    .principal2 {
         width: 60%;
     }
 
-    .mensagem{
+    .principal3 {
+        width: 80%;
+    }
+
+    .mensagem {
         font-size: 1em;
     }
 }

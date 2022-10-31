@@ -17,14 +17,15 @@
 <body>
         <div id="fecharDiv" class="div-todo2">
         <div class="principal3">
-        <a><i id="exit2" class="bi bi-x" onclick="javacript:window.location.href = '../entrar'" ></i></a>
+        <a><i id="exit2" class="bi bi-x" style="cursor: pointer;" onclick="javacript:window.location.href = '../entrar'" ></i></a>
             <center>
                 <div class="conteudo6">
-                        <h3 class="mensagem">Cadastre-se como</h3><br>
+                        <h3 class="mensagem">Cadastre-se como:</h3><br>
 
-                        <input type="submit" onclick="javacript:window.location.href = '../cadastrar_escola'" value="Escola" class="btn-enviar">
-                        <input type="submit" onclick="javacript:window.location.href = '../cadastrar_professor'" value="Professor" class="btn-enviar">
-
+                        <div class="div-tipos-user">
+                            <div class="tipo-cadastro-user"><img src="../images/svgs/school.svg"  class="img-usuario-cadastro"><br> <input type="submit" onclick="javacript:window.location.href = '../cadastrar_escola'" value="Instituição" class="btn-enviar"></div>
+                            <div class="tipo-cadastro-user"><img src="../images/svgs/student.svg" class="img-usuario-cadastro"><br> <input type="submit" onclick="javacript:window.location.href = '../cadastrar_professor'" value="Professor" class="btn-enviar"></div>
+                        </div>
                 </div>
             </center>
         </div>

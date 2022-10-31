@@ -59,7 +59,7 @@ if (isset($tema)) {
 
         <div class="filtros">
             <form class="form" method="POST">
-                <input class='input-textarea' name="cod" value="<?php echo $cod; ?>" type="number" maxlength="3" placeholder="Código da instituição">
+                <input class='input-textarea' maxlength="80" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="cod" value="<?php echo $cod; ?>" type="number" maxlength="3" placeholder="Código da instituição">
                 <button type="submit" class='botao-001'></button>
             </form>
         </div>
@@ -69,13 +69,13 @@ if (isset($tema)) {
                 <div>
                     <input type="checkbox" id="base" class="abo11">
 
-                    <label class="gaby" for="base"><i class="bi bi-filter"></i></label>
+                    <label class="gaby" for="base"><?php if($tela_tema == 'light dark'){ echo "<i style='color: white;' class='bi bi-filter'></i>";} else{ echo "<i class='bi bi-filter'></i>";} ?></label>
 
                     <div class="div-filtros">
 
                         <form method="POST" class="form-filtros">
                             Localização - Cidade: <br>
-                            <input type="text" name="localizacao" id="text-filtro"><br><br>
+                            <input maxlength="128" type="text" name="localizacao" id="text-filtro"><br><br>
 
                             Faixa Salarial: <br>
                             <input type="text" name="faixa" id="text-filtro" list="faixa">

@@ -24,10 +24,10 @@
                 <a href="./">Home</a>
             </li>
             <li>
-                <a href="sobre.php">Sobre</a>
+                <a href="sobre">Sobre</a>
             </li>
             <li>
-                <a href="contato.php">Contato</a>
+                <a href="contato">Contato</a>
             </li>
         </ul>
 

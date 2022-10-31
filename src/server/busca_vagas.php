@@ -29,7 +29,8 @@ if (!empty($_POST['cod'])) {
     isset($_POST['localizacao'], $_POST['grade'], $_POST['faixa'])
     && !empty($_POST['localizacao'] && $_POST['grade'] && $_POST['faixa'])
 ) {
-    $cidade = trim($_POST['localizacao']);
+    $cidade1 = trim($_POST['localizacao']);
+        $cidade = $cidade1.'%';
     $faixa = trim($_POST['faixa']);
     $grade = trim($_POST['grade']);
 
@@ -50,7 +51,7 @@ if (!empty($_POST['cod'])) {
     ON TB_VAGA.FK_INSTITUICAO = TB_INSTITUICAO.TB_INSTITUICAO_ID
     WHERE `TB_VAGA_GRADE` LIKE :grade 
     AND `TB_VAGA_FAIXA_SALARIAL` LIKE :faixa 
-    AND `TB_INSTITUICAO_CIDADE` LIKE :cidade');
+    AND `TB_INSTITUICAO_CIDADE` LIKE `:cidade%`');
 
     $sth->bindParam(':grade', $grade, PDO::PARAM_STR);
     $sth->bindParam(':cidade', $cidade, PDO::PARAM_STR);
@@ -63,7 +64,8 @@ if (!empty($_POST['cod'])) {
     && !empty($_POST['localizacao'])
 ) {
     if (!empty($_POST['grade'])) {
-        $cidade = trim($_POST['localizacao']);
+        $cidade1 = trim($_POST['localizacao']);
+        $cidade = $cidade1.'%';
         $grade = trim($_POST['grade']);
 
         $sth = $pdo->prepare('SELECT 
@@ -82,7 +84,7 @@ if (!empty($_POST['cod'])) {
         INNER JOIN `TB_INSTITUICAO` 
         ON TB_VAGA.FK_INSTITUICAO = TB_INSTITUICAO.TB_INSTITUICAO_ID
         WHERE `TB_VAGA_GRADE` LIKE :grade 
-        AND `TB_INSTITUICAO_CIDADE` LIKE :cidade');
+        AND `TB_INSTITUICAO_CIDADE` LIKE `:cidade%`');
 
         $sth->bindParam(':grade', $grade, PDO::PARAM_STR);
         $sth->bindParam(':cidade', $cidade, PDO::PARAM_STR);
@@ -90,7 +92,8 @@ if (!empty($_POST['cod'])) {
 
         $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
     } elseif (!empty($_POST['faixa'])) {
-        $cidade = trim($_POST['localizacao']);
+        $cidade1 = trim($_POST['localizacao']);
+        $cidade = $cidade1.'%';
         $faixa = trim($_POST['faixa']);
 
         $sth = $pdo->prepare('SELECT 
@@ -109,7 +112,7 @@ if (!empty($_POST['cod'])) {
         INNER JOIN `TB_INSTITUICAO` 
         ON TB_VAGA.FK_INSTITUICAO = TB_INSTITUICAO.TB_INSTITUICAO_ID
         WHERE `TB_VAGA_FAIXA_SALARIAL` LIKE :faixa 
-        AND `TB_INSTITUICAO_CIDADE` LIKE :cidade');
+        AND `TB_INSTITUICAO_CIDADE` LIKE `:cidade%`');
 
         $sth->bindParam(':faixa', $faixa, PDO::PARAM_STR);
         $sth->bindParam(':cidade', $cidade, PDO::PARAM_STR);
@@ -117,9 +120,10 @@ if (!empty($_POST['cod'])) {
 
         $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
     } else {
-        $cidade = trim($_POST['localizacao']);
+        $cidade1 = trim($_POST['localizacao']);
+        $cidade = $cidade1.'%';
 
-        $sth = $pdo->prepare('SELECT 
+        $sth = $pdo->prepare("SELECT 
         TB_VAGA.TB_VAGA_MATERIA AS Vaga,
     TB_VAGA.TB_VAGA_ID AS Idv,
         TB_VAGA.TB_VAGA_LINK AS VagaLink,
@@ -134,7 +138,7 @@ if (!empty($_POST['cod'])) {
         FROM `TB_VAGA` 
         INNER JOIN `TB_INSTITUICAO` 
         ON TB_VAGA.FK_INSTITUICAO = TB_INSTITUICAO.TB_INSTITUICAO_ID
-        AND `TB_INSTITUICAO_CIDADE` LIKE :cidade ');
+        AND `TB_INSTITUICAO_CIDADE` LIKE :cidade");
 
         $sth->bindParam(':cidade', $cidade, PDO::PARAM_STR);
         $sth->execute();

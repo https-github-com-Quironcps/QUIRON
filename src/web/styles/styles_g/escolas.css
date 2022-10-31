@@ -33,6 +33,7 @@ body{
     border-style: none;
     background-color: var(--color-005);
     padding-left: 10px;
+    color: var(--troca);
 }
 
 .input-textarea:hover{

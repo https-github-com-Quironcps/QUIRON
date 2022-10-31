@@ -60,17 +60,17 @@ if (isset($tema)) {
 
                 <center>
                     <div class="img-escola">
-
+                        
                         <h1 class="titulo">
                             <?php
                             echo $Resultado['Nome'];
                             ?>
                         </h1>
-
+                        
                         <h5 class="subtitulo">
                             <p><?php echo $Resultado['Cursos']; ?>
                         </h5>
-
+                        
                         <div class="div-ponta"><img class="img-div-alterar-01" onerror="Black(this)" src="<?php echo $Resultado['Foto']; ?>"></div>
 
                     </div>
@@ -138,26 +138,26 @@ if (isset($tema)) {
 
 
                                                     <div class="flex">
-                                                        <i id="voltarbtn" onclick="voltarPVaga(<?php echo $Vagas['Idv']; ?>)" class="bi bi-arrow-left"></i>
+                                                        <i id="voltarbtn" style="cursor: pointer;" onclick="voltarPVaga(<?php echo $Vagas['Idv']; ?>)" class="bi bi-arrow-left"></i>
 
                                                         <?php
-                                                        // if (count($favoritos)) {
-                                                        //     foreach ($favoritos as $Fav) {
-                                                        //         $fk_vaga_fav = $Fav['FKFavVaga'];
-                                                        //         $id_vaga_fav = $Vagas['Idv'];
-                                                        //         $condicao_fav = $Fav['CondFav'];
+                                                        if (count($favoritos)) {
+                                                            foreach ($favoritos as $Fav) {
+                                                                $fk_vaga_fav = $Fav['FKFavVaga'];
+                                                                $id_vaga_fav = $Vagas['Idv'];
+                                                                $condicao_fav = $Fav['CondFav'];
 
-                                                        //         if ($fk_vaga_fav == $id_vaga_fav) {
-                                                        //             if ($condicao_fav == true) {
-                                                        //                 include('partials/coracao-fav-fill.php');
-                                                        //             }
+                                                                if ($fk_vaga_fav == $id_vaga_fav) {
+                                                                    if ($condicao_fav == true) {
+                                                                        include('partials/coracao-fav-fill.php');
+                                                                    }
 
-                                                        //             else{
-                                                        //                 include('partials/coracao-fav.php');
-                                                        //             }
-                                                        //         }
-                                                        //     }
-                                                        // }
+                                                                    else{
+                                                                        include('partials/coracao-fav.php');
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                         ?>
                                                     </div>
 

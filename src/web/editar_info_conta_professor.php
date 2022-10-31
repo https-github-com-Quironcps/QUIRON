@@ -47,11 +47,10 @@ if (isset($tema)) {
     include('../server/PDO/acesso_telas_professor.php');
     ?>
 
-    <br><br><br><br>
-
 <div class="page">
 <?php include('../server/PDO/navbar.php'); ?>
 
+<br><br><br><br>
 
     <center>
         <h1 class="h1002">Editar informações da conta</h1>

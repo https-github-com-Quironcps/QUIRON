@@ -54,7 +54,7 @@ if (isset($tema)) {
     <div>
         <div class="filtros">
                 <form class="form" method="POST">
-                    <input class='input-textarea' name="cod" value="<?php echo $cod; ?>" type="number" maxlength="3" placeholder="Código da instituição">
+                    <input class='input-textarea' maxlength="80" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="cod" value="<?php echo $cod; ?>" type="number" maxlength="3" placeholder="Código da instituição">
                     <button type="submit" class='botao-001'></button>
                 </form>
         </div>

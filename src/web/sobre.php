@@ -39,12 +39,11 @@ if (isset($tema)) {
 <body onLoad="loading()">
 <div class="page">
 <?php 
-    include('../server/PDO/navbar.php'); 
-    include('../server/PDO/verifica_logado.php');
+    include('../server/PDO/navbar.php');
 ?>
     <br>
     <div class="div-sobre">
-    <img class= "img" src="images/sobre1.png">
+    <img class="img" src="images/sobre1.png">
 
         <div class="conteudo_sobre">
             <h1 id="title">Quem somos nós?</h1>
