@@ -48,7 +48,11 @@ if (isset($tema)) {
     ?>
 
 <div class="page">
-<?php include('../server/PDO/navbar.php'); ?>
+<?php include('../server/PDO/navbar.php'); 
+
+if(isset($div_confirmacao)){
+    include('partials/confirmação-edit.php');
+}?>
 
 <br><br><br><br>
 
@@ -103,7 +107,6 @@ if (isset($tema)) {
         </div>
     </form>
 
-<?php include('partials/confirmação-edit.php') ?>
 <?php include('partials/footer.php') ?>
 
     </div>

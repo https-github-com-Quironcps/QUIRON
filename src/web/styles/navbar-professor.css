@@ -281,6 +281,10 @@ input:checked[type="checkbox"]::before{
     left: 1.5vw;
 }
 
+.div-div{
+    display: none;
+}
+
 .div-modo{
     display: flex;
     align-self: center;

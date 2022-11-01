@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 include('../server/mandaTema.php');
+
 if (isset($tema)) {
     if (count($tema)) {
         foreach ($tema as $Tema) {
@@ -44,7 +45,16 @@ if (isset($tema)) {
 ?>
     <div class="page">
 
-    <?php include('../server/PDO/navbar.php'); ?>
+    <?php include('../server/PDO/navbar.php'); 
+    if (isset($_GET['editado'])){
+        include('partials/confirmação-edit.php');
+    }
+    
+    if (isset($_GET['vaga'])){
+        include('partials/confirmação-cad.php');
+    }    
+    ?>
+
 
     <center><h1 class="h1002">Minhas vagas</h1></center>
 

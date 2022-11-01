@@ -36,13 +36,19 @@ if (isset($tema)) {
 </head>
 <body>
 
+<!-- COLOCAR DIV DE CONFIRMAÇÃO DE EDIÇÃO -->
+
 <?php 
     include('../server/PDO/verifica_logado.php');
     include('../server/PDO/acesso_telas_escola.php');
 ?>
     <div class="page">
 
-<?php include('../server/PDO/navbar.php'); ?>
+<?php include('../server/PDO/navbar.php'); 
+
+if(isset($div_confirmacao)){
+    include('partials/confirmação-edit.php');
+}?>
 
 
 <br><br><br><br>
@@ -82,7 +88,6 @@ if (isset($tema)) {
         </center>
     </div>
     
-<?php include('partials/confirmação-edit.php') ?>
 <?php include('partials/footer.php') ?>
 
     </div>

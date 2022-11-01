@@ -34,7 +34,8 @@
         $edita_vaga->bindParam(':ID', $id_vaga, PDO::PARAM_INT);
 
         $edita_vaga->execute();
-        header("location: ../web/minhas_vagas");
+        
+        header("location: ../web/minhas_vagas?editado");
     } 
 
     $sto = $pdo->prepare('SELECT TB_VAGA.TB_VAGA_MATERIA AS Materia,

@@ -112,7 +112,6 @@ if (isset($tema)) {
         </form>
 
         <br>
-        <?php include('partials/confirmação-cad.php') ?>
     </div>
 
     <?php include('partials/loadpage.php'); ?>

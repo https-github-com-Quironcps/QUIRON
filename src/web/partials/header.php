@@ -19,6 +19,7 @@ include('../server/mandaTema.php');
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="scripts/ImagenError.js"></script>
+    <script src="scripts/chamaDIV.js"></script>
 
     <title>HEADER</title>
 
@@ -50,11 +51,16 @@ include('../server/mandaTema.php');
                         <div class="div-modo">
                             <a href="sobre" class="text-modo">Modo escuro:</a>
                             <input type="checkbox" onclick="javacript:window.location.href = './../server/mudaTema.php?tema=andamento'" class="check-modo" name="" id="">
-                            <a id="exit" href="../server/sair.php"><i class="bi bi-box-arrow-left"></i></a>
+                            <a id="exit" onclick="chamaDiv()"><i class="bi bi-box-arrow-left"></i></a>
                         </div>
                     </ul>
                 </div>
             </label>
+
+            <div style="transform: translateX(100vw);" id="div_div">
+                <?php include ("partials/confirmação-exit.php"); ?>
+
+                </div>
 
             <?php
             $light = "images/logos/arco-e-texto-light.png";

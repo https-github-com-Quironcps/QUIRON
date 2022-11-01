@@ -104,7 +104,7 @@ if (isset($tema)) {
             </div>
         </center>
     </div>
-    <?php include('partials/confirmação-cad.php') ?>
+    <?php include('partials/cadastro-perfil.php') ?>
     <?php include('partials/footer.php') ?>
 
     </div>

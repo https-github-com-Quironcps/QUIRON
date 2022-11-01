@@ -24,6 +24,7 @@
         $cad_vaga->bindParam(':FK', $escola_fk, PDO::PARAM_STR);
 
         $cad_vaga->execute();
-        header("location: ../web/minhas_vagas");
+        
+        header("location: ../web/minhas_vagas?vaga");
     } 
 ?>

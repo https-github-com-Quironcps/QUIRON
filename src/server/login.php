@@ -60,8 +60,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         
                             if (password_verify($senha, $hashed_senha)){
         
-                                echo '<br>asaasa';
-        
                                 // A senha está correta, então inicie uma nova sessão
                                 session_start();
                                 
@@ -79,14 +77,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             
                             else{
                                 // A senha não é válida, exibe uma mensagem de erro genérica
-                                $login_err = "Nome de usuário ou senha inválidos.";
+                                // include('../web/partials/senha-invalida.php');
+                                header("location: ../web/entrar?info");
                             }
                         }
                     } 
                     
                     else{
                         // O nome de usuário não existe, exibe uma mensagem de erro genérica
-                        $login_err = "Nome de usuário ou senha inválidos.";
+                        // include('../web/partials/senha-invalida.php');
+                        header("location: ../web/entrar?info");
                     }
                 } 
                 
@@ -136,14 +136,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             
                             else{
                                 // A senha não é válida, exibe uma mensagem de erro genérica
-                                $login_err = "Nome de usuário ou senha inválidos.";
+                                header("location: ../web/entrar?info");
                             }
                         }
                     } 
                     
                     else{
                         // O nome de usuário não existe, exibe uma mensagem de erro genérica
-                        $login_err = "Nome de usuário ou senha inválidos.";
+                        header("location: ../web/entrar?info");
                     }
                 } 
                 

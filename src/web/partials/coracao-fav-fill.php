@@ -1,39 +1,28 @@
-<?php 
-include ('../server/PDO/situacao.php');
+<?php
+include('../server/PDO/situacao.php');
+$condic_fav = $Fav['CondFav'];
+$idvga = $Vagas['Idv'];
+
 ?>
-<div class="div-coracao" onclick="<?php trocaCoracao($user_id, $Fav['CondFav'], $Vagas['Idv']);?>">
-    <span id="coracaovazio <?php echo $Vagas['Idv']; ?>" 
-    onclick="trocarCoracao(<?php echo $Vagas['Idv']; ?>)" 
-    class="bi bi-heart-fill coracaovazio"></span>
+
+<div class="div-coracao" onclick="javascript:abc(<?php echo $user_id; ?>,<?php echo $condic_fav; ?>,<?php echo $idvga; ?>)">
+    <span id="coracaovazio <?php echo $Vagas['Idv']; ?>" onclick="trocarCoracao(<?php echo $Vagas['Idv']; ?>)" class="bi bi-heart coracaovazio"></span>
 </div>
 
-<?php
-function trocaCoracao($idp, $condf, $idv){
-    $id_professor = $idp;
-    $cond_favorito = $condf;
-    $id_vaga = $idv;
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    if ($cond_favorito == 1){
-        $troca_condicao = 0;
-    }
+<script>
+function abc(idp, cond, idv){
+var id_professor = idp;
+var cond_favorito = cond;
+var id_vaga = idv;
 
-    else{
-        $troca_condicao = 1;
-    }
-
-    $query_vaga = "UPDATE TB_FAVORITO SET
-        TB_FAVORITO_CONDICAO = :CONDICAO
-
-        WHERE FK_VAGA LIKE :ID_VAGA AND FK_PROFESSOR LIKE :ID_PROFESSOR";
-
-        $edita_fav = $pdo->prepare($query_vaga);
-
-        $edita_fav->bindParam(':CONDICAO', $troca_condicao, PDO::PARAM_STR);
-        $edita_fav->bindParam(':ID_PROFESSOR', $id_professor, PDO::PARAM_STR);
-        $edita_fav->bindParam(':ID_VAGA', $id_vaga, PDO::PARAM_STR);
-
-        $edita_fav->execute();
-
-}
-
-?>
+$.ajax({
+    url: '../server/ativarFavorito.php',
+    type: 'POST',
+    data: id_professor, cond_favorito, id_vaga,
+    error: function (data) {
+       return data;
+   }
+});}
+</script>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,21 +17,23 @@
 
     <title>QUIRON - CONFIRMAÇÃO</title>
 </head>
+
 <body>
-        <div id="fecharDiv" class="div-todo">
+    <div id="fecharDiv" class="div-todo">
         <div class="principal2">
             <center>
-                <div class="conteudo6">
-              
-                        <h3 class="mensagem">Deseja Sair?</h3><br>
+                <div class="conteudo6"><br>
 
-                        <input type="submit" value="Sim" class="btn-enviar">
-                        <input type="submit" value="Não" onclick="sairTela()" class="btn-enviar">
+                    <h3 class="mensagem">Você realmente deseja sair?</h3><br>
+
+                    <a href="../server/sair.php"><input type="submit" style="height: 45px; width:100px;" value="Sim" class="btn-enviar"></a>
+                    <a><input type="submit" style="height: 45px; width:100px;" value="Não" onclick="sairDIVTela()" class="btn-enviar"></a>
 
                 </div>
             </center>
         </div>
-        </div>
- 
+    </div>
+
 </body>
+
 </html>

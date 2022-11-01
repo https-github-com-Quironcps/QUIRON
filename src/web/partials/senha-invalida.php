@@ -21,11 +21,11 @@
         <div class="principal2">
         <a><i id="exit2" class="bi bi-x" onclick="sairTela()"></i></a>
             <center>
-                <div class="conteudo6">
+                <div class="conteudo6"><br>
               
-                        <h3 class="mensagem">Informações Inválidas</h3><br>
+                        <h3 style="margin-top: 10px;" class="mensagem">Informações Inválidas</h3><br>
 
-                        <input type="submit" onclick="sairTela()" value="OK" class="btn-enviar">
+                        <input style="height: 45px; width:110px;" type="submit" onclick="sairTela()" value="OK" class="btn-enviar">
   
                 </div>
             </center>

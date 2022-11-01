@@ -25,6 +25,7 @@ if(isset($_POST['submit']))
     && !empty($_POST['email-p']) 
     && !empty($_POST['senha-p']))
     {
+        
         $nome = trim($_POST['nome-p']);
         $cep = trim($_POST['cep-p']);
         $endereco = trim($_POST['end-p']);
@@ -70,7 +71,8 @@ if(isset($_POST['submit']))
                     
                     $handle->execute($params);
                     
-                    $success = 'Cadastrado com sucesso, Bem-vindo a Quíron!';
+                    // $success = 'Cadastrado com sucesso, Bem-vindo a Quíron!';
+                    include('../web/partials/confirmação-cad.php');
                     
                 }
                 catch(PDOException $e){

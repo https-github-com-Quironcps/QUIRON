@@ -60,17 +60,17 @@ if (isset($tema)) {
 
                 <center>
                     <div class="img-escola">
-                        
+
                         <h1 class="titulo">
                             <?php
                             echo $Resultado['Nome'];
                             ?>
                         </h1>
-                        
+
                         <h5 class="subtitulo">
                             <p><?php echo $Resultado['Cursos']; ?>
                         </h5>
-                        
+
                         <div class="div-ponta"><img class="img-div-alterar-01" onerror="Black(this)" src="<?php echo $Resultado['Foto']; ?>"></div>
 
                     </div>
@@ -124,7 +124,7 @@ if (isset($tema)) {
                                     <tr>
                                         <td>
                                             <div class="vagas_link">
-                                                
+
                                                 <br>
                                                 <div id="nome-vaga <?php echo $Vagas['Idv']; ?>">
                                                     <center><label for="checkva <?php echo $Vagas['Idv']; ?>">
@@ -141,6 +141,7 @@ if (isset($tema)) {
                                                         <i id="voltarbtn" style="cursor: pointer;" onclick="voltarPVaga(<?php echo $Vagas['Idv']; ?>)" class="bi bi-arrow-left"></i>
 
                                                         <?php
+                                                        
                                                         if (count($favoritos)) {
                                                             foreach ($favoritos as $Fav) {
                                                                 $fk_vaga_fav = $Fav['FKFavVaga'];
@@ -148,18 +149,14 @@ if (isset($tema)) {
                                                                 $condicao_fav = $Fav['CondFav'];
 
                                                                 if ($fk_vaga_fav == $id_vaga_fav) {
-                                                                    if ($condicao_fav == true) {
-                                                                        include('partials/coracao-fav-fill.php');
-                                                                    }
-
-                                                                    else{
-                                                                        include('partials/coracao-fav.php');
-                                                                    }
+                                                                    include('partials/coracao-fav.php');
                                                                 }
+                                                                
                                                             }
                                                         }
                                                         ?>
                                                     </div>
+                                                    <div id='escrevePhp'></div>
 
                                                     <h6 class="title02"><?php echo $Vagas['Vaga']; ?></h6>
                                                     <br>
@@ -196,7 +193,7 @@ if (isset($tema)) {
 
                                                     <div>
                                                         <center><br>
-                                                        <a class="linkDVga" href="<?php echo $Vagas['VagaLink']; ?>">Ir para a vaga</a><br>
+                                                            <a class="linkDVga" href="<?php echo $Vagas['VagaLink']; ?>">Ir para a vaga</a><br>
                                                             <br><!-- <a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?codVagaEscola='+<?php echo $Vagas['Idv']; ?>"> -->
 
                                                         </center>
@@ -206,7 +203,7 @@ if (isset($tema)) {
                                             </div>
                                         </td>
                                     </tr>
-                                    
+
                                 </table>
                             <?php
                         }

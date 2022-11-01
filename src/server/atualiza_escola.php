@@ -42,6 +42,7 @@ if (isset($_POST['nome'])) {
 
     $sth->execute();
 
+    $div_confirmacao = 1;
 }
 
     $sto = $pdo->prepare('SELECT TB_INSTITUICAO.TB_INSTITUICAO_NOME AS Nome,

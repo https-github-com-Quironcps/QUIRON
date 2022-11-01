@@ -41,6 +41,10 @@ include("../server/login.php");
 
 <body>
   <div class="page">
+    <?php
+    if(isset($_GET['info'])){
+      include('partials/senha-invalida.php');
+    } ?>
     <header>
       <nav id="nav1">
         <div class="container">

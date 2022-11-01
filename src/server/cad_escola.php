@@ -66,7 +66,9 @@ if (isset($_POST['submit'])) {
 
                     $handle->execute($params);
 
-                    $success = 'Sua escola está cadastrada na Quíron';
+                    // $success = 'Sua escola está cadastrada na Quíron';
+
+                    header("location: ../web/cadastrar_perfil.php");
                 } catch (PDOException $e) {
                     $errors[] = $e->getMessage();
                 }

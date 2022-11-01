@@ -45,6 +45,10 @@ if (isset($tema)) {
     include('../server/PDO/navbar.php'); 
     include('../server/PDO/verifica_logado.php');
     include('../server/PDO/acesso_telas_escola.php');
+
+    if(isset($div_confirmacao)){
+        include('partials/confirmação-edit.php');
+    }
 ?>
 
 <br><br><br><br>
@@ -96,7 +100,6 @@ if (isset($tema)) {
         ?>
     </div>
 </form>
-<?php include('partials/confirmação-edit.php') ?>
 <?php include('partials/footer.php') ?>
     </div>
     <?php include('partials/loadpage.php'); ?>

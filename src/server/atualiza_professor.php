@@ -41,6 +41,8 @@ if (isset($_POST['nome'])) {
     $sth->bindParam(':cpf', $cpf, PDO::PARAM_STR);
 
     $sth->execute();
+
+    $div_confirmacao = 1;
 }
     $sto = $pdo->prepare('SELECT TB_PROFESSOR.TB_PROFESSOR_NOME AS Nome,
     TB_PROFESSOR.TB_PROFESSOR_ENDERECO AS Endereco,
