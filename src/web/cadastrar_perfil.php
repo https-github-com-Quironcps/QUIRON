@@ -98,14 +98,14 @@ if (isset($tema)) {
                     <label class="form-equipe">Equipe: </label><br><textarea type="text" name="equipe" class="input-equipe" id="input-text-alterar2"></textarea>
                     
                     <br>
-
+                    <h6 class="aviso">(Você poderá editar isso futuramente)</h6>
                     <input type="submit" name="submit" value="Criar Perfil" id="submit-text-alterar" class="submit-class"><br>
                 </form>
             </div>
         </center>
     </div>
-
-<?php include('partials/footer.php') ?>
+    <?php include('partials/confirmação-cad.php') ?>
+    <?php include('partials/footer.php') ?>
 
     </div>
 

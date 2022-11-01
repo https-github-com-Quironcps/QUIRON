@@ -75,7 +75,7 @@ nav a{
 }
 
 ul li a:hover{
-    color: var(--color-002);
+    color: var(--color-003);
     transition: all 0.5s ease;
     padding-left: 20px;
 }
@@ -149,7 +149,7 @@ nav .fa-bars:hover{
 }
 
 .slide ul li a:hover{
-    color: var(--color-002);
+    color: var(--color-003);
 }
 
 .inputNav{

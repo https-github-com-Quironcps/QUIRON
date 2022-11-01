@@ -81,7 +81,8 @@ if (isset($tema)) {
             </div>
         </center>
     </div>
-
+    
+<?php include('partials/confirmação-edit.php') ?>
 <?php include('partials/footer.php') ?>
 
     </div>

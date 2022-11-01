@@ -30,7 +30,7 @@
                     
                             <div class="confirm">
                                 <i id="icon" class="bi bi-pencil"></i>
-                            </div><br>
+                            </div><br><br>
 
                             <h3 class="mensagem">Edição Confirmada!</h3>
                         </div>

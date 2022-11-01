@@ -37,43 +37,25 @@ if (isset($tema)) {
 </head>
 <body>
 
-<?php 
-    include('../server/PDO/verifica_logado.php');
-    include('../server/PDO/acesso_telas_escola.php');
-    include('../server/busca_vagas_por_escola.php');
-?>
     <div class="page">
 
     <?php include('../server/PDO/navbar.php'); ?>
 
-    <center><h1 class="h1002">Minhas vagas</h1></center>
+    <center><h1 class="h1002">Meus favoritos</h1></center>
 
         <div class="div-total">
             <div class="conteudo">
             <center>
-                <div class="anunciar">
-                    <a href="anunciar_vaga">Anunciar Vaga</a>
-                </div>
                 <br>
-                <?php
-                if (count($resultados)) {
-                    $int_num = 0;
-
-                    foreach ($resultados as $Resultado) {
-                        $int_num++;
-                ?>
                 <div class="table1">
-                    <div class="td1"><?php echo $int_num;?></div>
+                    <div class="td1"></div>
 
-                    <div class="td2"><h6 class="nome_materia"><?php echo $Resultado['Materia']; ?></h6></div>
+                    <div class="td2"><h6 class="nome_materia"></h6></div>
 
-                    <div class="td3"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?cod='+<?php echo $Resultado['Id'];?>;return false;"><i id="trash-square" class="bi bi-pencil-square"></i></a></div>
+                    <div class="td3"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?cod='+<?php echo $Resultado['Id'];?>;return false;"><i id="trash-square" class="bi bi-arrow-90deg-right"></i></a></div>
 
                     <div class="td4"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?codigoex='+<?php echo $Resultado['Id'];?>;return false;"><i id="trash-square" class="bi bi-trash"></i></a></div>
                 </div>
-                <?php
-                    }}
-                ?>
             </div>
         
         </center>

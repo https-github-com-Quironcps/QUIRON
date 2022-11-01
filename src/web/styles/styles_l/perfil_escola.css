@@ -134,6 +134,16 @@
     min-height: 120px;
 }
 
+/* AVISO */
+
+.aviso{
+    font-family: 'Raleway';
+    color: var(--color-003);
+    font-size: 15px;
+    float: left;
+    margin-left: 3.3vw;
+}
+
 /* SENHA */
 
 #input-text-alterar:hover, #input-text-alterar:focus{
@@ -219,5 +229,9 @@
 @media screen and (max-width: 1115px) {
     .img-div-alterar-01{
         max-height: 120px;
+    }
+
+    .aviso{
+        font-size: 13px;
     }
 }

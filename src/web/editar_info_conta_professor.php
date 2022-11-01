@@ -103,7 +103,7 @@ if (isset($tema)) {
         </div>
     </form>
 
-
+<?php include('partials/confirmação-edit.php') ?>
 <?php include('partials/footer.php') ?>
 
     </div>

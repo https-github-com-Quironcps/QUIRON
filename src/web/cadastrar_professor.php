@@ -103,7 +103,7 @@ if (isset($tema)) {
                         <center> <label name="senha" class="form-senha aas">Senha: </label><input required maxlength="45" name="senha-p" type="password" class="input-senha input-text-alterar"> </center>
 
                         <input type="submit" name="submit" value="Cadastrar-se" id="submit-text-alterar" class="submit-class">
-
+                       
                     </div>
                 </div>
 
@@ -112,6 +112,7 @@ if (isset($tema)) {
         </form>
 
         <br>
+        <?php include('partials/confirmação-cad.php') ?>
     </div>
 
     <?php include('partials/loadpage.php'); ?>

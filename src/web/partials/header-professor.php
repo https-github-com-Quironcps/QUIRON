@@ -42,6 +42,7 @@
 
                         <li><a href="editar_info_conta_professor"><i class="bi bi-pencil-square"></i></i>ㅤEditar perfil</a></li>
                         <li><a href="contato"><i class="bi bi-question-circle-fill"></i></i>ㅤFale conosco</a></li>
+                        <li><a href="favoritos"><i class="bi bi-heart-fill"></i></i>ㅤFavoritos</a></li>
                         <br><br>
 
                         <div class="div-modo">

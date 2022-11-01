@@ -193,6 +193,11 @@ input[type=text] {
     color: var(--cor-005);
 }
 
+#trash-square{
+    color: var(--color-003);
+    font-size: 18px;
+}
+
 @media screen and (max-width: 1200px) {
     .td3, .td4{
         flex: 2;

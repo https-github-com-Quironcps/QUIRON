@@ -30,7 +30,7 @@
               
                     <div class="confirm">
                         <i id="icon" class="bi bi-check-lg"></i>
-                    </div><br>
+                    </div><br><br>
 
                     <h3 class="mensagem">Cadastro Confirmado!</h3>
                 </div>

@@ -2,11 +2,6 @@
 
 body {
     background-color: var(--white) !important;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    font-family: Raleway; */
 }
 
 .container{
@@ -24,8 +19,6 @@ nav{
     z-index: 9;
     transition:0.7s;
     background-color: var(--color-006);
-
-    /* box-shadow: 0 0 0.5em var(--grey); */
 }
 
 #nav1{
@@ -103,7 +96,7 @@ nav{
 h3{
     color: var(--color-003);
     font-weight: 900;
-} */
+}
 
 /* Responsive MENU */
 
