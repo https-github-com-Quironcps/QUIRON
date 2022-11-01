@@ -50,10 +50,6 @@
                             <i id="exit" class="bi bi-box-arrow-left"></i>
                         </div>
 
-                      
-
-                        
-
                     </ul>
 
                 </div>

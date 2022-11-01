@@ -14,7 +14,6 @@
 <body>
     <center>
     <div class="principal">
-        <i id="icon1" class="bi bi-arrow-left-short" onclick=""></i>
         
         <div class="termos">
         <h3 class="t">TERMOS DE USO - Quíron</h3><br>
