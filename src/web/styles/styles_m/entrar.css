@@ -264,6 +264,21 @@ h2 {
   background-color: var(--botao-iniciar-hover);
 }
 
+#botao-entrar{
+  background-color: var(--color-001);
+  border-radius: 4px;
+  width: 100%;
+  height: 6vh;
+  border-style: none;
+  color: var(--color-004);
+}
+
+#botao-entrar:hover{
+  transition: all 0.5s;
+  outline: none;
+  background: var(--color-002);
+}
+
 
 .professor-rl{
   padding-left: 10px;

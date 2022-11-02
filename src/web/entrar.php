@@ -6,7 +6,7 @@ include("../server/login.php");
 
 
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" class="light">
 
 <head>
   <!-- Required meta tags -->
@@ -23,6 +23,7 @@ include("../server/login.php");
 
   <!-- Style -->
   <link rel="stylesheet" href="styles/styles_m/entrar.css">
+
 
 
   <!-- Navbar Css  -->
@@ -102,7 +103,7 @@ include("../server/login.php");
                   </div>
                   <br>
 
-                  <input type="submit" name="submit" value="Entrar" class="btn btn-block btn-primary">
+                  <input type="submit" name="submit" value="Entrar"  id="botao-entrar">
 
 
                   <br>
@@ -110,7 +111,8 @@ include("../server/login.php");
 
 
 
-                    <span class="ml-auto"><a href="esqueci_senha" class="forgot-pass">Esqueceu a senha?</a></span> <br>
+                    <span><a href="termos" class="forgot-pass">Termos de uso</a></span> <br>
+                    <span class="ml-auto"><a href="esqueci_senha" class="forgot-pass">Esqueceu a senha?</a></span>
                   </div>
 
               </div>

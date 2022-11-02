@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
@@ -7,18 +8,17 @@
     <title>QUIRON - TERMOS DE USO</title>
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
-    <link rel="stylesheet" href="../styles/styles_g/termos.css">
-    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="../web/styles/styles_g/termos.css">
+    <link rel="stylesheet" href="../web/styles/theme.css">
 
 </head>
 <body>
     <center>
     <div class="principal">
-        <i id="icon1" class="bi bi-arrow-left-short" onclick=""></i>
         
         <div class="termos">
-        <h3 class="t">TERMOS DE USO - Quíron</h3><br>
-        <h3 class="t">Esta política de Termos de Uso é válida a partir de Oct 2022.</h3><br>
+        <h3 class="t" id="li">TERMOS DE USO - Quíron</h3><br>
+        <h3 class="t" id="li">Esta política de Termos de Uso é válida a partir de Oct 2022.</h3><br>
 
         <h4 class="s">Quíron, pessoa jurídica de direito privado descreve, através deste documento, as regras de uso do site
                         quiron.com.br e qualquer outro site, loja ou aplicativo operado pelo proprietário.<br><br>
@@ -138,7 +138,8 @@
             </ul>
         </h4><br><br>
 
-       <button class="btn-enviar" type="submit">Concordar</button>
+       <a href="entrar"><button class="btn-enviar" type="submit">Voltar</button></a>
+
        <br><br><br>
 
         </div>
