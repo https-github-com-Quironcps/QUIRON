@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../styles/theme.css">
     <link rel="stylesheet" href="styles/styles_g/style.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -19,7 +18,7 @@
 </head>
 
 <body>
-    <div id="fecharDiv" class="div-todo">
+    <div id="fecharDiv2" class="div-todo">
         <div class="principal2">
             <center>
                 <div class="conteudo6"><br>

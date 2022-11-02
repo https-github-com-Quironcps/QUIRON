@@ -19,6 +19,7 @@ if (isset($tema)) {
 <?php }
     }
 } ?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,64 +37,71 @@ if (isset($tema)) {
 
     <title>QUIRON - MINHAS VAGAS</title>
 </head>
+
 <body>
 
-<?php 
+    <?php
     include('../server/PDO/verifica_logado.php');
     include('../server/PDO/acesso_telas_escola.php');
     include('../server/busca_vagas_por_escola.php');
-?>
+    ?>
     <div class="page">
 
-    <?php include('../server/PDO/navbar.php'); 
-    if (isset($_GET['editado'])){
-        include('partials/confirmação-edit.php');
-    }
-    
-    if (isset($_GET['vaga'])){
-        include('partials/confirmação-cad.php');
-    }    
-    ?>
+        <?php include('../server/PDO/navbar.php');
+        if (isset($_GET['editado'])) {
+            include('partials/confirmação-edit.php');
+        }
+
+        if (isset($_GET['vaga'])) {
+            include('partials/vaga-cadastrada.php');
+        }
+        ?>
 
 
-    <center><h1 class="h1002">Minhas vagas</h1></center>
+        <center>
+            <h1 class="h1002">Minhas vagas</h1>
+        </center>
 
         <div class="div-total">
             <div class="conteudo">
-            <center>
-                <div class="anunciar">
-                    <a href="anunciar_vaga">Anunciar Vaga</a>
-                </div>
-                <br>
-                <?php
-                if (count($resultados)) {
-                    $int_num = 0;
+                <center>
+                    <div class="anunciar">
+                        <a href="anunciar_vaga">Anunciar Vaga</a>
+                    </div>
+                    <br>
+                    <?php
+                    if (count($resultados)) {
+                        $int_num = 0;
 
-                    foreach ($resultados as $Resultado) {
-                        $int_num++;
-                ?>
-                <div class="table1">
-                    <div class="td1"><?php echo $int_num;?></div>
+                        foreach ($resultados as $Resultado) {
+                            $int_num++;
+                    ?>
+                            <div class="table1">
+                                <div class="td1"><?php echo $int_num; ?></div>
 
-                    <div class="td2"><h6 class="nome_materia"><?php echo $Resultado['Materia']; ?></h6></div>
+                                <div class="td2">
+                                    <h6 class="nome_materia"><?php echo $Resultado['Materia']; ?></h6>
+                                </div>
 
-                    <div class="td3"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?cod='+<?php echo $Resultado['Id'];?>;return false;"><i id="trash-square" class="bi bi-pencil-square"></i></a></div>
+                                <div class="td3"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?cod='+<?php echo $Resultado['Id']; ?>;return false;"><i id="trash-square" class="bi bi-pencil-square"></i></a></div>
 
-                    <div class="td4"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?codigoex='+<?php echo $Resultado['Id'];?>;return false;"><i id="trash-square" class="bi bi-trash"></i></a></div>
-                </div>
-                <?php
-                    }}
-                ?>
+                                <div class="td4"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?codigoex='+<?php echo $Resultado['Id']; ?>;return false;"><i id="trash-square" class="bi bi-trash"></i></a></div>
+                            </div>
+                    <?php
+                        }
+                    }
+                    ?>
             </div>
-        
-        </center>
+
+            </center>
         </div>
 
-    <?php include('partials/footer.php'); ?>
+        <?php include('partials/footer.php'); ?>
 
     </div>
 
     <?php include('partials/loadpage.php'); ?>
 
 </body>
-</html>
+
+            </html>
