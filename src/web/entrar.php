@@ -106,7 +106,7 @@ include("../server/login.php");
                   <input type="submit" name="submit" value="Entrar"  id="botao-entrar">
 
 
-                  <br>
+                  <br><br>
                   <div class="d-flex mb-5 align-items-center">
 
 
