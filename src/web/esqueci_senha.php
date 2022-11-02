@@ -26,7 +26,7 @@ if (isset($tema)) {
 
 
     <link rel="stylesheet" href="styles/styles_l/style.css">
-    <link rel="stylesheet" href="styles/styles_l/anunciar_vaga.css">
+    <link rel="stylesheet" href="styles/styles_m/cadastro.css">
     <link rel="stylesheet" href="styles/theme.css">
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
@@ -68,7 +68,7 @@ if (isset($tema)) {
                     ?>
         </div> <br>
 
-<form name="formsenha" class="form" method="POST" action="esqueci_senha.php">
+<form name="formsenha" class="form" method="POST" action="">
                     <label for="name">E-mail:</label><br>
                     <input class='input-textarea' name="email_send" id="email_send" type="text"> <br><br><br>
 

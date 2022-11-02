@@ -94,11 +94,11 @@ include("../server/login.php");
                     <p class="mb-4">Entrar como:</p>
                     <center>
 
-                      <input required type="radio" id="Professor-entry" id="prof" name="entrada" value="professor">
-                      <label class="professor-rl" for="prof">Professor</label>
+                      <input required type="radio" id="Professor-entry" name="entrada" value="professor">
+                      <label class="professor-rl" for="Professor-entry">Professor</label>
 
-                      <input required type="radio" id="Escola-entry" id="esco" name="entrada" value="escola">
-                      <label class="escola-rl" for="esco">Escola</label><br>
+                      <input required type="radio" id="Escola-entry" name="entrada" value="escola">
+                      <label class="escola-rl" for="Escola-entry">Escola</label><br>
                     </center>
                   </div>
                   <br>

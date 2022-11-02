@@ -26,6 +26,8 @@
                             <div class="tipo-cadastro-user"><img src="../images/svgs/school.svg"  class="img-usuario-cadastro"><br> <input type="submit" onclick="javacript:window.location.href = '../cadastrar_escola'" value="Instituição" class="btn-enviar"></div>
                             <div class="tipo-cadastro-user"><img src="../images/svgs/student.svg" class="img-usuario-cadastro"><br> <input type="submit" onclick="javacript:window.location.href = '../cadastrar_professor'" value="Professor" class="btn-enviar"></div>
                         </div>
+                        <br>
+                        <h3 clas="mensagem">Antes de se cadastrar, leia os nossos <a href="termos.php">Termos de uso</a></h3>
                 </div>
             </center>
         </div>
