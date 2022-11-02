@@ -49,6 +49,7 @@ if (isset($_POST['submit'])) {
                 $sql = "INSERT INTO TB_INSTITUICAO (TB_INSTITUICAO_NOME, TB_INSTITUICAO_ENDERECO, TB_INSTITUICAO_END_NUM, TB_INSTITUICAO_CIDADE, TB_INSTITUICAO_CEP, TB_INSTITUICAO_TELEFONE, TB_INSTITUICAO_EMAIL,`TB_INSTITUICAO_SENHA`,TB_INSTITUICAO_COD, TB_INSTITUICAO_IMG_USER) 
                 values(:TB_INSTITUICAO_NOME,:TB_INSTITUICAO_ENDERECO,:TB_INSTITUICAO_END_NUM,:TB_INSTITUICAO_CIDADE,:TB_INSTITUICAO_CEP,:TB_INSTITUICAO_TELEFONE,:TB_INSTITUICAO_EMAIL,:TB_INSTITUICAO_SENHA,:TB_INSTITUICAO_COD, :IMG_INSTITUICAO)";
 
+                //pega o id da escola ao se cadastrar
                 $last_id = mysql_insert_id();
 
 
@@ -71,6 +72,7 @@ if (isset($_POST['submit'])) {
 
                     // $success = 'Sua escola está cadastrada na Quíron';
 
+                    //redireciona para pagina de cadastrar o perfil com o id na url
                     header("location: ../web/cadastrar_perfil.php?id=$last_id");
                 } catch (PDOException $e) {
                     $errors[] = $e->getMessage();
