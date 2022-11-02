@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <?php
 include('../server/mandaTema.php');
+include('../server/meusFavoritos.php');
+
 if (isset($tema)) {
     if (count($tema)) {
         foreach ($tema as $Tema) {
@@ -47,15 +49,41 @@ if (isset($tema)) {
             <div class="conteudo">
             <center>
                 <br>
+                <?php
+                if (count($favoritos)) {
+                    $int_num = 0;
+
+                    foreach ($favoritos as $Resultado) {
+                        $int_num++;
+                ?>
                 <div class="table1">
-                    <div class="td1"></div>
+                    <div class="td1"><?php echo $int_num;?></div>
 
-                    <div class="td2"><h6 class="nome_materia"></h6></div>
+                    <div class="td2"><h6 class="nome_materia"><?php echo $Resultado['Nmv']; ?></h6></div>
 
-                    <div class="td3"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?cod='+<?php echo $Resultado['Id'];?>;return false;"><i id="trash-square" class="bi bi-arrow-90deg-right"></i></a></div>
+                    <?php 
+                    $stp = $pdo->prepare('SELECT TB_VAGA.FK_INSTITUICAO AS Idi FROM TB_VAGA
+                    WHERE TB_VAGA_ID LIKE :VAGAID');
 
-                    <div class="td4"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?codigoex='+<?php echo $Resultado['Id'];?>;return false;"><i id="trash-square" class="bi bi-trash"></i></a></div>
+                    $stp->bindParam(':VAGAID', $Resultado['Idv'], PDO::PARAM_STR);
+
+                    $stp->execute();
+
+                    $resultados = $stp->fetchAll(PDO::FETCH_ASSOC);
+
+                    if (count($resultados)) {
+                        foreach ($resultados as $Res) {
+                    ?>
+                    <div class="td3"><a href="../server/pega_id_escola.php" onclick="location.href=this.href+'?cod='+<?php echo $Res['Idi'];?>;return false;"><i id="trash-square" class="bi bi-arrow-90deg-right"></i></a></div>
+                    <?php }
+                    }
+                    ?>
+                    <div class="td4"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?codigoFav='+<?php echo $Resultado['Idf'];?>;return false;"><i id="trash-square" class="bi bi-trash"></i></a></div>
                 </div>
+                <?php 
+                    }
+                }
+                ?>
             </div>
         
         </center>

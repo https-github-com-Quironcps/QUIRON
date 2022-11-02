@@ -72,6 +72,19 @@
     transition: all 0.5s;
 }
 
+.conteudo::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+}
+
+.conteudo::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.conteudo::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 .anunciar{
     background-color: var(--color-001);
     width: 150px;

@@ -291,14 +291,14 @@ input:checked[type="checkbox"]::before{
     align-items: center;
 }
 
-#exit{
+#exit4{
     font-size: 20px;
     color: var(--color-001);
     margin-left: 70%;
     position: absolute;
 }
 
-#exit:hover{
+#exit4:hover{
     color: var(--color-002);
 }
 
@@ -334,7 +334,7 @@ input:checked[type="checkbox"]::before{
     }
 
     .slide{
-        height: 400px;
+        height: 450px;
     }
 
     input[type="checkbox"]{

@@ -297,14 +297,14 @@ input:checked[type="checkbox"]::before{
     transform: none;
 }
 
-#exit{
+#exit4{
     font-size: 20px;
     color: var(--color-001);
     margin-left: 70%;
     position: absolute;
 }
 
-#exit:hover{
+#exit4:hover{
     color: var(--color-002);
 }
 

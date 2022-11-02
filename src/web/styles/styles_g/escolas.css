@@ -26,6 +26,19 @@ body{
     color: var(--color-003);
 }
 
+.conteudo::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+}
+
+.conteudo::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.conteudo::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 .input-textarea{
     width: 180px;
     height: 40px;

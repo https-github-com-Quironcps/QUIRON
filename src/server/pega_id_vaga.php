@@ -28,4 +28,11 @@
         
         header("location: favoritar_vaga.php");
     }
+
+    elseif (isset($_GET['codigoFav'])){
+        $id_favor = trim($_GET['codigoFav']);
+        $_SESSION['id_favor'] = $id_favor;
+        
+        header("location: excluir_favorito.php");
+    }
 ?>

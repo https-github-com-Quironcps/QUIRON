@@ -51,7 +51,7 @@ include('../server/mandaTema.php');
                         <div class="div-modo">
                             <a href="sobre" class="text-modo">Modo escuro:</a>
                             <input type="checkbox" onclick="javacript:window.location.href = './../server/mudaTema.php?tema=andamento'" class="check-modo" name="" id="">
-                            <a id="exit" onclick="chamaDiv()"><i class="bi bi-box-arrow-left"></i></a>
+                            <a style="cursor: pointer;" id="exit4" onclick="chamaDiv()"><i class="bi bi-box-arrow-left"></i></a>
                         </div>
                     </ul>
                 </div>
