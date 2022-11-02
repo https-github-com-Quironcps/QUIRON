@@ -24,6 +24,8 @@ if (isset($tema)) {
 
 <?php }
     }
+} else {
+    $tela_tema = 'light';
 } ?>
 
 <head>
@@ -69,7 +71,11 @@ if (isset($tema)) {
                 <div>
                     <input type="checkbox" id="base" class="abo11">
 
-                    <label class="gaby" for="base"><?php if($tela_tema == 'light dark'){ echo "<i style='color: white;' class='bi bi-filter'></i>";} else{ echo "<i class='bi bi-filter'></i>";} ?></label>
+                    <label class="gaby" for="base"><?php if ($tela_tema == 'light dark') {
+                                                        echo "<i style='color: white;' class='bi bi-filter'></i>";
+                                                    } else {
+                                                        echo "<i class='bi bi-filter'></i>";
+                                                    } ?></label>
 
                     <div class="div-filtros">
 
@@ -127,8 +133,39 @@ if (isset($tema)) {
                                     <button class=' check-vaga' style="display: none;" id="checkva <?php echo $Resultado['Idv']; ?>" onclick="AparecerVaga(<?php echo $Resultado['Idv']; ?>)"></button>
 
                                     <div id="aside-vaga <?php echo $Resultado['Idv']; ?>" class="aside">
-                                        <div class="flex">
+
+                                        <div class="flex" id="vaga<?php echo $Resultado['Idv']; ?>">
                                             <i id="voltarbtn" onclick="voltarPVaga(<?php echo $Resultado['Idv']; ?>)" class="bi bi-arrow-left"></i>
+                                            <?php
+                                            if ($user_type == 'professor') {
+                                                include('../server/PDO/situacao.php');
+
+                                                $sta->bindParam(':id', $Resultado['IDINST'], PDO::PARAM_INT);
+                                                $sta->bindParam(':id_professor', $user_id, PDO::PARAM_INT);
+                                                $sta->bindParam(':id_vaga', $Resultado['Idv'], PDO::PARAM_INT);
+                                                $sta->execute();
+                                                $favoritos = $sta->fetchAll(PDO::FETCH_ASSOC);
+
+
+                                                $id_vaga_fav = $Resultado['Idv'];
+
+                                                if (count($favoritos)) {
+                                                    foreach ($favoritos as $Fav) {
+                                                        $id_favorito = $Fav['IdFav'];
+                                                        $professor_fk = $Fav['FKFavProf'];
+                                                        $fk_vaga_fav = $Fav['FKFavVaga'];
+
+                                                        if ($user_id == $professor_fk && $id_vaga_fav == $fk_vaga_fav) {
+                                                            $condicao_fav = $Fav['CondFav'];
+                                                            include('partials/coracao-fav-fill.php');
+                                                        }
+                                                    }
+                                                } else {
+                                                    $condicao_fav = 3;
+                                                    include('partials/coracao-fav-fill.php');
+                                                }
+                                            }
+                                            ?>
                                             <br>
                                             <h6 class="title03"><?php echo $Resultado['Vaga']; ?></h6>
                                             <br>
@@ -142,23 +179,25 @@ if (isset($tema)) {
 
                                                 <div class="req-vaga">
                                                     <h6 class="title02">Requisitos da Vaga</h6>
-                                                    <h5 class="h5a"><?php if (isset($user_situacao)){
-                                                                                if ($user_situacao == true){
-                                                                                    echo $Resultado['VagaReq'];
-                                                                                    } else {
-                                                                                        echo '<center>Entre na QUIRON para saber mais</center>'; 
-                                                                                        }}?></h5>
+                                                    <h5 class="h5a"><?php if (isset($user_situacao)) {
+                                                                        if ($user_situacao == true) {
+                                                                            echo $Resultado['VagaReq'];
+                                                                        } else {
+                                                                            echo '<center>Entre na QUIRON para saber mais</center>';
+                                                                        }
+                                                                    } ?></h5>
                                                 </div><br>
 
                                                 <div class="req-vaga">
                                                     <h6 class="title02">Média salarial</h6>
                                                     <div class="carg-horaria">
-                                                        <h5 class="h5a"><?php if (isset($user_situacao)){
-                                                                                if ($user_situacao == true){
-                                                                                    echo $Resultado['VagaFaixa'];
-                                                                                    } else {
-                                                                                        echo '<center>---</center>'; 
-                                                                                        }}?></h5>
+                                                        <h5 class="h5a"><?php if (isset($user_situacao)) {
+                                                                            if ($user_situacao == true) {
+                                                                                echo $Resultado['VagaFaixa'];
+                                                                            } else {
+                                                                                echo '<center>---</center>';
+                                                                            }
+                                                                        } ?></h5>
                                                     </div><br>
                                                 </div>
 
@@ -166,34 +205,31 @@ if (isset($tema)) {
                                                 <div class="desc-vaga">
                                                     <h6 class="title02">Carga Horária</h6>
                                                     <div class="carg-horaria">
-                                                        <h5 class="h5a"><?php if (isset($user_situacao)){
-                                                                                if ($user_situacao == true){
-                                                                                    echo $Resultado['VagaCarga'];
-                                                                                    } else {
-                                                                                        echo '<center>---</center>'; 
-                                                                                        }}?></h5>
+                                                        <h5 class="h5a"><?php if (isset($user_situacao)) {
+                                                                            if ($user_situacao == true) {
+                                                                                echo $Resultado['VagaCarga'];
+                                                                            } else {
+                                                                                echo '<center>---</center>';
+                                                                            }
+                                                                        } ?></h5>
                                                     </div>
                                                 </div><br>
 
                                             </div> <br>
                                             <?php
-                                                if (isset($user_situacao)){
-                                                    if ($user_situacao == true){
-                                                        include('../server/BotoesAcessoVaga.php');
-                                                    }
-
-                                                    else{
-                                                        include('../server/BotoesNAcesso.php');
-                                                    }
-                                                }
-
-                                                else{
+                                            if (isset($user_situacao)) {
+                                                if ($user_situacao == true) {
+                                                    include('../server/BotoesAcessoVaga.php');
+                                                } else {
                                                     include('../server/BotoesNAcesso.php');
                                                 }
+                                            } else {
+                                                include('../server/BotoesNAcesso.php');
+                                            }
                                             ?>
-
-
                                         </div>
+
+
 
                                     </div>
                                 </div>

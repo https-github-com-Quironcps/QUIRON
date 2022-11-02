@@ -30,13 +30,8 @@ if (isset($tema)) {
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/mostraVagas.js"></script>
-
-    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
-    <!-- <script src="../web/scripts/modo-dark.js"></script> -->
-    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
-
 
     <title>QUIRON - ESCOLA</title>
 </head>
@@ -59,7 +54,7 @@ if (isset($tema)) {
                 <!-- div com informações (nome da escola, cursos) sobrepondo a imagem do topo -->
 
                 <center>
-                    <div class="img-escola">
+                    <div id="amor" class="img-escola">
 
                         <h1 class="titulo">
                             <?php
@@ -103,9 +98,6 @@ if (isset($tema)) {
 
                     </div>
 
-
-                    <!-- div com vagas disponíveis (canto direito) -->
-
                     <div class="vagas">
                         <h3 class="titulo-vagas">Vagas disponíveis</h4><br>
 
@@ -115,6 +107,7 @@ if (isset($tema)) {
                         }
                     }
 
+
                     $num2 = 0;
 
                     if (count($vagas)) {
@@ -123,7 +116,7 @@ if (isset($tema)) {
                                 <table id="div-vg" class="div-vaga">
                                     <tr>
                                         <td>
-                                            <div class="vagas_link">
+                                            <div id="vagan<?php echo $Vagas['Idv']; ?>" class="vagas_link">
 
                                                 <br>
                                                 <div id="nome-vaga <?php echo $Vagas['Idv']; ?>">
@@ -134,24 +127,36 @@ if (isset($tema)) {
 
                                                 <button class='check-vaga' id="checkva <?php echo $Vagas['Idv']; ?>" onclick='AparecerVaga(<?php echo $Vagas['Idv']; ?>)'></button>
 
-                                                <div id="aside-vaga <?php echo $Vagas['Idv']; ?>" class="aside">
-
+                                                <div style="display: none;" id="aside-vaga <?php echo $Vagas['Idv']; ?>" class="aside">
 
                                                     <div class="flex">
                                                         <i id="voltarbtn" style="cursor: pointer;" onclick="voltarPVaga(<?php echo $Vagas['Idv']; ?>)" class="bi bi-arrow-left"></i>
 
                                                         <?php
-                                                        
-                                                        if (count($favoritos)) {
-                                                            foreach ($favoritos as $Fav) {
-                                                                $fk_vaga_fav = $Fav['FKFavVaga'];
-                                                                $id_vaga_fav = $Vagas['Idv'];
-                                                                $condicao_fav = $Fav['CondFav'];
+                                                        $sta->bindParam(':id_vaga', $Vagas['Idv'], PDO::PARAM_INT);
 
-                                                                if ($fk_vaga_fav == $id_vaga_fav) {
-                                                                    include('partials/coracao-fav.php');
+                                                        $sta->execute();
+                                                        $favoritos = $sta->fetchAll(PDO::FETCH_ASSOC);
+
+                                                        include('../server/PDO/situacao.php');
+
+                                                        $id_vaga_fav = $Vagas['Idv'];
+
+                                                        if ($user_type == 'professor') {
+                                                            if (count($favoritos)) {
+                                                                foreach ($favoritos as $Fav) {
+                                                                    $id_favorito = $Fav['IdFav'];
+                                                                    $professor_fk = $Fav['FKFavProf'];
+                                                                    $fk_vaga_fav = $Fav['FKFavVaga'];
+
+                                                                    if ($user_id == $professor_fk && $id_vaga_fav == $fk_vaga_fav) {
+                                                                        $condicao_fav = $Fav['CondFav'];
+                                                                        include('partials/coracao-fav.php');
+                                                                    }
                                                                 }
-                                                                
+                                                            } else {
+                                                                $condicao_fav = 3;
+                                                                include('partials/coracao-fav.php');
                                                             }
                                                         }
                                                         ?>
@@ -242,8 +247,6 @@ if (isset($tema)) {
                     }
         ?>
             </div>
-
-            <?php include('partials/loadpage.php'); ?>
 
 </body>
 

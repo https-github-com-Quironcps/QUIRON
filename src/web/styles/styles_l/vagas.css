@@ -32,6 +32,15 @@
     color: var(--cor-005);
 }
 
+.coracaovazio{
+    color: #9d88da;
+    
+    font-size: 25px;
+    float: right;
+    margin-right: 30px;
+    flex: 1;
+}
+
 .input-textarea {
     width: 180px;
     height: 40px;

@@ -146,10 +146,6 @@ body{
     display: none;
 }
 
-.aside{
-    display: none;
-}
-
 .check-vaga:checked ~ .aside{
     display: block;
 }

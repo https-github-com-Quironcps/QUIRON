@@ -57,7 +57,7 @@ $sta = $pdo->prepare("SELECT TB_FAVORITO.TB_FAVORITO_ID AS IdFav,
                       INNER JOIN tb_instituicao 
                       ON tb_instituicao.TB_INSTITUICAO_ID LIKE FK_INSTITUICAO
 
-                      WHERE FK_INSTITUICAO = :id AND FK_PROFESSOR = :id_professor");
+                      WHERE FK_INSTITUICAO = :id AND FK_PROFESSOR = :id_professor AND FK_VAGA = :id_vaga");
 
 $sth->bindParam(':id', $id_escola, PDO::PARAM_INT);
 $sta->bindParam(':id', $id_escola, PDO::PARAM_INT);
@@ -65,9 +65,8 @@ $sto->bindParam(':id', $id_escola, PDO::PARAM_INT);
 $sta->bindParam(':id_professor', $id_professor, PDO::PARAM_INT);
 
 $sth->execute();
-$sta->execute();
+
 $sto->execute();
 
 $vagas = $sto->fetchAll(PDO::FETCH_ASSOC);
 $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
-$favoritos = $sta->fetchAll(PDO::FETCH_ASSOC);
