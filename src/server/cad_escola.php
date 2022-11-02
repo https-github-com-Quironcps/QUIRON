@@ -49,10 +49,6 @@ if (isset($_POST['submit'])) {
                 $sql = "INSERT INTO TB_INSTITUICAO (TB_INSTITUICAO_NOME, TB_INSTITUICAO_ENDERECO, TB_INSTITUICAO_END_NUM, TB_INSTITUICAO_CIDADE, TB_INSTITUICAO_CEP, TB_INSTITUICAO_TELEFONE, TB_INSTITUICAO_EMAIL,`TB_INSTITUICAO_SENHA`,TB_INSTITUICAO_COD, TB_INSTITUICAO_IMG_USER) 
                 values(:TB_INSTITUICAO_NOME,:TB_INSTITUICAO_ENDERECO,:TB_INSTITUICAO_END_NUM,:TB_INSTITUICAO_CIDADE,:TB_INSTITUICAO_CEP,:TB_INSTITUICAO_TELEFONE,:TB_INSTITUICAO_EMAIL,:TB_INSTITUICAO_SENHA,:TB_INSTITUICAO_COD, :IMG_INSTITUICAO)";
 
-                //pega o id da escola ao se cadastrar
-                $last_id = mysql_insert_id();
-
-
                 try {
                     $handle = $pdo->prepare($sql);
                     $params = [
@@ -73,7 +69,22 @@ if (isset($_POST['submit'])) {
                     // $success = 'Sua escola está cadastrada na Quíron';
 
                     //redireciona para pagina de cadastrar o perfil com o id na url
-                    header("location: ../web/cadastrar_perfil.php?id=$last_id");
+                    $pega_id = $pdo->prepare("SELECT TB_INSTITUICAO_ID AS ID FROM TB_INSTITUICAO WHERE TB_INSTITUICAO_NOME LIKE :NOME AND TB_INSTITUICAO_EMAIL LIKE :EMAIL");
+                
+                    $pega_id->bindParam(':NOME', $nome, PDO::PARAM_STR);
+                    $pega_id->bindParam(':EMAIL', $email, PDO::PARAM_STR);
+
+                    $pega_id->execute();
+                    
+                    $id_int = $pega_id->fetchAll(PDO::FETCH_ASSOC);
+                    
+                    if (count($id_int)) {
+                        foreach ($id_int as $Lat) {
+                            $last_id = $Lat['ID'];
+                        }
+                    }
+
+                    header("location: ../web/cadastrar_perfil?cad=$last_id");
                 } catch (PDOException $e) {
                     $errors[] = $e->getMessage();
                 }

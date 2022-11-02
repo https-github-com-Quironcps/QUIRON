@@ -37,6 +37,7 @@ if (isset($tema)) {
     <link rel="stylesheet" href="../web/styles/styles_g/load.css">
     <!-- <script src="../web/scripts/modo-dark.js"></script> -->
     <script type="text/javascript" src="../web/scripts/preloader.js"></script>
+    <script src="scripts/mask.js"></script>
     
 </head>
 <body>
@@ -79,18 +80,18 @@ if (isset($tema)) {
 
         <div class="div-alterar-texto">
             <div class="div-alterar-form">
-                <label class="form-nome">Nome da instituição: </label><input value="<?php echo $Resultado['Nome']; ?>" class="input-sozinho" name="nome" type="text" id="input-text-alterar"><br>
+                <label class="form-nome">Nome da instituição: </label><input value="<?php echo $Resultado['Nome']; ?>" maxlength="128" class="input-sozinho input-text-alterar" name="nome" type="text" ><br>
                 
-                <label class="form-endereco">Endereço: </label><input value="<?php echo $Resultado['Endereco']; ?>" name="endereco" type="text" class="input-endereco" id="input-text-alterar"> <label class="form-num"> Nº: </label><input value="<?php echo $Resultado['Numero_endereco']; ?>" name="num" class="input-num" type="number" id="input-text-alterar"><br>
+                <label class="form-endereco aas">Endereço: </label><input value="<?php echo $Resultado['Endereco']; ?>" maxlength="128" name="endereco" type="text" class="input-endereco input-text-alterar" > <label class="form-num aas"> Nº: </label><input value="<?php echo $Resultado['Numero_endereco']; ?>" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="30" name="num" class="input-num input-text-alterar" type="number"><br>
                 
-                <label class="form-bairro">Cidade: </label><input value="<?php echo $Resultado['Bairro']; ?>" name="bairro" type="text" class="input-bairro" id="input-text-alterar"> <label class="form-cep"> CEP: </label><input value="<?php echo $Resultado['Cep']; ?>" name="cep" class="input-cep" type="number" id="input-text-alterar"><br>
+                <label class="form-bairro aas">Cidade: </label><input value="<?php echo $Resultado['Bairro']; ?>" maxlength="128" name="bairro" type="text" class="input-bairro input-text-alterar" > <label class="form-cep aas"> CEP: </label><input value="<?php echo $Resultado['Cep']; ?>" name="cep" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="8" class="input-cep input-text-alterar" type="number"><br>
                 
-                <label class="form-tel">Telefone: </label><input type="number" value="<?php echo $Resultado['Telefone']; ?>" name="telefone" class="input-tel" id="input-text-alterar"> <label class="form-email"> E-mail: </label><input class="input-email" value="<?php echo $Resultado['Email']; ?>" name="email" type="email" id="input-text-alterar"><br>
+                <label class="form-tel aas">Telefone: </label><input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" type="number" value="<?php echo $Resultado['Telefone']; ?>" name="telefone" class="input-tel input-text-alterar" > <label class="form-email aas"> E-mail: </label><input maxlength="128" class="input-email input-text-alterar" value="<?php echo $Resultado['Email']; ?>" name="email" type="email"><br>
 
-                <center> <label class="form-senha">Senha: </label><input type="password" value="<?php echo $Resultado['Senha']; ?>" name="senha" class="input-senha" id="input-text-alterar"> <label class="form-cod">Código: </label><input type="number" class="input-cod" value="<?php echo $Resultado['Codigo']; ?>" name="cod" id="input-text-alterar"></center>
+                <center> <label class="form-senha aas">Senha: </label><input maxlength="45" type="password" value="<?php echo $Resultado['Senha']; ?>" name="senha" class="input-senha input-text-alterar" > <label class="form-cod aas">Código: </label><input type="number" maxlength="100" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="input-cod input-text-alterar" value="<?php echo $Resultado['Codigo']; ?>" name="cod"></center>
                 
-                <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"> <input type="submit" name="editar" value="Deletar Conta" id="submit-text-alterar-2" class="submit-class"> 
-            
+                
+                <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"><a href="../server/excluir_escola.php" id="submit-text-alterar-2" class="submit-class">Deletar Conta</a>
             </div>
         </div>
         
