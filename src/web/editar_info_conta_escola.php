@@ -94,7 +94,7 @@ if (isset($tema)) {
                 <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"> <a style="text-decoration: none; color:white;" href="../server/excluir_escola.php"><div style="padding-top: 7px; text-align: center;" id="submit-text-alterar-2" class="submit-class">Deletar Conta</div></a>
             </div>
         </div>
-        
+
         <textarea style="display:none" name="imagem"><?php echo $Resultado['Foto']; ?></textarea>
         <?php
             }}

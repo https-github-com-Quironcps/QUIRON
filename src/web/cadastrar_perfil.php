@@ -79,7 +79,10 @@ if (isset($tema)) {
             <div class="div-alterar-img">
                 <div class="div-imagens">
                 
-                <div class="div-ponta"><img class="img-div-alterar-01" onerror="handleError2(this)" src="#"> <img id="imagem001" class="img-trash" src="images/svgs/trash.svg"></div>
+                <div class="div-ponta">
+                    <img class="img-div-alterar-01" onerror="handleError2(this)" src="#">
+                    <img id="imagem001" class="img-trash" src="images/svgs/trash.svg">
+                </div>
                 <div class="div-meio"><img class="img-div-alterar-01" onerror="handleError2(this)" src="#"> <img id="imagem002" class="img-trash" src="images/svgs/trash.svg"></div>
                 <div class="div-ultimo"><img class="img-div-alterar-01" onerror="handleError2(this)" src="#"> <img id="imagem003" class="img-trash" src="images/svgs/trash.svg"></div>            
                     
@@ -102,6 +105,11 @@ if (isset($tema)) {
                     <textarea style="display:none" name="cod_escola"><?php echo $escola_fk; ?></textarea>
                     <br>
                     <h6 class="aviso">(Você poderá editar isso futuramente)</h6>
+
+                    <textarea style="display:none" name="imagem1"></textarea>
+                    <textarea style="display:none" name="imagem2"></textarea>
+                    <textarea style="display:none" name="imagem3"></textarea>
+
                     <input type="submit" name="submit" value="Criar Perfil" id="submit-text-alterar" class="submit-class"><br>
                 </form>
             </div>
