@@ -100,7 +100,7 @@ if (isset($tema)) {
 
                         <label class="form-tel aas">Telefone: </label><input required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" name="tel-p" type="number" class="input-tel input-text-alterar"> <label class="form-email aas"> E-mail: </label><input required maxlength="128" name="email-p" class="input-email input-text-alterar" type="email"><br>
 
-                        <center> <label name="senha" class="form-senha aas">Senha: </label><input required maxlength="45" name="senha-p" type="password" class="input-senha input-text-alterar"> </center>
+                        <center> <label class="form-senha aas">Senha: </label><input required maxlength="45" name="senha-p" type="password" class="input-senha input-text-alterar"> </center>
 
                         <input type="submit" name="submit" value="Cadastrar-se" id="submit-text-alterar" class="submit-class">
                        

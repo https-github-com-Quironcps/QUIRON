@@ -34,11 +34,23 @@
     $sistema->bindParam(':id', $id_escola, PDO::PARAM_INT);
     $sistema->execute();
 
+    $perfil = $pdo->prepare('DELETE FROM `TB_PERFIL`
+    WHERE TB_PERFIL.TB_INSTITUICAO_TB_INSTITUICAO_ID LIKE :id');
+
+    $perfil->bindParam(':id', $id_escola, PDO::PARAM_INT);
+    $perfil->execute();
+
     $excluir_escola = $pdo->prepare('DELETE FROM `TB_INSTITUICAO`
     WHERE TB_INSTITUICAO.TB_INSTITUICAO_ID LIKE :id');
 
     $excluir_escola->bindParam(':id', $id_escola, PDO::PARAM_INT);
     $excluir_escola->execute();
 
+    session_start();
+    
     $_SESSION["user_sit"] = false;
+    $_SESSION["user_cod"] = 0;
+    $_SESSION["user_type"] = '';
+    $_SESSION["user_email"] = '';
+    
     header("location: ../web/");
