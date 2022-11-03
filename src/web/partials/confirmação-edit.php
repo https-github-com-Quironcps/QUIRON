@@ -19,7 +19,7 @@
     <div id="fecharDiv" class="div-todo">
 
         <div class="principal">
-            <a><i id="exit2" class="bi bi-x" onclick="sairTela()"></i></a>
+            <a><i id="exit2" style="cursor: pointer;"  class="bi bi-x" onclick="sairTela()"></i></a>
             <center>
                 <div class="conteudo6">
 
