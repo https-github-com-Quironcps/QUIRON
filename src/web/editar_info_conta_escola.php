@@ -50,6 +50,8 @@ if (isset($tema)) {
     if(isset($div_confirmacao)){
         include('partials/confirmação-edit.php');
     }
+
+    include('partials/aviso-excluir-conta.php');
 ?>
 
 <br><br><br><br>
@@ -91,7 +93,8 @@ if (isset($tema)) {
                 <center> <label class="form-senha aas">Senha: </label><input maxlength="45" type="password" value="<?php echo $Resultado['Senha']; ?>" required name="senha" class="input-senha input-text-alterar" > <label class="form-cod aas">Código: </label><input type="number" required maxlength="100" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="input-cod input-text-alterar" value="<?php echo $Resultado['Codigo']; ?>" name="cod"></center>
                 
                 
-                <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"> <a style="text-decoration: none; color:white;" href="../server/excluir_escola.php"><div style="padding-top: 7px; text-align: center;" id="submit-text-alterar-2" class="submit-class">Deletar Conta</div></a>
+                <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"> <a style="text-decoration: none; color:white;" onclick="chamaDivEx()"><div style="cursor: pointer; padding-top: 7px; text-align: center;" id="submit-text-alterar-2" class="submit-class">Deletar Conta</div></a>
+                
             </div>
         </div>
 

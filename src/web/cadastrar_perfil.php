@@ -115,7 +115,7 @@ if (isset($tema)) {
 
         <center>
             <div class="div-alterar-texto">
-                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="div-alterar-form" method="POST">
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="div-alterar-form" method="POST" enctype="multipart/form-data">
                     
                     <label class="form-cursos">Cursos: </label><br><textarea class="input-cursos" type="text" name="cursos" id="input-text-alterar2"></textarea><br>
                     
