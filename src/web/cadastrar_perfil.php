@@ -45,11 +45,13 @@ if (isset($tema)) {
 
 
 <?php 
-    include('../server/PDO/acesso_telas_desconhecido.php'); ?>
+    include('../server/PDO/acesso_telas_desconhecido.php'); 
+    $escola_fk = trim($_GET['cad']);?>
    
 <div class="page">
 
-<?php include('../server/PDO/navbar.php'); ?>
+<?php include('../server/PDO/navbar.php'); 
+?>
 
 
 <br><br><br><br>
@@ -97,6 +99,7 @@ if (isset($tema)) {
                     
                     <label class="form-equipe">Equipe: </label><br><textarea type="text" name="equipe" class="input-equipe" id="input-text-alterar2"></textarea>
                     
+                    <textarea style="display:none" name="cod_escola"><?php echo $escola_fk; ?></textarea>
                     <br>
                     <h6 class="aviso">(Você poderá editar isso futuramente)</h6>
                     <input type="submit" name="submit" value="Criar Perfil" id="submit-text-alterar" class="submit-class"><br>

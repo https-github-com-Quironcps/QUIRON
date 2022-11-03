@@ -2,8 +2,6 @@
 
     include ('PDO/situacao.php');
 
-    $escola_fk = $user_id;
-
     $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
     if (!empty($dados['submit'])){
@@ -16,10 +14,10 @@
         $cad_perfil->bindParam(':CURSOS', $dados['cursos'], PDO::PARAM_STR);
         $cad_perfil->bindParam(':SOBRE', $dados['sobre'], PDO::PARAM_STR);
         $cad_perfil->bindParam(':EQUIPE', $dados['equipe'], PDO::PARAM_STR);
-        $cad_perfil->bindParam(':FK', $escola_fk, PDO::PARAM_STR);
+        $cad_perfil->bindParam(':FK', $dados['cod_escola'], PDO::PARAM_STR);
 
         $cad_perfil->execute();
         
-        header("location: ../web/./");
+        header("location: ../web/entrar");
     } 
 ?>

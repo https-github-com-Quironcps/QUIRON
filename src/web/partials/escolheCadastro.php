@@ -27,7 +27,7 @@
                             <div class="tipo-cadastro-user"><img src="../images/svgs/student.svg" class="img-usuario-cadastro"><br> <input type="submit" onclick="javacript:window.location.href = '../cadastrar_professor'" value="Professor" class="btn-enviar"></div>
                         </div>
                         <br>
-                        <h3 clas="mensagem">Antes de se cadastrar, leia os nossos <a href="termos.php">Termos de uso</a></h3>
+                        <h4 clas="mensagem"> <br> <a style="color:white; opacity: 70%; text-decoration: none; font-size: 13px;" href="termos.php">Termos de uso</a></h4>
                 </div>
             </center>
         </div>
