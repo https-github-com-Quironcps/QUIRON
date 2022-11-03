@@ -52,7 +52,10 @@ if (isset($tema)) {
 
 if(isset($div_confirmacao)){
     include('partials/confirmação-edit.php');
-}?>
+}
+
+include('partials/aviso-excluir-conta.php');
+?>
 
 <br><br><br><br>
 
@@ -93,7 +96,7 @@ if(isset($div_confirmacao)){
 
                             <center> <label class="form-cpf aas">CPF: </label><input required value="<?php echo $Resultado['CPF']; ?>" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="14" name="cpf" type="number" class="input-cpf input-text-alterar" name="cpf"> <label class="form-senha aas">Senha: </label><input required value="<?php echo $Resultado['Senha']; ?>" maxlength="45" name="senha" type="password" class="input-senha input-text-alterar"> </center>
 
-                            <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"> <a style="text-decoration: none; color:white;" href="../server/excluir_professor.php"><div style="padding-top: 7px; text-align: center;" id="submit-text-alterar-2" class="submit-class">Deletar Conta</div></a>
+                            <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"> <a style="text-decoration: none; color:white;" onclick="chamaDivEx()"><div style="cursor: pointer; padding-top: 7px; text-align: center;" id="submit-text-alterar-2" class="submit-class">Deletar Conta</div></a>
                             
                             
                         </div>
