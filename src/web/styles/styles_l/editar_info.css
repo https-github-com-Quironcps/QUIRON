@@ -1,0 +1,468 @@
+.div-mae{
+    width: 80vw;
+    height: 450px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.h1002{
+    margin-top: 15px;
+    color: var(--color-003);
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.div-alterar-img{
+    border-radius: 20px;
+    text-align: center;
+    width: 30%;
+    background-color: var(--color-005);
+}
+
+.div-alterar-img h3{
+    font-size: 17px;
+    font-weight: 390;
+    line-height: 60px;
+    color: var(--color-003);
+    margin-top: 15%;
+}
+
+.div-alterar-img button{
+    margin-top: 30px;
+    margin-bottom: 15%;
+}
+
+.sub-div-alterar-img{
+    border-radius: 20px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    width: 85%;
+    height: 50%;
+    background-color: var(--white);
+}
+
+img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
+    height: 80px;
+    width: auto;
+    margin-top: 10vh;
+    /* padding: 30px; */
+}
+
+
+.bi-camera{
+    font-size: 80px;
+    color: var(--color-002);
+    opacity: 50%;
+}
+
+.imagem-anexo{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.div-alterar-texto{
+    border-radius: 20px;
+    width: 70%;
+    margin-left: 5vw;
+    padding: 8vh 20px;
+    background-color: var(--color-005);
+    padding: 40px 20px;
+    font-size: 17px;
+    font-weight: 390;
+}
+
+.div-alterar-texto2{
+    border-radius: 20px;
+    width: 70%;
+    margin-left: 5vw;
+    padding: 8vh 20px;
+    background-color: var(--color-005);
+    padding: 40px 20px;
+    font-size: 17px;
+    font-weight: 390;
+}
+
+#input-text-alterar{
+    font-size: 16px;
+    font-weight: 390;
+    margin-top: 30px;
+    background-color: var(--white);
+    border: 0;
+    border-radius: 5px;
+    padding: 1px 10px;
+    color: var(--color-003);
+    align-content: space-between;
+}
+
+.input-text-alterar{
+    font-size: 16px;
+    font-weight: 390;
+    margin-top: 30px;
+    background-color: var(--white);
+    border: 0;
+    border-radius: 5px;
+    padding: 1px 10px;
+    color: var(--color-003);
+    align-content: space-between;
+}
+
+/* Nome */
+.form-nome{
+    width: 26%;
+    line-height: 20px;
+    color: var(--color-003);
+}
+
+.input-sozinho{
+    width: 74%;
+}
+
+.form-nome-completo{
+    width: 22%;
+    line-height: 20px;
+    color: var(--color-003);
+}
+
+.input-nome{
+    width: 78%;
+}
+
+/* Endereco e Nº */
+.form-endereco{
+    width: 14%;
+    line-height: 20px;
+    color: var(--color-003);
+}
+
+.input-endereco{
+    width: 60%;
+}
+
+.form-num{
+    width: 10%;
+    padding-left: 5%;
+    color: var(--color-003);
+}
+
+.input-num{
+    width: 15%;
+}
+
+.form-cod{
+    width: 10%;
+    color: var(--color-003);
+    font-weight: 600;
+}
+
+.input-cod{
+    width: 15%;
+}
+
+.form-cpf{
+    width: 10%;
+    color: var(--color-003);
+}
+.input-cpf{
+    width: 25%;
+}
+
+.input-nasc{
+    width: 20%;
+}
+
+.form-nasc{
+    margin-left: 3%;
+    width: 15.5%;
+    color: var(--color-003);
+}
+
+.form-cpf2{
+    width: 8.5%;
+    color: var(--color-003);
+}
+
+.input-cpf2{
+    width: 25%;
+}
+
+/* Bairro e CEP */
+.form-bairro{
+    width: 10%;
+    line-height: 20px;
+    color: var(--color-003);
+}
+
+.input-bairro{
+    width: 50%;
+}
+
+.form-cep{
+    width: 10%;
+    padding-left: 3.5%;
+    color: var(--color-003);
+}
+
+.input-cep{
+    width: 29%;
+}
+
+/* Telefone e E-mail */
+.form-tel{
+    line-height: 20px;
+    width: 13%;
+    color: var(--color-003);
+}
+
+.input-tel{
+    width: 27%;
+}
+
+.form-email{
+    width: 12%;
+    padding-left: 3%;
+    color: var(--color-003);
+}
+
+.input-email{
+    width: 47%;
+}
+
+.input-junto{
+    width: 15vw;
+}
+
+/* SENHA */
+
+.form-senha{
+    width: 10%;
+    color: var(--color-003);
+}
+
+.input-senha{
+    width: 30%;
+}
+
+#input-text-alterar:hover, #input-text-alterar:focus{
+    outline: none;
+    border-color: var(--color-002);
+    box-shadow: 0 0 0 2px var(--color-002);
+    transition: all 0.9s;
+}
+
+.input-text-alterar:hover, .input-text-alterar:focus{
+    outline: none;
+    border-color: var(--color-002);
+    box-shadow: 0 0 0 2px var(--color-002);
+    transition: all 0.9s;
+}
+
+#submit-text-alterar{
+    background-color: var(--color-001);
+    border-radius: 4px;
+    width: 20vh;
+    height: 40px;
+    border-style: none;
+    padding: 5px;
+    color: var(--color-004);
+}
+
+#submit-text-alterar:hover{
+    transition: all 0.5s;
+    outline: none;
+    background: var(--color-002);
+}
+
+#submit-text-alterar-2{
+    background-color: var(--cor-rgb-005);
+    border-radius: 4px;
+    width: 20vh;
+    height: 40px;
+    border-style: none;
+    color: var(--color-004);
+}
+
+#submit-text-alterar-2:hover{
+    transition: all 0.5s;
+    outline: none;
+    background: var(--color-002);
+}
+
+.input-file{
+    display: none;
+}
+
+.submit-class{
+    float: right;
+    margin-left: 10px;
+}
+
+#submit-text-alterar, #submit-text-alterar-2{
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1255px) {
+    .div-alterar-texto{
+        font-size: 15px;
+    }
+
+    .div-alterar-texto2{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    .div-mae{
+        display: contents;
+        align-items: center;
+        height: auto;
+    }
+
+    #submit-text-alterar, #submit-text-alterar-2{
+        margin-top: 20px;
+    }
+
+    .imagem-anexo{
+        width: 90%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
+        height: 50px;
+        width: auto;
+        margin-top: 0;
+    }
+
+    .div-alterar-img{
+        display: flex;
+        width: 90vw;
+        margin: 0 5vw;
+        height: 80px;
+        align-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        padding: 0px 20px;
+    }
+
+    .sub-div-alterar-img{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 60px;
+        height: 60px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        flex: 1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .bi-camera{
+        height: 30px;
+        font-size: 30px;
+    }
+
+    .div-alterar-img h3{
+        font-size: 15px;
+        font-weight: 390;
+        flex: 1;
+        line-height: 60px;
+        margin-top: 1%;
+    }
+
+    .abc001{
+        flex: 1;
+        width: 100px;
+    }
+
+    .div-alterar-texto{
+        width: 90vw;
+        height: 450px;
+        margin-bottom: 30px;
+    }
+
+    .div-alterar-texto2{
+        width: 90vw;
+        height: 500px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .div-alterar-texto, .div-alterar-texto2{
+        height: 100%;
+    }
+
+    .div-alterar-form{
+        height: 820px;
+    }
+
+    .aas{
+        margin-top: 33px;
+    }
+
+    .div-alterar-form2{
+        height: 870px;
+    }
+
+    .input-bairro, 
+    .input-cep, 
+    .input-email, 
+    .input-endereco, 
+    .input-junto, 
+    .input-num,
+    .input-nome,
+    .input-senha, 
+    .input-sozinho, 
+    .input-cod,
+    .input-cpf,
+    .input-cpf2,
+    .input-nasc,
+    .input-tel
+    {
+        width: 60%;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    
+    .form-nasc{
+        margin-left: 0;
+    }
+    .form-bairro,
+    .form-cep,
+    .form-email,
+    .form-nome,
+    .form-nome-completo,
+    .form-endereco,
+    .form-cod,
+    .form-num,
+    .form-cpf,
+    .form-cpf2,
+    .form-nasc,
+    .form-senha,
+    .form-tel{
+        width: 39%;
+        padding-left: 0;
+        line-height: normal;
+        text-align: center;
+    }
+    
+    .div-alterar-img h3{
+        font-size: 15px;
+        font-weight: 390;
+        flex: 1;
+        line-height: normal;
+        margin-top: 5%;
+    }
+
+    img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
+        height: 40px;
+        margin-top: 5px;
+        padding: 5%;
+    }
+}

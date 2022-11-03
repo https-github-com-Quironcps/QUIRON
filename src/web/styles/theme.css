@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+:root{
+    /* Paleta de cores da QUIRON */
+    --cor-palette-1: #2C166B;
+    --cor-palette-2: #9679ED;
+    --cor-palette-3: #6031EB;
+    --cor-palette-4: #44376B;
+    --cor-palette-5: #4B27B8;
+
+    --botao-iniciar-hover: #9d88da;
+
+    --white: #ffffff;
+    --black: #000000;
+    --grey: grey;
+
+    --cor-001: #7e57c2;
+    --cor-002: #6131EB;
+    --cor-003: #9d88da;
+    --cor-004: #8C8398;
+    --cor-005: #7E7E7E;
+    --cor-006: #F2EFFB;
+    --cor-007: #6d6d6d;
+    --cor-008: #7e57c2c3; /* cor do botão */
+    --cor-009: #ebeaea; /* cor texto do botão */
+    --cor-010: #F2EFFB; /* div principal da tela escolas */
+    --cor-011: #c1c1c1e7; /* cor da linha na tela sobre */
+    --cor-012: #9f9f9f; /* cor do texto na footer da tela visualizar escolas */
+    --cor-013: #1e1e1e;   /* cor background da loadpage */
+
+    --cor-rgb-001: rgb(97, 49, 235, 70%);
+    --cor-rgb-002: rgb(242, 239, 251, 61%);
+    --cor-rgb-003: rgb(97, 49, 235, 61%);
+    --cor-rgb-004: rgba(96, 49, 235, 0.453);
+    --cor-rgb-005: rgba(178, 22, 22, 0.623);
+    --cor-rgb-006: rgba(168, 149, 225, 0.349);
+    --cor-rgb-007: rgb(97, 49, 235, 0.6);
+    --cor-rgb-008: rgb(226, 224, 227);  /* cor do título e sibtítulo da tela visualizar escolas */
+}
+
+.light:root{
+
+    --white: #ffffff;
+    --black: #000000;
+    --grey:  #666666;
+    --troca: #000;
+
+    --color-001: #7e57c2c3; /* cor dos ícones e dos botões, bem como títulos em destaque (como na tela "sobre", por exemplo) */
+    --color-002: #7e57c2;   /* cor para o "hover" dos botões, inputs, entre outros */
+    --color-003: #8C8398;   /* para os textos das páginas e das "linhas" que separam parágrafos (na tela de contato tem um exemplo) */
+    --color-004: #f0efef;   /* para o texto que vai dentro dos botões */
+    --color-005: #F2EFFB;   /* cor das divs que estão ao fundo de outros elementos (no formulário da tela contato, por exemplo), ou dos campos de texto com fundo branco (tela de escolas, por exemplo */
+    --color-006: #ffff;     /* cor da navbar */
+    --color-007: rgba(54, 54, 54, 0.8);   /* cor da footer */
+
+    --color-rgb-001: rgba(237, 56, 56, 0.623);  /* cor do botão "deletar conta" */
+    
+}
+
+.dark:root{
+
+    --white: rgba(23, 23, 23, 0.937);
+    --black: #000000;
+    --grey:  #666666;
+    --troca: #666666;
+
+    --color-001: #323232; /* cor dos ícones e dos botões, bem como títulos em destaque (como na tela "sobre", por exemplo) */
+    --color-002: #181818;   /* cor para o "hover" dos botões, inputs, entre outros */
+    --color-003: #D3D3D3;   /* para os textos das páginas e das "linhas" que separam parágrafos (na tela de contato tem um exemplo) */
+    --color-004: #D3D3D3;   /* para o texto que vai dentro dos botões */
+    --color-005: #1e1e1e;   /* cor das divs que estão ao fundo de outros elementos (no formulário da tela contato, por exemplo), ou dos campos de texto com fundo branco (tela de escolas, por exemplo */
+    --color-006: rgba(38, 38, 38, 0.838); /* cor da navbar */
+    --color-007: #1e1e1e;   /* cor da footer */
+
+    --color-rgb-001: rgba(238, 48, 48, 0.438);  /* cor do botão "deletar conta" */
+} 
