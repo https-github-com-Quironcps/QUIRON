@@ -84,7 +84,8 @@ if (isset($_POST['submit'])) {
                         }
                     }
 
-                    header("location: ../web/cadastrar_perfil?cad=$last_id");
+                    header("location: ../server/pega_id_perfil.php?cad=$last_id");
+
                 } catch (PDOException $e) {
                     $errors[] = $e->getMessage();
                 }

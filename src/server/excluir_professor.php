@@ -4,7 +4,7 @@
 
     $id_prof = $user_id;
 
-    $favoritos_Vaga = $pdo->prepare("DELETE FROM `tb_favorito` WHERE FK_PROFESSOR = :ID_PROF");
+    $favoritos_Vaga = $pdo->prepare("DELETE FROM `TB_FAVORITO` WHERE FK_PROFESSOR = :ID_PROF");
 
     $favoritos_Vaga->bindParam(':ID_PROF', $id_prof, PDO::PARAM_INT);
     $favoritos_Vaga->execute();

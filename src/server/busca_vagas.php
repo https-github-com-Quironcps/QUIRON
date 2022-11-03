@@ -271,7 +271,7 @@ $sta = $pdo->prepare("SELECT TB_FAVORITO.TB_FAVORITO_ID AS IdFav,
                     INNER JOIN TB_PROFESSOR 
                     ON TB_PROFESSOR.TB_PROFESSOR_ID LIKE FK_PROFESSOR
 
-                    INNER JOIN tb_instituicao 
-                    ON tb_instituicao.TB_INSTITUICAO_ID LIKE FK_INSTITUICAO
+                    INNER JOIN TB_INSTITUICAO 
+                    ON TB_INSTITUICAO.TB_INSTITUICAO_ID LIKE FK_INSTITUICAO
 
                     WHERE FK_INSTITUICAO = :id AND FK_PROFESSOR = :id_professor AND FK_VAGA = :id_vaga");

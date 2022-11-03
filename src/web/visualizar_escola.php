@@ -77,9 +77,9 @@ if (isset($tema)) {
 
                     <div class="imagens">
 
-                        <img class="sub-imagens" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['ImgPost1']; ?>" alt="">
-                        <img class="sub-imagens" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['ImgPost2']; ?>" alt=""><br>
-                        <img class="sub-imagens" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['ImgPost3']; ?>" alt=""><br>
+                        <img class="sub-imagens" onerror="imagem_escola(this)" src="<?php echo $Resultado['ImgPost1']; ?>" alt="">
+                        <img class="sub-imagens" onerror="imagem_escola(this)" src="<?php echo $Resultado['ImgPost2']; ?>" alt=""><br>
+                        <img class="sub-imagens" onerror="imagem_escola(this)" src="<?php echo $Resultado['ImgPost3']; ?>" alt=""><br>
 
                     </div>
 

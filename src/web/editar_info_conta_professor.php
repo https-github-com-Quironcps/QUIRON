@@ -78,6 +78,7 @@ include('partials/aviso-excluir-conta.php');
                         </div>
 
                         <input type="file" name="foto" class="input-file" id="base">
+                        
                         <label id="submit-text-alterar" class="abc001" for="base">Anexar</label>
                     </div>
 

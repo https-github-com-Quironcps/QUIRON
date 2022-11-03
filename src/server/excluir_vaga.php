@@ -4,7 +4,7 @@
 
     $id_vaga = $_SESSION['id_vaga'];
 
-    $favoritos_Vaga = $pdo->prepare("DELETE FROM `tb_favorito` WHERE FK_VAGA = :ID_VAGA");
+    $favoritos_Vaga = $pdo->prepare("DELETE FROM `TB_FAVORITO` WHERE FK_VAGA = :ID_VAGA");
 
     $favoritos_Vaga->bindParam(':ID_VAGA', $id_vaga, PDO::PARAM_INT);
 

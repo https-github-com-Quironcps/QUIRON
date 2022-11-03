@@ -44,10 +44,11 @@
     background-color: var(--white);
 }
 
-img[src="images/svgs/camera.svg"], [src=''], img:not([src]) {
+img[src="images/svgs/school.svg"], [src=''], img:not([src]) {
     height: 80px;
     width: auto;
     margin-top: 10vh;
+    /* padding: 30px; */
 }
 
 

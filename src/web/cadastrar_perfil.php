@@ -46,7 +46,8 @@ if (isset($tema)) {
 
 <?php 
     include('../server/PDO/acesso_telas_desconhecido.php'); 
-    $escola_fk = trim($_GET['cad']);?>
+    // $escola_fk = trim($_GET['cad']);
+    ?>
    
 <div class="page">
 
@@ -80,17 +81,37 @@ if (isset($tema)) {
                 <div class="div-imagens">
                 
                 <div class="div-ponta">
-                    <img class="img-div-alterar-01" onerror="handleError2(this)" src="#">
-                    <img id="imagem001" class="img-trash" src="images/svgs/trash.svg">
+                    <label for="base_img_1">
+                        <img style="cursor: pointer;" class="img-div-alterar-01" onerror="handleError2(this)" id="preview1" src="">
+                    </label>
+                    <input style="display: none;" type="file" name="foto" class="input-file" id="base_img_1">
+                    <img id="imagem001" onclick="apagaFoto(1)" id="trash_01" class="img-trash" src="images/svgs/trash.svg">
                 </div>
-                <div class="div-meio"><img class="img-div-alterar-01" onerror="handleError2(this)" src="#"> <img id="imagem002" class="img-trash" src="images/svgs/trash.svg"></div>
-                <div class="div-ultimo"><img class="img-div-alterar-01" onerror="handleError2(this)" src="#"> <img id="imagem003" class="img-trash" src="images/svgs/trash.svg"></div>            
+
+                <div class="div-meio">
+                    <label for="base_img_2">
+                            <img style="cursor: pointer;" class="img-div-alterar-01" onerror="handleError2(this)" id="preview2" src="">
+                    </label>
+
+                    <input style="display: none;" type="file" name="foto" class="input-file" id="base_img_2">
+                    <img id="imagem002" onclick="apagaFoto(2)" id="trash_02" class="img-trash" src="images/svgs/trash.svg">
+                </div>
+
+                <div class="div-ultimo">
+                    <label for="base_img_3">
+                            <img style="cursor: pointer;" class="img-div-alterar-01" onerror="handleError2(this)" id="preview3" src="">
+                    </label>
+                    
+                    <input style="display: none;" type="file" name="foto" class="input-file" id="base_img_3">
+                    <img id="imagem003" onclick="apagaFoto(3)" id="trash_03" class="img-trash" src="images/svgs/trash.svg">
+                </div>            
                     
                 </div>
             </div>
         </center>
 
         <br>
+        <script src="scripts/imagem_perfil.js"></script>
 
         <center>
             <div class="div-alterar-texto">
@@ -106,9 +127,9 @@ if (isset($tema)) {
                     <br>
                     <h6 class="aviso">(Você poderá editar isso futuramente)</h6>
 
-                    <textarea style="display:none" name="imagem1"></textarea>
-                    <textarea style="display:none" name="imagem2"></textarea>
-                    <textarea style="display:none" name="imagem3"></textarea>
+                    <textarea id="texta_imagem1" style="display:none" name="imagem1"></textarea>
+                    <textarea id="texta_imagem2" style="display:none" name="imagem2"></textarea>
+                    <textarea id="texta_imagem3" style="display:none" name="imagem3"></textarea>
 
                     <input type="submit" name="submit" value="Criar Perfil" id="submit-text-alterar" class="submit-class"><br>
                 </form>

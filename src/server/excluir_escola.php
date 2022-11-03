@@ -14,7 +14,7 @@
 
     if (count($vagas)) {
         foreach ($vagas as $Vag) {
-            $favoritos_Vaga = $pdo->prepare("DELETE FROM `tb_favorito` WHERE FK_VAGA = :ID_VAGA");
+            $favoritos_Vaga = $pdo->prepare("DELETE FROM `TB_FAVORITO` WHERE FK_VAGA = :ID_VAGA");
 
             $favoritos_Vaga->bindParam(':ID_VAGA', $Vag['Idv'], PDO::PARAM_INT);
             $favoritos_Vaga->execute();

@@ -20,7 +20,7 @@ if (isset($_GET['tema']) == 'andamento') {
             $modoa = 1;
         }
 
-        $stq = $pdo->prepare("UPDATE `tb_sistema` SET
+        $stq = $pdo->prepare("UPDATE `TB_SISTEMA` SET
                                   `TB_SISTEMA_MODO` = :MODO
                                   WHERE TB_SISTEMA_ID LIKE :ID_SISTEMA AND TB_INSTITUICAO_FK LIKE :ID_ESCOLA");
 
@@ -40,7 +40,7 @@ if (isset($_GET['tema']) == 'andamento') {
             $modoa = 1;
         }
 
-        $stq = $pdo->prepare("UPDATE `tb_sistema` SET
+        $stq = $pdo->prepare("UPDATE `TB_SISTEMA` SET
                                   `TB_SISTEMA_MODO` = :MODO
                                   WHERE TB_SISTEMA_ID LIKE :ID_SISTEMA AND TB_PROFESSOR_FK LIKE :ID_PROFESSOR");
 
