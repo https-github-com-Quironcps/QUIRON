@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+include('../server/atualiza_perfil.php');
 include('../server/mandaTema.php');
 if (isset($tema)) {
     if (count($tema)) {
@@ -56,7 +57,11 @@ if(isset($div_confirmacao)){
     <center><h1 class="h1002">Editar Perfil</h1></center>
 
     <div class="div-pai">
+    <?php
+                if (count($resultados)) {
+                    foreach ($resultados as $Resultado) {
 
+                ?>
         <center>
             <div class="div-alterar-img">
                 <div class="div-imagens">
@@ -75,16 +80,21 @@ if(isset($div_confirmacao)){
             <div class="div-alterar-texto">
                 <form action="" method="POST" class="div-alterar-form">
                     
-                    <label class="form-cursos">Cursos: </label><br><textarea class="input-cursos" type="text" name="cursos" id="input-text-alterar2"></textarea><br>
+                    <label class="form-cursos">Cursos: </label><br><textarea class="input-cursos" type="text" name="cursos" id="input-text-alterar2"> <?php echo $Resultado['Cursos']; ?> </textarea><br>
                     
-                    <label class="form-sobre">Sobre: </label><br><textarea type="text" name="sobre" class="input-sobre" id="input-text-alterar2"></textarea><br>
+                    <label class="form-sobre">Sobre: </label><br><textarea type="text" name="sobre" class="input-sobre" id="input-text-alterar2"> <?php echo $Resultado['Sobre']; ?> </textarea><br>
                     
-                    <label class="form-equipe">Equipe: </label><br><textarea type="text" name="equipe" class="input-equipe" id="input-text-alterar2"></textarea>
+                    <label class="form-equipe">Equipe: </label><br><textarea type="text" name="equipe" class="input-equipe" id="input-text-alterar2"><?php echo $Resultado['Equipe']; ?> </textarea>
                     
                     <br>
                     <input type="submit" name="submit" value="Editar" id="submit-text-alterar" class="submit-class"><br>
                 </form>
             </div>
+            <?php
+                    }
+                }
+
+?>
         </center>
     </div>
     
