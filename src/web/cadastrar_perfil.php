@@ -66,12 +66,6 @@ if (isset($tema)) {
 						echo '<div class="alert alert-danger">'.$error_msg.'</div>';
 					}
                 }
-                
-                if(isset($success))
-                {
-                    
-                    echo '<div class="alert alert-success">'.$success.'</div>';
-                }
 			?>
 
     <div class="div-pai">

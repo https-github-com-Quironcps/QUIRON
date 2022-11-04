@@ -19,6 +19,7 @@ if (isset($tema)) {
 <?php }
     }
 } ?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,73 +36,102 @@ if (isset($tema)) {
     <script type="text/javascript" src="../web/scripts/preloader.js"></script>
 
 </head>
+
 <body>
 
-<!-- COLOCAR DIV DE CONFIRMAÇÃO DE EDIÇÃO -->
+    <!-- COLOCAR DIV DE CONFIRMAÇÃO DE EDIÇÃO -->
 
-<?php 
+    <?php
     include('../server/PDO/verifica_logado.php');
     include('../server/PDO/acesso_telas_escola.php');
-?>
+    ?>
     <div class="page">
 
-<?php include('../server/PDO/navbar.php'); 
+        <?php include('../server/PDO/navbar.php');
 
-if(isset($div_confirmacao)){
-    include('partials/confirmação-edit.php');
-}?>
+        if (isset($div_confirmacao)) {
+            include('partials/confirmação-edit.php');
+        } ?>
 
 
-<br><br><br><br>
+        <br><br><br><br>
 
-    <center><h1 class="h1002">Editar Perfil</h1></center>
+        <center>
+            <h1 class="h1002">Editar Perfil</h1>
+        </center>
 
-    <div class="div-pai">
-    <?php
-                if (count($resultados)) {
-                    foreach ($resultados as $Resultado) {
+        <div class="div-pai">
+            <?php
+            if (count($resultados)) {
+                foreach ($resultados as $Resultado) {
+
+            ?>
+                    <center>
+                        <div class="div-alterar-img">
+                            <div class="div-imagens">
+                                <div class="div-ponta">
+                                    <label for="base_img_1">
+                                        <img style="cursor: pointer;" class="img-div-alterar-01" onerror="handleError2(this)" id="preview1" src="<?php echo $Resultado['Img1']; ?>">
+                                    </label>
+                                    <input style="display: none;" type="file" name="foto" class="input-file" id="base_img_1">
+                                    <img id="imagem001" onclick="apagaFoto(1)" id="trash_01" class="img-trash" src="images/svgs/trash.svg">
+                                </div>
+
+                                <div class="div-meio">
+                                    <label for="base_img_2">
+                                        <img style="cursor: pointer;" class="img-div-alterar-01" onerror="handleError2(this)" id="preview2" src="<?php echo $Resultado['Img2']; ?>">
+                                    </label>
+
+                                    <input style="display: none;" type="file" name="foto" class="input-file" id="base_img_2">
+                                    <img id="imagem002" onclick="apagaFoto(2)" id="trash_02" class="img-trash" src="images/svgs/trash.svg">
+                                </div>
+
+                                <div class="div-ultimo">
+                                    <label for="base_img_3">
+                                        <img style="cursor: pointer;" class="img-div-alterar-01" onerror="handleError2(this)" id="preview3" src="<?php echo $Resultado['Img3']; ?>">
+                                    </label>
+
+                                    <input style="display: none;" type="file" name="foto" class="input-file" id="base_img_3">
+                                    <img id="imagem003" onclick="apagaFoto(3)" id="trash_03" class="img-trash" src="images/svgs/trash.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+
+                    <br>
+                    <script src="scripts/imagem_perfil.js"></script>
+
+                    <center>
+                        <div class="div-alterar-texto">
+                            <form action="" method="POST" class="div-alterar-form">
+
+                                <label class="form-cursos">Cursos: </label><br><textarea style="color: grey; font-weight: 300;" class="input-cursos" type="text" name="cursos" id="input-text-alterar2"> <?php echo $Resultado['Cursos']; ?> </textarea><br>
+
+                                <label class="form-sobre">Sobre: </label><br><textarea style="color: grey; font-weight: 300;" type="text" name="sobre" class="input-sobre" id="input-text-alterar2"> <?php echo $Resultado['Sobre']; ?> </textarea><br>
+
+                                <label class="form-equipe">Equipe: </label><br><textarea style="color: grey; font-weight: 300;" type="text" name="equipe" class="input-equipe" id="input-text-alterar2"><?php echo $Resultado['Equipe']; ?> </textarea>
+
+                                <textarea id="texta_imagem1" style="display:none" name="imagem1"><?php echo $Resultado['Img1']; ?></textarea>
+                                <textarea id="texta_imagem2" style="display:none" name="imagem2"><?php echo $Resultado['Img2']; ?></textarea>
+                                <textarea id="texta_imagem3" style="display:none" name="imagem3"><?php echo $Resultado['Img3']; ?></textarea>
+
+                                <br>
+                                <input type="submit" name="submit" value="Editar" id="submit-text-alterar" class="submit-class"><br>
+                            </form>
+                        </div>
+                <?php
+                }
+            }
 
                 ?>
-        <center>
-            <div class="div-alterar-img">
-                <div class="div-imagens">
-                
-                <div class="div-ponta"><img class="img-div-alterar-01" onerror="handleError2(this)" src="#"> <img id="imagem001" class="img-trash" src="images/svgs/trash.svg"></div>
-                <div class="div-meio"><img class="img-div-alterar-01" onerror="handleError2(this)" src="#"> <img id="imagem002" class="img-trash" src="images/svgs/trash.svg"></div>
-                <div class="div-ultimo"><img class="img-div-alterar-01" onerror="handleError2(this)" src="#"> <img id="imagem003" class="img-trash" src="images/svgs/trash.svg"></div>            
-                    
-                </div>
-            </div>
-        </center>
+                    </center>
+        </div>
 
-        <br>
-
-        <center>
-            <div class="div-alterar-texto">
-                <form action="" method="POST" class="div-alterar-form">
-                    
-                    <label class="form-cursos">Cursos: </label><br><textarea class="input-cursos" type="text" name="cursos" id="input-text-alterar2"> <?php echo $Resultado['Cursos']; ?> </textarea><br>
-                    
-                    <label class="form-sobre">Sobre: </label><br><textarea type="text" name="sobre" class="input-sobre" id="input-text-alterar2"> <?php echo $Resultado['Sobre']; ?> </textarea><br>
-                    
-                    <label class="form-equipe">Equipe: </label><br><textarea type="text" name="equipe" class="input-equipe" id="input-text-alterar2"><?php echo $Resultado['Equipe']; ?> </textarea>
-                    
-                    <br>
-                    <input type="submit" name="submit" value="Editar" id="submit-text-alterar" class="submit-class"><br>
-                </form>
-            </div>
-            <?php
-                    }
-                }
-
-?>
-        </center>
-    </div>
-    
-<?php include('partials/footer.php') ?>
+        <?php include('partials/footer.php') ?>
 
     </div>
 
     <?php include('partials/loadpage.php') ?>
 </body>
-</html>
+
+            </html>
