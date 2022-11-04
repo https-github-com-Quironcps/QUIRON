@@ -23,7 +23,7 @@ $content = new SendGrid\Content("text/html", "Olá Quíron, <br><br>Você recebe
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
 //Necessário inserir a chave
-$apiKey = 'SENDGRID_API_KEY';
+$apiKey = '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';
 $sg = new \SendGrid($apiKey);
 
 $response = $sg->client->mail()->send()->post($mail);
