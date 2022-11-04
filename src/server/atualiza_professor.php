@@ -62,7 +62,45 @@ if (isset($_POST['nome'])) {
 
                             $div_confirmacao = 1;
                         } else {
-                            $errors[] = 'CPF já cadastrado';
+                            $cpf_ver = 'SELECT * FROM TB_PROFESSOR where TB_PROFESSOR_CPF = :TB_PROFESSOR_CPF AND TB_PROFESSOR_ID = :TB_PROFESSOR_ID';
+                            $stmtv = $pdo->prepare($cpf_ver);
+                            $pv = [
+                                'TB_PROFESSOR_CPF' => $cpf,
+                                'TB_PROFESSOR_ID' => $user_id
+                            ];
+                            $stmtv->execute($pv);
+
+                            if ($stmtv->rowCount() == 1) {
+                                $sth = $pdo->prepare('UPDATE TB_PROFESSOR SET TB_PROFESSOR_NOME = :nome,
+                                        TB_PROFESSOR_CPF = :cpf, 
+                                        TB_PROFESSOR_ENDERECO = :endereco,
+                                        TB_PROFESSOR_END_NUM = :num,
+                                        TB_PROFESSOR_CIDADE = :bairro,
+                                        TB_PROFESSOR_CEP = :cep,
+                                        TB_PROFESSOR_TELEFONE = :telefone,
+                                        TB_PROFESSOR_EMAIL = :email,
+                                        TB_PROFESSOR_SENHA = :senha,
+                                        TB_PROFESSOR_IMG_USER = :img
+                                        WHERE TB_PROFESSOR_ID LIKE :id');
+
+                                $sth->bindParam(':nome', $nome, PDO::PARAM_STR);
+                                $sth->bindParam(':email', $email, PDO::PARAM_STR);
+                                $sth->bindParam(':senha', $senha, PDO::PARAM_STR);
+                                $sth->bindParam(':img', $textarea, PDO::PARAM_STR);
+                                $sth->bindParam(':bairro', $bairro, PDO::PARAM_STR);
+                                $sth->bindParam(':telefone', $telefone, PDO::PARAM_STR);
+                                $sth->bindParam(':cep', $cep, PDO::PARAM_STR);
+                                $sth->bindParam(':num', $num, PDO::PARAM_INT);
+                                $sth->bindParam(':id', $user_id, PDO::PARAM_INT);
+                                $sth->bindParam(':endereco', $endereco, PDO::PARAM_STR);
+                                $sth->bindParam(':cpf', $cpf, PDO::PARAM_STR);
+
+                                $sth->execute();
+
+                                $div_confirmacao = 1;
+                            } else {
+                                $errors[] = 'CPF já cadastrado';
+                            }
                         }
                     } else {
                         $errors[] = 'CPF inválido';
