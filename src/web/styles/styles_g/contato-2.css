@@ -19,8 +19,8 @@ h4{
 .info{
     color: var(--color-003);
     text-decoration: none;
-    font-size: 3.5vh;
-    padding: 2vh;
+    font-size: 1.5rem;
+    padding: 0 1rem;
 }
 
 .info:hover{
