@@ -46,6 +46,7 @@
     background-color: var(--color-005);
     display: flex;
     padding: 10px;
+    transition: all 0.8s;
     align-items: center;
 }
 
@@ -77,6 +78,7 @@
     font-size: 17px;
     background-color: var(--color-005);
     font-weight: 490;
+    transition: all 0.8s;
     height: auto;
 }
 
@@ -164,8 +166,8 @@
 #submit-text-alterar{
     background-color: var(--color-001);
     border-radius: 4px;
-    width: 20vh;
-    height: 6vh;
+    width: 130px;
+    height:40px;
     border-style: none;
     color: var(--color-004);
 }
@@ -231,6 +233,17 @@
         max-height: 120px;
     }
 
+    .div-alterar-img{
+        width: 92vw;
+    }
+
+    .div-alterar-texto{
+        width: 92vw;
+    }
+
+    .div-pai{
+        width: 99vw;
+    }
     .aviso{
         font-size: 13px;
     }
