@@ -160,6 +160,55 @@
     font-size: 23px;
 }
 
+.div10{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: var(--color-005);
+    font-family: Raleway;
+    position: fixed;
+    z-index: 1200;
+    width: 60%;
+    height: 20vh;
+    top: 10%;
+    left: 20%;
+    right: 0;
+    border-radius: 20px;
+}
+
+.imagem100{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    transition: all 0.5;
+}
+
+#trash-square{
+    font-size: 1.2rem;
+    position: absolute;
+    left: 6px;
+    bottom: 1px;
+    color: var(--color-004);
+}
+
+#trash-square:hover{
+    color: var(--color-002);
+}
+
+.div-icon10{
+    background-color: var(--color-001);
+    opacity: 100%;
+    border-radius: 50px;
+    width: 2rem;
+    height: 2rem;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+}
+
 @media (max-width: 880px) {
 
     .principal,
@@ -169,6 +218,30 @@
 
     .principal3 {
         width: 50%;
+    }
+
+    .div10{
+        min-height: 40%;
+        width: 90%;
+        left: 5%;
+        top: 30%;
+    }
+
+    #trash-square{
+        font-size: 1.1rem;
+        position: absolute;
+        left: 6px;
+        bottom: 2px;
+        color: var(--color-004);
+    }
+    .div-icon10{
+        background-color: var(--color-001);
+        border-radius: 50px;
+        width: 2rem;
+        height: 2rem;
+        right: 10px;
+        top: 10px;
+        position: absolute;
     }
 }
 

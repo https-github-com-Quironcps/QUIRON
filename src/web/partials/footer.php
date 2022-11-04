@@ -27,6 +27,9 @@
             <li>
                 <a href="contato">Contato</a>
             </li>
+            <li>
+                <a href="https://membros-quiron.vercel.app/">Integrantes</a>
+            </li>
         </ul>
 
         <p class="copyright">
