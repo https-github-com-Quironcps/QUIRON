@@ -3,6 +3,7 @@
 include ('PDO/conexao.php');
 include ('PDO/situacao.php');
 
+
 if (isset($_POST['cursos'])) {
 
     $cursos = trim($_POST['cursos']);
@@ -12,25 +13,26 @@ if (isset($_POST['cursos'])) {
 
     $sth = $pdo->prepare('UPDATE TB_PERFIL SET TB_PERFIL_CURSOS = :cursos,
     TB_PERFIL_SOBRE = :sobre, 
-    TB_PERFIL_EQUIPE = :equipe,
-    WHERE TB_PERFIL_ID LIKE :id');
+    TB_PERFIL_EQUIPE = :equipe
+    WHERE TB_PERFIL.TB_INSTITUICAO_TB_INSTITUICAO_ID LIKE :id');
     
     $sth->bindParam(':cursos', $cursos, PDO::PARAM_STR);
     $sth->bindParam(':sobre', $sobre, PDO::PARAM_STR);
     $sth->bindParam(':equipe', $equipe, PDO::PARAM_STR);
+    $sth->bindParam(':id', $user_id, PDO::PARAM_INT);
 
     $sth->execute();
 
     $div_confirmacao = 1;
 }
-    $sto = $pdo->prepare('SELECT TB_PERFIL.TB_PERFIL_CURSOS AS Cursos,
+    $sth = $pdo->prepare("SELECT TB_PERFIL.TB_PERFIL_CURSOS AS Cursos,
     TB_PERFIL.TB_PERFIL_SOBRE AS Sobre,
-    TB_PERFIL.TB_PERFIL_EQUIPE AS Equipe,
-    FROM `TB_PERFIL`
-    WHERE TB_PERFIL.TB_PERFIL_ID LIKE :id');
+    TB_PERFIL.TB_PERFIL_EQUIPE AS Equipe
+    FROM TB_PERFIL
+    WHERE TB_INSTITUICAO_TB_INSTITUICAO_ID LIKE :id");
 
-    $sto->bindParam(':id', $user_id, PDO::PARAM_INT);
-    $sto->execute();
+    $sth->bindParam(':id', $user_id, PDO::PARAM_INT);
+    $sth->execute();
 
-    $resultados = $sto->fetchAll(PDO::FETCH_ASSOC);
+    $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
 ?>
