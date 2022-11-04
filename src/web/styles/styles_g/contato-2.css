@@ -3,17 +3,17 @@ body{
 }
 
 .info-contato{
-    
     height: 100%;
+    background-color: aqua;
 }
 
 h4{
     color: var(--color-003);
 }
 
-#icon{
-    color: var(--color-001);
-    font-size: 6vh;
+#icon-10{
+    color: var(--color-003);
+    font-size: 2rem;
 }
 
 .info{
@@ -39,7 +39,7 @@ h4{
 .formulario{
     background-color: var(--color-005);
     width: 75vh;
-    height: 70vh;
+    height: 30rem;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ h4{
 
 #mensagem{
     resize: none;
-    height: 15vh;
+    height: 5rem;
     min-height: 15vh;
     border-style: none;
     background: var(--white);
@@ -76,7 +76,7 @@ h4{
     background-color: var(--color-001);
     border-radius: 4px;
     width: 20vh;
-    height: 6vh;
+    height: 4rem;
     border-style: none;
     color: var(--color-004);
 }

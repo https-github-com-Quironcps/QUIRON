@@ -78,6 +78,7 @@ ul li a:hover{
     padding-left: 20px;
 }
 
+
 nav .fa-bars{
     font-size:1.2em;
     cursor: pointer;
@@ -338,15 +339,19 @@ input:checked[type="checkbox"]::before{
     }
 
     input[type="checkbox"]{
-        width: 4vw;
+        width: 5vw;
         height: 3vh;
+    }
+
+    input:checked[type="checkbox"]::before{
+        left: 2.2vw;
     }
 }
 
 @media screen and (max-width: 780px) {
 
     input[type="checkbox"]{
-        width: 5vw;
+        width: 7vw;
         height: 3vh;
     }
 }
@@ -361,7 +366,7 @@ input:checked[type="checkbox"]::before{
     }
 
     input[type="checkbox"]{
-        width: 8vw;
+        width: 10vw;
         height: 3vh;
     }
 }

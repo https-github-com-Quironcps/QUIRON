@@ -58,11 +58,11 @@ if (isset($tema)) {
                 <p>Nós ajudaremos você!</p>
                 </h4><br><br>
 
-                <i id="icon" class="bi bi-instagram"></i> <a class="info" href="https://instagram.com/quiron_cps?igshid=YmMyMTA2M2Y=">@quiron_cps</a> <br>
+                <i id="icon-10" class="bi bi-instagram"></i><a class="info" href="https://instagram.com/quiron_cps?igshid=YmMyMTA2M2Y=">@quiron_cps</a> <br>
                 <hr class="linha">
-                <i id="icon" class="bi bi-envelope"></i> <a class="info" href="">quirontcc@gmail.com</a> <br>
+                <i id="icon-10" class="bi bi-envelope"></i> <a class="info" href="">quirontcc@gmail.com</a> <br>
                 <hr class="linha">
-                <i id="icon" class="bi bi-telephone"></i> <a class="info" href="">(11) 4002-8922</a> <br>
+                <i id="icon-10" class="bi bi-telephone"></i> <a class="info" href="">(11) 4002-8922</a> <br>
             </div>
 
             <!-- div com o formulário de contato (a direita) -->
