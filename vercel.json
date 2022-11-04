@@ -1,5 +1,17 @@
 {
     "functions": {
+        "api/src/server/*.php": {
+            "runtime": "vercel-php@0.5.2"
+        },
+
+        "api/src/server/PDO/*.php": {
+            "runtime": "vercel-php@0.5.2"
+        },
+
+        "api/src/web/partials/*.php": {
+            "runtime": "vercel-php@0.5.2"
+        },
+
         "api/src/web/*.php": {
             "runtime": "vercel-php@0.5.2"
         }
