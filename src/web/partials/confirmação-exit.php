@@ -21,7 +21,7 @@
     <div id="fecharDiv2" class="div-todo">
         <div class="principal2">
             <center>
-                <div class="conteudo6"><br>
+                <div class="conteudo6">
 
                     <h3 class="mensagem">Você realmente deseja sair?</h3><br>
 

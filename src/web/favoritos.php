@@ -74,11 +74,11 @@ if (isset($tema)) {
                     if (count($resultados)) {
                         foreach ($resultados as $Res) {
                     ?>
-                    <div class="td3"><a href="../server/pega_id_escola.php" onclick="location.href=this.href+'?cod='+<?php echo $Res['Idi'];?>;return false;"><i id="trash-square" class="bi bi-arrow-90deg-right"></i></a></div>
+                    <div class="td3"><a href="../server/pega_id_escola.php" onclick="location.href=this.href+'?cod='+<?php echo $Res['Idi'];?>;return false;"><i id="icone20" class="bi bi-arrow-90deg-right"></i></a></div>
                     <?php }
                     }
                     ?>
-                    <div class="td4"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?codigoFav='+<?php echo $Resultado['Idf'];?>;return false;"><i id="trash-square" class="bi bi-trash"></i></a></div>
+                    <div class="td4"><a href="../server/pega_id_vaga.php" onclick="location.href=this.href+'?codigoFav='+<?php echo $Resultado['Idf'];?>;return false;"><i id="icone20" class="bi bi-trash"></i></a></div>
                 </div>
                 <?php 
                     }
