@@ -70,16 +70,16 @@ if (isset($tema)) {
                 
                 <h4 class="title-form">Fale conosco!</h4><br>
 
-                <form class="form-contato"action="">
+                <form class="form-contato" method="POST" action="processa_contato.php">
 
                     <label class="text-form">Nome</label><br>
-                    <input id="form-campo" class="form-control" type="text" required></input><br>
+                    <input id="form-campo" name="nome" class="form-control" type="text" required></input><br>
 
                     <label class="text-form">E-mail</label><br>
-                    <input  id="form-campo" class="form-control" type="text" required></input><br>
+                    <input  id="form-campo" name="email" class="form-control" type="text" required></input><br>
 
                     <label class="text-form">Mensagem</label><br>
-                    <textarea id="mensagem" class="form-control" type="text" required></textarea><br>
+                    <textarea id="mensagem" name="mensagem" class="form-control" type="text" required></textarea><br>
                     <input type="hidden" name="_captcha" value="false" />
 
                     <input type="submit" value="Enviar" class="btn-enviar">
