@@ -63,6 +63,14 @@ include('partials/aviso-excluir-conta.php');
         <h1 class="h1002">Editar informações da conta</h1>
     </center>
 
+    <?php
+        if (isset($errors) && count($errors) > 0) {
+            foreach ($errors as $error_msg) {
+                echo '<div class="alert alert-danger"><center>' . $error_msg . '</center></div>';
+            }
+        }
+    ?>
+
     <form method="POST" enctype="multipart/form-data">
 
         <div class="div-mae">
@@ -94,7 +102,7 @@ include('partials/aviso-excluir-conta.php');
 
                             <label class="form-tel aas">Telefone: </label><input required value="<?php echo $Resultado['Telefone']; ?>" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" name="telefone" type="number" class="input-tel input-text-alterar"> <label class="form-email aas"> E-mail: </label><input required value="<?php echo $Resultado['Email']; ?>" maxlength="128" name="email" class="input-email input-text-alterar" type="email"><br>
 
-                            <center> <label class="form-cpf aas">CPF: </label><input required value="<?php echo $Resultado['CPF']; ?>" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="14" name="cpf" type="number" class="input-cpf input-text-alterar" name="cpf"> <label class="form-senha aas">Senha: </label><input required value="<?php echo $Resultado['Senha']; ?>" maxlength="45" name="senha" type="password" class="input-senha input-text-alterar"> </center>
+                            <center> <label class="form-cpf aas">CPF: </label><input required value="<?php echo $Resultado['CPF']; ?>" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" name="cpf" type="number" class="input-cpf input-text-alterar" name="cpf"> <label class="form-senha aas">Senha: </label><input required value="<?php echo $Resultado['Senha']; ?>" maxlength="45" name="senha" type="password" class="input-senha input-text-alterar"> </center>
 
                             <input type="submit" value="Editar" id="submit-text-alterar" class="submit-class"> <a style="text-decoration: none; color:white;" onclick="chamaDivEx()"><div style="cursor: pointer; padding-top: 7px; text-align: center;" id="submit-text-alterar-2" class="submit-class">Deletar Conta</div></a>
                             

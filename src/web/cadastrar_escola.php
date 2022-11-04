@@ -61,13 +61,8 @@ if (isset($tema)) {
         <?php
         if (isset($errors) && count($errors) > 0) {
             foreach ($errors as $error_msg) {
-                echo '<div class="alert alert-danger">' . $error_msg . '</div>';
+                echo '<div class="alert alert-danger"><center>' . $error_msg . '</center></div>';
             }
-        }
-
-        if (isset($success)) {
-
-            echo '<div class="alert alert-success">' . $success . '</div>';
         }
         ?>
 
@@ -91,15 +86,15 @@ if (isset($tema)) {
 
                 <div class="div-alterar-texto">
                     <div class="div-alterar-form">
-                        <label class="form-nome-completo aas">Nome da Instituição: </label><input required maxlength="128" name="nome-e" class="input-nome input-text-alterar" type="text"><br>
+                        <label class="form-nome-completo aas">Nome da Instituição: </label><input value="<?php if(isset($valnome)){ echo $valnome; } ?>" required maxlength="128" name="nome-e" class="input-nome input-text-alterar" type="text"><br>
 
-                        <label class="form-endereco aas">Endereço: </label><input required maxlength="128" name="end-e" type="text" class="input-endereco input-text-alterar"> <label class="form-num aas"> Nº: </label><input required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="30" name="num-e" class="input-num input-text-alterar" type="number"><br>
+                        <label class="form-endereco aas">Endereço: </label><input value="<?php if(isset($valendereco)){ echo $valendereco; } ?>" required maxlength="128" name="end-e" type="text" class="input-endereco input-text-alterar"> <label class="form-num aas"> Nº: </label><input value="<?php if(isset($valnumero)){ echo $valnumero; } ?>" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="30" name="num-e" class="input-num input-text-alterar" type="number"><br>
 
-                        <label class="form-bairro aas">Cidade: </label><input required maxlength="128" name="cidade-e" type="text" class="input-bairro input-text-alterar"> <label class="form-cep aas"> CEP: </label><input required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="8" name="cep-e" class="input-cep input-text-alterar" type="number"><br>
+                        <label class="form-bairro aas">Cidade: </label><input value="<?php if(isset($valcidade)){ echo $valcidade; } ?>" required maxlength="128" name="cidade-e" type="text" class="input-bairro input-text-alterar"> <label class="form-cep aas"> CEP: </label><input value="<?php if(isset($valcep)){ echo $valcep; } ?>" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="8" name="cep-e" class="input-cep input-text-alterar" type="number"><br>
 
-                        <label class="form-tel aas">Telefone: </label><input required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" name="tel-e" type="number" class="input-tel input-text-alterar"> <label class="form-email aas"> E-mail: </label><input required maxlength="128" name="email-e" class="input-email input-text-alterar" type="email"><br>
+                        <label class="form-tel aas">Telefone: </label><input value="<?php if(isset($valtelefone)){ echo $valtelefone; } ?>" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" name="tel-e" type="number" class="input-tel input-text-alterar"> <label class="form-email aas"> E-mail: </label><input required value="<?php if(isset($valemail)){ echo $valemail; } ?>" maxlength="128" name="email-e" class="input-email input-text-alterar" type="email"><br>
 
-                        <center> <label name="senha" class="form-senha aas">Senha: </label><input required maxlength="45" name="senha-e" type="password" class="input-senha input-text-alterar"> <label class="form-cod">Código: </label><input maxlength="100" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required type="number" class="input-cod" name="cod-e" id="input-text-alterar"> </center>
+                        <center> <label name="senha" class="form-senha aas">Senha: </label><input value="<?php if(isset($valsenha)){ echo $valsenha; } ?>" required maxlength="45" name="senha-e" type="password" class="input-senha input-text-alterar"> <label class="form-cod">Código: </label><input value="<?php if(isset($valcodigo)){ echo $valcodigo; } ?>" maxlength="100" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required type="number" class="input-cod" name="cod-e" id="input-text-alterar"> </center>
 
                         <input type="submit" name="submit" value="Cadastrar-se" id="submit-text-alterar" class="submit-class">
                     </div>

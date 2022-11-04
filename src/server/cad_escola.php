@@ -25,6 +25,7 @@ if (isset($_POST['submit'])) {
         && !empty($_POST['senha-e'])
         && !empty($_POST['cod-e'])
     ) {
+
         $nome = trim($_POST['nome-e']);
         $endereco = trim($_POST['end-e']);
         $numero = trim($_POST['num-e']);
@@ -36,74 +37,144 @@ if (isset($_POST['submit'])) {
         $codigo = trim($_POST['cod-e']);
         $textarea = trim($_POST['imagem']);
 
-        $options = array("cost" => 4);
-        $hashsenha = password_hash($senha, PASSWORD_BCRYPT, $options);
+        $count_email = strlen($email);
+        $count_senha = strlen($senha);
+        $count_telefone = strlen($telefone);
+        $count_cep = strlen($cep);
 
-        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $sql = 'SELECT * FROM TB_INSTITUICAO where TB_INSTITUICAO_EMAIL = :TB_INSTITUICAO_EMAIL';
-            $stmt = $pdo->prepare($sql);
-            $p = ['TB_INSTITUICAO_EMAIL' => $email];
-            $stmt->execute($p);
+        if ($count_senha >= 8) {
+            if ($count_cep = 8) {
+                if ($count_email > 13) {
+                    if ($count_telefone >= 10) {
+                        $options = array("cost" => 4);
+                        $hashsenha = password_hash($senha, PASSWORD_BCRYPT, $options);
 
-            if ($stmt->rowCount() == 0) {
-                $sql = "INSERT INTO TB_INSTITUICAO (TB_INSTITUICAO_NOME, TB_INSTITUICAO_ENDERECO, TB_INSTITUICAO_END_NUM, TB_INSTITUICAO_CIDADE, TB_INSTITUICAO_CEP, TB_INSTITUICAO_TELEFONE, TB_INSTITUICAO_EMAIL,`TB_INSTITUICAO_SENHA`,TB_INSTITUICAO_COD, TB_INSTITUICAO_IMG_USER) 
-                values(:TB_INSTITUICAO_NOME,:TB_INSTITUICAO_ENDERECO,:TB_INSTITUICAO_END_NUM,:TB_INSTITUICAO_CIDADE,:TB_INSTITUICAO_CEP,:TB_INSTITUICAO_TELEFONE,:TB_INSTITUICAO_EMAIL,:TB_INSTITUICAO_SENHA,:TB_INSTITUICAO_COD, :IMG_INSTITUICAO)";
+                        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                            $sql = 'SELECT * FROM TB_INSTITUICAO where TB_INSTITUICAO_EMAIL = :TB_INSTITUICAO_EMAIL';
+                            $stmt = $pdo->prepare($sql);
+                            $p = ['TB_INSTITUICAO_EMAIL' => $email];
+                            $stmt->execute($p);
 
-                try {
-                    $handle = $pdo->prepare($sql);
-                    $params = [
-                        ':TB_INSTITUICAO_NOME' => $nome,
-                        ':TB_INSTITUICAO_ENDERECO' => $endereco,
-                        ':TB_INSTITUICAO_END_NUM' => $numero,
-                        ':TB_INSTITUICAO_CIDADE' => $cidade,
-                        ':TB_INSTITUICAO_CEP' => $cep,
-                        ':TB_INSTITUICAO_TELEFONE' => $telefone,
-                        ':TB_INSTITUICAO_EMAIL' => $email,
-                        ':TB_INSTITUICAO_SENHA' => $senha,
-                        ':TB_INSTITUICAO_COD' => $codigo,
-                        ':IMG_INSTITUICAO' => $textarea
-                    ];
+                            if ($stmt->rowCount() == 0) {
+                                $sql = "INSERT INTO TB_INSTITUICAO (TB_INSTITUICAO_NOME, TB_INSTITUICAO_ENDERECO, TB_INSTITUICAO_END_NUM, TB_INSTITUICAO_CIDADE, TB_INSTITUICAO_CEP, TB_INSTITUICAO_TELEFONE, TB_INSTITUICAO_EMAIL,`TB_INSTITUICAO_SENHA`,TB_INSTITUICAO_COD, TB_INSTITUICAO_IMG_USER) 
+                            values(:TB_INSTITUICAO_NOME,:TB_INSTITUICAO_ENDERECO,:TB_INSTITUICAO_END_NUM,:TB_INSTITUICAO_CIDADE,:TB_INSTITUICAO_CEP,:TB_INSTITUICAO_TELEFONE,:TB_INSTITUICAO_EMAIL,:TB_INSTITUICAO_SENHA,:TB_INSTITUICAO_COD, :IMG_INSTITUICAO)";
 
-                    $handle->execute($params);
+                                try {
+                                    $handle = $pdo->prepare($sql);
+                                    $params = [
+                                        ':TB_INSTITUICAO_NOME' => $nome,
+                                        ':TB_INSTITUICAO_ENDERECO' => $endereco,
+                                        ':TB_INSTITUICAO_END_NUM' => $numero,
+                                        ':TB_INSTITUICAO_CIDADE' => $cidade,
+                                        ':TB_INSTITUICAO_CEP' => $cep,
+                                        ':TB_INSTITUICAO_TELEFONE' => $telefone,
+                                        ':TB_INSTITUICAO_EMAIL' => $email,
+                                        ':TB_INSTITUICAO_SENHA' => $senha,
+                                        ':TB_INSTITUICAO_COD' => $codigo,
+                                        ':IMG_INSTITUICAO' => $textarea
+                                    ];
 
-                    // $success = 'Sua escola está cadastrada na Quíron';
+                                    $handle->execute($params);
 
-                    //redireciona para pagina de cadastrar o perfil com o id na url
-                    $pega_id = $pdo->prepare("SELECT TB_INSTITUICAO_ID AS ID FROM TB_INSTITUICAO WHERE TB_INSTITUICAO_NOME LIKE :NOME AND TB_INSTITUICAO_EMAIL LIKE :EMAIL");
-                
-                    $pega_id->bindParam(':NOME', $nome, PDO::PARAM_STR);
-                    $pega_id->bindParam(':EMAIL', $email, PDO::PARAM_STR);
+                                    // $success = 'Sua escola está cadastrada na Quíron';
 
-                    $pega_id->execute();
-                    
-                    $id_int = $pega_id->fetchAll(PDO::FETCH_ASSOC);
-                    
-                    if (count($id_int)) {
-                        foreach ($id_int as $Lat) {
-                            $last_id = $Lat['ID'];
+                                    //redireciona para pagina de cadastrar o perfil com o id na url
+                                    $pega_id = $pdo->prepare("SELECT TB_INSTITUICAO_ID AS ID FROM TB_INSTITUICAO WHERE TB_INSTITUICAO_NOME LIKE :NOME AND TB_INSTITUICAO_EMAIL LIKE :EMAIL");
+
+                                    $pega_id->bindParam(':NOME', $nome, PDO::PARAM_STR);
+                                    $pega_id->bindParam(':EMAIL', $email, PDO::PARAM_STR);
+
+                                    $pega_id->execute();
+
+                                    $id_int = $pega_id->fetchAll(PDO::FETCH_ASSOC);
+
+                                    if (count($id_int)) {
+                                        foreach ($id_int as $Lat) {
+                                            $last_id = $Lat['ID'];
+                                        }
+                                    }
+
+                                    header("location: ../server/pega_id_perfil.php?cad=$last_id");
+                                } catch (PDOException $e) {
+                                    $errors[] = $e->getMessage();
+                                }
+                            } else {
+                                $valnome = $nome;
+                                $valendereco = $endereco;
+                                $valnumero = $numero;
+                                $valcidade = $cidade;
+                                $valcep = $cep;
+                                $valtelefone = $telefone;
+                                $valemail = '';
+                                $valsenha = $senha;
+                                $valcodigo = $codigo;
+
+                                $errors[] = 'Email já cadastrado';
+                            }
+                        } else {
+                            $valnome = $nome;
+                            $valendereco = $endereco;
+                            $valnumero = $numero;
+                            $valcidade = $cidade;
+                            $valcep = $cep;
+                            $valtelefone = $telefone;
+                            $valemail = '';
+                            $valsenha = $senha;
+                            $valcodigo = $codigo;
+
+                            $errors[] = "Endereço de email não é válido";
                         }
+                    } else {
+                        $valnome = $nome;
+                        $valendereco = $endereco;
+                        $valnumero = $numero;
+                        $valcidade = $cidade;
+                        $valcep = $cep;
+                        $valtelefone = '';
+                        $valemail = $email;
+                        $valsenha = $senha;
+                        $valcodigo = $codigo;
+
+                        $errors[] = 'Verifique o telefone inserido, não esqueça do DDD!';
                     }
+                } else {
+                    $valnome = $nome;
+                    $valendereco = $endereco;
+                    $valnumero = $numero;
+                    $valcidade = $cidade;
+                    $valcep = $cep;
+                    $valtelefone = $telefone;
+                    $valemail = '';
+                    $valsenha = $senha;
+                    $valcodigo = $codigo;
 
-                    header("location: ../server/pega_id_perfil.php?cad=$last_id");
-
-                } catch (PDOException $e) {
-                    $errors[] = $e->getMessage();
+                    $errors[] = 'Verifique o email inserido';
                 }
             } else {
                 $valnome = $nome;
                 $valendereco = $endereco;
                 $valnumero = $numero;
                 $valcidade = $cidade;
-                $valcep = $cep;
+                $valcep = '';
                 $valtelefone = $telefone;
-                $valemail = '';
+                $valemail = $email;
                 $valsenha = $senha;
                 $valcodigo = $codigo;
 
-                $errors[] = 'Email já cadastrado';
+                $errors[] = 'CEP incorreto';
             }
         } else {
-            $errors[] = "Endereço de email não é válido";
+            $valnome = $nome;
+            $valendereco = $endereco;
+            $valnumero = $numero;
+            $valcidade = $cidade;
+            $valcep = $cep;
+            $valtelefone = $telefone;
+            $valemail = $email;
+            $valsenha = '';
+            $valcodigo = $codigo;
+
+            $errors[] = 'Senha muito curta!';
         }
     } else {
         if (!isset($_POST['nome-e']) || empty($_POST['nome-e'])) {
@@ -159,9 +230,7 @@ if (isset($_POST['submit'])) {
             $valcodigo = $_POST['cod-e'];
         }
 
-        
-            $errors[] = 'Por favor insira o código da ';
-       
 
+        $errors[] = 'Por favor insira o código da ';
     }
 }
