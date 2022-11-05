@@ -79,7 +79,7 @@ if (isset($tema)) {
                         <img style="cursor: pointer;" class="img-div-alterar-01" onerror="handleError2(this)" id="preview1" src="">
                     </label>
                     <input style="display: none;" type="file" name="foto" class="input-file" id="base_img_1">
-                    <img id="imagem001" onclick="apagaFoto(1)" id="trash_01" class="img-trash" src="images/svgs/trash.svg">
+                    <img id="imagem001" onclick="apagaFoto(1)"  class="img-trash" src="images/svgs/trash.svg">
                 </div>
 
                 <div class="div-meio">
@@ -88,7 +88,7 @@ if (isset($tema)) {
                     </label>
 
                     <input style="display: none;" type="file" name="foto" class="input-file" id="base_img_2">
-                    <img id="imagem002" onclick="apagaFoto(2)" id="trash_02" class="img-trash" src="images/svgs/trash.svg">
+                    <img id="imagem002" onclick="apagaFoto(2)"  class="img-trash" src="images/svgs/trash.svg">
                 </div>
 
                 <div class="div-ultimo">
@@ -97,7 +97,7 @@ if (isset($tema)) {
                     </label>
                     
                     <input style="display: none;" type="file" name="foto" class="input-file" id="base_img_3">
-                    <img id="imagem003" onclick="apagaFoto(3)" id="trash_03" class="img-trash" src="images/svgs/trash.svg">
+                    <img id="imagem003" onclick="apagaFoto(3)"  class="img-trash" src="images/svgs/trash.svg">
                 </div>            
                     
                 </div>
