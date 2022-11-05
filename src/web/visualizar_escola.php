@@ -49,7 +49,7 @@ if (isset($tema)) {
 
             <div class="page">
 
-                <?php include('../server/PDO/navbar.php'); ?>
+                <?php include('../server/PDO/navbar.php');?>
 
                 <!-- div com informações (nome da escola, cursos) sobrepondo a imagem do topo -->
 
@@ -72,14 +72,18 @@ if (isset($tema)) {
                 </center>
                 <br><br>
 
+                <?php 
+                include('partials/div-imagem.php'); 
+                ?>
+
                 <div class="div-total">
                     <!-- div com as imagens da escola (canto esquerdo) -->
 
                     <div class="imagens">
 
-                        <img class="sub-imagens" onerror="imagem_escola(this)" src="<?php echo $Resultado['ImgPost1']; ?>" alt="">
-                        <img class="sub-imagens" onerror="imagem_escola(this)" src="<?php echo $Resultado['ImgPost2']; ?>" alt=""><br>
-                        <img class="sub-imagens" onerror="imagem_escola(this)" src="<?php echo $Resultado['ImgPost3']; ?>" alt=""><br>
+                        <img class="sub-imagens" style="cursor: pointer;" onclick="chamaDiv2('<?php echo $Resultado['ImgPost1']; ?>')" onerror="imagem_escola(this)" src="<?php echo $Resultado['ImgPost1']; ?>" alt="">
+                        <img class="sub-imagens" style="cursor: pointer;" onclick="chamaDiv2('<?php echo $Resultado['ImgPost2']; ?>')" onerror="imagem_escola(this)" src="<?php echo $Resultado['ImgPost2']; ?>" alt=""><br>
+                        <img class="sub-imagens" style="cursor: pointer;" onclick="chamaDiv2('<?php echo $Resultado['ImgPost3']; ?>')" onerror="imagem_escola(this)" src="<?php echo $Resultado['ImgPost3']; ?>" alt=""><br>
 
                     </div>
 
@@ -106,7 +110,6 @@ if (isset($tema)) {
                             <?php
                         }
                     }
-
 
                     $num2 = 0;
 

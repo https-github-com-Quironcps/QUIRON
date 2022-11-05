@@ -160,20 +160,26 @@
     font-size: 23px;
 }
 
+.tudo{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 2500;
+}
+
 .div10{
-    display: flex;
+    margin-top: 15vh;
+    height: 70vh;
+    width: 70vw;
+    margin-left: 15vw;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
     background-color: var(--color-005);
     font-family: Raleway;
-    position: fixed;
-    z-index: 1200;
-    width: 60%;
-    height: 20vh;
-    top: 10%;
-    left: 20%;
-    right: 0;
+    z-index: 2500;
     border-radius: 20px;
 }
 
@@ -204,6 +210,8 @@
     border-radius: 50px;
     width: 2rem;
     height: 2rem;
+    margin-top: 15vh;
+    margin-right: 15vw;
     right: 10px;
     top: 10px;
     position: absolute;
@@ -221,10 +229,15 @@
     }
 
     .div10{
-        min-height: 40%;
-        width: 90%;
-        left: 5%;
-        top: 30%;
+        margin-top: 25vh;
+        height: 50vh;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    .div-icon10{
+        margin-top: 25vh;
+        margin-right: 5vw;
     }
 
     #trash-square{
@@ -233,15 +246,6 @@
         left: 6px;
         bottom: 2px;
         color: var(--color-004);
-    }
-    .div-icon10{
-        background-color: var(--color-001);
-        border-radius: 50px;
-        width: 2rem;
-        height: 2rem;
-        right: 10px;
-        top: 10px;
-        position: absolute;
     }
 }
 
