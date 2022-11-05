@@ -360,8 +360,12 @@ input:checked[type="checkbox"]::before{
 @media screen and (max-width: 780px) {
 
     input[type="checkbox"]{
-        width: 7vw;
+        width: 6vw;
         height: 3vh;
+    }
+
+    input:checked[type="checkbox"]::before{
+        left: 3.2vw;
     }
 }
 
@@ -375,14 +379,28 @@ input:checked[type="checkbox"]::before{
     }
 
     input[type="checkbox"]{
-        width: 10vw;
+        width: 8vw;
         height: 3vh;
+    }
+
+    input:checked[type="checkbox"]::before{
+        left: 4vw;
     }
 }
 
 @media screen and (max-width: 450px) {
     .slide{
         margin-top: 50px;
+    }
+
+    
+    input[type="checkbox"]{
+        width: 9vw;
+        height: 3vh;
+    }
+
+    input:checked[type="checkbox"]::before{
+        left: 4vw;
     }
 }
 
