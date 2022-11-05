@@ -64,6 +64,8 @@ include('partials/aviso-excluir-conta.php');
     </center>
 
     <?php
+    include('partials/div-imagem.php'); 
+
         if (isset($errors) && count($errors) > 0) {
             foreach ($errors as $error_msg) {
                 echo '<div class="alert alert-danger"><center>' . $error_msg . '</center></div>';
@@ -82,7 +84,7 @@ include('partials/aviso-excluir-conta.php');
                         <h3>Foto de perfil</h3>
 
                         <div class="sub-div-alterar-img">
-                            <img src="<?php echo $Resultado['Foto']; ?>" onerror="handleError(this)" name="imagem" id="preview" class="imagem-anexo" alt="">
+                            <img src="<?php echo $Resultado['Foto']; ?>" onclick="chamaDiv2('<?php echo $Resultado['Foto']; ?>')" onerror="handleError(this)" name="imagem" id="preview" class="imagem-anexo" alt="">
                         </div>
 
                         <input type="file" name="foto" class="input-file" id="base">
