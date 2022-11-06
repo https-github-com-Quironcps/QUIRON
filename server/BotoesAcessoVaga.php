@@ -1,0 +1,2 @@
+<a class="linkDVga" href="<?php echo $Resultado['VagaLink']; ?>">Ir para a vaga</a>
+<a class="linkDVga" href="../server/pega_id_escola.php" onclick="location.href=this.href+'?cod='+<?php echo $Resultado['IDINST']; ?>;return false;">Ver Escola</a>
