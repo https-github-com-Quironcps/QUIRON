@@ -14,9 +14,9 @@ include("../server/login.php");
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/styles_m/fonts.css">
+  <!-- <link rel="stylesheet" href="styles/styles_m/fonts.css"> -->
 
-  <link rel="stylesheet" href="styles/styles_m/owl.carousel.min.css">
+  <!-- <link rel="stylesheet" href="styles/styles_m/owl.carousel.min.css"> -->
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="styles/styles_m/bootstrap.min.css">
@@ -128,10 +128,10 @@ include("../server/login.php");
   </div>
 
 
-  <script src="scripts/jquery_login.min.js"></script>
-  <script src="scripts/popper_login.min.js"></script>
-  <script src="scripts/bootstrap_login.min.js"></script>
-  <script src="scripts/main_login.js"></script>
+  <!-- <script src="scripts/jquery_login.min.js"></script> -->
+  <!-- <script src="scripts/popper_login.min.js"></script> -->
+  <!-- <script src="scripts/bootstrap_login.min.js"></script> -->
+  <!-- <script src="scripts/main_login.js"></script> -->
   </div>
 
   <?php include('partials/loadpage.php'); ?>

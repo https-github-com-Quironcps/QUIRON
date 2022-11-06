@@ -33,18 +33,10 @@ if (isset($tema)) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link CSS -->
     <link rel="stylesheet" href="../web/styles/styles_l/vagas.css">
     <link rel="stylesheet" href="styles/theme.css">
 
     <link rel="icon" href="../web/images/logos/arco-dark-2.png">
-
-    <link rel="stylesheet" href="../web/styles/styles_g/load.css">
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-    <!-- <script src="scripts/teste.js"></script> -->
-
-    <script type="text/javascript" src="../web/scripts/preloader.js"></script>
 
     <script src="scripts/mostrarVagasIndex.js"></script>
 
@@ -52,6 +44,15 @@ if (isset($tema)) {
 </head>
 
 <body>
+    <?php
+    if (isset($user_type)) {
+        if ($user_type == 'professor' || $user_type == 'escola') {
+            echo "<link rel='stylesheet' href='../web/styles/styles_g/load.css'>";
+            echo "<script type='text/javascript' src='../web/scripts/preloader.js'></script>";
+            include('partials/loadpage.php');
+        }
+    }
+    ?>
     <div class="page">
         <?php
         include('../server/PDO/navbar.php');
@@ -61,7 +62,9 @@ if (isset($tema)) {
 
         <div class="filtros">
             <form class="form" method="POST">
-                <input class='input-textarea' maxlength="80" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="cod" value="<?php echo $cod; ?>" type="number" maxlength="3" placeholder="Código da instituição">
+                <input class='input-textarea' maxlength="80" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="cod" value="<?php if (isset($cod)) {
+                                                                                                                                                                                                    echo $cod;
+                                                                                                                                                                                                } ?>" type="number" maxlength="3" placeholder="Código da instituição">
                 <button type="submit" class='botao-001'></button>
             </form>
         </div>
@@ -137,32 +140,34 @@ if (isset($tema)) {
                                         <div class="flex" id="vaga<?php echo $Resultado['Idv']; ?>">
                                             <i id="voltarbtn" onclick="voltarPVaga(<?php echo $Resultado['Idv']; ?>)" class="bi bi-arrow-left"></i>
                                             <?php
-                                            if ($user_type == 'professor') {
-                                                include('../server/PDO/situacao.php');
+                                            if (isset($user_type)) {
+                                                if ($user_type == 'professor') {
+                                                    include('../server/PDO/situacao.php');
 
-                                                $sta->bindParam(':id', $Resultado['IDINST'], PDO::PARAM_INT);
-                                                $sta->bindParam(':id_professor', $user_id, PDO::PARAM_INT);
-                                                $sta->bindParam(':id_vaga', $Resultado['Idv'], PDO::PARAM_INT);
-                                                $sta->execute();
-                                                $favoritos = $sta->fetchAll(PDO::FETCH_ASSOC);
+                                                    $sta->bindParam(':id', $Resultado['IDINST'], PDO::PARAM_INT);
+                                                    $sta->bindParam(':id_professor', $user_id, PDO::PARAM_INT);
+                                                    $sta->bindParam(':id_vaga', $Resultado['Idv'], PDO::PARAM_INT);
+                                                    $sta->execute();
+                                                    $favoritos = $sta->fetchAll(PDO::FETCH_ASSOC);
 
 
-                                                $id_vaga_fav = $Resultado['Idv'];
+                                                    $id_vaga_fav = $Resultado['Idv'];
 
-                                                if (count($favoritos)) {
-                                                    foreach ($favoritos as $Fav) {
-                                                        $id_favorito = $Fav['IdFav'];
-                                                        $professor_fk = $Fav['FKFavProf'];
-                                                        $fk_vaga_fav = $Fav['FKFavVaga'];
+                                                    if (count($favoritos)) {
+                                                        foreach ($favoritos as $Fav) {
+                                                            $id_favorito = $Fav['IdFav'];
+                                                            $professor_fk = $Fav['FKFavProf'];
+                                                            $fk_vaga_fav = $Fav['FKFavVaga'];
 
-                                                        if ($user_id == $professor_fk && $id_vaga_fav == $fk_vaga_fav) {
-                                                            $condicao_fav = $Fav['CondFav'];
-                                                            include('partials/coracao-fav-fill.php');
+                                                            if ($user_id == $professor_fk && $id_vaga_fav == $fk_vaga_fav) {
+                                                                $condicao_fav = $Fav['CondFav'];
+                                                                include('partials/coracao-fav-fill.php');
+                                                            }
                                                         }
+                                                    } else {
+                                                        $condicao_fav = 3;
+                                                        include('partials/coracao-fav-fill.php');
                                                     }
-                                                } else {
-                                                    $condicao_fav = 3;
-                                                    include('partials/coracao-fav-fill.php');
                                                 }
                                             }
                                             ?>
@@ -290,7 +295,7 @@ if (isset($tema)) {
 
     </div>
 
-    <?php include('partials/loadpage.php'); ?>
+
 </body>
 
             </html>

@@ -375,7 +375,7 @@ img:not([src]) {
 
 .nome_materia {
     margin-top: 1vh;
-    margin-left: 2vh;
+    margin-left: 10px;
     color: var(--botao-iniciar-hover);
     font-size: 17px;
     overflow: hidden;
@@ -384,9 +384,12 @@ img:not([src]) {
 
 .escola {
     margin-top: 1vh;
-    margin-left: 2vh;
+    margin-left: 10px;
     color: var(--color-003);
     font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* margin-right: 10px; */
 }
 
 input[type=text] {
