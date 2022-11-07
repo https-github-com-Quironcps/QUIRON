@@ -62,7 +62,7 @@ if (isset($tema)) {
                 <hr class="linha">
                 <i id="icon-10" class="bi bi-envelope"></i> <a class="info" href="">quirontcc@gmail.com</a> <br>
                 <hr class="linha">
-                <i id="icon-10" class="bi bi-telephone"></i> <a class="info" href="">(11) 4002-8922</a> <br>
+                <i id="icon-10" class="bi bi-github"></i><a class="info" href="https://github.com/https-github-com-Quironcps">GitHub</a><br>
             </div>
 
             <!-- div com o formulário de contato (a direita) -->

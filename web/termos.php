@@ -21,7 +21,7 @@
         <h3 class="t" id="li">Esta política de Termos de Uso é válida a partir de Oct 2022.</h3><br>
 
         <h4 class="s">Quíron, pessoa jurídica de direito privado descreve, através deste documento, as regras de uso do site
-                        quiron.com.br e qualquer outro site, loja ou aplicativo operado pelo proprietário.<br><br>
+                        https://quironcps.herokuapp.com/web/ e qualquer outro site, loja ou aplicativo operado pelo proprietário.<br><br>
                         Ao navegar neste website, consideramos que você está de acordo com os Termos de Uso abaixo.<br><br>
                         Caso você não esteja de acordo com as condições deste contrato, pedimos que não faça mais uso deste website,
                         muito menos cadastre-se ou envie os seus dados pessoais.<br><br>
