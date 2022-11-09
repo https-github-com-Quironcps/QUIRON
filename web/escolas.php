@@ -1,6 +1,6 @@
 <?php
-    include ('../server/busca_escolas.php'); 
-    include('../server/PDO/theme.php');
+include('../server/busca_escolas.php');
+include('../server/PDO/theme.php');
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +23,7 @@ if (isset($tema)) {
 <?php }
     }
 } ?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,58 +42,65 @@ if (isset($tema)) {
 
     <title>QUIRON - ESCOLAS</title>
 </head>
+
 <body>
 
-    <?php 
-        include('../server/PDO/verifica_logado.php');
+    <?php
+    include('../server/PDO/verifica_logado.php');
     ?>
 
     <div class="page">
 
-    <?php include('../server/PDO/navbar.php'); ?>
-    
-    <div>
-        <div class="filtros">
+        <?php include('../server/PDO/navbar.php'); ?>
+
+        <div>
+            <div class="filtros">
                 <form class="form" method="POST">
-                    <input class='input-textarea' maxlength="80" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="cod" value="<?php echo $cod; ?>" type="number" maxlength="3" placeholder="Código da instituição">
+                    <input class='input-textarea' maxlength="80" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="cod" value="<?php if (isset($cod)) {
+                                                                                                                                                                                                        echo $cod;
+                                                                                                                                                                                                    } ?>" type="number" maxlength="3" placeholder="Código da instituição">
                     <button type="submit" class='botao-001'></button>
                 </form>
+            </div>
+            <br>
+            <center>
+                <h1 class="titulo1">Escolas disponíveis:</h1>
+            </center>
+
+            <br>
+
+            <center>
+                <div class="conteudo">
+                    <!-- primeira linha -->
+                    <div class="table1">
+                        <?php
+                        if (count($resultados)) {
+                            foreach ($resultados as $Resultado) {
+                        ?>
+                                <a class="td1" href="../server/pega_id_escola.php" onclick="location.href=this.href+'?cod='+<?php echo $Resultado['Id']; ?>;return false;">
+
+                                    <img class="foto-perfil" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['Foto']; ?>">
+
+                                    <marquee behavior="slide" direction="left">
+                                        <h6><?php echo $Resultado['Nome']; ?></h6>
+                                    </marquee>
+
+                                </a>
+                        <?php
+                            }
+                        }
+                        ?>
+                        <div class="td2">ㅤ</div>
+                    </div>
+            </center>
+
         </div>
-        <br>
-        <center><h1 class="titulo1">Escolas disponíveis:</h1></center>
-        
-        <br>
 
-        <center>
-        <div class="conteudo">
-            <!-- primeira linha -->
-            <div class="table1">
-                <?php   
-                    if (count($resultados)) {
-                    foreach($resultados as $Resultado){
-                ?>
-                <a class="td1" href="../server/pega_id_escola.php" onclick="location.href=this.href+'?cod='+<?php echo $Resultado['Id'];?>;return false;">
-                        
-                            <img class="foto-perfil" onerror="handleErrorEscola(this)" src="<?php echo $Resultado['Foto']; ?>">
-
-                            <marquee behavior="slide" direction="left">
-                                <h6><?php echo $Resultado['Nome']; ?></h6>
-                            </marquee>
-                        
-                        </a>
-                <?php
-                    }}
-                ?>
-                    <div class="td2">ㅤ</div>
-        </div>
-        </center>
-        
-    </div>
-
-    <?php include('partials/footer.php'); ?>
+        <?php include('partials/footer.php'); ?>
 
     </div>
 
     <?php include('partials/loadpage.php'); ?>
 </body>
-</html>
+
+            </html>

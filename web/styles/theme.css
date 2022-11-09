@@ -42,11 +42,11 @@
 }
 
 .light:root{
-
     --white: #ffffff;
     --black: #000000;
     --grey:  #666666;
     --troca: #000;
+    --escolas: #e0d7eec3;
 
     --color-001: #7e57c2c3; /* cor dos ícones e dos botões, bem como títulos em destaque (como na tela "sobre", por exemplo) */
     --color-002: #7e57c2;   /* cor para o "hover" dos botões, inputs, entre outros */
@@ -66,7 +66,8 @@
     --black: #000000;
     --grey:  #666666;
     --troca: #666666;
-
+    --escolas: #241936c3;
+    
     --color-001: #323232; /* cor dos ícones e dos botões, bem como títulos em destaque (como na tela "sobre", por exemplo) */
     --color-002: #181818;   /* cor para o "hover" dos botões, inputs, entre outros */
     --color-003: #D3D3D3;   /* para os textos das páginas e das "linhas" que separam parágrafos (na tela de contato tem um exemplo) */

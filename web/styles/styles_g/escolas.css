@@ -132,7 +132,7 @@ body{
 }
 
 .td1:hover{
-    background-color: var(--color-002);
+    background-color: var(--escolas);
     transition: all 1s;
     color: var(--white);
 }

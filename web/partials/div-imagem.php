@@ -18,7 +18,7 @@
 <body>
     <div id="div-tudo-img" class="tudo" style="border: none; transform: translateX(100vw); display: none;">
     <div id="div10-img" class="div10">
-        <div class="div-icon10"><i id="trash-square" class="bi bi-arrow-90deg-left" onclick="sairDIVTela2()" ></i></div>
+        <div class="div-icon10"><i id="trash-square" style="cursor: pointer;" class="bi bi-arrow-90deg-left" onclick="sairDIVTela2()" ></i></div>
         <img class="imagem100" id="imagem_div_fora" onerror="imagem_escola(this)" src="" alt="">
     </div>
     </div>
