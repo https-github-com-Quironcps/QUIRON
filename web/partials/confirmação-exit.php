@@ -23,7 +23,7 @@
             <center>
                 <div class="conteudo6">
 
-                    <h3 class="mensagem">Você realmente deseja sair?</h3><br>
+                    <h3 style="margin-top: 10px;" class="mensagem">Você realmente deseja sair?</h3><br>
 
                     <a href="../server/sair.php"><input type="submit" style="height: 45px; width:100px;" value="Sim" class="btn-enviar"></a>
                     <a><input type="submit" style="height: 45px; width:100px;" value="Não" onclick="sairDIVTela()" class="btn-enviar"></a>
