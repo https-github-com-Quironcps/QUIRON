@@ -171,7 +171,7 @@ if (isset($tema)) {
                                                 }
                                             }
                                             ?>
-                                            <br>
+                                            <br><br>
                                             <h6 class="title03"><?php echo $Resultado['Vaga']; ?></h6>
                                             <br>
                                             <div class="linha1">
